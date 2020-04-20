@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Employee&apos;s SAP Number for Sales Org 2050 (Allure). --></help>
+        <label><!-- Allure SAP User # --></label>
+        <name>Allure_SAP_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Employee&apos;s SAP Number for Sales Org 2110 (Altair). --></help>
+        <label><!-- Altair SAP User # --></label>
+        <name>Altair_SAP_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bypass Account Process --></label>
+        <name>Bypass_Account_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Tracking Agent ID --></label>
+        <name>Call_Tracking_Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desk Location --></label>
+        <name>Desk_Location__c</name>
+        <picklistValues>
+            <masterLabel>Campus</masterLabel>
+            <translation><!-- Campus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote</masterLabel>
+            <translation><!-- Remote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DS Technical Contact --></label>
+        <name>DialSource__DS_Technical_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- DialSource Development Endpoint --></label>
+        <name>DialSource__DialSource_Development_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- DialSource Development Mode --></label>
+        <name>DialSource__DialSource_Development_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- DialSource Minimize --></label>
+        <name>DialSource__DialSource_Minimize__c</name>
+    </fields>
+    <fields>
+        <label><!-- DialSource Testing Mode --></label>
+        <name>DialSource__DialSource_Testing_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name Last Initial --></label>
+        <name>First_Name_Last_Initial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gat Formula for Approval Process --></label>
+        <name>Gat_Formula_for_Approval_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>MPM4_BASE__Start__c</name>
+    </fields>
+    <fields>
+        <help><!-- Employee&apos;s SAP Number for Sales Org 2010 (Marchon). --></help>
+        <label><!-- Marchon SAP User # --></label>
+        <name>Marchon_SAP_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional GAT Sales Territory Code --></label>
+        <name>MarketingID2__c</name>
+    </fields>
+    <fields>
+        <label><!-- GAT Sales Territory Code --></label>
+        <name>MarketingID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skill Level --></label>
+        <name>Skill_Level__c</name>
+        <picklistValues>
+            <masterLabel>Fully Trained</masterLabel>
+            <translation><!-- Fully Trained --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 1</masterLabel>
+            <translation><!-- Level 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 2</masterLabel>
+            <translation><!-- Level 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 3</masterLabel>
+            <translation><!-- Level 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 4</masterLabel>
+            <translation><!-- Level 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Termination Effective Date/Time --></label>
+        <name>Termination_Effective_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Agent Location --></label>
+        <name>Vision_Care_Agent_Location__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Auto Login --></label>
+        <name>cnx__Agent_AutoLogin__c</name>
+    </fields>
+    <fields>
+        <label><!-- obsolete --></label>
+        <name>cnx__Agent_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Id --></label>
+        <name>cnx__Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Agent --></label>
+        <name>cnx__Agent_MobileAgent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Agent Mode --></label>
+        <name>cnx__Agent_MobileMode__c</name>
+        <picklistValues>
+            <masterLabel>CALL_BY_CALL</masterLabel>
+            <translation><!-- CALL_BY_CALL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAILED_CONNECTION</masterLabel>
+            <translation><!-- NAILED_CONNECTION --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile Agent Dial Number --></label>
+        <name>cnx__Agent_MobileNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Password --></label>
+        <name>cnx__Agent_PasswordEncrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- obsolete --></label>
+        <name>cnx__Agent_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Extension --></label>
+        <name>cnx__Agent_Phone_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speed Dial Numbers --></label>
+        <name>cnx__Agent_SpeedDialNumbers__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- QualtricsURL --></label>
+        <name>qualtrics__QualtricsURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- QualtricsUserName --></label>
+        <name>qualtrics__QualtricsUserName__c</name>
+    </fields>
+    <layouts>
+        <layout>Community Member Layout</layout>
+        <layoutType>CommunityMemberLayout</layoutType>
+        <sections>
+            <label><!-- Basic Information --></label>
+            <section>Basic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Chatter Settings --></label>
+            <section>Chatter Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Language And Locale Settings --></label>
+            <section>Language And Locale Settings</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Connects for Cisco Contact Center --></label>
+            <section>Connects for Cisco Contact Center</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You cannot make updates to the Department field. Please contact your LOB Admin for further assistance. --></errorMessage>
+        <name>VSPR28_Allow_Department_Update</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,18 @@
+<apex:page standardController="Contact_Role__c" extensions="VSPR27_CampaignRelatedListExt">
+     <apex:form >       
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!camps}" var="c" >
+                <apex:column headerValue="Campaign Name">
+                    <apex:outputText value="{!IF(LEN(c.Campaign.Name)>50, LEFT(c.Campaign.Name, 50)+'...',c.Campaign.Name)}"></apex:outputText>
+                </apex:column>                       
+                <apex:column headerValue="Campaign Description">
+                    <apex:outputText value="{!IF(LEN(c.Campaign.Description)>40, LEFT(c.Campaign.Description,40)+'...', c.Campaign.Description)}"></apex:outputText>
+                </apex:column>    
+                <apex:column headerValue="Start Date" value="{!c.Campaign.StartDate}"/>
+                <apex:column headerValue="End Date" value="{!c.Campaign.EndDate}"/>
+                <apex:column headerValue="Member Status" value="{!c.Status}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>     
+    
+</apex:page>

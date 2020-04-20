@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <columns>
+        <field>Activity$Owner</field>
+    </columns>
+    <columns>
+        <field>Activity$Status</field>
+    </columns>
+    <columns>
+        <field>Activity$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Activity$LastModifiedDate</field>
+    </columns>
+    <description>Task report for Barb&apos;s Team</description>
+    <filter>
+        <criteriaItems>
+            <column>Activity$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Completed</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Activities Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities_and_Users__c</reportType>
+    <roleHierarchyFilter>Provider_Network_Supervisor_1</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Activity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURPREV1</interval>
+    </timeFrameFilter>
+</Report>

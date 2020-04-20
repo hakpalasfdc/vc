@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sfdash@vsp.com</contactEmail>
+    <label>SAP FitKit Integration</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/eauth2/callback</callbackUrl>
+        <consumerKey>3MVG9oZtFCVWuSwOvwwAVjUooDQ63oH.gCT3BqQ4E5e0YpfzqVCYk29wQip7E_2FAmC26Xc7ifeb6baAVSO.H</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

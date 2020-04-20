@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Email-to-Case Auto Reponse</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <formula>ISNEW() &amp;&amp;  NOT(ISBLANK( SuppliedEmail )) &amp;&amp;  RecordType.Name  = &apos;Client Delivery&apos; &amp;&amp;  ISPICKVAL(Origin, &apos;Email&apos;) &amp;&amp;  Owner:Queue.QueueName = &apos;CD Membership Coordination&apos;</formula>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>eei@vsp.com</replyToEmail>
+            <senderEmail>visioncarecrm@vsp.com</senderEmail>
+            <senderName>EDI Enrollment Integration Team</senderName>
+            <template>Client_Delivery/Membership_Auto_Response_OE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>ISNEW() &amp;&amp; NOT(ISBLANK( SuppliedEmail )) &amp;&amp; RecordType.Name = &apos;Client Delivery&apos; &amp;&amp; ISPICKVAL(Origin, &apos;Email&apos;) &amp;&amp; Owner:Queue.QueueName = &apos;CD Billing&apos;</formula>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>vspbilling@vsp.com</replyToEmail>
+            <senderEmail>visioncarecrm@vsp.com</senderEmail>
+            <senderName>Billing</senderName>
+            <template>Client_Delivery/CD_Biiling_Auto_Response</template>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>ISNEW() &amp;&amp; NOT(ISBLANK( SuppliedEmail )) &amp;&amp; RecordType.Name = &apos;Client Delivery&apos; &amp;&amp; ISPICKVAL(Origin, &apos;Email&apos;) &amp;&amp; Owner:Queue.QueueName = &apos;CD Cash Receipts&apos;</formula>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>cashreceipts@vsp.com</replyToEmail>
+            <senderEmail>visioncarecrm@vsp.com</senderEmail>
+            <senderName>Cash Receipts</senderName>
+            <template>Client_Delivery/CD_Cash_Receipts_Auto_Response</template>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>ISNEW() &amp;&amp; NOT(ISBLANK( SuppliedEmail )) &amp;&amp; RecordType.Name = &apos;Client Delivery&apos; &amp;&amp; ISPICKVAL(Origin, &apos;Email 1:1&apos;) &amp;&amp; Owner:User.Department = &quot;HP Plan&quot;</formula>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>eei@vsp.com</replyToEmail>
+            <senderEmail>visioncarecrm@vsp.com</senderEmail>
+            <senderName>VSP High Profile Senior Client Specialist Team</senderName>
+            <template>Client_Delivery/CD_HP_Plan_Admin_Auto_Response</template>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>ISNEW() &amp;&amp; NOT(ISBLANK( SuppliedEmail )) &amp;&amp; RecordType.Name = &apos;Client Delivery&apos; &amp;&amp; ISPICKVAL(Origin, &apos;Email 1:1&apos;) &amp;&amp; Owner:User.Department = &quot;EDI Membership&quot;</formula>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>eei@vsp.com</replyToEmail>
+            <senderEmail>visioncarecrm@vsp.com</senderEmail>
+            <senderName>VSP EDI Membership</senderName>
+            <template>Client_Delivery/CD_EDI_Membership_Auto_Response</template>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>ISNEW() &amp;&amp; NOT(ISBLANK( SuppliedEmail )) &amp;&amp; RecordType.Name = &apos;Client Delivery&apos; &amp;&amp; ISPICKVAL(Origin, &apos;Email&apos;) &amp;&amp; Owner:Queue.QueueName = &apos;CD State of CA&apos;</formula>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>stateofca@vsp.com</replyToEmail>
+            <senderEmail>visioncarecrm@vsp.com</senderEmail>
+            <senderName>VSP TPA Services</senderName>
+            <template>Client_Delivery/VSP_TPA_Services</template>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>ISNEW() &amp;&amp; NOT(ISBLANK( SuppliedEmail )) &amp;&amp; RecordType.Name = &apos;Client Delivery&apos; &amp;&amp; ISPICKVAL(Origin, &apos;Email&apos;) &amp;&amp; Owner:Queue.QueueName = &apos;CD CS University&apos;</formula>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>csuniv@vsp.com</replyToEmail>
+            <senderEmail>visioncarecrm@vsp.com</senderEmail>
+            <senderName>VSP TPA Services</senderName>
+            <template>Client_Delivery/VSP_TPA_Services</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

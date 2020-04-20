@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>Custom link to call UNITY Brand Sales Dashboard Cognos report.</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Brand</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=cognosViewer&amp;ui.action=run&amp;ui.object=/content/folder[@name=&apos;-Salesforce&apos;]/report[@name=&apos;VSP Brand Dashboard_1&apos;]&amp;run.outputFormat=HTML&amp;run.prompt=false&amp;p_prePrompt={!User.MarketingID__c}&amp;p_SlsRegion=[VSPBrand Sales Cube].[OpticsBrand Sales Team].[OpticsBrand Sales Team]-&gt;[{!User.MarketingID__c}]</url>
+</CustomPageWebLink>

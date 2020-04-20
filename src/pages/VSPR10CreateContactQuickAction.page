@@ -1,0 +1,7 @@
+<apex:page tabStyle="contact">
+<apex:outputPanel layout="block" style="overflow:auto;width:500px;height:400px" >
+<flow:interview name="Create_Contact_Quick_Action"> 
+<apex:param name="vAccountID" value="{!$CurrentPage.parameters.id}"/>
+</flow:interview>
+</apex:OutputPanel>
+</apex:page>

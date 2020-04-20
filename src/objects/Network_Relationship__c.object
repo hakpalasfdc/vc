@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object to track Payment Relationships between doctors and offices.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Network Relationships</relationshipLabel>
+        <relationshipName>Network_Relationships</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bypass_VC_Validation_Rules__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bypass VC Validation Rules</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Claims_Priced__c</fullName>
+        <externalId>false</externalId>
+        <label>Claims Priced</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>true</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_Role__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact Role</label>
+        <referenceTo>Contact_Role__c</referenceTo>
+        <relationshipName>Payment_Relationships</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Directory_Effective_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Directory Effective Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Directory_End_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Directory End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Doctor_ID__c</fullName>
+        <description>Doctor ID of associated Contact record</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Doctor ID</label>
+        <length>9</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exception_Reason_Calculation__c</fullName>
+        <description>Calculates the Vision Care Exception Reasons from Practice Account, Business Account, Contact, and Contact Role and displays the exception if the Program ID = VSP</description>
+        <externalId>false</externalId>
+        <formula>IF( Program_ID__r.Name  = &apos;VSP&apos; &amp;&amp; NOT(ISBLANK( TEXT(Account_Name__r.Parent.Vision_Care_Practice_Exception__c ))), TEXT(Account_Name__r.Parent.Vision_Care_Practice_Exception__c), 
+
+IF(Program_ID__r.Name = &apos;VSP&apos; &amp;&amp; NOT(ISBLANK(TEXT( Account_Name__r.Vision_Care_Location_Exception__c ))), TEXT( Account_Name__r.Vision_Care_Location_Exception__c),
+
+IF(Program_ID__r.Name = &apos;VSP&apos; &amp;&amp; NOT(ISBLANK(TEXT( Provider_Name__r.Vision_Care_Doctor_Exception__c ))), TEXT( Provider_Name__r.Vision_Care_Doctor_Exception__c), 
+
+IF(Program_ID__r.Name = &apos;VSP&apos; &amp;&amp; NOT(ISBLANK(TEXT( Contact_Role__r.Vision_Care_Contact_Role_Exception__c ))), TEXT( Contact_Role__r.Vision_Care_Contact_Role_Exception__c), &quot;&quot;)
+)
+)
+)</formula>
+        <label>Exception Reason Calculation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exception_Reason__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Exception Reason</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fee_Code__c</fullName>
+        <defaultValue>&quot;NF&quot;</defaultValue>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Fee Code</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours_Worked__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Hours Worked</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LVC_Negotiated_Discount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>LVC Negotiated Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(Program_End_Date__c&gt;= TODAY(), ISBLANK(Program_End_Date__c))
+				, 1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ownership__c</fullName>
+        <description>Converts Contact Role Type to Ownership Code for data integration</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Contact_Role__r.Type__c, &quot;Doctor-Owner&quot;),&quot;O&quot;, 
+    IF(ISPICKVAL(Contact_Role__r.Type__c, &quot;Doctor-Employee&quot;), &quot;E&quot;, &quot; &quot;))</formula>
+        <label>Ownership</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Program_Effective_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Program Effective Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Program_End_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Program End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Program_ID_Code__c</fullName>
+        <description>Code of Network ID from General Table</description>
+        <externalId>false</externalId>
+        <formula>Program_ID__r.Name</formula>
+        <label>Program ID Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Program_ID__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Lookup relationship field from Network Relationship to General Table object</description>
+        <externalId>false</externalId>
+        <label>Program ID</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>General_Table__c.Table__c</field>
+                <operation>equals</operation>
+                <value>PRSP</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>General_Table__c</referenceTo>
+        <relationshipLabel>Network Relationships</relationshipLabel>
+        <relationshipName>Network_Relationships</relationshipName>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Program_Term_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Term Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NOEN - Provider Not Enrolled/Registered with State</fullName>
+                    <default>false</default>
+                    <label>NOEN - Provider Not Enrolled/Registered with State</label>
+                </value>
+                <value>
+                    <fullName>PLEF - Provider Left Office</fullName>
+                    <default>false</default>
+                    <label>PLEF - Provider Left Office</label>
+                </value>
+                <value>
+                    <fullName>PREQ - Provider Requested/Provider Initiated</fullName>
+                    <default>false</default>
+                    <label>PREQ - Provider Requested/Provider Initiated</label>
+                </value>
+                <value>
+                    <fullName>NOEN-Provider Not Enrolled/Registered with State</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>NOEN-Provider Not Enrolled/Registered with State</label>
+                </value>
+                <value>
+                    <fullName>PLEF- Provider Left Office</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PLEF- Provider Left Office</label>
+                </value>
+                <value>
+                    <fullName>PREQ-Provider Requested/Provider Initiated</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PREQ-Provider Requested/Provider Initiated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Provider_Name__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Provider Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Network Relationships</relationshipLabel>
+        <relationshipName>Network_Relationships</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Role ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Triggers an update on the record and sends outbound message for data integration</description>
+        <externalId>false</externalId>
+        <label>Update</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>VSP_Geo_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.VSP_GeoCode__c</formula>
+        <label>VSP Geo Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VSP_Network_Provider_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VSP Network Provider Flag</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Vision_Care_Location_Key__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Vision Care Location Key</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Network Relationship</label>
+    <listViews>
+        <fullName>LVC_Network_Relationships</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Program_ID__c</columns>
+        <columns>Program_Effective_Date__c</columns>
+        <columns>Program_End_Date__c</columns>
+        <columns>Vision_Care_Location_Key__c</columns>
+        <columns>Role_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Program_ID__c</field>
+            <operation>equals</operation>
+            <value>LVC01</value>
+        </filters>
+        <label>LVC Network Relationships</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000000000}</displayFormat>
+        <label>Network Relationship Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Network Relationships</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Provider_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Role__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Program_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Program_Effective_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Program_End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Claims_Priced__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Directory_Effective_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Directory_End_Date__c</customTabListAdditionalFields>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Provider_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact_Role__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Program_Effective_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Program_End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Claims_Priced__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LVC_Negotiated_Discount__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Provider_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Role__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Program_Effective_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Program_End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Claims_Priced__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Directory_Effective_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Directory_End_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VSPR19b_Claims_Priced_Restriction</fullName>
+        <active>true</active>
+        <description>No changes can be made once claims have been priced against this Network Relationship.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(Claims_Priced__c , &quot;Y&quot;),
+OR(
+ISCHANGED (Contact_Role__c),
+ISCHANGED (Account_Name__c),
+ISCHANGED (Provider_Name__c), 
+ISCHANGED (Program_ID__c ),
+ISCHANGED (Program_Effective_Date__c),
+ISCHANGED (LVC_Negotiated_Discount__c),
+ISCHANGED (Fee_Code__c))
+)
+
+&amp;&amp;
+Bypass_VC_Validation_Rules__c = false</errorConditionFormula>
+        <errorMessage>Claims have been priced against this Network Relationship. You cannot make any changes.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR19b_Negotiated_Discount_0_To_100</fullName>
+        <active>true</active>
+        <description>LVC Negotiated Discount must be between 0 and 100. Ensures non-numeric text and values outside the range are not saved.</description>
+        <errorConditionFormula>OR(LVC_Negotiated_Discount__c &lt; 0.00, LVC_Negotiated_Discount__c &gt; 1.00)
+&amp;&amp;
+NOT( $Profile.Name = &quot;System Administrator&quot; || $Profile.Name = &quot;VSP Technical User&quot;)
+
+&amp;&amp;
+Bypass_VC_Validation_Rules__c = false</errorConditionFormula>
+        <errorMessage>You must enter an LVC Negotiated Discount of 0-100</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR19b_Negotiated_Discount_Required</fullName>
+        <active>true</active>
+        <description>Require user to enter an LVC Negotiated Discount for Program ID LVC01</description>
+        <errorConditionFormula>AND(
+IF(
+    AND(
+        Program_ID__c = &quot;LVC01&quot;, 
+        ISBLANK(LVC_Negotiated_Discount__c )), True, False
+ )
+,
+NOT( $Profile.Name = &quot;System Administrator&quot; || $Profile.Name = &quot;VSP Technical User&quot;)
+)
+
+&amp;&amp;
+Bypass_VC_Validation_Rules__c = false</errorConditionFormula>
+        <errorMessage>You must enter an LVC Negotiated Discount for this Program ID</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR19b_Program_Effective_Date_Account</fullName>
+        <active>true</active>
+        <description>Program ID Effective Date cannot be less than the Account Vision Care Effective Date.</description>
+        <errorConditionFormula>AND(
+ISNEW()||ISCHANGED(Program_Effective_Date__c),
+Program_Effective_Date__c &lt; Contact_Role__r.Account__r.Vision_Care_Effective_Date__c,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;VSP Technical User&quot;,
+$Profile.Name &lt;&gt; &quot;VSP Integration User&quot;,
+Bypass_VC_Validation_Rules__c = false
+)</errorConditionFormula>
+        <errorDisplayField>Program_Effective_Date__c</errorDisplayField>
+        <errorMessage>Program Effective Date cannot be less than Vision Care Effective Date on associated Business Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR19b_Program_Effective_Date_Contact</fullName>
+        <active>true</active>
+        <description>Program Effective Date cannot be less than the Contact Vision Care Effective Date.</description>
+        <errorConditionFormula>AND(
+(ISNEW() || ISCHANGED(Program_Effective_Date__c)),
+Program_Effective_Date__c &lt; Contact_Role__r.Contact__r.Vision_Care_Effective_Date__c,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;VSP Technical User&quot;,
+Bypass_VC_Validation_Rules__c = false
+)</errorConditionFormula>
+        <errorDisplayField>Program_Effective_Date__c</errorDisplayField>
+        <errorMessage>Program Effective Date cannot be less than Vision Care Effective Date on the associated Contact Record</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR19b_Program_End_Date</fullName>
+        <active>true</active>
+        <description>Program End Date must be greater than the Effective Date</description>
+        <errorConditionFormula>AND(
+Program_End_Date__c &lt;= Program_Effective_Date__c,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;VSP Technical User&quot;,
+Bypass_VC_Validation_Rules__c = false
+)</errorConditionFormula>
+        <errorDisplayField>Program_End_Date__c</errorDisplayField>
+        <errorMessage>Program End Date must be greater than the Program Effective Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR19b_Restrict_Fee_Code_on_Non_CGVN</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+AND( 
+ISNEW(),
+Program_ID__r.Name &lt;&gt; &apos;CGVN&apos;,
+Program_ID__r.Name &lt;&gt; &apos;HELEN&apos;,
+ISPICKVAL( Claims_Priced__c , &apos;N&apos;),
+Fee_Code__c &lt;&gt; &quot;NF&quot;
+),
+AND( 
+NOT( ISNEW()),
+ISCHANGED(Fee_Code__c ),
+Program_ID__r.Name &lt;&gt; &apos;CGVN&apos;,
+Program_ID__r.Name &lt;&gt; &apos;HELEN&apos;,
+ISPICKVAL( Claims_Priced__c , &apos;N&apos;)
+))
+&amp;&amp; 
+
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;)) 
+&amp;&amp;
+Bypass_VC_Validation_Rules__c = false</errorConditionFormula>
+        <errorMessage>You cannot change the Fee Code for this Network Relationship.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR26_NonVisionCareValidation</fullName>
+        <active>true</active>
+        <description>Validation to prevent a user from creating a new Network Relationship the associated Contact does not have an active or future-dated active Vision Care Effective Date.</description>
+        <errorConditionFormula>ISNEW()
+				
+&amp;&amp;
+
+(	
+				
+	ISBLANK(Contact_Role__r.Contact__r.Vision_Care_Effective_Date__c)
+
+||
+		
+Contact_Role__r.Contact__r.Vision_Care_End_Date__c &lt; TODAY()
+				
+)
+
+&amp;&amp; 
+
+NOT($Profile.Name = &quot;System Administrator&quot; || $Profile.Name = &quot;VSP Technical User&quot;)</errorConditionFormula>
+        <errorMessage>The associated Contact must be Active or Future Dated Vision Care Provider.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR27_NonVisionCareAcctValidation</fullName>
+        <active>true</active>
+        <description>Validation to prevent a user from creating a new Network Relationship if the associated Account is not an active or future-dated Vision Care Business Account.</description>
+        <errorConditionFormula>AND(
+				OR(ISNEW(),ISCHANGED(Contact_Role__c)), 
+				Contact_Role__r.Account__r.Active_or_Future_Vision_Care_Account__c == false
+)
+&amp;&amp; 
+NOT($Profile.Name = &quot;System Administrator&quot; || $Profile.Name = &quot;VSP Technical User&quot;)</errorConditionFormula>
+        <errorMessage>The associated Account must be an Active or Future Dated Vision Care Business Account.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

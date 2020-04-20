@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Business Process</label>
+                    <name>Business_Process</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Training</label>
+                    <name>Salesforce_Training</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Case Articles</label>
+                    <name>Case_Articles</name>
+                </dataCategory>
+                <label>SALESFORCE</label>
+                <name>SALESFORCE</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Business Process</label>
+                    <name>SAP_Business_Process</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Training</label>
+                    <name>SAP_Training</name>
+                </dataCategory>
+                <label>SAP</label>
+                <name>SAP</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Brand Sheets</label>
+                        <name>Designer_Brand_Sheets</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Line Sheets</label>
+                        <name>Designer_Line_Sheets</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Price Lists</label>
+                        <name>Designer_Price_Lists</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Product Talking Points</label>
+                        <name>Designer_Product_Talking_Points</name>
+                    </dataCategory>
+                    <label>Designer</label>
+                    <name>Designer</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Brand Sheets</label>
+                        <name>Brand_Sheets</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Line Sheets</label>
+                        <name>Line_Sheets</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Price Lists</label>
+                        <name>Price_Lists</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Product Talking Points</label>
+                        <name>Product_Talking_Points</name>
+                    </dataCategory>
+                    <label>Private Label</label>
+                    <name>Private_Label</name>
+                </dataCategory>
+                <label>PRODUCT</label>
+                <name>PRODUCT</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Email PDFs</label>
+                        <name>Email_PDFs</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Fax PDFs</label>
+                        <name>Fax_PDFs</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Word Docs to Copy/Paste</label>
+                        <name>Word_Docs_to_Copy_Paste</name>
+                    </dataCategory>
+                    <label>Customer Facing Documents</label>
+                    <name>Customer_Facing_Documents</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Premier</label>
+                        <name>Premier</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Field Rep Docs</label>
+                        <name>Field_Rep_Docs</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Training Misc.</label>
+                        <name>Training_Misc</name>
+                    </dataCategory>
+                    <label>Internal Documents</label>
+                    <name>Internal_Documents</name>
+                </dataCategory>
+                <label>RESOURCES</label>
+                <name>RESOURCES</name>
+            </dataCategory>
+            <dataCategory>
+                <label>PROMOTIONS/INCENTIVES</label>
+                <name>PROMOTIONS_INCENTIVES</name>
+            </dataCategory>
+            <label>Altair</label>
+            <name>Altair</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Eyewear</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

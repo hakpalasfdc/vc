@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Activities$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Status</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$IsTask</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Description</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Event_Description__c</field>
+    </columns>
+    <columns>
+        <field>Account$Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 or 2) AND 3 AND (4 or 5)</booleanFilter>
+        <criteriaItems>
+            <column>Account.Activities$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>mmt</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>my marketing team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Tax_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Owner</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>danae lefranc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Owner</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>alandria terry</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>My Marketing Team Activities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_associated_with_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Activities$Owner</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

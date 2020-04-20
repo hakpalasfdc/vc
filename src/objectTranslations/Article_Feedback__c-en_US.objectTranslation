@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Article Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Article Feedback</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article ID --></label>
+        <name>Article_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Link --></label>
+        <name>Article_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Title --></label>
+        <name>Article_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Type --></label>
+        <name>Article_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article URL --></label>
+        <name>Article_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Category Group --></label>
+        <name>Data_Category_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Category --></label>
+        <name>Data_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>Broken Link</masterLabel>
+            <translation><!-- Broken Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hard to Find Page</masterLabel>
+            <translation><!-- Hard to Find Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Information</masterLabel>
+            <translation><!-- Missing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Page Unclear</masterLabel>
+            <translation><!-- Page Unclear --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Article Feedback Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

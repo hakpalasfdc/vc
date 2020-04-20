@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Internal notification to owner of a Key Action/Decision that is due the next day.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Key Actions and Decisions Due Next Day</name>
+    <style>none</style>
+    <subject>Key Action/Decision Due Tomorrow: {!Key_Action_Decision__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,25 @@
+<apex:page standardController="Knowledge__kav"  id="openenrollmentpageid" showHeader="true" renderAs="pdf">
+    <apex:pageBlock mode="detail">
+        <apex:pageBlockSection columns="1">
+            <apex:outputfield label="Title" value="{!Knowledge__kav.Title}"/><br/>
+            <apex:outputfield label="Article Number" value="{!Knowledge__kav.ArticleNumber}"/><br/>
+            <apex:outputfield label="Version Number" value="{!Knowledge__kav.VersionNumber}"/><br/>
+            <apex:outputfield label="Last Published Date" value="{!Knowledge__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield label="Version Comments" value="{!Knowledge__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="===================================================================="/><br/><br/>
+
+            <apex:outputField label="Enrollment Start Date" value="{!Knowledge__kav.Enrollment_Start_Date__c}"/> 
+            <apex:outputField label="Enrollment End Date" value="{!Knowledge__kav.Enrollment_End_Date__c}"/> 
+            <apex:outputField label="Benefits Effective Date" value="{!Knowledge__kav.Benefit_Effective_Data__c}"/> 
+            <apex:outputField label="General Description" value="{!Knowledge__kav.General_Description__c}"/>                                      
+            <apex:outputField label="Benefits" value="{!Knowledge__kav.Benefit__c}"/>                                      
+            <apex:outputField label="Eligibility" value="{!Knowledge__kav.Eligibility__c}"/>                                      
+            <apex:outputField label="How to Enroll" value="{!Knowledge__kav.How_To_Enroll__c}"/>                                      
+            <apex:outputField label="Premiums and Billing" value="{!Knowledge__kav.Premiums_and_Billing__c}"/>                                      
+            <apex:outputField label="Confirmation" value="{!Knowledge__kav.Confirmation__c}"/>                                      
+            <apex:outputField label="Change or Cancel" value="{!Knowledge__kav.Change_Cancel__c}"/>
+            <apex:outputField label="Key Word" value="{!Knowledge__kav.Keyword__c}"/>
+            <apex:outputField label="SQ/QQ Steps" value="{!Knowledge__kav.Support_Queue_Steps__c}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>   
+</apex:page>

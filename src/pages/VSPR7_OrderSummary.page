@@ -1,0 +1,340 @@
+<apex:page title="Order Summary" sidebar="false" tabStyle="Account" 
+
+controller="VSPR9_AccountOrderSummaryController" action="{!getShipMethodDetails}">
+    <apex:form > 
+        <apex:actionfunction name="searchorderdetails" action="{!searchOrderDetails}" 
+
+rerender="orderdetails"/>
+        <apex:includeScript value="/support/console/22.0/integration.js"/>
+
+        <script type="text/javascript">
+            function setFocus(){
+                //alert('-------'+document.getElementById('{$Component.searchPatientName}'));
+                //This is used for filtering 
+                document.getElementById('{$Component.j_id0:j_id1:orderdetails:searchPatientName}').focus();
+            }       
+                       
+            window.onload = function() {
+                //Set the tab title as Order History when opened in Customer Console
+                sforce.console.setTabTitle('Order Summaries'); 
+            }       
+                        
+            function directToOrderHistory(urlValue){
+                //alert('-----------hi----------'+urlValue);
+                if(typeof(srcUp)!='function') {
+                    // window.parent.location.href='/apex/VSPR7_OrderSummary?opticKey=17494';
+                    window.open('/apex/VSPR7_OrderHistory?url='+encodeURIComponent(urlValue));
+                }
+                else{
+                    srcUp('/apex/VSPR7_OrderHistory?url='+encodeURIComponent(urlValue));
+                }
+            }
+            
+            function openAccountRecord(accountId){
+                //alert(accountId);
+                if(accountId!=null && accountId!='')
+                    window.open('');      
+            }
+        </script>
+        <apex:pageMessages escape="false" />
+        <apex:pageBlock rendered="{!serviceException == ''}" mode="maindetail">
+            <!-- renders when web service is working fine -->
+            <h1><font size="3">VSPOne Order Summaries </font></h1>
+            <br></br>
+        </apex:pageBlock>
+    
+        <!-- renders when web service is out of order or unavailable -->
+        <!-- <apex:pageBlock rendered="{!serviceException  != ''}" mode="maindetail">
+            <br></br>
+            <br></br>
+            <h1><font size="3">The service is temporarily unavailable.</font></h1>
+        </apex:pageBlock>-->
+        
+        <apex:pageBlock rendered="{!serviceException  == ''}"> 
+            <!-- text box used to search on patient name, rx and invoice -->
+            <b><apex:outputLabel value="Account #: "><apex:inputText value="{!
+
+accountNumber}"/></apex:outputLabel></b>
+        </apex:pageBlock>
+        
+        <!-- <apex:pageBlock id="pbcollapse"> -->
+        <apex:pageBlock rendered="{!serviceException  == ''}" id="pbcollapse">
+            <apex:pageBlockSection id="pbscollapse" collapsible="true" title="Shipping Methods" >
+                <apex:pageBlockTable value="{!lstShippingMethodDetails}" var="obj">
+                        
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputpanel layout="none">
+                                <apex:outputLabel value="Lab Name "/>
+                            </apex:outputpanel> 
+                        </apex:facet>
+                        <apex:outputlabel value="{!obj.labName}"/>
+                    </apex:column>
+                        
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputpanel layout="none">
+                                <apex:outputLabel value="Ship Method Description"/>
+                            </apex:outputpanel> 
+                        </apex:facet>
+                        <apex:outputlabel value="{!obj.shipMethodDesc}"/>
+                        </apex:column>
+                </apex:pageBlockTable>
+                
+            </apex:pageBlockSection>
+            <script> twistSection(document.getElementById('{!
+
+$Component.pbcollapse.pbscollapse}').getElementsByTagName('img')[0]) </script>
+        </apex:pageBlock> 
+            
+        <!-- onkeyup="searchorderdetails();" -->
+        
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                 <apex:pageBlockSectionItem >
+                    <apex:outputLink value="https://doctor.vsp.com/reports/html/idcreporter.htm" target="_blank">IDC Reporter</apex:outputLink> 
+        </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+                 </apex:pageBlock>
+        
+        <apex:pageBlock rendered="{!serviceException  == ''}">
+            <!-- text box used to search on patient name, rx and invoice -->
+            <b><apex:outputLabel value="Patient Name: "/><apex:inputText id="searchPatientName" size="10" 
+
+value="{!searchOnPatientName}"/></b> &nbsp;&nbsp;&nbsp;
+            <b><apex:outputLabel value="Rx #: "/><apex:inputText id="searchRxNumber" size="10" value="{!
+
+searchOnRxNumber}" /></b> &nbsp;&nbsp;&nbsp;
+            <b><apex:outputLabel value="Invoice #: "/><apex:inputText id="invoiceNumber" size="10" 
+
+value="{!searchOnInvoiceNumber}" /></b> &nbsp;&nbsp;&nbsp;
+            <apex:commandButton value="Search" action="{!getOrderDetails}" / >&nbsp;&nbsp;&nbsp;
+            <!-- Button used to clear the values in patient name, rx and invoice text fields -->
+            <apex:commandButton value="Clear" action="{!clearSearchDetails}" / >         
+        </apex:pageBlock>
+               
+        <apex:pageBlock id="orderdetails" rendered="{!serviceException  == ''}">
+        
+            <!-- Displays when there are no records available -->
+            <apex:pageMessage summary="No records found!!" severity="info" strength="3" rendered="{!!
+
+showDataTable}" id="message2"/>
+          
+            <!-- Iterates through all the records from the web service and displays it on  the page and each 
+
+column except Account name is sortable ascending and descending -->
+            <apex:pageBlockTable value="{!lstOrderSummaryDetails}" var="obj" rendered="{!showDataTable}">
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputpanel layout="none">
+                            <apex:outputLabel value="Account Name "/>
+                            <!-- <apex:inputText size="10" value="{!searchOnPatientName}" 
+
+onchange="searchPatientName();this.focus();" />-->
+                        </apex:outputpanel> 
+                    </apex:facet>
+                    <apex:commandLink onclick="window.open('/{!accountId}');" value="{!obj.accountName}" 
+
+rendered="{!IF(accountId!=null && accountId!='',true,false)}"/>
+                    <apex:outputlabel value="{!obj.accountName}" rendered="{!IF(accountId==null || 
+
+accountId=='',true,false)}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">   
+                        <apex:commandLink action="{!SortData}" value="Patient Name{!IF
+
+(sortExpression=='patientname',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="patientname" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.patientName}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!SortData}" value="Rx #{!IF
+
+(sortExpression=='rxnumber',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="rxnumber" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>         
+                    <apex:commandLink onclick="directToOrderHistory('{!obj.vsponeLensOrderDetail.href}');">
+                        <apex:outputLabel value="{!obj.rxNumber}"/>
+                    </apex:commandLink>                     
+                </apex:column>    
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!SortData}" value="Inv #{!IF
+
+(sortExpression=='invoicenumber',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="invoicenumber" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:commandLink onclick="directToOrderHistory('{!obj.vsponeLensOrderDetail.href}');">
+                        <apex:outputlabel value="{!obj.invoiceNumber}"/>
+                    </apex:commandLink>                    
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!SortData}" value="Lab Name{!IF
+
+(sortExpression=='labname',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="labname" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.labName}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!SortData}" value="Entered Date{!IF
+
+(sortExpression=='entereddate',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="entereddate" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.dateEntered}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!SortData}" value="Location{!IF
+
+(sortExpression=='location',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="location" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.labStationStatus}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!SortData}" value="Location at Date{!IF
+
+(sortExpression=='locationatdate',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="locationatdate" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.dateAtStation}"/>
+                </apex:column>
+                    
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!SortData}" value="Estimated Ship Date{!IF
+
+(sortExpression=='estimatedshipdate',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="estimatedshipdate" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.estimatedShipDate}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!SortData}" value="Shipped{!IF
+
+(sortExpression=='shipdate',IF(sortDirection='ASC','▲','▼'),'')}">
+                            <apex:param value="shipdate" name="column" assignTo="{!sortExpression}" 
+
+></apex:param>                            
+                        </apex:commandLink>                        
+                    </apex:facet>
+                    
+                    <apex:outputlabel value="{!obj.actualShipDate}" />
+                    
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Shipped Tracking Number"/>
+                    </apex:facet>
+                    
+                    <apex:commandLink onclick="window.open('{!obj.trackURL}');" value="{!obj.trackNumber}" 
+
+rendered="{!IF(obj.trackURL!=null && obj.trackURL!='',true,false)}"/>
+                    <apex:outputlabel value="{!obj.trackNumber}" rendered="{!IF(obj.trackURL==null && 
+
+obj.trackURL=='',true,false)}"/>
+                    
+                </apex:column>
+                
+            </apex:pageBlockTable>
+
+        <!-- <apex:pageBlockButtons location="bottom">
+                <apex:actionStatus id="previousStatus" >
+                    <apex:facet name="start" >
+                      <img src="/img/loading.gif" />                    
+                    </apex:facet>
+                </apex:actionStatus>&nbsp;&nbsp;
+                <apex:commandButton value="Previous" disabled="{!disablePrevious}" action="{!previousPage}" 
+
+status="previousStatus" rerender="orderdetails,message"/>
+                <apex:commandButton value="Next" disabled="{!disableNext}" action="{!nextPage}" 
+
+status="nextStatus" rerender="orderdetails,message"/>                           
+                &nbsp;&nbsp;<apex:actionStatus id="nextStatus" >
+                    <apex:facet name="start" >
+                      <img src="/img/loading.gif" />                    
+                    </apex:facet>
+                </apex:actionStatus>
+        </apex:pageBlockButtons>-->
+
+        </apex:pageBlock>
+        <center>
+    
+            <!-- Buttons for pagination (previous and next) -->
+            <apex:outputpanel layout="block" id="paginationButtons">
+                <apex:actionStatus id="previousStatus" >
+                    <apex:facet name="start" >
+                        <img src="/img/loading.gif" />                    
+                    </apex:facet>
+                </apex:actionStatus>&nbsp;&nbsp;
+                
+                <!-- <apex:commandButton value="Previous" disabled="{!disablePrevious}" action="{!
+
+previousPage}" status="previousStatus" rerender="paginationButtons,orderdetails,message2"/>
+                <apex:commandButton value="Next" disabled="{!disableNext}" action="{!nextPage}" 
+
+status="nextStatus" rerender="paginationButtons,orderdetails,message2"/> -->              
+                
+                <apex:commandButton rendered="{!serviceException  == ''}" value="Previous" disabled="{!
+
+disablePrevious}" action="{!previousPage}" status="previousStatus" 
+
+rerender="paginationButtons,orderdetails,message2"/>
+                <apex:commandButton rendered="{!serviceException  == ''}" value="Next" disabled="{!
+
+disableNext}" action="{!nextPage}" status="nextStatus" rerender="paginationButtons,orderdetails,message2"/>  
+
+                          
+                &nbsp;&nbsp;<apex:actionStatus id="nextStatus" >
+                    <apex:facet name="start" >
+                        <img src="/img/loading.gif" />                    
+                    </apex:facet>
+                </apex:actionStatus> 
+            </apex:outputpanel>
+        </center>
+    
+    </apex:form>    
+</apex:page>

@@ -1,0 +1,34 @@
+<apex:page standardController="Credentialing__c" recordSetVar="Cred" extensions="VSPR12_NewRecredGroupController" docType="html-5.0">
+<!-- Script to prevent Charachter and accept only Numeric Values... -->
+   <script type="text/javascript">
+        var specialKeys = new Array();
+        specialKeys.push(8); //Backspace
+        function IsNumeric(e) {
+            var keyCode = e.which ? e.which : e.keyCode
+            var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+            document.getElementById("error").style.display = ret ? "none" : "inline";
+            return ret;
+        }
+        function show(){
+            document.getElementById("success").style.display = "inline";
+        }
+    </script>
+<!-- Script End ... -->
+ <apex:form >
+     <apex:pageBlock >
+          <!-- <apex:pagemessages />-->
+          <apex:pageBlockButtons location="bottom">
+              <apex:commandButton value="Search" action="{!doSearch}" />
+              <apex:commandButton value="Process Search Results" action="{!processSelected}" rendered="{!listView}"/>
+          </apex:pageBlockButtons>
+          <apex:pageBlockSection >
+              Please Enter Month: <apex:inputtext required="true" id="NextRecredMonth" value="{!NextRecredMonth}" onkeypress="return IsNumeric(event);" />
+              Please Enter Year:<apex:inputtext required="true" id="NextRecredYear" value="{!NextRecredYear}" onkeypress="return IsNumeric(event);"/>
+              <span id="error" style="color: Red; display: none">* Input digits (0 - 9)</span>
+              <span id="success" style="color:green;display: none;"><b>{!count}  contacts have a matching Next Recred Date</b></span>
+              
+         </apex:pageBlockSection>
+         <apex:pagemessages ></apex:pagemessages>
+</apex:pageBlock>
+  </apex:form>
+</apex:page>

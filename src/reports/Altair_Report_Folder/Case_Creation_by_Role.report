@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_37126394</developerName>
+        <masterLabel>Case Categories</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>SUBJECT</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Credit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit &amp; Rebill Issue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit and Rebill Issue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>credit and rebill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>credit card EYECMO100399462</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>credit issue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CreditSights&apos;s 12/01/2017 Annual Enrollment contact information.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: Credit and Rebill Issue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: Lost US Mail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: Duplicate Lab Billing Form</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair SAP Shipping Credit Less than $25.00</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shipping Credit  Less than $25.00</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Issue with an Inbound Shipment (pricing dispute)</sourceValue>
+            </sourceValues>
+            <value>Credit (Rebill)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Altair Marketing</sourceValue>
+            </sourceValues>
+            <value>Marketing</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Subject:  Altair SAP Shipping Method</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject:  Altair SAP Shipping Method or IM Checklist Delivery method</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: SAP Account Maintenance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: SAP Customer Method Changes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>shipping change of address</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair SAP Account Maintenance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair SAP Shipping Method or IM Checklist Delivery method</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SAP ACCOUNT MAINTENANCE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SAP Customer Method Changes</sourceValue>
+            </sourceValues>
+            <value>Acct Maint.</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Credit Add</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit-Add for 1502646 ST PETERS VISION CENTER</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: Credit Add</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair SAP Credit Add</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ALTAIR CREDIT ADD</sourceValue>
+            </sourceValues>
+            <value>Credit Add</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Subject: Auto Pattern shipment for New Releases</sourceValue>
+            </sourceValues>
+            <value>patterns</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Issue with an Inbound Shipment (Returns)</sourceValue>
+            </sourceValues>
+            <value>Returns</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Altair SAP Shipment Trace</sourceValue>
+            </sourceValues>
+            <value>Trace, Mail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Altair Correct Invoice/Incorrect Frame in Box</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair SAP Shipment - Correct Invoice / Incorrect Frames in Box</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair SAP Shipment - Correct Invoice/Incorrect Frame in Box</sourceValue>
+            </sourceValues>
+            <value>Wrong frame</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Case.Created_By_Role__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>Case.Severity__c</field>
+    </columns>
+    <columns>
+        <field>Case.Line_of_Business__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Product__c</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>Case.Complaint__c</field>
+    </columns>
+    <columns>
+        <field>Case.Notes__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>Case.Systematic_Escalation_Count__c</field>
+    </columns>
+    <columns>
+        <field>Case.Total_Escalation_Count__c</field>
+    </columns>
+    <description>results report of Cases created in last 120 days.  Created 11/2/17</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.Line_of_Business__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Altair</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Created_By_Role__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Sales</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Classification__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_37126394</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>SUBJECT</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Case Creation by Role</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.Contact_Role__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User Feedback</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>User Feedback Body</value>
+        </caseValues>
+        <name>body_idea</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>User Feedback Currency</value>
+        </caseValues>
+        <name>currency_idea</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>User Feedback Body</value>
+        </caseValues>
+        <name>idea_body</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>User Feedback Comment</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>User Feedback Comments</value>
+        </caseValues>
+        <name>idea_comment</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>User Feedback Comment ID</value>
+        </caseValues>
+        <name>idea_comment_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>User Feedback Detail</value>
+        </caseValues>
+        <name>idea_detail</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>User Feedback Edit</value>
+        </caseValues>
+        <name>idea_edit</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>User Feedback ID</value>
+        </caseValues>
+        <name>idea_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- LOB --></label>
+        <name>LOB__c</name>
+        <picklistValues>
+            <masterLabel>Altair</masterLabel>
+            <translation><!-- Altair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchon</masterLabel>
+            <translation><!-- Marchon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omni-Channel Solutions</masterLabel>
+            <translation><!-- Omni-Channel Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optics Group</masterLabel>
+            <translation><!-- Optics Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision Care</masterLabel>
+            <translation><!-- Vision Care --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requestor&apos;s Name --></label>
+        <name>Requestors_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Idea Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Record Type used to associate ideas with a specific community --></description>
+        <label><!-- Internal Ideas: Idea Record Type --></label>
+        <name>InternalIdeasIdeaRecordType</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- You may only select one category for this Idea.  Use a new post for additional feedback. --></errorMessage>
+        <name>Catagories_less_then_2_picklist_val</name>
+    </validationRules>
+</CustomObjectTranslation>

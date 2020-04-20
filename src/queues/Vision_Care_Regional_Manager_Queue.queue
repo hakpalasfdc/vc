@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Vision Care Regional Manager Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Vision_Care_Regional_Manager_Queue</publicGroup>
+        </publicGroups>
+        <users>
+            <user>annawi@vsp.com_1</user>
+            <user>erynho@vsp.com</user>
+            <user>gerabo@vsp.com</user>
+            <user>krisli@vsp.com</user>
+            <user>marywh@vsp.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

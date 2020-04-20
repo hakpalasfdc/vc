@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_16198291</developerName>
+        <masterLabel>FAQ Channel</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>KnowledgeSearchEventHistory$Channel</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>KnowledgeSearchEventHistory$Related</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>KnowledgeSearchEventHistory$DeltaCount</field>
+    </columns>
+    <columns>
+        <field>KnowledgeSearchEventHistory$CumulativeCount</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>KnowledgeSearchEventHistory$Duration</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>D</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>FAQ Recent Searches</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SK__Knowledge_Article_Searches__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>KnowledgeSearchEventHistory$Related</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeSearchEventHistory$AsOfDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

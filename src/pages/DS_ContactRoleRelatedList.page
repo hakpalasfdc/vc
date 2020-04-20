@@ -1,0 +1,72 @@
+<apex:page standardcontroller="Contact_Role__c" extensions="DS_ContactRoleRelatedListExt" >
+    <head>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    
+    <apex:form >       
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!contactRoles}" var="cr"  styleClass="openInPopup">
+                <apex:column value="{!cr.Altair_Contact__c}"/>
+                <apex:column value="{!cr.Contact__c}"/>
+                <!--<apex:column value="{!cr.Contact_Role_Type__c}"/> -->
+                <apex:column headerValue="Contact Role Type">
+                    <apex:outputLink value="{!URLFOR($Action.Contact_Role__c.View, cr.id)}">
+                        <apex:outputText escape="true" value='{!
+                        left(
+                            right(
+                                cr.Contact_Role_Type__c, 
+                                (
+                                    len
+                                    (
+                                        cr.Contact_Role_Type__c
+                                    )
+
+                                    -
+
+                                    find
+                                    (
+                                        ">",
+                                        cr.Contact_Role_Type__c
+                                    )
+                                )
+                            ),
+                            find
+                            (
+                               "</a>",
+                                right(
+                                    cr.Contact_Role_Type__c, 
+                                    (
+                                        len
+                                        (
+                                            cr.Contact_Role_Type__c
+                                        )
+
+                                        -
+
+                                        find
+                                        (
+                                            ">",
+                                            cr.Contact_Role_Type__c
+                                        )
+                                    )
+                                )
+                            ) - 1
+                        )}'/>
+                    </apex:outputLink>   
+                </apex:column>
+                <apex:column value="{!cr.Contact__r.Email}"/>
+                <apex:column value="{!cr.Altair_Campaigns__c}"/>
+                <apex:column value="{!cr.Contact_Role_Phone__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>     
+    
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('.openInPopup a').click(function(event) {
+                event.preventDefault();
+                window.open(jQuery(this).attr('href'));
+            });
+        });    
+    </script>
+</apex:page>

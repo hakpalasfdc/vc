@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_19801401</developerName>
+        <masterLabel>L&amp;R Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Shelley Heberle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Guenthner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hilary Garrard</sourceValue>
+            </sourceValues>
+            <value>Team 1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erika Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mari Ostdiek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carrie McGuire</sourceValue>
+            </sourceValues>
+            <value>Team 2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rosemary Higgens Piper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair Sales New Hire 1 New-INACTIVE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lydia Cunningham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Naomi Hurd</sourceValue>
+            </sourceValues>
+            <value>Team 3</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>David Perez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeanie Scholle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Kassel</sourceValue>
+            </sourceValues>
+            <value>Team 4</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Misty O&apos;Connor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan McNally</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kendall English</sourceValue>
+            </sourceValues>
+            <value>Team 5</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ashley Rogers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kayla Ogden OOO 1/18-5/5 Mari Ostdiek is covering</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Allard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julie Paul</sourceValue>
+            </sourceValues>
+            <value>Team 6</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marsha OOO 1/22-1/27 Klopfenstein</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeff McEntee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Holly Tenge</sourceValue>
+            </sourceValues>
+            <value>Team 7</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Robin Blake</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeremiah Lopez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gillian Marx</sourceValue>
+            </sourceValues>
+            <value>Team 8</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sharon Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jenna Gorrell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Allison Korge</sourceValue>
+            </sourceValues>
+            <value>Team 9</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>August Foote</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Genevie Roman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tracie Antar</sourceValue>
+            </sourceValues>
+            <value>Team 10</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Altair Sales New Hire 2 New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrea Allred</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Randy Lein</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vanessa Otsuka</sourceValue>
+            </sourceValues>
+            <value>Team 11</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Amie Camp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicki Dixon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LeeAnn Stover</sourceValue>
+            </sourceValues>
+            <value>Team 12</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.New_Release_Preference__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_SAP_Consignment_Account__c</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Last_Activity__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Frames_on_Consignment__c</field>
+    </columns>
+    <columns>
+        <field>Account.Total_Net_Altair_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Vision_Care_Claim_Volume_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Vision_Care_Frame_Claims_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Realignment_Requested__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Lost_Reason__c</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>NEXT_STEP</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STREET</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_ZIP</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_YTD_Sales_and_History__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_ID</field>
+    </columns>
+    <description>NR #500 LENTON &amp; RUSBY PHS1 - 40pc - LR4</description>
+    <filter>
+        <criteriaItems>
+            <column>OPPORTUNITY_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>NR #500</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_19801401</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Lenton &amp; Rusby Open-ClosedOpp Report</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>team</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

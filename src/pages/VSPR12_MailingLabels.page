@@ -1,0 +1,138 @@
+<apex:page standardController="Account" extensions="VSPR12_PrintMailingLabels" showHeader="false" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/JavaScript" /> 
+    <style>
+        .myButt{
+        }
+        .myButt2{
+        }
+        .abc{   }
+        b{
+        font-size:19px;
+        }
+        .btn{
+        width:100px;
+        height:30px;
+        font-size:12px;
+        }
+        .textfield{
+        width:250px;
+        height:20px;
+        font-size:1.5em;
+        }
+        .printDetail{       
+        margin-top:20% !important;
+        margin-left:40% !important;
+        }
+    </style>
+    <script>
+        $( document ).ready(function() {
+             $('.myButt').hide();
+             $('.abc').hide();
+             $('.abc2').hide();
+        });
+        
+        function clickbutt(){
+           $('.myButt2').hide();
+           $('.myButt').show();
+           $('.abc1').hide();
+           $('.abc').show();
+           //window.print();
+        }
+        
+        function clickbutt1(){
+           $('.myButt2').hide();
+           $('.myButt').show();
+           $('.abc1').hide();
+           $('.abc').hide();
+           $('.abc2').hide();
+           window.print();
+           $('.abc').show();
+           $('.abc2').show();
+        }
+        
+        function clickbutt2(){
+           $('.myButt2').show();
+           $('.myButt').hide();
+           $('.abc1').show();
+           $('.abc2').hide();
+           $('.abc').hide();
+        }
+    </script>
+    <apex:form id="frm" >
+    <style>
+    @page 
+        {
+            size: landscape;    /* sets the orientation of the printed page to landscape */ 
+            margin-left: 10px;   /* this affects the margin in the printer settings */ 
+        }
+           </style>
+            <table class="myButt2" >
+                <tr>
+                    <td><b>Account Name</b></td>
+                    <td><apex:inputText value="{!acc.name}"   styleClass="textfield"/> </td>
+                </tr>
+                
+                <tr>
+                    <td><b>Physical Street</b></td>
+                    <td><apex:inputText value="{!acc.ShippingStreet}"  styleClass="textfield"/> </td>
+                </tr>
+                <tr>
+                    <td><b>Physical City</b></td>
+                    <td><apex:inputText value="{!acc.ShippingCity}" styleClass="textfield"/> </td>
+                </tr>
+                <tr>
+                    <td><b>Physical State</b></td>
+                    <td><apex:inputText value="{!acc.ShippingState}" styleClass="textfield"/> </td>
+                </tr>
+                <tr>
+                    <td><b>Physical Zip</b></td>
+                    <td><apex:inputText value="{!acc.ShippingPostalCode}" styleClass="textfield"/> </td>
+                </tr>
+                <tr>
+                    <td><b>ATTN:</b></td>
+                    <td><apex:inputText value="{!acc.Attention_To__c}"   styleClass="textfield"/> </td>
+                </tr>
+                <tr height="20" >
+                </tr>
+                <tr>
+                 <td><apex:commandButton styleClass="abc1" value="Printable View" action="{!abc}"  oncomplete="clickbutt();"  reRender="frm"/></td>
+                 </tr>
+                 
+
+            </table>
+        <div class="printDetail">
+        <table class="myButt">
+        
+        
+            <tr height="10"></tr>
+            <tr>
+                <!--- <td>Account Name:</td> --->
+                <td><b>{!acc.name}</b></td>
+            </tr>
+            <tr>
+                <!-- <td>Physical Street:</td> -->
+                <td><b>{!acc.ShippingStreet}</b></td>
+            </tr>
+            <tr>
+               <!--- <td>Physical City</td> --->
+                <td ><b>{!acc.ShippingCity}, &nbsp; {!acc.ShippingState}&nbsp;&nbsp; {!acc.ShippingPostalCode} </b></td>
+            </tr>
+            <tr height="20">
+            </tr>
+            <tr >
+                <td ><b>ATTN:&nbsp;&nbsp;{!acc.Attention_To__c}</b></td>
+            </tr>
+            <tr height="10"></tr>
+             <tr>
+                
+                <td><apex:commandButton styleClass="abc" value="Print" action="{!abc}"  oncomplete="clickbutt1();"  reRender="frm"/>&nbsp;
+                <apex:commandButton styleClass="abc2"  value="Edit Details" action="{!abc}"  oncomplete="clickbutt2();"  reRender="frm"/></td>
+            </tr>
+           
+        </table>
+        </div>
+        <table>
+           
+        </table>
+    </apex:form>
+</apex:page>

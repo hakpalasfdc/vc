@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vision Care Private Notes</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vision Care Private Notes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Vision Care Private Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Private Notes --></label>
+        <name>Vision_Care_Private_Notes__c</name>
+    </fields>
+    <layouts>
+        <layout>Vision Care Private Notes Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

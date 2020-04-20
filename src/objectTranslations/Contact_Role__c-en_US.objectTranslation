@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Roles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Detail --></label>
+        <name>Account_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID Text --></label>
+        <name>Account_ID_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Record Type --></label>
+        <name>Account_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Vision Care Effective Date Text --></label>
+        <name>Account_Vision_Care_Effective_Date_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Vision Care End Date Text --></label>
+        <name>Account_Vision_Care_End_Date_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Contact Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active or Future VC Relationship --></label>
+        <name>Active_or_Future_Vision_Care_Relationshi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Altair Campaigns --></label>
+        <name>Altair_Campaigns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Altair Contact --></label>
+        <name>Altair_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Altair Prospect Rep --></label>
+        <name>Altair_Prospect_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Altair Rep --></label>
+        <name>Altair_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAQH ID of Contact --></label>
+        <name>CAQH_ID_of_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combo Match --></label>
+        <name>Combo_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Id Text --></label>
+        <name>Contact_Id_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Primary Email --></label>
+        <name>Contact_Primary_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role Id Text --></label>
+        <name>Contact_Role_Id_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Phone --></label>
+        <name>Contact_Role_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role Type --></label>
+        <name>Contact_Role_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Vision Care Effective Date Text --></label>
+        <name>Contact_Vision_Care_Effective_Date_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Vision Care End Date Text --></label>
+        <name>Contact_Vision_Care_End_Date_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Contact Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DS Altair Rep IDs --></label>
+        <name>DS_Altair_Rep_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Conversation Count Last 30 Days --></label>
+        <name>DS_Conversation_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Date of Last Dispo --></label>
+        <name>DS_Date_of_Last_Dispo__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Datetime of Last Disposition --></label>
+        <name>DS_Datetime_of_Last_Disposition__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Last Call List Name --></label>
+        <name>DS_Last_Call_List_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Last Disposition --></label>
+        <name>DS_Last_Disposition__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Pending Event Date --></label>
+        <name>DS_Pending_Event_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Pending Task Date --></label>
+        <name>DS_Pending_Task_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Total Call Count --></label>
+        <name>DS_Total_Call_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tracks the number of voicemails left through DialSource in the last 30 Days --></help>
+        <label><!-- DS VM Count Last 30 Days --></label>
+        <name>DS_VM_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree on Contact --></label>
+        <name>Degree_on_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor ID of Contact --></label>
+        <name>Doctor_ID_of_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duplicate Key --></label>
+        <name>Duplicate_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email of Account --></label>
+        <name>Email_of_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax of Account --></label>
+        <name>Fax_of_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Calculation Code --></label>
+        <name>Fee_Calculation_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Code --></label>
+        <name>Fee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geo Code of Account --></label>
+        <name>Geo_Code_of_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active Role? --></label>
+        <name>Is_Active_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Account --></label>
+        <name>Name_of_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Contact --></label>
+        <name>Name_of_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Physical City --></label>
+        <name>Name_of_Physical_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Physical County --></label>
+        <name>Name_of_Physical_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Physical State --></label>
+        <name>Name_of_Physical_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Physical Street --></label>
+        <name>Name_of_Physical_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Physical Zip --></label>
+        <name>Name_of_Physical_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Case --></label>
+        <name>New_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Event --></label>
+        <name>New_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Task --></label>
+        <name>New_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone of Account --></label>
+        <name>Phone_of_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Fee Portal URL Formula --></label>
+        <name>Provider_Fee_Portal_URL_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider NPI --></label>
+        <name>Provider_NPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Combo Key --></label>
+        <name>SFDC_Combo_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status - Contact Name --></label>
+        <name>Status_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task --></label>
+        <name>Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Doctor Hours --></label>
+        <name>Total_Doctor_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board Member/ Officer</masterLabel>
+            <translation><!-- Board Member/ Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dean</masterLabel>
+            <translation><!-- Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor-Employee</masterLabel>
+            <translation><!-- Doctor-Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor-Owner</masterLabel>
+            <translation><!-- Doctor-Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor-Unspecified</masterLabel>
+            <translation><!-- Doctor-Unspecified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Administrator</masterLabel>
+            <translation><!-- Group Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab Technician</masterLabel>
+            <translation><!-- Lab Technician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Administration</masterLabel>
+            <translation><!-- Office Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Manager</masterLabel>
+            <translation><!-- Office Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optical Buyer</masterLabel>
+            <translation><!-- Optical Buyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optical Manager</masterLabel>
+            <translation><!-- Optical Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optician</masterLabel>
+            <translation><!-- Optician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optician-Owner</masterLabel>
+            <translation><!-- Optician-Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner</masterLabel>
+            <translation><!-- Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unspecified</masterLabel>
+            <translation><!-- Unspecified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Profile Name --></label>
+        <name>User_Profile_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Geo Code --></label>
+        <name>VSP_Geo_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Network Provider --></label>
+        <name>VSP_Network_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Contact Role Exception --></label>
+        <name>Vision_Care_Contact_Role_Exception__c</name>
+        <picklistValues>
+            <masterLabel>DOWN - Does not Own Dispensary</masterLabel>
+            <translation><!-- DOWN - Does not Own Dispensary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Key --></label>
+        <name>Vision_Care_Key__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Role Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DialSource Info --></label>
+            <section>DialSource Info</section>
+        </sections>
+        <sections>
+            <label><!-- Related Campaigns --></label>
+            <section>Related Campaigns</section>
+        </sections>
+        <sections>
+            <label><!-- Related Contact Roles --></label>
+            <section>Related Contact Roles</section>
+        </sections>
+        <sections>
+            <label><!-- Related Opportunities --></label>
+            <section>Related Opportunities</section>
+        </sections>
+        <sections>
+            <label><!-- Vision Care Details --></label>
+            <section>Vision Care Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>New_Case</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Contact Role Type for a Vision Care Provider. Please contact a Vision Care Network Administrator to make a change. --></errorMessage>
+        <name>Restrict_Edit_On_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Setting the “Contact Role End date” that precedes the “Contact Role Start Date” is not allowed. --></errorMessage>
+        <name>StartDate_should_be_greater_than_EndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to edit the &quot;Altair Contact&quot; field. --></errorMessage>
+        <name>VSPR16_Restrict_Edit_on_Altair_Contact</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- DS_Add_to_Queue --></label>
+        <name>DS_Add_to_Queue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DS_InstaQueue --></label>
+        <name>DS_InstaQueue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DS_InstaQueue_List --></label>
+        <name>DS_InstaQueue_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Edit_Fees --></label>
+        <name>View_Edit_Fees</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<apex:page controller="vspresourcelinks" showHeader="false" sidebar="false">
+  
+    <apex:form > 
+
+        <apex:pageBlock mode="maindetail">
+
+            <apex:pageBlockTable value="{!vsplinks}" var="c" rows="1" columns="4" cellspacing="1" cellpadding="20" style="background-color:#FFFFFF">
+
+                <apex:column id="GlobalView" style="background-color:#F47B20; width:25%; text-align:center;">
+
+                    <apex:outputLink id="GlobalViewBtn" value="{!c.Globalview__c}" style="font-family:Helvetica; font-size:15px; color:#FFFFFF;text-decoration:none; font-weight:700;">
+
+                        <apex:outputText >Globalview</apex:outputText>
+
+                    </apex:outputLink>
+
+                </apex:column>
+
+                <apex:column id="PathToPremier" style="background-color:#F47B20; width:25%; text-align:center;">     
+
+                    <apex:outputLink id="PathToPremierBtn" value="{!c.Path_to_Premier__c}" style="font-family:Helvetica; font-size:15px; color:#FFFFFF;text-decoration:none;font-weight:700;">
+
+                        <apex:outputText style="font-color:#FFFFFF">Path to Premier</apex:outputText>
+
+                    </apex:outputLink>
+
+                </apex:column>
+
+                <apex:column id="VSP" style="background-color:#F47B20; width:25%; text-align:center;">
+
+                    <apex:outputLink id="VSPBtn" value="{!c.VSP_com__c}" style="font-family:Helvetica; font-size:15px; color:#FFFFFF;text-decoration:none;font-weight:700;">
+
+                        <apex:outputText style="font-color:#FFFFFF">VSP.com</apex:outputText>
+
+                    </apex:outputLink>
+
+                </apex:column>
+
+                <apex:column id="Chatter" style="background-color:#F47B20; width:25%; text-align:center;">
+
+                    <apex:outputLink id="ChatterBtn" value="{!c.Chatter__c}" style="font-family:Helvetica; font-size:15px; color:#FFFFFF;text-decoration:none;font-weight:700;">
+
+                        <apex:outputText style="font-color:#FFFFFF">Chatter</apex:outputText>
+
+                    </apex:outputLink>
+
+                </apex:column>
+
+            </apex:pageBlockTable>
+
+        </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

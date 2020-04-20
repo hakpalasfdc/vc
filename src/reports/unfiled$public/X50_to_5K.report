@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.Optics_Key__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Program_Count__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Subject</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Custom_Product_Promotion__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>5K</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>50 to 5K</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_or_without_Activities__c</reportType>
+    <roleHierarchyFilter>General_CRM</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity.Activities$Subject</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

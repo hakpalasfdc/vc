@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_LINE1</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_ZIP</field>
+    </columns>
+    <columns>
+        <field>Account.Vision_Care_Effective_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Vision_Care_End_Date__c</field>
+    </columns>
+    <description>Locations opting out of discounts.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Participation_Exclusions__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NODIS – Opts out of discounts</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADDRESS1_STATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opt Of Of Discounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

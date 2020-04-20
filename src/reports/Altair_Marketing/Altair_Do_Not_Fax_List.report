@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Altair_SAP_Consignment_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Fax</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$ClosedDate</field>
+    </columns>
+    <description>List of accounts on Altair&apos;s Do Not Fax list.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Cases$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Do Not Fax</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Altair_SAP_Consignment_Account__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Altair_Consignment_Date__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Altair_Frames_on_Consignment__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>A</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Altair - Do Not Fax List</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

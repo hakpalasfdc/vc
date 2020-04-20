@@ -1,0 +1,32 @@
+<apex:page controller="QuestController1"   showHeader="false" sidebar="false" id="eligicomp">   
+    <apex:form id="eligibilityform">
+        <!--apex:actionFunction action="{!setParams}" name="setParamsName" rerender="ifNeeded">
+               <apex:param name="stageParam" assignTo="{!param1}" value="Eligibility" />          
+        </apex:actionFunction-->
+    <!--script>
+          window.onload = function() {
+               setParamsName();
+          }
+    </script-->
+
+        <apex:pageBlock mode="maindetail" html-style="width:80%;float:left;" >
+            <apex:outputPanel id="eligibilitypanel">
+            <httpProtocol>
+    <customHeaders>
+      <add name="X-Frame-Options" value="sameorigin" />
+    </customHeaders>
+  </httpProtocol>
+                <apex:iframe src="/{!QuestTab.Default_Article__c}" id="mainframe" scrolling="true" />                                                                   
+            </apex:outputpanel>
+        </apex:pageBlock>
+        <apex:pageBlock mode="maindetail" html-style="width:20%;float:right;height:100%" id="eligidiv">
+            <apex:pageBlock id="eligipageblock">
+               
+                <apex:commandButton value="Search Articles" onclick="document.getElementById('mainframe').src='/apex/Eligibility_AricleList_VFP';return false" id="eligisubmitButton" rerender="eligibilitypanel"/> 
+            </apex:pageBlock> 
+            <apex:pageBlock > 
+                <apex:outputText value="{!Sidebarlinks}"  escape="false"/> 
+            </apex:pageBlock>
+        </apex:pageBlock> 
+    </apex:form>                
+</apex:page>

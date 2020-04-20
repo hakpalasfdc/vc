@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Activity$CreatedById$Subject</field>
+    </columns>
+    <columns>
+        <field>User.Activity$CreatedById$ActivityDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User.Activity$CreatedById$Status</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Not Started,In Progress</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$IsActive</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Inactive Users with Open Tasks</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User$LastLoginDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

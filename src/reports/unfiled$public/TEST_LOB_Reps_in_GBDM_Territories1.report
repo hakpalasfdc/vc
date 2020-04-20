@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Global_Business_Development_Partner__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Reps__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_RMs__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marchon_Reps__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marchon_DMs__c</field>
+    </columns>
+    <columns>
+        <field>Account.Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <format>Tabular</format>
+    <name>TEST LOB Reps in GBDM Territories</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Global_Business_Development_Partner__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

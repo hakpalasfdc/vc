@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount / PARENTGROUPVAL(RowCount, QA_Review__c.Review_Level__c)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>QA_Review__c.QA_Review_Status__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Review Percentage</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.QA_Administrator__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Result_Letter_Date__c</field>
+    </columns>
+    <description>Scheduled- total percentage. Quarterly Report</description>
+    <filter>
+        <criteriaItems>
+            <column>QA_Review__c.QA_Review_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Completed Audit Pass,Completed Audit Failed</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>QA_Review__c.Review_Level__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>QA_Review__c.QA_Review_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Qtly Closed by level Type Pass/Fail</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$QA_Review__c@QA_Review__c.Provider_Name__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>QA_Review__c.Result_Letter_Date__c</dateColumn>
+        <interval>INTERVAL_PREVQ</interval>
+    </timeFrameFilter>
+</Report>

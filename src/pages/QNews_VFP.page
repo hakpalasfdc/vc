@@ -1,0 +1,17 @@
+<apex:page controller="QNewsTabControllerLEX"   showHeader="false" sidebar="false" id="qnewscomp">   
+    <apex:form id="qnewsform">
+        <apex:pageBlock mode="maindetail" html-style="width:80%;float:left;" >
+            <apex:outputPanel id="qnewspanel">
+                <apex:iframe src="/{!QNewsTab.Default_Article__c}" id="mainframe" scrolling="true" />                                                                   
+            </apex:outputpanel>
+        </apex:pageBlock>
+        <apex:pageBlock mode="maindetail" html-style="width:20%;float:right;height:100%" id="qnewsdiv">
+            <apex:pageBlock id="qnewspageblock">             
+                <apex:commandButton value="Search Articles" onclick="document.getElementById('mainframe').src='/apex/QNews_ArticleList_VFP';return false" id="qnewssubmitButton" rerender="qnewspanel"/> 
+            </apex:pageBlock> 
+            <apex:pageBlock > 
+                <apex:outputText value="{!QNewscatlinks}"  escape="false"/> 
+            </apex:pageBlock>
+        </apex:pageBlock> 
+    </apex:form>                
+</apex:page>

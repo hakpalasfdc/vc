@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Vision Care Premier Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Vision_Care_Premier_Queue</publicGroup>
+        </publicGroups>
+        <users>
+            <user>keylco@vsp.com</user>
+            <user>nickal@vsp.com</user>
+            <user>robegu@vsp.com</user>
+            <user>sheisn@vsp.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

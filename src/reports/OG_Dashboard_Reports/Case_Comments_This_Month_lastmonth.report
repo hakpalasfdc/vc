@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_34536628</developerName>
+        <masterLabel>Age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>7</to>
+            </sourceValues>
+            <value>Less Than 7 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+                <to>14</to>
+            </sourceValues>
+            <value>8 - 14 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>14</from>
+                <to>21</to>
+            </sourceValues>
+            <value>15 - 21 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>21</from>
+                <to>28</to>
+            </sourceValues>
+            <value>22 - 28 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>28</from>
+            </sourceValues>
+            <value>29+ Days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case.User_Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Vision Care Premier Customer Service Team - SD1,otto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMMENT_CREATED_DATE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_MONTH,LAST_MONTH</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_34536628</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_NUMBER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Case Comments This Month,lastmonth</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

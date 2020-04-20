@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>FK_Account.Marchon_and_Altair_Net_Sales_LTM__c:SUM + FK_Account.Optics_VSPOne_YTD_revenue__c:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>Eyewear and Optics revenue LTM</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>VSP LOB Revenue LTM</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>FK_Account.Optics_VSPOne_PM_Revenue__c:SUM + FK_Account.Eyewear_Last_Month_Revenue__c:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>Optics and Eyewear last month revenue</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>VSP LOB Last Month Revenue</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(FK_Account.Marchon_and_Altair_Net_Sales_LTM__c:SUM + FK_Account.Optics_VSPOne_YTD_revenue__c:SUM) / 12</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>Average Optics and Eyewear monthly revenue</description>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>VSP LOB Monthly Revenue Average</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>FK_OPP_AMOUNT:SUM / 24</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>What the practice needs to purchase per month to meet agreed amount</description>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>VSP LOB Target Monthly Average</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>((FK_Account.Marchon_and_Altair_Net_Sales_LTM__c:SUM + FK_Account.Optics_VSPOne_YTD_revenue__c:SUM) / 12) - (FK_OPP_AMOUNT:SUM / 24)</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>Amount below or above the target monthly amount</description>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>VSP LOB Monthly Revenue Variance</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <colorRanges>
+        <columnName>FORMULA5</columnName>
+        <highBreakpoint>0.0</highBreakpoint>
+        <highColor>#54C254</highColor>
+        <lowBreakpoint>0.0</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C2C254</midColor>
+    </colorRanges>
+    <columns>
+        <field>FK_$Account.Premier_Tax_ID_Roll_Up_Account__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>MPM4_BASE__Milestone1_Project__c.Trending__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_OPP_AMOUNT</field>
+    </columns>
+    <description>Shows each signed account and total VSP revenue LTM and what their target spend per month should be.</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>shift series phase 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MPM4_BASE__Milestone1_Project__c.MPM4_BASE__Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Inactive</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>MPM4_BASE__Milestone1_Project__c.Current_Milestone__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_ACC_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Shift Series Phase 1 Projects</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MPM4_BASE__Milestone1_Project__c@MPM4_BASE__Milestone1_Project__c.MPM4_BASE__Opportunity__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MPM4_BASE__Milestone1_Project__c.MPM4_BASE__Actual_Finish_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

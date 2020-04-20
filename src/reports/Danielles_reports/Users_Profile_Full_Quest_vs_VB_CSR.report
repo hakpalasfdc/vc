@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>USERNAME</field>
+    </columns>
+    <columns>
+        <field>ALIAS</field>
+    </columns>
+    <description>Pulled report to compare the profiles of Quest User vs the new SOFI VSP Role - VSP Vision Benefits CSR - per Kent</description>
+    <filter>
+        <criteriaItems>
+            <column>PROFILE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>VSP Full Quest User,VSP Vision Benefits CSR</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Users - Profile Full Quest vs VB CSR</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

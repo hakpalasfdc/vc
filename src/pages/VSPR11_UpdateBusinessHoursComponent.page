@@ -1,0 +1,14 @@
+<apex:page standardController="Account" showheader="false" extensions="VSPR11_UpdateBusinessHoursforComponent" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/JavaScript" /> 
+    <script>
+        function refreshPage() {
+            
+            var currentURL = "https://{!URLForPage}/{!Account.Id}"; 
+            top.location.href = currentURL; 
+            
+        }
+    </script>
+    <apex:form >
+                <apex:commandLink value="Edit Hours" onclick="window.open('/apex/VSPR11_UpdateBusinessHoursPage?id={!Account.Id}','mywindow', 'location=1,status=1,scrollbars=1,width=800,height=600');"  />
+    </apex:form>
+</apex:page>

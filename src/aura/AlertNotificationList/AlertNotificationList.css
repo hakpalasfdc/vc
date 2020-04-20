@@ -1,0 +1,56 @@
+.THIS .white {
+    background: rgb(255, 255, 255) !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-bottom: 1px solid rgb(255, 255, 255) !important;
+}
+.THIS .button{
+     background:none;
+     color:inherit;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     border-bottom:1px solid #444; 
+     cursor: pointer;
+}
+.THIS .slds-truncate{
+     white-space: pre-wrap !important;
+}
+.THIS .slds-button{
+    line-height: 1.2 !important;
+    border-radius: 15rem !important;
+}
+.THIS .slds-icon {
+    width: 1rem;
+    height: 1rem;
+    fill: rgb(255, 255, 255);
+}
+.THIS .slds-accordion__summary-action{
+    color: rgb(62, 62, 60);
+    font-size: .75rem;
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+}
+.THIS .slds-accordion__content{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgb(8, 7, 7);
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+}
+.THIS .rightArrow{
+    border: solid rgb(0, 109, 204);
+  	border-width: 0 2px 2px 0;
+  	display: inline-block;
+  	padding: 3px;
+    transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+}
+.THIS .leftArrow{
+    border: solid rgb(0, 109, 204);
+  	border-width: 0 2px 2px 0;
+  	display: inline-block;
+  	padding: 3px;
+    transform: rotate(135deg);
+  	-webkit-transform: rotate(135deg);
+}
+.THIS .slds-accordion__summary-action{
+    color: rgb(8, 7, 7) !important;
+}

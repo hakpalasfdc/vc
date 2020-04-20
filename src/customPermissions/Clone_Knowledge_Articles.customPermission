@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission is designed to be assigned to a permission set to allow a user to clone a knowledge article. This permission is referenced on the Clone component in the Knowledge Record Page</description>
+    <label>Clone Knowledge Articles</label>
+</CustomPermission>

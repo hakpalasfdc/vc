@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>DialSource__DialSource_Sessions_V3__c.DialSource__DS_Session_Length_in_Seconds__c:SUM / 3600</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Hours Dialed</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>DialSource__DialSource_Sessions_V3__c.DialSource__Talk_Time_in_Hours__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Hours on Talk Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Disposition_Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total # of Dispositions</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>DialSource__DialSource_Sessions_V3__c.DialSource__Talk_Time_in_Hours__c:SUM / DialSource__DialSource_Sessions_V3__c.DialSource__Session_Length_Hours__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>% of time on a Session talking with accounts.  created 7/28/17</description>
+        <developerName>FORMULA6</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Talk Time</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA6</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CUST_OWNER_NAME</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <colorRanges>
+        <columnName>FORMULA6</columnName>
+        <highBreakpoint>50.0</highBreakpoint>
+        <highColor>#54C254</highColor>
+        <lowBreakpoint>30.0</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C2C254</midColor>
+    </colorRanges>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Date__c</field>
+    </columns>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__DialSource_Session_Campaign__c</field>
+    </columns>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Length_Minutes__c</field>
+    </columns>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Disposition_Count__c</field>
+    </columns>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__Talk_Time_in_Minutes__c</field>
+    </columns>
+    <description>Results Report -Hours on the Dialer,  Grouped by rep, sorted by time on Call, shows % of Session time spent on calls(Colors Red -29%, Yellow 30-59%, Green 60+  Created 7/28/2017 added color 12/8/17</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Matt McGinnis,Ryan Huffman,Vitaly Burlaka</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dialer Report  % Talk time Last 7 days</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$DialSource__DialSource_Sessions_V3__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Date__c</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

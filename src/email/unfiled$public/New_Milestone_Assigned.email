@@ -1,0 +1,7 @@
+The following Milestone has been added to the toolkit and assigned to you.
+
+Milestone #: {!Milestone__c.Name}
+
+Description: {!Milestone__c.Description__c}
+
+{!Milestone__c.Link}

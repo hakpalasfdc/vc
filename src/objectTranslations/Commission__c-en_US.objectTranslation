@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Commission</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Commissions</value>
+    </caseValues>
+    <fields>
+        <help><!-- The address commission checks paid to this Tax ID should be mailed to --></help>
+        <label><!-- Address Line 1 --></label>
+        <name>AddressLine1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique identification number used for this Commission record throughout VSP&apos;s systems. --></help>
+        <label><!-- Agency ID --></label>
+        <name>AgencyId__c</name>
+    </fields>
+    <fields>
+        <help><!-- City associated with the Address record --></help>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the Partner is still using this commission record information. --></help>
+        <label><!-- Commission Status --></label>
+        <name>CommissionStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this Partner is filing taxes as a company or an individual. --></help>
+        <label><!-- IRS Partner Type --></label>
+        <name>IrsPartnerType__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent</masterLabel>
+            <translation><!-- Independent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Legal Name the commission payments will be made. --></help>
+        <label><!-- Legal Name --></label>
+        <name>LegalName__c</name>
+    </fields>
+    <fields>
+        <help><!-- State of the Address record --></help>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Tax ID or SSN that they commission payments will be reported to the IRS under. --></help>
+        <label><!-- Tax ID --></label>
+        <name>TaxId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zip code tied to the Address record --></help>
+        <label><!-- Zip Code --></label>
+        <name>ZipCode__c</name>
+    </fields>
+    <layouts>
+        <layout>Commission Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionContext>
+        <action>VSPR2_GetPropensityScores</action>
+        <argument>
+            <name>caseIdSB</name>
+            <value>$Record.Id</value>
+        </argument>
+        <description>This creates Propensity Score records associated to a Case after it makes a call out to Consumer DB and if it finds a matching record. We build conditions in the class itself. We pass in the Case Id since this resides on Case.</description>
+        <label>GetPropensityScore</label>
+        <name>GetPropensityScore</name>
+        <type>apex</type>
+    </actionContext>
+    <contextRecordType>Case</contextRecordType>
+    <description>Next Best Offer for Cases</description>
+    <filter>
+        <childNode>Date_Start_End_OON</childNode>
+        <label>OON</label>
+        <name>OON_Filter</name>
+        <expression>$GetPropensityScore.OONCode = &apos;OON&apos; &amp;&amp; $GetPropensityScore.OONClassification = &apos;Y&apos;</expression>
+    </filter>
+    <filter>
+        <childNode>Start_End_Age_OON</childNode>
+        <label>Date Start/End OON</label>
+        <name>Date_Start_End_OON</name>
+        <expression>Start_Date__c &lt;= TODAY() &amp;&amp; End_Date__c &gt;= TODAY() ||  Start_Date__c &lt;= TODAY() &amp;&amp; ISBLANK(End_Date__c) ||  ISBLANK(Start_Date__c) &amp;&amp; ISBLANK(End_Date__c)</expression>
+    </filter>
+    <filter>
+        <childNode>Load_OON</childNode>
+        <label>Start/End Age OON</label>
+        <name>Start_End_Age_OON</name>
+        <expression>Beginning_Age_Range__c &lt;= $Record.Contact.Current_Age__c &amp;&amp; Ending_Age_Range__c &gt;= $Record.Contact.Current_Age__c ||  Beginning_Age_Range__c &lt;= $Record.Contact.Current_Age__c &amp;&amp; Ending_Age_Range__c = 0 ||  Beginning_Age_Range__c = 0 &amp;&amp; Ending_Age_Range__c = 0</expression>
+    </filter>
+    <filter>
+        <childNode>Date_StartEnd</childNode>
+        <description>Checks if the return value from the invocable apex is returning an IP value</description>
+        <label>Look For IP Offer</label>
+        <name>Look_For_IP_Offer</name>
+        <expression>$GetPropensityScore.IPCode = &apos;IP&apos; &amp;&amp; $GetPropensityScore.IPReason = &apos;Age Out&apos; &amp;&amp; $GetPropensityScore.IPConfidence = &apos;N/A&apos; &amp;&amp; $GetPropensityScore.IPClassification = &apos;Y&apos;</expression>
+    </filter>
+    <filter>
+        <childNode>Start_End_Age_IP_Offer</childNode>
+        <description>Start and end date.</description>
+        <label>Date Start/End</label>
+        <name>Date_StartEnd</name>
+        <expression>Start_Date__c &lt;= TODAY() &amp;&amp; End_Date__c &gt;= TODAY() ||  Start_Date__c &lt;= TODAY() &amp;&amp; ISBLANK(End_Date__c) ||  ISBLANK(Start_Date__c) &amp;&amp; ISBLANK(End_Date__c)</expression>
+    </filter>
+    <filter>
+        <childNode>Load_IP_Offer_Recommendation</childNode>
+        <label>Start/End Age IP Offer</label>
+        <name>Start_End_Age_IP_Offer</name>
+        <expression>Beginning_Age_Range__c &lt;= $Record.Contact.Current_Age__c &amp;&amp; Ending_Age_Range__c &gt;= $Record.Contact.Current_Age__c ||  Beginning_Age_Range__c &lt;= $Record.Contact.Current_Age__c &amp;&amp; Ending_Age_Range__c = 0 ||  Beginning_Age_Range__c = 0 &amp;&amp; Ending_Age_Range__c = 0</expression>
+    </filter>
+    <if>
+        <childNode>CEC_Retail_OON_Recommendation</childNode>
+        <description>Display recommendation if the Case Record Type = Vision Benefits, Caller Type = Retail Partner, Case Origin = Phone</description>
+        <label>Vision Benefits Case Record Type</label>
+        <name>Vision_Benefits_Case_Record_Type</name>
+        <childNodeExpression>
+            <childName>CEC_Retail_OON_Recommendation</childName>
+            <expression>ISPICKVAL($Record.CallerType__c, &apos;Retail Partner&apos;) &amp;&amp; ISPICKVAL($Record.Origin, &apos;Phone&apos;) &amp;&amp; $Record.RecordTypeId = &apos;0124O000000NAwA&apos;</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>OON_Filter</childNode>
+        <label>OON</label>
+        <name>OON</name>
+        <childNodeExpression>
+            <childName>OON_Filter</childName>
+            <expression>true</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>true</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>Look_For_IP_Offer</childNode>
+        <label>Has Offer</label>
+        <name>Has_Offer</name>
+        <childNodeExpression>
+            <childName>Look_For_IP_Offer</childName>
+            <expression>ISPICKVAL($Record.CallerType__c, &apos;Member&apos;) &amp;&amp; $Record.Contact.Current_Age__c &gt;= 62 &amp;&amp; ISPICKVAL($Record.Origin, &apos;Phone&apos;) &amp;&amp; ($Record.IVR_Call_Type__c &lt;&gt; &apos;MetLife&apos;) &amp;&amp; ($Record.IVR_Call_Type__c &lt;&gt; &apos;CignaVision&apos;) &amp;&amp; ($Record.IVR_Call_Type__c &lt;&gt; &apos;CIGNAVision&apos;)</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <label>Case Offers</label>
+    <recommendationLimit>
+        <childNode>OON</childNode>
+        <childNode>Has_Offer</childNode>
+        <label>Limit Reoffer 30 days</label>
+        <name>Limit_Reoffer_30_days</name>
+        <filterMode>Accepted</filterMode>
+        <filterMode>Rejected</filterMode>
+        <lookbackDuration>30</lookbackDuration>
+        <maxRecommendationCount>1</maxRecommendationCount>
+    </recommendationLimit>
+    <recommendationLoad>
+        <label>Load OON</label>
+        <name>Load_OON</name>
+        <condition>
+            <field>Active__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>BOOLEAN</type>
+                <value>true</value>
+            </value>
+        </condition>
+        <condition>
+            <field>ActionReference</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>NBA_In_Network_Influencing_Flow</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Load IP Offer Recommendation</label>
+        <name>Load_IP_Offer_Recommendation</name>
+        <condition>
+            <field>Active__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>BOOLEAN</type>
+                <value>true</value>
+            </value>
+        </condition>
+        <condition>
+            <field>ActionReference</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>NBA_IP_Opportunity_Offer</value>
+            </value>
+        </condition>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Offer</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <recommendationLoad>
+        <description>Loads the recommendation for Enrollment Category</description>
+        <label>CEC - Retail/OON Recommendation</label>
+        <name>CEC_Retail_OON_Recommendation</name>
+        <condition>
+            <field>ActionReference</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Retail_Service_Center_Call_Flow</value>
+            </value>
+        </condition>
+        <condition>
+            <field>Active__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>BOOLEAN</type>
+                <value>true</value>
+            </value>
+        </condition>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Enrollment</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <union>
+        <childNode>Limit_Reoffer_30_days</childNode>
+        <childNode>Vision_Benefits_Case_Record_Type</childNode>
+        <label>Output</label>
+        <name>Output_fc93345396d04bbba2b5904e155fc68a</name>
+    </union>
+</RecommendationStrategy>

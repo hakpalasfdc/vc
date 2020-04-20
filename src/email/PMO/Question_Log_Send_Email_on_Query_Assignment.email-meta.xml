@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Question Log - Send Email on Query Assignment</name>
+    <style>none</style>
+    <subject>A Query has been assigned on PMO</subject>
+    <textOnly>URL: {!Question_Log__c.Link}
+Question Log ID: {!Question_Log__c.Name}
+Assigned On: {!Question_Log__c.Date_Reported__c}
+Assigned By: {!Question_Log__c.Submitter__c}
+Task Description: {!Question_Log__c.Description__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

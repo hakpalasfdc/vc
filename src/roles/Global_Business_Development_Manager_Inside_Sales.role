@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Global Business Development Manager Inside Sales</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Global Business Development Manager Inside Sales</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Global_Business_Development_Inside_Sales_Management</parentRole>
+</Role>

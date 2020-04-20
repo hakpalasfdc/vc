@@ -1,0 +1,37 @@
+<apex:page standardcontroller="Contact_Role__c" extensions="DS_OpportunityRelatedListExt">
+    <apex:form >       
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!updateValues}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!opps}" var="o" >
+                <apex:column headerValue="Change">
+                    <apex:selectList value="{!o.StageName}" multiselect="false" size="1">
+                    <apex:selectOption itemValue="Prospect" itemLabel="Prospect"/>
+                    <apex:selectOption itemValue="Qualify" itemLabel="Qualify"/>
+                    <apex:selectOption itemValue="Work" itemLabel="Work"/>
+                    <apex:selectOption itemValue="Development" itemLabel="Development"/>
+                    <apex:selectOption itemValue="Propose" itemLabel="Propose"/>
+                    <apex:selectOption itemValue="Closed Won" itemLabel="Closed Won"/>
+                    <apex:selectOption itemValue="Closed Lost" itemLabel="Closed Lost"/>
+                    <apex:selectOption itemValue="Closed Cancelled" itemLabel="Closed Cancelled"/>
+                </apex:selectList>
+                </apex:column>
+                <apex:column headerValue="Lost Reason">
+                    <apex:selectList value="{!o.Lost_Reason__c}" multiselect="false" size="1">
+                    <apex:selectOption itemValue="" itemLabel="--None--"/>
+                    <apex:selectOption itemValue="Competition" itemLabel="Competition"/>
+                    <apex:selectOption itemValue="Performance" itemLabel="Performance"/>
+                    <apex:selectOption itemValue="VSP Rejected" itemLabel="VSP Rejected"/>
+                    <apex:selectOption itemValue="Not Interested" itemLabel="Not Interested"/>
+                </apex:selectList>
+                </apex:column>
+                <apex:column value="{!o.Name}"/>
+                <apex:column headerValue="Owner" value="{!o.Owner.Name}"/>
+                <apex:column value="{!o.Line_of_Business__c}"/>
+                <apex:column headerValue="Description"><apex:outputText value="{!left(o.Description,50)}"></apex:outputText></apex:column>
+                <apex:column value="{!o.CloseDate}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>     
+</apex:page>

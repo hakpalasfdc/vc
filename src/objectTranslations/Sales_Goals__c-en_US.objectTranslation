@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Goal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Goals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Goal Name --></label>
+        <name>Goal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Period --></label>
+        <name>Goal_Period__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q1</masterLabel>
+            <translation><!-- Q1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q2</masterLabel>
+            <translation><!-- Q2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q3</masterLabel>
+            <translation><!-- Q3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4</masterLabel>
+            <translation><!-- Q4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Goal Timeline --></label>
+        <name>Goal_Timeline__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Goal Type --></label>
+        <name>Goal_Type__c</name>
+        <picklistValues>
+            <masterLabel>Dollars</masterLabel>
+            <translation><!-- Dollars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Locations</masterLabel>
+            <translation><!-- Locations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volume</masterLabel>
+            <translation><!-- Volume --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the 4-digit goal year (i.e., &quot;2015&quot;) --></help>
+        <label><!-- Goal Year --></label>
+        <name>Goal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal --></label>
+        <name>Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Business --></label>
+        <name>Line_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>Altair</masterLabel>
+            <translation><!-- Altair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchon</masterLabel>
+            <translation><!-- Marchon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optics</masterLabel>
+            <translation><!-- Optics --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Territory Code --></label>
+        <name>Territory_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Sales Goals --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Sales Goal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

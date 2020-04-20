@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Practice Account</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Agreements</relationshipLabel>
+        <relationshipName>Agreements</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Effective_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Date_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date Reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>End of Agreement</fullName>
+                    <default>false</default>
+                    <label>End of Agreement</label>
+                </value>
+                <value>
+                    <fullName>Termination of Agreement</fullName>
+                    <default>false</default>
+                    <label>Termination of Agreement</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( OR( Effective_Date__c = TODAY() , AND( Effective_Date__c &lt; TODAY() , OR( End_Date__c &gt;= TODAY() , ISBLANK( End_Date__c ) ) ) ) , &quot;Active&quot;, IF( Effective_Date__c&gt; TODAY() , &apos;Future&apos;, &apos;Inactive&apos;) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pathways - Expansion</fullName>
+                    <default>false</default>
+                    <label>Pathways - Expansion</label>
+                </value>
+                <value>
+                    <fullName>Global Strategic Agreement</fullName>
+                    <default>false</default>
+                    <label>Global Strategic Agreement</label>
+                </value>
+                <value>
+                    <fullName>Shift Series</fullName>
+                    <default>false</default>
+                    <label>Shift Series</label>
+                </value>
+                <value>
+                    <fullName>DOLP4</fullName>
+                    <default>false</default>
+                    <label>DOLP4</label>
+                </value>
+                <value>
+                    <fullName>Optics Agreements</fullName>
+                    <default>false</default>
+                    <label>Optics Agreements</label>
+                </value>
+                <value>
+                    <fullName>DOLP3</fullName>
+                    <default>false</default>
+                    <label>DOLP3</label>
+                </value>
+                <value>
+                    <fullName>DOLP2</fullName>
+                    <default>false</default>
+                    <label>DOLP2</label>
+                </value>
+                <value>
+                    <fullName>DOLP1</fullName>
+                    <default>false</default>
+                    <label>DOLP1</label>
+                </value>
+                <value>
+                    <fullName>Pathways - Recruitment</fullName>
+                    <default>false</default>
+                    <label>Pathways - Recruitment</label>
+                </value>
+                <value>
+                    <fullName>Path to Platinum</fullName>
+                    <default>false</default>
+                    <label>Path to Platinum</label>
+                </value>
+                <value>
+                    <fullName>Path to Platinum - Custom</fullName>
+                    <default>false</default>
+                    <label>Path to Platinum - Custom</label>
+                </value>
+                <value>
+                    <fullName>FastPass</fullName>
+                    <default>false</default>
+                    <label>FastPass</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Agreement</label>
+    <nameField>
+        <displayFormat>A-{0000000}</displayFormat>
+        <label>Agreement Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Agreements</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VSPR31_EffectiveDateValidation</fullName>
+        <active>true</active>
+        <description>Effective Date cannot be prior than today’s date</description>
+        <errorConditionFormula>AND( NOT($Profile.Name = &quot;System Administrator&quot;) , TODAY()   &gt;  Effective_Date__c,   ISCHANGED(Effective_Date__c) )</errorConditionFormula>
+        <errorMessage>Effective Date cannot be prior than today’s date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR31_EndDateReasonRequired</fullName>
+        <active>true</active>
+        <description>When an End Date is entered, End Date Reason is required.</description>
+        <errorConditionFormula>AND(  NOT(ISBLANK( End_Date__c ) ),   ISBLANK( TEXT( End_Date_Reason__c ) )  , NOT($Profile.Name = &quot;System Administrator&quot;) )</errorConditionFormula>
+        <errorMessage>When an End Date is entered, End Date Reason is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR31_EndDateValidation</fullName>
+        <active>true</active>
+        <description>End Date can only be a future date</description>
+        <errorConditionFormula>AND(NOT($Profile.Name = &quot;System Administrator&quot;), NOT( ISBLANK( End_Date__c ) ),   OR(End_Date__c    &lt;=   Effective_Date__c,  TODAY()  &gt;=  End_Date__c   ), NOT(ISCHANGED( Type__c ) ) )</errorConditionFormula>
+        <errorMessage>End Date can only be a future date</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

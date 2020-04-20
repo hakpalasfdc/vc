@@ -1,0 +1,10 @@
+{!Network_Recruitment__c.OwnerFullName},
+
+The following record has been in Episoded/Rostered status for > 60 days: 
+
+Account: {!Network_Recruitment__c.Account_Name_Lookup__c}
+Provider: {!Network_Recruitment__c.Provider_Name_Lookup__c}
+Recruitment Status: {!Network_Recruitment__c.Recruitment_Status__c}
+Status Change Date: {!Network_Recruitment__c.Status_Change_Date__c}
+
+Click on the link to access the Network Recruitment record: {!Network_Recruitment__c.Link}

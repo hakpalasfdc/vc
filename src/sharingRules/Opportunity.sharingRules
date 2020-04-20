@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>All_Opportunity_Record_Types_Public</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>All Opportunity Record Types Public</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Release Opportunity,Shift Opportunity,VSP Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

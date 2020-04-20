@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Agreement_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Agreement Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pathways - Expansion</fullName>
+                    <default>false</default>
+                    <label>Pathways - Expansion</label>
+                </value>
+                <value>
+                    <fullName>Global Strategic Agreement</fullName>
+                    <default>false</default>
+                    <label>Global Strategic Agreement</label>
+                </value>
+                <value>
+                    <fullName>Shift Series</fullName>
+                    <default>false</default>
+                    <label>Shift Series</label>
+                </value>
+                <value>
+                    <fullName>DOLP4</fullName>
+                    <default>false</default>
+                    <label>DOLP4</label>
+                </value>
+                <value>
+                    <fullName>Optics Agreements</fullName>
+                    <default>false</default>
+                    <label>Optics Agreements</label>
+                </value>
+                <value>
+                    <fullName>DOLP3</fullName>
+                    <default>false</default>
+                    <label>DOLP3</label>
+                </value>
+                <value>
+                    <fullName>DOLP2</fullName>
+                    <default>false</default>
+                    <label>DOLP2</label>
+                </value>
+                <value>
+                    <fullName>DOLP1</fullName>
+                    <default>false</default>
+                    <label>DOLP1</label>
+                </value>
+                <value>
+                    <fullName>Pathways - Recruitment</fullName>
+                    <default>false</default>
+                    <label>Pathways - Recruitment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bypass_Validation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bypass Validation</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Type__c</fullName>
+        <description>A criteria in Premier Admin Tiering so that I differentiate tiers by contract.</description>
+        <externalId>false</externalId>
+        <label>Contract Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Affiliate</fullName>
+                    <default>false</default>
+                    <label>Affiliate</label>
+                </value>
+                <value>
+                    <fullName>AOP</fullName>
+                    <default>false</default>
+                    <label>AOP</label>
+                </value>
+                <value>
+                    <fullName>CAT2</fullName>
+                    <default>false</default>
+                    <label>CAT2</label>
+                </value>
+                <value>
+                    <fullName>Conflict</fullName>
+                    <default>false</default>
+                    <label>Conflict</label>
+                </value>
+                <value>
+                    <fullName>GAP</fullName>
+                    <default>false</default>
+                    <label>GAP</label>
+                </value>
+                <value>
+                    <fullName>Independent</fullName>
+                    <default>false</default>
+                    <label>Independent</label>
+                </value>
+                <value>
+                    <fullName>LVC</fullName>
+                    <default>false</default>
+                    <label>LVC</label>
+                </value>
+                <value>
+                    <fullName>Near Site</fullName>
+                    <default>false</default>
+                    <label>Near Site</label>
+                </value>
+                <value>
+                    <fullName>Net Dev Excluded</fullName>
+                    <default>false</default>
+                    <label>Net Dev Excluded</label>
+                </value>
+                <value>
+                    <fullName>Net Dev Purchasing Requirement</fullName>
+                    <default>false</default>
+                    <label>Net Dev Purchasing Requirement</label>
+                </value>
+                <value>
+                    <fullName>Not Supported</fullName>
+                    <default>false</default>
+                    <label>Not Supported</label>
+                </value>
+                <value>
+                    <fullName>Onsite</fullName>
+                    <default>false</default>
+                    <label>Onsite</label>
+                </value>
+                <value>
+                    <fullName>Pearle Vision CO</fullName>
+                    <default>false</default>
+                    <label>Pearle Vision CO</label>
+                </value>
+                <value>
+                    <fullName>Pearle Vision LO</fullName>
+                    <default>false</default>
+                    <label>Pearle Vision LO</label>
+                </value>
+                <value>
+                    <fullName>Pop Up</fullName>
+                    <default>false</default>
+                    <label>Pop Up</label>
+                </value>
+                <value>
+                    <fullName>Rollup</fullName>
+                    <default>false</default>
+                    <label>Rollup</label>
+                </value>
+                <value>
+                    <fullName>School</fullName>
+                    <default>false</default>
+                    <label>School</label>
+                </value>
+                <value>
+                    <fullName>Visionworks</fullName>
+                    <default>false</default>
+                    <label>Visionworks</label>
+                </value>
+                <value>
+                    <fullName>VSP Retail</fullName>
+                    <default>false</default>
+                    <label>VSP Retail</label>
+                </value>
+                <value>
+                    <fullName>VSP Ventures</fullName>
+                    <default>false</default>
+                    <label>VSP Ventures</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Effective_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Blank Date = No end date.</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exclusive_VSP_Patient_Offers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Exclusive VSP Patient Offers</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eyewear_Minimum_Formula__c</fullName>
+        <description>Used in Monthly Batch Job</description>
+        <externalId>false</externalId>
+        <formula>Eyewear_Minimum__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Eyewear Minimum Formula</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Eyewear_Minimum__c</fullName>
+        <externalId>false</externalId>
+        <label>Eyewear Minimum</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Free_Fitting_and_Adjustments__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Free Fitting and Adjustments</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hierarchy_Action__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The selection of &quot;&lt;&quot; below or &quot;Top Tier&quot;, will determine the hierarchy location of where the new or edited tier needs to go in the list of existing tiers.</inlineHelpText>
+        <label>Hierarchy Action</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;</fullName>
+                    <default>false</default>
+                    <label>&lt;</label>
+                </value>
+                <value>
+                    <fullName>Top_Tier</fullName>
+                    <default>false</default>
+                    <label>Top Tier</label>
+                </value>
+                <value>
+                    <fullName>&gt;</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>&gt;</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Hierarchy_Selection__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>If Hierarchy Action = Top Tier, Hierarchy Selection must be blank.</inlineHelpText>
+        <label>Hierarchy Selection</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <errorMessage>The selected Hierarchy Selection Tier has a status of Inactive.</errorMessage>
+            <filterItems>
+                <field>Premier_Tier__c.Status__c</field>
+                <operation>notEqual</operation>
+                <value>Inactive</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>System Administrator, VSP Technical User</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Premier_Tier__c</referenceTo>
+        <relationshipLabel>Premier Tiers</relationshipLabel>
+        <relationshipName>Tiers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lens_Minimum_Formula__c</fullName>
+        <description>Used in Monthly Batch Job</description>
+        <externalId>false</externalId>
+        <formula>Lens_Minimum__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lens Minimum Formula</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lens_Minimum__c</fullName>
+        <externalId>false</externalId>
+        <label>Lens Minimum</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Order_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__c</formula>
+        <label>Hierarchy Order #</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Hierarchy Order #</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Retinal_Imaging_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Retinal Imaging Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Future</fullName>
+                    <default>false</default>
+                    <label>Future</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tier_Name_AutoNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier Name AutoNumber</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_Name_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier Name Id</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Purchases_LTM_Formula__c</fullName>
+        <description>Used in Monthly Batch Job</description>
+        <externalId>false</externalId>
+        <formula>Total_Purchases_LTM__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Purchases LTM Formula</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Purchases_LTM__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Purchases LTM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VSP_Flex_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Purchases_LTM__c - Eyewear_Minimum__c -  Lens_Minimum__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VSP Flex Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Premier Tier</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Hierarchy_Action__c</columns>
+        <columns>Hierarchy_Selection__c</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Order_Formula__c</columns>
+        <columns>Tier_Name_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Active_Tiers</fullName>
+        <columns>NAME</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Hierarchy_Selection__c</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Status__c</columns>
+        <columns>Order_Formula__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>All Active Tiers</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Future_Tiers</fullName>
+        <columns>NAME</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Hierarchy_Selection__c</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Status__c</columns>
+        <columns>Order__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Future</value>
+        </filters>
+        <label>All Future Tiers</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Inactive_Tiers</fullName>
+        <columns>NAME</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Hierarchy_Selection__c</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>Status__c</columns>
+        <columns>Order__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Inactive</value>
+        </filters>
+        <label>All Inactive Tiers</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Tier Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Premier Tiers</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Hierarchy_Action__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Hierarchy_Selection__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Effective_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Effective_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VSPR32_Effective_Date_Validation</fullName>
+        <active>true</active>
+        <description>Effective Date must be a future date</description>
+        <errorConditionFormula>OR(ISNEW(),
+ISCHANGED(Effective_Date__c))
+&amp;&amp;
+Effective_Date__c &lt;= Today()
+&amp;&amp;
+NOT(OR( $Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;))</errorConditionFormula>
+        <errorDisplayField>Effective_Date__c</errorDisplayField>
+        <errorMessage>You must enter an Effective Date greater than today</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR32_End_Date_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(ISNEW(),
+ISCHANGED(End_Date__c))
+&amp;&amp;
+End_Date__c &lt;= Effective_Date__c 
+&amp;&amp;
+NOT(OR( $Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;))</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>You must enter an End Date greater than Effective Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSP_Premier_Active_Rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>TEXT(Status__c) = &apos;Active&apos;
+
+&amp;&amp; 
+
+NOT(ISCHANGED(Status__c))
+
+&amp;&amp;
+
+OR(
+ISCHANGED(Description__c),
+ISCHANGED(Effective_Date__c),
+ISCHANGED(Exclusive_VSP_Patient_Offers__c),
+ISCHANGED(Eyewear_Minimum__c),	
+ISCHANGED(Free_Fitting_and_Adjustments__c),  
+ISCHANGED(Hierarchy_Action__c),    
+ISCHANGED(Hierarchy_Selection__c),
+ISCHANGED(Lens_Minimum__c),  
+ISCHANGED(Retinal_Imaging_Indicator__c),
+ISCHANGED(Name),
+ISCHANGED(Total_Purchases_LTM__c),	
+ISCHANGED(VSP_Flex_Amount__c),
+ISCHANGED(Contract_Type__c),
+ISCHANGED(Agreement_Type__c)
+)
+
+&amp;&amp;
+
+NOT(OR( 
+$Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;) 
+)
+
+&amp;&amp;
+
+NOT(OR(ISCHANGED(Bypass_Validation__c ), 
+						Bypass_Validation__c = True))</errorConditionFormula>
+        <errorMessage>This Tier can not be edited when it is Active.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSP_Premier_Child_Hierarchy</fullName>
+        <active>true</active>
+        <errorConditionFormula>Hierarchy_Selection__r.Order__c &gt; Order__c
+	
+	&amp;&amp;
+	
+	
+	TEXT(Status__c) = &apos;Active&apos; 
+	
+	&amp;&amp;
+	
+	ISCHANGED(Hierarchy_Selection__c)
+	
+	&amp;&amp; 
+
+NOT(OR(ISCHANGED(Bypass_Validation__c ), 
+Bypass_Validation__c = True))</errorConditionFormula>
+        <errorMessage>You can&apos;t select a Parent record that is lower than your current order.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSP_Premier_End_Date_Future</fullName>
+        <active>true</active>
+        <description>Check that End is in the Future</description>
+        <errorConditionFormula>ISCHANGED(End_Date__c)
+
+&amp;&amp;
+OR(
+End_Date__c &lt; TODAY() + 1,
+End_Date__c &lt; Effective_Date__c 
+)
+&amp;&amp;
+
+NOT(OR(
+$Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;VSP Technical User&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>The End Date must be greater than the Effective Date. The End Date must be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSP_Premier_Hierarchy_Selection</fullName>
+        <active>true</active>
+        <errorConditionFormula>TEXT(Hierarchy_Action__c) = &apos;&lt;&apos; 
+
+&amp;&amp; 
+
+ISBLANK(Hierarchy_Selection__c)
+&amp;&amp;
+NOT(OR( $Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;VSP Technical User&quot;))</errorConditionFormula>
+        <errorMessage>Tier must have a Hierarchy Selection.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSP_Premier_Inactive_Rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>TEXT(Status__c) = &apos;Inactive&apos; 
+
+&amp;&amp; 
+
+NOT(ISCHANGED(Status__c)) 
+
+&amp;&amp;
+
+NOT(OR( 
+$Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;) 
+)
+
+&amp;&amp; 
+
+NOT(OR(ISCHANGED(Bypass_Validation__c ), 
+Bypass_Validation__c = True))</errorConditionFormula>
+        <errorMessage>This Tier can not be edited when it is Inactive.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSP_Premier_Top_Tier</fullName>
+        <active>true</active>
+        <errorConditionFormula>TEXT(Hierarchy_Action__c) = &apos;Top_Tier&apos;
+
+&amp;&amp;
+
+NOT(ISBLANK(Hierarchy_Selection__c) )</errorConditionFormula>
+        <errorMessage>Top Tier cannot have a Hierarchy Selection.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

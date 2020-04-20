@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionContext>
+        <action>VSPR2_GetPropensityScores</action>
+        <argument>
+            <name>caseIdSB</name>
+            <value>$Record.Id</value>
+        </argument>
+        <description>This creates Propensity Score records associated to a Case after it makes a call out to Consumer DB and if it finds a matching record. We build conditions in the class itself. We pass in the Case Id since this resides on Case.</description>
+        <label>CheckIPOfferPropensitySCore</label>
+        <name>CheckIPOfferPropensitySCore</name>
+        <type>apex</type>
+    </actionContext>
+    <contextRecordType>Case</contextRecordType>
+    <description>Next Best Offer for IP Offer</description>
+    <filter>
+        <childNode>Load_IP_Offer_Recommendation</childNode>
+        <description>Checks if the return value from the invocable apex is returning a D2C value</description>
+        <label>Look For IP Offer</label>
+        <name>Look_For_IP_Offer</name>
+        <expression>$CheckIPOfferPropensitySCore.IPCode = &apos;IP&apos; &amp;&amp; $CheckIPOfferPropensitySCore.IPClassification = &apos;Y&apos;</expression>
+    </filter>
+    <if>
+        <childNode>Look_For_IP_Offer</childNode>
+        <label>Has Offer</label>
+        <name>Has_Offer</name>
+        <childNodeExpression>
+            <childName>Look_For_IP_Offer</childName>
+            <expression>ISPICKVAL($Record.CallerType__c, &apos;Member&apos;) &amp;&amp; $Record.Contact.Current_Age__c &gt;= 62 &amp;&amp; ISPICKVAL($Record.Origin, &apos;Phone&apos;) &amp;&amp; ($Record.IVR_Call_Type__c &lt;&gt; &apos;MetLife&apos;) &amp;&amp; ($Record.IVR_Call_Type__c &lt;&gt; &apos;CignaVision&apos;) &amp;&amp; ($Record.IVR_Call_Type__c &lt;&gt; &apos;CIGNAVision&apos;)</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <label>IP Offer 2</label>
+    <recommendationLoad>
+        <label>Load IP Offer Recommendation</label>
+        <name>Load_IP_Offer_Recommendation</name>
+        <condition>
+            <field>Active__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>BOOLEAN</type>
+                <value>true</value>
+            </value>
+        </condition>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Offer</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <union>
+        <childNode>Has_Offer</childNode>
+        <label>Output</label>
+        <name>Output_fc93345396d04bbba2b5904e155fc68a</name>
+    </union>
+</RecommendationStrategy>

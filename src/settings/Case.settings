@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAssignNotificationTemplate>unfiled$public/Notify_Email_Case_Owner</caseAssignNotificationTemplate>
+    <caseAutoProcUser>false</caseAutoProcUser>
+    <caseFeedItemSettings>
+        <characterLimit>400</characterLimit>
+        <displayFormat>Default</displayFormat>
+        <feedItemType>EmailMessageEvent</feedItemType>
+    </caseFeedItemSettings>
+    <caseFeedReadUnreadLtng>false</caseFeedReadUnreadLtng>
+    <caseMergeInLightning>false</caseMergeInLightning>
+    <closeCaseThroughStatusChange>true</closeCaseThroughStatusChange>
+    <defaultCaseFeedLayoutOn>false</defaultCaseFeedLayoutOn>
+    <defaultCaseOwner>katherineb@vsp.com</defaultCaseOwner>
+    <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>katherineb@vsp.com</defaultCaseUser>
+    <emailToCase>
+        <enableE2CAttachmentAsFile>false</enableE2CAttachmentAsFile>
+        <enableE2CSourceTracking>true</enableE2CSourceTracking>
+        <enableEmailToCase>true</enableEmailToCase>
+        <enableHtmlEmail>true</enableHtmlEmail>
+        <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
+        <enableThreadIDInBody>true</enableThreadIDInBody>
+        <enableThreadIDInSubject>true</enableThreadIDInSubject>
+        <notifyOwnerOnNewCaseEmail>true</notifyOwnerOnNewCaseEmail>
+        <overEmailLimitAction>Bounce</overEmailLimitAction>
+        <preQuoteSignature>true</preQuoteSignature>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>aline.amayacano@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>aamayacano@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Aline Amaya Cano</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Fax</caseOrigin>
+            <caseOwner>AL_Inventory_Management</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>altairim@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Altair IM</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>amarta@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>atakhar@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Amarjit Takhar</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>amber.moss@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>amoss@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Amber Moss</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>arnecl@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>aclark2@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Arnesia Clark</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>brannu@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bnuss@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Brandi Nuss</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>bryaki@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bkim@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Bryan Kim</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Case_External_Routing_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>info@dragonalliance.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>CC Dragon</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CC_Knowledge_Authors</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>knowledge@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>CC Knowledge Authors</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Mail/Parcel</caseOrigin>
+            <caseOwner>CC_Written_Inquiries_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>uscwritteninquiries@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>CC Written Inquiries</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CD_CS_University</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>csuniv@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>CSUniv</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>caitji@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cjimenez@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Caitlin Jimenez</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>camrse@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>csegarra@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Camrae Segarra</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>cecilia.salas@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>csalas@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Cecilia Salas</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>chanmo@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cmontgomery@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Chanelle Montgomery</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>chanjo@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cjones3@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Chantelle Jones</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>cheldu@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cduncan@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Cheleyne Duncan</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>chergr2@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cgrisel@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Cheryl Grisel</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>chripe@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cpena2@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Chris Pena</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>christina.alford@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>calford@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Christina Alford</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>clifel@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cellison@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Clifton Ellison</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>crystal.raskin@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>craskin@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Crystal Raskin</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>danado@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ddource@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Dana Dource</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>daviba2@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>dbachman@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>David Bachman</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>deborah.villescas@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>dvillescas@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Deborah Villescas</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>donna.keplinger@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>dkeplinger@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Donna Keplinger</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>edouga@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>egarcia@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Edouardjon Garcia</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>erikca@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ecastillo@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Erika Castillo</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>erinte@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>eteel@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Erin Teel</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>evelyn.mendoza@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>emendoza@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Evelyn Mendoza</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CC_Eyeconic_Main_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>High</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>info@eyeconic.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Eyeconic</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>felibu@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>faustin@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Felicia Austin</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>fransa@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>fsanchez2@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Francisco Sanchez</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>herbra@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>hrangel@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Herberth Rangel</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>jacinta.fang@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jfang2@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jacinta Fang</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>jacqda@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jbraggdavis@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jacqualine Bragg-Davis</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>jamie.dreuth@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jdreuth@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jamie Dreuth</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>janeca2@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jrobichaux@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Janelle Robichaux</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>jasmine.coleman@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jcoleman@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jasmine Coleman</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>jeanette.martinez@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jmartinez@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jeanette Martinez</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>jennifer.hall@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jhall@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jennifer Hall</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>joanlu@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jluong@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Joanne Luong</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>jonafe@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jferrer@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jonathan Ferrer</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>jordhe@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jheadley@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jordan Headley</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>julimu@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jmurrieta@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Julio Murrieta</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>kacech@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kchristensen@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kacey Christensen</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>kaitma@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kmackey@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kaitlin Mackey</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>kathca@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kcamara@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kathy Camara</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>kativo@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kvoigt@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Katie Voigt</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>kavide@vspc.om</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kdevi@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kavita Devi</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>kaysh@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kshay@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kay Shay</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>kennye@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kyee@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kenneth Yee</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>khaepa@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kpangilinan@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Khae Pangilinan</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>takiru@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>trussell@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kisha Russell</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>lakeenya.keola@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lkeola@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lakeenya Keola</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>laraca@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lcaves@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lara Caves</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>leanro@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lrobeson@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Leann Robeson</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>lena.thao@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lthao@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lena Thao</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CC_Level_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>leveltechnology@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Level Technology</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>lisasu@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lsuggs@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lisa Suggs</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>maefo@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mfong@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Mae Fong</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>mai.thao@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mthao@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Mai Thao</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>marihu3@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mhutnick@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Marian Hutnick</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>marika@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mkalinovskiy@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Marina Kalinovskiy</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>marina.volkova@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mvolkova@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Marina Volkova</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>marlee.vang3@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mvang@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Marlee Vang</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>meagwa@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mwatson@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Meagan Watson</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>katherineb@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mjones@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Melinda Jones</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>melira@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mraymond@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Melissa Raymond</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CC_MetLife_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>High</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>inquiries@mymetlifevision.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>MetLife Vision</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>miguma@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mmartinez3@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Miguel Martinez</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>nancni2@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>nnicholas@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Nancy Nicholas</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>naomle@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>nlewis@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Naomi Lewis</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>neetka@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>nkalsi@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Neetu Kalsi</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>nefy.schell@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>nschell2@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Nefertiti Schell</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>nichol.wilhite@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>nwilhite@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Nichol Wilhite</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CC_Nike_Vision_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>High</casePriority>
+            <createTask>true</createTask>
+            <emailAddress>info@nikevision.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Nike Vision</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+            <taskStatus>Not Started</taskStatus>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>parist@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>pstroughter@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Parise Stroughter</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>rachel.long@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rlong@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Rachel Long</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>randni@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rnicholson@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Randi Nicholson</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>rebecca.watermolen@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rwatermolen@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Rebecca Watermolen</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>samantha.bolin@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>sbolin@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Samantha Bolin</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>shaite@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>stehrani@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Shain Tehrani</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>sheiho2@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>sholcomb@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Sheila Holcomb</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>shelro@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>srossi@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Shelby Rossi</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>sherkr@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>skrumm@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Sheryl Krumm</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CD_State_of_CA</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>stateofca@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>State of CA</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>stephanie.wilson@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>swilson2@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Stephanie Wilson</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>susach@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>scheely@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Susan Cheely</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>suzanne.wuehler@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>swuehler@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Suzanne Wuehler</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>sylvia.kelleher@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>skelleher@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Sylvia Kelleher</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>traci.ragland@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>tpulliam@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Traci Pulliam</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>travor@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>tortlip@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Travis Ortlip</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CD_Billing</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>vspbilling@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VSP Billing</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CD_Cash_Receipts</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cashreceipts@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VSP Cash Receipts</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>vspcustomercare@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VSP Customer Care</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CC_Marketing_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>vspcustomercarevcm@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VSP Customer Care VCM</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CD_Membership_Coordination</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>eei@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VSP EDI Enrollment Integration</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CD_Data_Entry</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>membershipdataentry@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VSP Membership Data Entry</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Onsite_Clinics_Main_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>oscsalesforcerequests@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VSP Retail Operations</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>CD_TPA_COBRA</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>vspadoe@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VSP TPA</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>veromi@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>vmiranda@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Veronica Miranda</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email 1:1</caseOrigin>
+            <caseOwner>victgo@vsp.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>vgoodwin@vsp.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Victor Goodwin</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <unauthorizedSenderAction>Discard</unauthorizedSenderAction>
+    </emailToCase>
+    <enableCaseFeed>true</enableCaseFeed>
+    <enableCollapseEmailThread>false</enableCollapseEmailThread>
+    <enableDraftEmails>true</enableDraftEmails>
+    <enableEarlyEscalationRuleTriggers>false</enableEarlyEscalationRuleTriggers>
+    <enableEmailActionDefaultsHandler>false</enableEmailActionDefaultsHandler>
+    <enableSuggestedArticlesApplication>false</enableSuggestedArticlesApplication>
+    <enableSuggestedArticlesCustomerPortal>false</enableSuggestedArticlesCustomerPortal>
+    <enableSuggestedArticlesPartnerPortal>false</enableSuggestedArticlesPartnerPortal>
+    <enableSuggestedSolutions>true</enableSuggestedSolutions>
+    <escalateCaseBefore>false</escalateCaseBefore>
+    <keepRecordTypeOnAssignmentRule>true</keepRecordTypeOnAssignmentRule>
+    <notifyContactOnCaseComment>false</notifyContactOnCaseComment>
+    <notifyDefaultCaseOwner>false</notifyDefaultCaseOwner>
+    <notifyOwnerOnCaseComment>false</notifyOwnerOnCaseComment>
+    <notifyOwnerOnCaseOwnerChange>true</notifyOwnerOnCaseOwnerChange>
+    <showEmailAttachmentsInCaseAttachmentsRL>true</showEmailAttachmentsInCaseAttachmentsRL>
+    <showFewerCloseActions>false</showFewerCloseActions>
+    <systemUserEmail>automatedcase@00dd0000000hm9aeaa.ext</systemUserEmail>
+    <useSystemEmailAddress>true</useSystemEmailAddress>
+    <useSystemUserAsDefaultCaseUser>false</useSystemUserAsDefaultCaseUser>
+    <webToCase>
+        <enableWebToCase>false</enableWebToCase>
+    </webToCase>
+</CaseSettings>

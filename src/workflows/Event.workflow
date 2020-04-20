@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>UpdateEventDateFinished</fullName>
+        <field>Event_Date_Finished__c</field>
+        <formula>TODAY()</formula>
+        <name>UpdateEventDateFinished</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>VSPR11_UpdateEventCompletionDate</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Event.EndDateTime</field>
+            <operation>lessOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Event.AccountId</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>UpdateEventDateFinished</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Event.EndDateTime</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

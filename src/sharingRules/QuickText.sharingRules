@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Sharing_Rule_Client_Delivery</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Sharing Rule Client Delivery</label>
+        <sharedTo>
+            <group>Client_Delivery_Membership_Coordinators</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Client_Delivery_Quick_Text_Owners</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sharing_Rule_Customer_Care</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Sharing Rule Customer Care</label>
+        <sharedTo>
+            <group>CC_USC_Agents</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Customer_Care_Quick_Text_Owners</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

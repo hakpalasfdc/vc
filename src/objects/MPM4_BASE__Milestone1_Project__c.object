@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Current_Milestone__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Milestone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Practice Assessment</fullName>
+                    <default>true</default>
+                    <label>Practice Assessment</label>
+                </value>
+                <value>
+                    <fullName>Investment Shift</fullName>
+                    <default>false</default>
+                    <label>Investment Shift</label>
+                </value>
+                <value>
+                    <fullName>Emerging Consumer</fullName>
+                    <default>false</default>
+                    <label>Emerging Consumer</label>
+                </value>
+                <value>
+                    <fullName>Retail Shift</fullName>
+                    <default>false</default>
+                    <label>Retail Shift</label>
+                </value>
+                <value>
+                    <fullName>Completed Phase 1</fullName>
+                    <default>false</default>
+                    <label>Completed Phase 1</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Trending__c</fullName>
+        <externalId>false</externalId>
+        <label>Trending</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Above Target</fullName>
+                    <default>false</default>
+                    <label>Above Target</label>
+                </value>
+                <value>
+                    <fullName>On Target</fullName>
+                    <default>true</default>
+                    <label>On Target</label>
+                </value>
+                <value>
+                    <fullName>Below Target</fullName>
+                    <default>false</default>
+                    <label>Below Target</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

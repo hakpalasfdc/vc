@@ -1,0 +1,57 @@
+<apex:page standardController="Contact_Role__c" showHeader="false" extensions="VSPR1_RelocateController" sidebar="false" >
+
+ <style> 
+      .isNormal{background-color: white;} 
+      .isModified{background-color:rgb(200,200,255);color:blue;}
+      .blue { color:blue; }
+      marvz {color: red;}
+    </style>  
+    
+     <apex:form >
+        
+         <apex:pageBlock title="Current Account and Contact Role">
+         <!--<apex:pageMessages > </apex:pageMessages>  -->
+         <font size="2" color="red"><apex:outputText value="Setting the “Contact Role End Date” that precedes the “Contact Role Start Date” is not allowed." rendered="{!endDateValError}"> </apex:outputText></font>
+         <br></br>
+         <br></br>
+            <apex:outputLabel value="Related Account: " for="RelatedAccount" style="font-weight:bold"/>
+            
+            <apex:outputText value="{!CurrentAccount}" id="RelatedAccount" />
+            <br></br>  
+            <br/>
+            <br/>      
+            <apex:outputLabel value="Contact Role:" for="ContactRole" style="font-weight:bold"/>
+                <br></br>
+                <apex:repeat value="{!cRole}" var="val">
+                
+                {!val.Type__c} <br></br>
+                                        
+                </apex:repeat>
+            <br></br>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+                <td align="left"><b>Current Role End Date: </b> &nbsp; <td width="89%" align="left"><apex:inputField value="{!oldContRole.Contact__r.Birthdate__c }" id="oldEndDate" /></td></td>
+            </tr> 
+            <!--    
+            <br></br><b>Current Role End Date: </b> <apex:inputField value="{!oldContRole.Contact__r.Birthdate__c }" required="true" id="oldEndDate" />  
+            <br></br> -->
+            </table>
+          </apex:pageBlock>
+          
+
+        <apex:pageBlock title="Future Account And Contact Role">
+        <apex:pageBlockSection title="Account" columns="1" collapsible="false"> 
+            <apex:inputField value="{!Contact_Role__c.Account__c}" id="newAccount" />    
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Contact Role" columns="1" collapsible="false">
+            <apex:inputField value="{!Contact_Role__c.Type__c}" required="true" id="newType" />
+            <apex:inputField value="{!Contact_Role__c.Start_Date__c}" id="newStartDate" />
+            <apex:inputField value="{!Contact_Role__c.End_Date__c}" id="newEndDate" />        
+        </apex:pageBlockSection>
+            <apex:commandButton value="Save" onclick="return window.confirm('You are severing the relationship between the contact and the previous account. Are you sure you want to continue?');" action="{!doSave}"  rendered="true" />
+        
+        </apex:pageBlock>
+                    
+        
+ </apex:form>
+</apex:page>

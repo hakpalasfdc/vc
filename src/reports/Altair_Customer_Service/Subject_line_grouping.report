@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_75292407</developerName>
+        <masterLabel>Call purpose</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Contact_Roles__r.Activities$Subject</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Marchon:contact</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>marchon.contact</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>marchon:e-mail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>marchon:call</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MARCHON: Contacted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marchon: contact</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>marchon contact</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marchon: Contacted </sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marchon: Contacted  </sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contact:marchon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marchon Contacted</sourceValue>
+            </sourceValues>
+            <value>Marchon Contact</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MARCHON:ORDER</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MARCHON: Frames Ordered</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>marchon-order</sourceValue>
+            </sourceValues>
+            <value>Marchon Orders</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Altair: IM checklist</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair IM Checklist</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IM Checklist</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair:IM checklist</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair:IM checklsit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair:Im chcklist</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>altair:IMchecklist</sourceValue>
+            </sourceValues>
+            <value>Altair IM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marchon:l/m</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>marchon-l/m</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MARCHON: Left Message/No Answer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MARCHON: Left Message</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>marchon:left message</sourceValue>
+            </sourceValues>
+            <value>Marchon Left Message</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MARCHON: Scheduled Callback</sourceValue>
+            </sourceValues>
+            <value>Marchon scheduled call back</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marchon: Kaleydoscope</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MARCHON: Kaleyedoscope</sourceValue>
+            </sourceValues>
+            <value>Kaleidoscope</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marchon lead</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marchon - Lead</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marchon lead (Attn: John Mazziotti)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MARCHON: Appointment</sourceValue>
+            </sourceValues>
+            <value>Appt/Leads</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MARCHON: Research</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marchon:research</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marchon Research</sourceValue>
+            </sourceValues>
+            <value>Marchon Research</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.Contact_Roles__r.Activities$Owner</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_75292407</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$What</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r$Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Description</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Marchon_Last_Stock_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Total_Net_Marchon_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Marchon_SAP_Account_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Marchon_Reps__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Total_Net_Altair_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Premier_Location_Count__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Premier_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Premier_Exception_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$Account.Frame_Group__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r$Name_of_Physical_Street__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r$Name_of_Physical_Zip__c</field>
+    </columns>
+    <description>Buckets the subject line to help provide statistics. created 9/25/18  modified 12/18/18</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contact_Roles__r.Activities$Owner.UserRole</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contact_Roles__r.Activities$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contact_Roles__r.Activities$Owner</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Shelley Shores,Daniel Anemone,Kevin Stout</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Contact_Roles__r.Activities$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_75292407</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Bus Dev Activity -Current Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>DS_Acct_with_Activities_and_VSP_contact_role__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Contact_Roles__r.Activities$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

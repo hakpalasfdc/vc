@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Email_Last_Sent__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <description>USC &quot;VB&quot; Closed cases, w/ last email sent date</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Customer_Care</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CC Spam Queue,CC No Reply Queue,CC Undeliverable Queue,CC Marketing Queue,Katherine Boothe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Product__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Vision Benefits</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>QA - USC Closed Cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

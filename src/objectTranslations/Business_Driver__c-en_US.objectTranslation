@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Business Driver</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Business Drivers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Driver --></label>
+        <name>Business_Driver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capability --></label>
+        <name>Capability_lookup__c</name>
+        <relationshipLabel><!-- Business Drivers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Release --></label>
+        <name>Release__c</name>
+        <relationshipLabel><!-- Business Driver --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request --></label>
+        <name>Request__c</name>
+        <relationshipLabel><!-- Business Drivers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value Lever --></label>
+        <name>Value_Lever__c</name>
+        <relationshipLabel><!-- Associated Drivers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value Lever --></label>
+        <name>Value_Lever_text__c</name>
+    </fields>
+    <layouts>
+        <layout>Business Driver Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

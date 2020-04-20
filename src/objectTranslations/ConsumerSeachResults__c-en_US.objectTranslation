@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ConsumerSeachResults</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ConsumerSeachResults</value>
+    </caseValues>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Id --></label>
+        <name>Client_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Name --></label>
+        <name>Client_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ConsClientDivIDs --></label>
+        <name>ConsClientDivIDs__c</name>
+    </fields>
+    <fields>
+        <label><!-- ConsumerId --></label>
+        <name>ConsumerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer Client Status --></label>
+        <name>Consumer_Client_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- COnsumer Id --></label>
+        <name>Consumer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedBy --></label>
+        <name>CreatedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- FullClientId --></label>
+        <name>FullClientId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- PrimaryMemberConsumerId --></label>
+        <name>PrimaryMemberConsumerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- PrimaryMemberName --></label>
+        <name>PrimaryMemberName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relation to Member --></label>
+        <name>Relation_to_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- TermDate --></label>
+        <name>TermDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- coverageCode --></label>
+        <name>coverageCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- divId --></label>
+        <name>divId__c</name>
+    </fields>
+    <fields>
+        <label><!-- dobDisplay --></label>
+        <name>dobDisplay__c</name>
+    </fields>
+    <fields>
+        <label><!-- dobForSort --></label>
+        <name>dobForSort__c</name>
+    </fields>
+    <fields>
+        <label><!-- dob --></label>
+        <name>dob__c</name>
+    </fields>
+    <fields>
+        <label><!-- dob_display --></label>
+        <name>dob_display__c</name>
+    </fields>
+    <fields>
+        <label><!-- effectiveDate --></label>
+        <name>effectiveDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- effectiveInDateFormat --></label>
+        <name>effectiveInDateFormat__c</name>
+    </fields>
+    <fields>
+        <label><!-- email --></label>
+        <name>email__c</name>
+    </fields>
+    <fields>
+        <label><!-- expandedId --></label>
+        <name>expandedId__c</name>
+    </fields>
+    <fields>
+        <label><!-- firstName --></label>
+        <name>firstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- lastName --></label>
+        <name>lastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- populationIndicator --></label>
+        <name>populationIndicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- strategicAlliance --></label>
+        <name>strategicAlliance__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <description>For Sherri 6/3/15 Accounts with Account Relationships and Account Group Report</description>
+    <filter>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Bard Optical,EyeOne (Augusta Eye Associates),Eye Express,Eye Care Specialties,Eye Care Management,Eye Associates of New Mexico,Eye Associates (Kansas City),Crown Vision,Accurate Optical,Accurate Optical (H Rubin),Barnet,Dulaney,Perkins,Buffalo Optical</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Grene Vision,Wing Eyecare,Vision Pro,Vision Point,Virginia Eye Institute,Union Eye Care,The Hour Glass,Standard Optical,Simon Eye Associates,Rosin Eyecare,Rinkov Eyecare Centers,Real Optics,Optyx,One Hour Optical,Ocala Eye,Northeastern Eye Institute,Midwest Vision Center,Kennedy &amp; Perkins,Jefferson Eye Care,Hettler &amp; Associates,Henry Ford Optimeyes,Harvey &amp; Lewis</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Optiport onlythose part of Acct Group</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Account_Group__c@Account_Group__c.Account_Group__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,22 @@
+<apex:page standardStylesheets="false" id="categorytablinkpageid" showHeader="true">
+<!--<apex:page standardController="Category_Tab_Link__kav" extensions="CoreBenefits_Feedbackctrl" standardStylesheets="false" id="categorytablinkpageid" showHeader="true">-->
+    <style>
+        .activeTab {background-color: #4F81BD; color:white; background-image:none}
+        .inactiveTab { background-color: #D8E3F0; color:black; background-image:none}
+        h1 {font:18px arial,sans-serif,bold;}
+        .hasMotif {margin: 0 0px !important;}
+    </style>
+    
+    <!--<apex:pageBlock mode="maindetail" title="{!Category_Tab_Link__kav}" id="pageblockid">  -->  
+        <knowledge:articleRendererToolBar id="toolbarid" articleId="{! $CurrentPage.parameters.id}" canVote="true" showChatter="true"/><br/>
+       <!-- <apex:outputLink value="https://{!sfurll}/apex/Category_Tab_Link_PDF?id={!Returnid}" target="_blank"> open article as a pdf</apex:outputLink>-->
+        
+        <!-- <apex:outputLink value="https://{!sfurll}/apex/Category_Tab_Link_PDF?id={!Returnid}&pubstatus=d" style="float:right" target="_blank" rendered="{!$Setup.Preview_Draft_Article_PDF__c.User__c}"  >Preview Draft as PDF</apex:outputLink><br/> -->
+        <!--<apex:outputLink value="https://{!sfurll}/apex/Category_Tab_Link_PDF?id={!Returnid}&pubstatus=d" style="float:right" target="_blank" rendered="{!IF($Setup.Preview_Draft_Article_PDF__c.User__c && checkIfDraft == true,true,false)}" >Preview Draft as PDF</apex:outputLink><br/>-->
+                
+                <apex:pageBlockSection columns="1">
+                    <!--<apex:outputField id="links" value="{!Category_Tab_Link__kav.Links__c}"/>
+                    <apex:outputField id="approvalstatuse" value="{!Category_Tab_Link__kav.Approval_Status__c}"/>     -->                                
+                </apex:pageBlockSection>                          
+   <!-- </apex:pageBlock>-->
+</apex:page>

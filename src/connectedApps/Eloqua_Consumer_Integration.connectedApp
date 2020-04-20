@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sfdash@vsp.com</contactEmail>
+    <label>Eloqua Consumer Integration</label>
+    <oauthConfig>
+        <callbackUrl>https://apps.p03.eloqua.com/eloqua/salesforce/callback</callbackUrl>
+        <consumerKey>3MVG9oZtFCVWuSwOvwwAVjUooDQ63oH.gCT3Bjef2vHTL6C9gC4a4C.a0CEUuUM9khjZuE0MW4vYhmfonDLrK</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+</ConnectedApp>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>Activity.Event_Type__c</field>
+    </columns>
+    <columns>
+        <field>Activity.Type__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Activity.Event_Description__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 or 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>san diego</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DESCRIPTION</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>san diego</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DUE_DATE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_WEEK</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER_ROLE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>San Diego Last Week</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <roleHierarchyFilter>VSPOne_Sales_Leadership</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

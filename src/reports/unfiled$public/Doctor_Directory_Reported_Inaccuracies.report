@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <columns>
+        <field>Case$Classification__c</field>
+    </columns>
+    <columns>
+        <field>Case$Origin</field>
+    </columns>
+    <columns>
+        <field>Case$Status</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Case$ClosedDate</field>
+    </columns>
+    <columns>
+        <field>Case$Notes__c</field>
+    </columns>
+    <columns>
+        <field>Case$Account</field>
+    </columns>
+    <columns>
+        <field>Case$Contact</field>
+    </columns>
+    <description>Reported Inaccuracies of the data that appears on the VSP Doctor Directory</description>
+    <filter>
+        <criteriaItems>
+            <column>Case$User_Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Provider Networks Team 1,Provider Networks Team 2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Directory</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Doctor Directory Reported Inaccuracies</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$CreatedDate</dateColumn>
+        <endDate>2017-02-27</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-01-01</startDate>
+    </timeFrameFilter>
+</Report>

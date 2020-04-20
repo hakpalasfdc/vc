@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_75137422</developerName>
+        <masterLabel>Aging</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.Status_Number__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>Above Standard</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>In Standard</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+            </sourceValues>
+            <value>Out of Standard</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59597439</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.User_Role__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery Supervisor - Adrian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Adrian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Adrian</sourceValue>
+            </sourceValues>
+            <value>Team Adrian</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Nick</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Nick</sourceValue>
+            </sourceValues>
+            <value>Team Nick</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Fernando</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Fernando</sourceValue>
+            </sourceValues>
+            <value>Team Fernando</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery Supervisor - Sara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Sara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Sara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>System Administrator</sourceValue>
+            </sourceValues>
+            <value>Team Sara</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Amber</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Amber</sourceValue>
+            </sourceValues>
+            <value>Team Amber</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Leah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Leah</sourceValue>
+            </sourceValues>
+            <value>Team Leah</value>
+        </values>
+        <values>
+            <value>The Vault Users</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <description>Based on SLA report</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Client_Delivery</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aisha Copeland,Amber Moss,Carmen Greenmyer,Cecilia Salas,Chanelle Montgomery,Clifton Ellison,David Bachman,Evelyn Mendoza,Francisco Sanchez,Janelle Robichaux,Kavita Devi,Mai Thao,Samantha Bolin,Sheila Brown,Kisha Russell</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_75137422</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Nick Team SLA</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

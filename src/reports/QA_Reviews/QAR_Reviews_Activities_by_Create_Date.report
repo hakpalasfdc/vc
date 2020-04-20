@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_57427722</developerName>
+        <masterLabel>QAR Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>QA_Review__c.QA_Review_Status__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Re-Submit for Claims</sourceValue>
+            </sourceValues>
+            <value>New</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>In Progress QA Admin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Submit for Claims</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Assigned to Clinical Auditor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Progress Clinical Auditor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Clinical Auditor Complete</sourceValue>
+            </sourceValues>
+            <value>In Progress</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Completed Audit Pass</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Completed Audit Failed</sourceValue>
+            </sourceValues>
+            <value>Completed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Non-responder</sourceValue>
+            </sourceValues>
+            <value>Closed</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>QA_Review__c.Review_Date_Scheduled__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_57427722</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Provider_Name__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Review_Type__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.QA_Administrator__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Original_DocuSign_Sent_Date__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>QA_Review__c.Review_Date_Scheduled__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>QA_Review__c.Review_Level__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_57427722</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>QAR Reviews Activities by Create Date</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$QA_Review__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Length_Minutes__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Minutes Dialed</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>DialSource__DialSource_Sessions_V3__c.DialSource__Talk_Time_in_Minutes__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Minutes on Talk Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Disposition_Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total # of Dispositions</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>DialSource__DialSource_Sessions_V3__c.DialSource__Talk_Time_in_Minutes__c:SUM / DialSource__DialSource_Sessions_V3__c.DialSource__Session_Length_Minutes__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>% of time on a Session talking with accounts.  created 7/28/17</description>
+        <developerName>FORMULA6</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Talk Time (Minutes)</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(DialSource__DialSource_Sessions_V3__c.DialSource__Session_Length_Minutes__c:SUM - DialSource__DialSource_Sessions_V3__c.DialSource__Talk_Time_in_Minutes__c:SUM * 0.025)/100</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>Session time minus talk time x 2.5 cents  Created 8/9/17</description>
+        <developerName>FORMULA7</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Cost of Idle time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA7</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Date__c</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__DialSource_Session_Campaign__c</field>
+    </columns>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Length_Minutes__c</field>
+    </columns>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Disposition_Count__c</field>
+    </columns>
+    <columns>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__Talk_Time_in_Minutes__c</field>
+    </columns>
+    <description>DS Results Report - Monthly % of minutes on calls and cost of Idle time.  based on 2.5 cents per minute.  Shows the time each rep is on the dialer in Hours per Month.  Created 8/9/17</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dialer Report Monthly -Cost of idle time</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$DialSource__DialSource_Sessions_V3__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DialSource__DialSource_Sessions_V3__c.DialSource__Session_Date__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

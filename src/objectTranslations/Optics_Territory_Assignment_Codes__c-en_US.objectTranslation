@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Optics Territory Assignment Codes</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Optics Territory Assignment Codes</value>
+    </caseValues>
+    <fields>
+        <label><!-- OBDM Regional VP --></label>
+        <name>OBDM_Regional_VP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ophthalmic Business Consultant --></label>
+        <name>Ophthalmic_Business_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ophthalmic Business Regional VP --></label>
+        <name>Ophthalmic_Business_Regional_VP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Business Development Manager --></label>
+        <name>Optics_Business_Development_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Contact Lens Consultant --></label>
+        <name>Optics_Contact_Lens_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Contact Lens Regional VP --></label>
+        <name>Optics_Contact_Lens_Regional_VP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Zip_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Optics Territory Assignment Codes Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter valid 5 digit zip code. --></errorMessage>
+        <name>VSPR34_check_ZIPcode_length</name>
+    </validationRules>
+</CustomObjectTranslation>

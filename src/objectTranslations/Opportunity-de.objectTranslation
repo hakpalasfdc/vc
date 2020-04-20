@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Profitable practices will be 60% or greater --></help>
+        <label><!-- % AR --></label>
+        <name>AR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Phone Number --></label>
+        <name>Account_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Physical City --></label>
+        <name>Account_Physical_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Physical State --></label>
+        <name>Account_Physical_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Physical Street Address --></label>
+        <name>Account_Physical_Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Physical ZIP Code --></label>
+        <name>Account_Physical_ZIP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Altair --></label>
+        <name>Altair__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Value Timeframe --></label>
+        <name>Amount_Value_Timeframe__c</name>
+        <picklistValues>
+            <masterLabel>1 Month</masterLabel>
+            <translation><!-- 1 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 Months</masterLabel>
+            <translation><!-- 12 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 Months</masterLabel>
+            <translation><!-- 24 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 Months</masterLabel>
+            <translation><!-- 36 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 Months</masterLabel>
+            <translation><!-- 48 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Months</masterLabel>
+            <translation><!-- 60 Months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Profitable practices will be less than 10% --></help>
+        <label><!-- % Bifocal --></label>
+        <name>Bifocal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buying Alliance Affiliation --></label>
+        <name>Buying_Alliance_Affiliation__c</name>
+        <picklistValues>
+            <masterLabel>FIRST EYE CARE</masterLabel>
+            <translation><!-- FIRST EYE CARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEA</masterLabel>
+            <translation><!-- HEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDOC</masterLabel>
+            <translation><!-- IDOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTI-PORT</masterLabel>
+            <translation><!-- OPTI-PORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PECAA</masterLabel>
+            <translation><!-- PECAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PEN</masterLabel>
+            <translation><!-- PEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PERC/IVA</masterLabel>
+            <translation><!-- PERC/IVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TODAY&apos;S VISION</masterLabel>
+            <translation><!-- TODAY&apos;S VISION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSO</masterLabel>
+            <translation><!-- TSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VISION SOURCE</masterLabel>
+            <translation><!-- VISION SOURCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VISION TRENDS</masterLabel>
+            <translation><!-- VISION TRENDS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Lens Kit ID --></label>
+        <name>Contact_Lens_Kit_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Full Kit Name --></help>
+        <label><!-- Contact Lens Kit --></label>
+        <name>Contact_Lens_Kit__c</name>
+        <picklistValues>
+            <masterLabel>FK UNITY BIOSYNC B SPH 8.8</masterLabel>
+            <translation><!-- FK UNITY BIOSYNC B SPH 8.8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created from Lead? --></label>
+        <name>Created_from_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cross-Sell --></label>
+        <name>Cross_Sell__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lab of Choice --></help>
+        <label><!-- Current Lab Affiliation --></label>
+        <name>Current_Lab_Affiliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Product/Promotion --></label>
+        <name>Custom_Product_Promotion__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS_Description --></label>
+        <name>DS_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Left --></label>
+        <name>Days_Left__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Owner ID --></label>
+        <name>DialSource__DS_Owner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Datetime of Last Disposition --></label>
+        <name>DialSource__Datetime_of_Last_Disposition_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Call Campaign Name --></label>
+        <name>DialSource__Last_Call_Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Disposition --></label>
+        <name>DialSource__Last_Disposition_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Call --></label>
+        <name>DialSource__Next_Call_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Call Count --></label>
+        <name>DialSource__Total_Call_Count_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division/Brand --></label>
+        <name>Division_Brand__c</name>
+        <picklistValues>
+            <masterLabel>Altair</masterLabel>
+            <translation><!-- Altair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Lenses</masterLabel>
+            <translation><!-- Contact Lenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethos</masterLabel>
+            <translation><!-- Ethos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global</masterLabel>
+            <translation><!-- Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Business Development</masterLabel>
+            <translation><!-- Global Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOF</masterLabel>
+            <translation><!-- IOF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchon</masterLabel>
+            <translation><!-- Marchon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Participation</masterLabel>
+            <translation><!-- Network Participation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optics Only</masterLabel>
+            <translation><!-- Optics Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathways Expansion</masterLabel>
+            <translation><!-- Pathways Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TechShield</masterLabel>
+            <translation><!-- TechShield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNITY</masterLabel>
+            <translation><!-- UNITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSPOne</masterLabel>
+            <translation><!-- VSPOne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>otto</masterLabel>
+            <translation><!-- otto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sunsync</masterLabel>
+            <translation><!-- sunsync --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyefinity --></label>
+        <name>Eyefinity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Provided --></label>
+        <name>Feedback_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB Feedback --></label>
+        <name>LOB_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Which LOB is referring an Opportunity? --></help>
+        <label><!-- LOB Referral Source --></label>
+        <name>LOB_Referral__c</name>
+        <picklistValues>
+            <masterLabel>Eyefinity</masterLabel>
+            <translation><!-- Eyefinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyewear</masterLabel>
+            <translation><!-- Eyewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optics</masterLabel>
+            <translation><!-- Optics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision Care</masterLabel>
+            <translation><!-- Vision Care --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LTM Revenue Benchmark --></label>
+        <name>LTM_Revenue_Benchmark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lab spend of new practice --></label>
+        <name>Lab_spend_of_new_practice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Conversion Date --></label>
+        <name>Lead_Conversion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Business --></label>
+        <name>Line_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>Eyefinity</masterLabel>
+            <translation><!-- Eyefinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyewear</masterLabel>
+            <translation><!-- Eyewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global</masterLabel>
+            <translation><!-- Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optics</masterLabel>
+            <translation><!-- Optics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Does practice want all locations to be considered for funding or a specific location only? Please provide Address and MDM# of location(s) --></help>
+        <label><!-- Locations to use for analysis --></label>
+        <name>Locations_to_use_for_analysis__c</name>
+    </fields>
+    <fields>
+        <help><!-- Competition-The Account prefers other brands or companies
+Performance-The Account is not happy with company/brand
+VSP Rejected-LOB decided not to proceed with this Opportunity
+Not Interested-The Account is not interested in this promotion or product --></help>
+        <label><!-- Lost Reason --></label>
+        <name>Lost_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Competition</masterLabel>
+            <translation><!-- Competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance</masterLabel>
+            <translation><!-- Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Rejected</masterLabel>
+            <translation><!-- VSP Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marchon/Altair Commitment Year 1 --></label>
+        <name>Marchon_Altair_Commitment_Year_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon/Altair Commitment Year 2 --></label>
+        <name>Marchon_Altair_Commitment_Year_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon/Altair Commitment Year 3 --></label>
+        <name>Marchon_Altair_Commitment_Year_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon/Altair Commitment Year 4 --></label>
+        <name>Marchon_Altair_Commitment_Year_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon/Altair Commitment Year 5 --></label>
+        <name>Marchon_Altair_Commitment_Year_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon Funding --></label>
+        <name>Marchon_Funding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon --></label>
+        <name>Marchon__c</name>
+    </fields>
+    <fields>
+        <label><!-- New LOB Business --></label>
+        <name>New_LOB_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- If account has identified a practice to purchase, please provide practice name, address and tax id --></help>
+        <label><!-- New Practice Information --></label>
+        <name>New_Practice_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Practice Tax ID --></label>
+        <name>New_Practice_Tax_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this a new build or are they purchasing another practice? --></help>
+        <label><!-- New or Existing Practice --></label>
+        <name>New_or_Existing_Practice__c</name>
+        <picklistValues>
+            <masterLabel>Existing Practice</masterLabel>
+            <translation><!-- Existing Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Build</masterLabel>
+            <translation><!-- New Build --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Doctors --></label>
+        <name>Number_of_Doctors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Jobs --></label>
+        <name>Number_of_Jobs__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityNameDefault --></label>
+        <name>OpportunityNameDefault__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Count --></label>
+        <name>Opportunity_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Brand Commitment Year 1 --></label>
+        <name>Optics_Brand_Commitment_Year_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Brand Commitment Year 2 --></label>
+        <name>Optics_Brand_Commitment_Year_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Brand Commitment Year 3 --></label>
+        <name>Optics_Brand_Commitment_Year_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Brand Commitment Year 4 --></label>
+        <name>Optics_Brand_Commitment_Year_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Brand Commitment Year 5 --></label>
+        <name>Optics_Brand_Commitment_Year_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Funding --></label>
+        <name>Optics_Funding__c</name>
+    </fields>
+    <fields>
+        <help><!-- RVP to complete pre-screen and attach document to the opportunity --></help>
+        <label><!-- Optics Pre-Screen Calculator --></label>
+        <name>Optics_Pre_Screen_Calculator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics --></label>
+        <name>Optics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Buying Alliance Affiliation --></label>
+        <name>Other_Buying_Alliance_Affiliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Other Insurance --></label>
+        <name>Other_Insurance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required when &quot;Other&quot; is chosen from the Purpose of Funds field --></help>
+        <label><!-- Other Purpose of Funds --></label>
+        <name>Other_Purpose_of_Funds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership Structure --></label>
+        <name>Ownership_Structure__c</name>
+        <picklistValues>
+            <masterLabel>Group Practice</masterLabel>
+            <translation><!-- Group Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Owner</masterLabel>
+            <translation><!-- Sole Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Profitable practices will be 25% or greater --></help>
+        <label><!-- % Photochromic --></label>
+        <name>Photochromic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Closed Month --></label>
+        <name>Planned_Closed_Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Received Amount --></label>
+        <name>Premier_Value_Program_Received_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Premier Value Program --></label>
+        <name>Premier_Value_Program__c</name>
+        <picklistValues>
+            <masterLabel>Eyefinity EHR</masterLabel>
+            <translation><!-- Eyefinity EHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMT (My Marketing Team)</masterLabel>
+            <translation><!-- MMT (My Marketing Team) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optovue</masterLabel>
+            <translation><!-- Optovue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutionreach</masterLabel>
+            <translation><!-- Solutionreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synemed</masterLabel>
+            <translation><!-- Synemed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision One (Credit Union)</masterLabel>
+            <translation><!-- Vision One (Credit Union) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Private Pay --></label>
+        <name>Private_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product/Program Name --></label>
+        <name>Product_Program_Name__c</name>
+        <picklistValues>
+            <masterLabel>25/250 Both</masterLabel>
+            <translation><!-- 25/250 Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25/250 Unity</masterLabel>
+            <translation><!-- 25/250 Unity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both AR Growth</masterLabel>
+            <translation><!-- Both AR Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both Ethos Growth</masterLabel>
+            <translation><!-- Both Ethos Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both PAL Growth</masterLabel>
+            <translation><!-- Both PAL Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both SunSync Growth</masterLabel>
+            <translation><!-- Both SunSync Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brand AR Growth</masterLabel>
+            <translation><!-- Brand AR Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brand PAL Growth</masterLabel>
+            <translation><!-- Brand PAL Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brand SunSync Growth</masterLabel>
+            <translation><!-- Brand SunSync Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ClearSlide</masterLabel>
+            <translation><!-- ClearSlide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Product/Promotion</masterLabel>
+            <translation><!-- Custom Product/Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Time Offer (LTO)</masterLabel>
+            <translation><!-- Limited Time Offer (LTO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PB Voucher</masterLabel>
+            <translation><!-- PB Voucher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PB Voucher 1.67/Polar</masterLabel>
+            <translation><!-- PB Voucher 1.67/Polar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product/Program --></label>
+        <name>Product_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Count --></label>
+        <name>Program_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Status --></label>
+        <name>Program_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed</masterLabel>
+            <translation><!-- Removed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Profitable practices will be 40% or greater --></help>
+        <label><!-- % Progressive --></label>
+        <name>Progressive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Type --></label>
+        <name>Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>Shift Series Phase 1</masterLabel>
+            <translation><!-- Shift Series Phase 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Funds --></label>
+        <name>Purpose_of_Funds__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition</masterLabel>
+            <translation><!-- Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Purchase</masterLabel>
+            <translation><!-- Equipment Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodeling</masterLabel>
+            <translation><!-- Remodeling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodeling &amp; Adding New Dr. Space</masterLabel>
+            <translation><!-- Remodeling &amp; Adding New Dr. Space --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Case --></label>
+        <name>Related_Case__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requested Delivery Date --></label>
+        <name>Requested_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did account specify amount of $ needed for investment? --></help>
+        <label><!-- Requested Funding Amount --></label>
+        <name>Requested_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are they interested in RightEye Unit as a part of their agreement --></help>
+        <label><!-- RightEye --></label>
+        <name>RightEye__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Details --></label>
+        <name>SAP_Order_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Number --></label>
+        <name>SAP_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Status --></label>
+        <name>SAP_Order_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales generated  from --></label>
+        <name>Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift Opportunity Account Name --></label>
+        <name>Shift_Opportunity_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Status --></label>
+        <name>Shipping_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Profitable practices will be less than 50% --></help>
+        <label><!-- % Single Vision --></label>
+        <name>Single_Vision__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strategic AP Global RVP Manager --></label>
+        <name>Strategic_AP_Global_RVP_Manager__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Strategic Agreement Approval --></label>
+        <name>Strategic_Agreement_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Funding --></label>
+        <name>Total_Funding__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes VSP and Private Pay from All Labs --></help>
+        <label><!-- Total Monthly Lab Spend --></label>
+        <name>Total_Monthly_Lab_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Info --></label>
+        <name>Tracking_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Up-Sell --></label>
+        <name>Up_Sell__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSPOne Commitment Year 1 --></label>
+        <name>VSPOne_Commitment_Year_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSPOne Commitment Year 2 --></label>
+        <name>VSPOne_Commitment_Year_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSPOne Commitment Year 3 --></label>
+        <name>VSPOne_Commitment_Year_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSPOne Commitment Year 4 --></label>
+        <name>VSPOne_Commitment_Year_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSPOne Commitment Year 5 --></label>
+        <name>VSPOne_Commitment_Year_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Contact Role --></label>
+        <name>VSP_Contact_Role__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vision Care --></label>
+        <name>Vision_Care__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of VSP Business --></label>
+        <name>of_VSP_Business__c</name>
+    </fields>
+    <layouts>
+        <layout>New Release Opportunity Layout</layout>
+        <sections>
+            <label><!-- Clearslide Content --></label>
+            <section>Clearslide Content</section>
+        </sections>
+        <sections>
+            <label><!-- Source Information --></label>
+            <section>Source Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Clearslide Content --></label>
+            <section>Clearslide Content</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Lens Kit Information --></label>
+            <section>Contact Lens Kit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Premier Value Programs --></label>
+            <section>Premier Value Programs</section>
+        </sections>
+        <sections>
+            <label><!-- Program Information --></label>
+            <section>Program Information</section>
+        </sections>
+        <sections>
+            <label><!-- Source Information --></label>
+            <section>Source Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Shift Opportunity Layout</layout>
+        <sections>
+            <label><!-- Source Information --></label>
+            <section>Source Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Strategic Opportunity Page Layout</layout>
+        <sections>
+            <label><!-- Source Information --></label>
+            <section>Source Information</section>
+        </sections>
+        <sections>
+            <label><!-- Strategic Account Form --></label>
+            <section>Strategic Account Form</section>
+        </sections>
+        <sections>
+            <label><!-- Strategic Agreement Commitment Chart --></label>
+            <section>Strategic Agreement Commitment Chart</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Used for New Release Opportunities --></description>
+        <label><!-- New Release Opportunity --></label>
+        <name>New_Release_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type used for Global Business Development Shift Opportunities --></description>
+        <label><!-- Shift Opportunity --></label>
+        <name>Shift_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Strategic Agreement Pathways Opportunities --></description>
+        <label><!-- Strategic Agreement Opportunity --></label>
+        <name>Strategic_Agreement_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VSP Opportunity --></label>
+        <name>VSP_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The Amount cannot be null when a Shift Opportunity is changed to Closed Won. --></errorMessage>
+        <name>Amount_Required_ShiftOpp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Amount Value Timeframe cannot be null when a Shift Opportunity is changed to Closed Won. --></errorMessage>
+        <name>Amount_Value_Timeframe_Required_ShiftOpp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the competitors name in the &quot;Competitor&quot; field. --></errorMessage>
+        <name>Competitor_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed Lost opportunities require a &quot;Lost Reason&quot; --></errorMessage>
+        <name>Lost_reason_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunities in closed/won status are not editable --></errorMessage>
+        <name>VSPR16_SHIFT_CLOSED_OPP_NOT_EDITABLE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have edit permission once Stage is Closed Cancelled. Please contact your Support Admin. --></errorMessage>
+        <name>VSPR1_ClosedCancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have edit permission once Stage is Closed Lost.  Please contact your Support Admin. --></errorMessage>
+        <name>VSPR1_ClosedLost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have edit permission once Stage is Closed Won.  Please contact your Support Admin. --></errorMessage>
+        <name>VSPR1_ClosedWon</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunities may not be closed on New or Pending Accounts. --></errorMessage>
+        <name>VSPR1_Pending_account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have permission to change End Date once Start Date is set. --></errorMessage>
+        <name>VSPR1_StartDateIsSetIschangeEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to change the Start Date once it has been set. --></errorMessage>
+        <name>VSPR1_StartDateIsSetIschangeProgramName</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contact Lens Kit field is required when Division/Brand is Contact Lenses. --></errorMessage>
+        <name>VSPR31_Contact_Lens_Kit_Validate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantity field is required when Division Brand is Contact Lenses. --></errorMessage>
+        <name>VSPR31_Contact_Lenses_Quantity_Validate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensure this Contact Lens Kit Order is associated with a Business Account that has a valid Physical Address --></errorMessage>
+        <name>VSPR31_OrderingCLKitsRequiredFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requested Delivery Date cannot be less than 14 days in the future. --></errorMessage>
+        <name>VSPR31_RequestedDeliveryDateValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Feedback Provided cannot be left blank if LOB Feedback is Yes --></errorMessage>
+        <name>VSPR33_FeedbackProvidedRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- New Practice Tax ID field must contain numbers only and must contain no less than 9 numbers --></errorMessage>
+        <name>VSPR33_NewPracticeTaxID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Other Buying Group Alliance Affiliation is required when Other is selected in Buying Alliance Affiliation --></errorMessage>
+        <name>VSPR33_OtherBuyingAllianceRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Other Purpose of Funds is required when Other is selected in Purpose of Funds field --></errorMessage>
+        <name>VSPR33_Other_Purpose_Funds</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- New or Existing Practice, New Practice Information and New Practice Tax ID are required when Acquisition is selected for Purpose of Funds --></errorMessage>
+        <name>VSPR33_PurposeofFunds</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the value of the Custom Product/Promotion field after a value has previously been saved. --></errorMessage>
+        <name>VSPR5_Restrict_Change_to_CustomProdPromo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the value of the Product/Program Name field after a value has previously been saved. --></errorMessage>
+        <name>VSPR5_Restrict_Change_to_ProductProgram</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Sales Stage to Closed if the Product/Program Name has a value. --></errorMessage>
+        <name>VSPR7_RestrictCloseifProdProgNamePresent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Email_Pitch --></label>
+        <name>CLS4SF__Email_Pitch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Live_Pitch --></label>
+        <name>CLS4SF__Live_Pitch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Opportunity --></label>
+        <name>New_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

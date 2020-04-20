@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Flow Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User Flow Tracking</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case Closed Date --></label>
+        <name>Case_Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Open Date --></label>
+        <name>Case_Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner --></label>
+        <name>Case_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Status --></label>
+        <name>Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- User Flow Tracking --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Flow Completed --></label>
+        <name>Flow_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Name --></label>
+        <name>Flow_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Path --></label>
+        <name>Flow_Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- User Flow Tracking --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>User Flow Tracking Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

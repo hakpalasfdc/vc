@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>QA Patient Review</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>QA Patient Reviews</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional CL Hx Perf --></label>
+        <name>Additional_CL_Hx_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Algorithm Followed? --></label>
+        <name>Algorithm_Followed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Algorithm followed also mark answer --></label>
+        <name>Algorithm_followed_also_mark_answer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorization Number --></label>
+        <name>Authorization_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefit Type --></label>
+        <name>Benefit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Access/Access Indemnity Plan</masterLabel>
+            <translation><!-- Access/Access Indemnity Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advantage</masterLabel>
+            <translation><!-- Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advantage Exam Plus</masterLabel>
+            <translation><!-- Advantage Exam Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advantage Exam Plus with Allowances</masterLabel>
+            <translation><!-- Advantage Exam Plus with Allowances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choice Exam Plus</masterLabel>
+            <translation><!-- Choice Exam Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choice Exam Plus with Allowance</masterLabel>
+            <translation><!-- Choice Exam Plus with Allowance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered Contact Lens</masterLabel>
+            <translation><!-- Covered Contact Lens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exam Only</masterLabel>
+            <translation><!-- Exam Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exam Plus</masterLabel>
+            <translation><!-- Exam Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exam Plus with Allowance</masterLabel>
+            <translation><!-- Exam Plus with Allowance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety Eyecare Plan</masterLabel>
+            <translation><!-- Safety Eyecare Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signature</masterLabel>
+            <translation><!-- Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value Exam Only</masterLabel>
+            <translation><!-- Value Exam Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Binoc Doc --></label>
+        <name>Binoc_Doc__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Binoc Perf --></label>
+        <name>Binoc_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Hx Perf --></label>
+        <name>Case_Hx_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Chart notes rendering doctor by initials --></label>
+        <name>Chart_notes_rendering_doctor_by_initials__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Claim Number --></label>
+        <name>Claim_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim Type --></label>
+        <name>Claim_Type__c</name>
+        <picklistValues>
+            <masterLabel>Exam</masterLabel>
+            <translation><!-- Exam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exam and Contact</masterLabel>
+            <translation><!-- Exam and Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exam and Frame</masterLabel>
+            <translation><!-- Exam and Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exam and Lens</masterLabel>
+            <translation><!-- Exam and Lens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exam, Lens, and Frame</masterLabel>
+            <translation><!-- Exam, Lens, and Frame --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client --></label>
+        <name>Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_pick__c</name>
+        <picklistValues>
+            <masterLabel>Comp. Exam requires tonometry, either applanation, non-contact or reason why tactile was not performed</masterLabel>
+            <translation><!-- Comp. Exam requires tonometry, either applanation, non-contact or reason why tactile was not performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medication(s) noted but no condition(s) indicated</masterLabel>
+            <translation><!-- Medication(s) noted but no condition(s) indicated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ophthalmoscopy - C/D ratio not documented</masterLabel>
+            <translation><!-- Ophthalmoscopy - C/D ratio not documented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routine exam, however all tests required for the level of service billed were not performed/documented</masterLabel>
+            <translation><!-- Routine exam, however all tests required for the level of service billed were not performed/documented --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Corr VA Perf --></label>
+        <name>Corr_VA_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current illnesses and medical conditions --></label>
+        <name>Current_illnesses_and_medical_conditions__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current medication allergies noted --></label>
+        <name>Current_medication_allergies_noted__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current medications noted --></label>
+        <name>Current_medications_noted__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date of Service --></label>
+        <name>Date_of_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Diabetes present at time of exam? --></label>
+        <name>Diabetes_Present__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Diabetes suspect based on exam --></label>
+        <name>Diabetes_Suspected__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Diabetes Identified? If yes, CPG Form --></label>
+        <name>Diabetes__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Diabetic Retinopathy documented? --></label>
+        <name>Diabetic_Retinopathy__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Diagnoses consistent with exam --></label>
+        <name>Diagnoses_consistent_with_exam__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Diagnosis Doc --></label>
+        <name>Diagnosis_Doc__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Diagnosis Perf --></label>
+        <name>Diagnosis_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dilation Diabetic Doc --></label>
+        <name>Dilation_Diabetic_Doc__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dilation Diabetic Perf --></label>
+        <name>Dilation_Diabetic_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dilation Doc --></label>
+        <name>Dilation_Doc__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dilation Perf --></label>
+        <name>Dilation_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Dilation performed? --></label>
+        <name>Dilation_Performed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What is the  Dilation Rationale? --></label>
+        <name>Dilation_Rationale__c</name>
+        <picklistValues>
+            <masterLabel>Dilated within last 12 months</masterLabel>
+            <translation><!-- Dilated within last 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient refused</masterLabel>
+            <translation><!-- Patient refused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient scheduled dilation later</masterLabel>
+            <translation><!-- Patient scheduled dilation later --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient under care of Ophthalmologist/Retinal Specialist</masterLabel>
+            <translation><!-- Patient under care of Ophthalmologist/Retinal Specialist --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Enter. VA Perf --></label>
+        <name>Enter_VA_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exam according to VSP guidelines --></label>
+        <name>Exam_according_to_VSP_guidelines__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exam record and claim have same DOS --></label>
+        <name>Exam_record_have_DOS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ext/Bio Doc --></label>
+        <name>Ext_Bio_Doc__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ext/Bio Perf --></label>
+        <name>Ext_Bio_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- First 1/1 Perf --></label>
+        <name>First_1_1_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Follow-Up Time Frame --></label>
+        <name>Follow_Up_Time_Frame__c</name>
+        <picklistValues>
+            <masterLabel>Less than ONE month</masterLabel>
+            <translation><!-- Less than ONE month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than SIX months</masterLabel>
+            <translation><!-- More than SIX months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ONE to SIX months</masterLabel>
+            <translation><!-- ONE to SIX months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Follow up care noted --></label>
+        <name>Follow_up_care_noted__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GV Fields Doc --></label>
+        <name>GV_Fields_Doc__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GV Fields Perf --></label>
+        <name>GV_Fields_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Glaucoma Diagnosed --></label>
+        <name>Glaucoma_Diagnosed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Glaucoma Noted in History --></label>
+        <name>Glaucoma_Noted_in_History__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Glaucoma identified? If yes, CPG Form --></label>
+        <name>Glaucoma__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- High Cholesterol --></label>
+        <name>High_Cholesterol__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hypertension --></label>
+        <name>Hypertension__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If Other was selected --></label>
+        <name>If_Other_was_selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- If no State Reason --></label>
+        <name>If_no_State_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info noted is pertinent to patient --></label>
+        <name>Info_noted_is_pertinent_to_patient__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Mascular encroachment 1 disc diameter --></label>
+        <name>Is_Mascular_encroachment_1_disc_diameter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is PCP Communication Documented --></label>
+        <name>Is_PCP_Communication_Documented__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Keratometry Perf --></label>
+        <name>Keratometry_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediate</masterLabel>
+            <translation><!-- Intermediate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Medication to Control IOP --></label>
+        <name>Medication_to_Control_IOP__c</name>
+        <picklistValues>
+            <masterLabel>Initiated in exam</masterLabel>
+            <translation><!-- Initiated in exam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented in exam hx</masterLabel>
+            <translation><!-- Presented in exam hx --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Member First Name --></label>
+        <name>Member_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Last Name --></label>
+        <name>Member_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member MI --></label>
+        <name>Member_MI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modify Glaucoma Meds --></label>
+        <name>Modify_Glaucoma_Meds__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ophthal Doc --></label>
+        <name>Ophthal_Doc__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ophthal Perf --></label>
+        <name>Ophthal_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Optic Nerve Stable --></label>
+        <name>Optic_Nerve_Stable__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Comments --></label>
+        <name>Other_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Over Refraction Perf --></label>
+        <name>Over_Refraction_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PCP Communication --></label>
+        <name>PCP_Communication__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Past medical history noted --></label>
+        <name>Past_medical_history_noted__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient Age --></label>
+        <name>Patient_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient First Name --></label>
+        <name>Patient_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Last Name --></label>
+        <name>Patient_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient MI --></label>
+        <name>Patient_MI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Possible Points --></label>
+        <name>Patient_Possible_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Review Status --></label>
+        <name>Patient_Review_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient Score --></label>
+        <name>Patient_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Total Points --></label>
+        <name>Patient_Total_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient to return within 12 months --></label>
+        <name>Patient_to_return_within_12_months__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program ID --></label>
+        <lookupFilter>
+            <errorMessage><!-- That is not a valid Program ID. Use the lookup feature to locate the correct value. --></errorMessage>
+        </lookupFilter>
+        <name>Program_ID__c</name>
+        <relationshipLabel><!-- QA Patient Reviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pt preferred language documented --></label>
+        <name>Pt_preferred_language_documented__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pt refused interpreter --></label>
+        <name>Pt_refused_interpreter__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pt requested interpreter --></label>
+        <name>Pt_requested_interpreter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pupil Ref Doc --></label>
+        <name>Pupil_Ref_Doc__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pupil Ref Perf --></label>
+        <name>Pupil_Ref_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- QA Review Number --></label>
+        <name>QA_Review_Number__c</name>
+        <relationshipLabel><!-- QA Patient List --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason for No Glaucoma Meds --></label>
+        <name>Reason_for_No_Glaucoma_Meds__c</name>
+        <picklistValues>
+            <masterLabel>Further testing ordered, and results not obtained at time of this exam</masterLabel>
+            <translation><!-- Further testing ordered, and results not obtained at time of this exam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient referred to ophthalmologist or glaucoma specialist</masterLabel>
+            <translation><!-- Patient referred to ophthalmologist or glaucoma specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient under care of ophthalmologist or glaucoma specialist</masterLabel>
+            <translation><!-- Patient under care of ophthalmologist or glaucoma specialist --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred to Health Plan Specialist --></label>
+        <name>Referred_to_Health_Plan_Specialist__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refitting (3 Fields) Perf --></label>
+        <name>Refitting_3_Fields_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship to Member --></label>
+        <name>Relationship_to_Member__c</name>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dependent Parent</masterLabel>
+            <translation><!-- Dependent Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domestic Partner</masterLabel>
+            <translation><!-- Domestic Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handicap Dependent</masterLabel>
+            <translation><!-- Handicap Dependent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse</masterLabel>
+            <translation><!-- Spouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Replacement -N/A Perf --></label>
+        <name>Replacement_N_A_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Response Subj. Obj. Perf --></label>
+        <name>Response_Subj_Obj_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If 3 is No, If applicable select: --></label>
+        <name>Retinal_Imaging_Type__c</name>
+        <picklistValues>
+            <masterLabel>OptoMap</masterLabel>
+            <translation><!-- OptoMap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retinal Imaging</masterLabel>
+            <translation><!-- Retinal Imaging --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Auditor Name --></label>
+        <name>Review_Auditor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slit Lamp Evaluation w/CL Perf --></label>
+        <name>Slit_Lamp_Evaluation_w_CL_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Slit Lamp Evaluation w/o CL Perf --></label>
+        <name>Slit_Lamp_Evaluation_w_o_CL_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subj. Rx Perf --></label>
+        <name>Subj_Rx_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tonometry 19 yrs &amp; Over Doc --></label>
+        <name>Tonometry_19_over_Doc__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tonometry 19 yrs &amp; Over Perf --></label>
+        <name>Tonometry_19_over_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treatment Doc --></label>
+        <name>Treatment_Doc__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treatment Perf --></label>
+        <name>Treatment_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treatment consistent with diagnosis --></label>
+        <name>Treatment_consistent_with_diagnosis__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Under Care of Specialist --></label>
+        <name>Under_Care_of_Specialist__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VA w/CL Perf --></label>
+        <name>VA_w_CL_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VA w/o CL Perf --></label>
+        <name>VA_w_o_CL_Perf__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Versions Doc --></label>
+        <name>Versions_Doc__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Versions Perf --></label>
+        <name>Versions_Perf__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visual Field Progression Stabilized --></label>
+        <name>Visual_Field_Progression_Stabilized__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Was a Consultation Documented --></label>
+        <name>Was_a_Consultation_Documented__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Were appropriate procedures performed --></label>
+        <name>Were_appropriate_procedures_performed__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Were procedures performed contact lens --></label>
+        <name>Were_procedures_performed_contact_lens__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What is Communication Rationale? --></label>
+        <name>What_is_Communication_Rationale__c</name>
+        <picklistValues>
+            <masterLabel>Letter previously sent within LTM</masterLabel>
+            <translation><!-- Letter previously sent within LTM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCP is an institution (Kaiser)</masterLabel>
+            <translation><!-- PCP is an institution (Kaiser) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCP orders requesting exam are included</masterLabel>
+            <translation><!-- PCP orders requesting exam are included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part of medical record</masterLabel>
+            <translation><!-- Part of medical record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient declined to have letter sent</masterLabel>
+            <translation><!-- Patient declined to have letter sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient did not provide PCP</masterLabel>
+            <translation><!-- Patient did not provide PCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient under care of Ophthalmogist</masterLabel>
+            <translation><!-- Patient under care of Ophthalmogist --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>QA Patient Review Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Review Results --></label>
+            <section>Review Results</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- QA_Medical_Record_Review --></label>
+        <name>QA_Medical_Record_Review</name>
+    </webLinks>
+</CustomObjectTranslation>

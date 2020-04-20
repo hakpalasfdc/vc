@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingCity</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingState</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$StageName</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Lost_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Reason__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Description</field>
+    </columns>
+    <description>Will reflect Sales Stage, Notes, Lost Reason, and Acct info</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Ohio Team,Florida Team</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Sales Collab Opportunities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

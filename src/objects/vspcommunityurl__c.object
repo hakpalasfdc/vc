@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This is used to define the community URL name to navigate during user login.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>communityurl__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>communityurl</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>vspcommunityurl</label>
+    <visibility>Public</visibility>
+</CustomObject>

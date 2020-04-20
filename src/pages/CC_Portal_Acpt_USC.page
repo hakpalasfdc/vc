@@ -1,0 +1,56 @@
+<apex:page controller="VSP_CTI_Controller" showHeader="false" sidebar="false">
+    <apex:includeScript value="{!URLFOR($Resource.cnx__CnxSfdcResources,'js/ConnectsIntegrationAPI.min.js')}"/> 
+    <apex:includeScript value="/support/console/43.0/integration.js"/>
+    <apex:includeScript value="/soap/ajax/38.0/connection.js"/>
+ 
+    <apex:outputPanel id="PortalUrl">
+        <apex:form >
+            <script type="text/javascript">  
+           
+            ConnectsIntegrationAPI.onWorkItemConnect = function (event) {
+                
+                if (event.item.Channel == "VOICE") {
+                    var workItemType = ConnectsIntegrationAPI.WORKITEM.TYPE.VOICE;
+                    var firstWorkItemData = ConnectsIntegrationAPI.getFirstWorkItem(workItemType);
+                    
+                    if(firstWorkItemData){
+                        
+                        if (firstWorkItemData.Direction == 'inbound' && !firstWorkItemData.IsInternalCall && firstWorkItemData.DialedNumber == '19165963042'){ ///Change to 1855EYECONIC
+                            var conId = Object.keys(firstWorkItemData.CrmData.SearchResult.returnValue);
+                            // alert('DNIS:'+ firstWorkItemData.DNIS + 'DialedNumber: '+ firstWorkItemData.DialedNumber + ' ConId: ' + conId[0]);
+                             callAccept(conId[0], firstWorkItemData.DNIS, firstWorkItemData.PerVar4 );
+                            }
+                        }
+                    }
+                }
+            
+            function openCaseTab(){
+                //   sforce.console.resetSessionTimeOut();
+
+                // sforce.console.getFocusedPrimaryTabId(openSubTab);
+                var caseId = '{!caseId}';
+                sforce.console.openPrimaryTab( null, '/'+caseId, false, 'Case: {!caseNum}', null, null, null);
+            }
+            
+            /*          function openSubTab(result){
+                var caseId = '{!caseId}';
+                sforce.console.openPrimaryTab( null, '/'+caseId, false, 'Case: {!caseNum}', null, null, null);
+            }*/
+            </script>
+            
+            <apex:actionFunction name="callAccept" action="{!VSP_cti_Controller}" reRender="PortalUrl" oncomplete="openCaseTab()" >
+                <apex:param name="conIdValue" value="" assignTo="{!conIdValue}"/>
+                <apex:param name="IVRDNIS" value="" assignTo="{!IVRDNIS}"/>
+                <apex:param name="IVRConId" value="" assignTo="{!IVRConId}"/>
+            </apex:actionFunction>
+            
+           
+            
+          
+        </apex:form>
+        
+    </apex:outputPanel> 
+    
+ <!--   <apex:iframe id="showPortal" src="https://www.vsp.com/" scrolling="true">
+    </apex:iframe>   -->   
+</apex:page>

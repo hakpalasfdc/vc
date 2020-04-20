@@ -1,0 +1,8 @@
+<apex:page >
+    <apex:form >
+        <center>
+            <br/><br/><br/>
+            <h4>Unexpected Error Occurred!!. Please try after some time.</h4>
+        </center>
+    </apex:form>
+</apex:page>

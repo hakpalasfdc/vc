@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Task Counts by User &amp; Status for Staff Evaluation</description>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,GAAT Queue,Lieu Nguyen,Debbie Neverve,Bianca Castellanos,Matthew Benjamin,GAAT Member,Altair Account Maintenance Queue,Gina Vella,Kim Globus,Linda Romano,Matthew Singer,Phou Soukkay,Danielle Hughes,Leticia Friend,Yengkee Her Chand,Delise Loken</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Task Counts By User</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>t</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <roleHierarchyFilter>General_CRM</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>END_DATE_TIME</dateColumn>
+        <endDate>2018-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-01-01</startDate>
+    </timeFrameFilter>
+</Report>

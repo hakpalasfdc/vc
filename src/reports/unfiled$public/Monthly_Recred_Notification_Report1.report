@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts$Salesforce_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Doctor_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$LastName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$FirstName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Credentialing_Instances__r$Committee_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts$Vision_Care_Network_Provider__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.Credentialing_Instances__r$Credentialing_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Recredentialing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.Credentialing_Instances__r$Committee_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Routine,Routine - Interim Committee,Issue Approved by Committee,Issue Approved by Mgmt,Issue Approved by Mgmt - Interim Committee</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Monthly Recred Notification Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_and_Credentialing__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts.Credentialing_Instances__r$Committee_Date__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

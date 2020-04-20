@@ -1,0 +1,9 @@
+The following Risk has been added to the toolkit  and assigned to you.
+
+Created by: {!Issues_Risks__c.CreatedBy}
+
+Risk #: {!Issues_Risks__c.Name}
+
+Description: {!Issues_Risks__c.Description__c}
+
+{!Issues_Risks__c.Link}

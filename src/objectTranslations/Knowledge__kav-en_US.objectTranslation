@@ -1,0 +1,1608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Benefits --></label>
+        <name>Additional_Benefits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Details --></label>
+        <name>Additional_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Steps --></label>
+        <name>Adjustment_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Details --></label>
+        <name>Article_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Record Type Name --></label>
+        <name>Article_Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that enrolled benifits become effective --></help>
+        <label><!-- Benefit Effective Date --></label>
+        <name>Benefit_Effective_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Client-specific benefits --></help>
+        <label><!-- Benefit --></label>
+        <name>Benefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caller Type --></label>
+        <name>Caller_Type__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider</masterLabel>
+            <translation><!-- Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Partner</masterLabel>
+            <translation><!-- Retail Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change/Cancel --></label>
+        <name>Change_Cancel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chat Answer --></label>
+        <name>Chat_Answer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use the smartLink editor to insert a link to a specific client exceptions article.
+Be sure to set Target as Iframe (main Topic). --></help>
+        <label><!-- Client exceptions --></label>
+        <name>Client_exceptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmation --></label>
+        <name>Confirmation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts --></label>
+        <name>Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor Network --></label>
+        <name>Doctor_Network__c</name>
+    </fields>
+    <fields>
+        <help><!-- client requirements for eligibility --></help>
+        <label><!-- Eligibility --></label>
+        <name>Eligibility__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that open enrollments closes for members --></help>
+        <label><!-- Enrollment End Date --></label>
+        <name>Enrollment_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that enrollment opens up for members --></help>
+        <label><!-- Enrollment Start Date --></label>
+        <name>Enrollment_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exam --></label>
+        <name>Exam__c</name>
+    </fields>
+    <fields>
+        <label><!-- Examples --></label>
+        <name>Examples__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Submitted --></label>
+        <name>Feedback_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frame --></label>
+        <name>Frame__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Description --></label>
+        <name>General_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- How To Enroll --></label>
+        <name>How_To_Enroll__c</name>
+    </fields>
+    <fields>
+        <label><!-- Information --></label>
+        <name>Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keyword --></label>
+        <name>Keyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keywords --></label>
+        <name>Keywords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lab --></label>
+        <name>Lab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lens Enhancements --></label>
+        <name>Lens_Enhancements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lens --></label>
+        <name>Lens__c</name>
+    </fields>
+    <fields>
+        <label><!-- Links --></label>
+        <name>Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- Premiums and Billing --></label>
+        <name>Premiums_and_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Procedure --></label>
+        <name>Procedure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Steps --></label>
+        <name>Processing_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Details --></label>
+        <name>Reason_Details__c</name>
+        <picklistValues>
+            <masterLabel>10 or more Dependents</masterLabel>
+            <translation><!-- 10 or more Dependents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A - C</masterLabel>
+            <translation><!-- A - C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accessing Eyefinity</masterLabel>
+            <translation><!-- Accessing Eyefinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Provider / Office</masterLabel>
+            <translation><!-- Add Provider / Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Service(s)</masterLabel>
+            <translation><!-- Add Service(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add/Update Member/Dependent</masterLabel>
+            <translation><!-- Add/Update Member/Dependent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adding Dependent</masterLabel>
+            <translation><!-- Adding Dependent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Additional Doctor Payments</masterLabel>
+            <translation><!-- Additional Doctor Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address</masterLabel>
+            <translation><!-- Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjustment</masterLabel>
+            <translation><!-- Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjustments</masterLabel>
+            <translation><!-- Adjustments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Other Providers</masterLabel>
+            <translation><!-- All Other Providers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorizations</masterLabel>
+            <translation><!-- Authorizations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Available Benefits</masterLabel>
+            <translation><!-- Available Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Available Services</masterLabel>
+            <translation><!-- Available Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backdating</masterLabel>
+            <translation><!-- Backdating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefit Not Covered</masterLabel>
+            <translation><!-- Benefit Not Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefit Update</masterLabel>
+            <translation><!-- Benefit Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefits</masterLabel>
+            <translation><!-- Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefits Description</masterLabel>
+            <translation><!-- Benefits Description --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COB</masterLabel>
+            <translation><!-- COB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS Letters</masterLabel>
+            <translation><!-- CS Letters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Handling</masterLabel>
+            <translation><!-- Call Handling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Service(s)</masterLabel>
+            <translation><!-- Change Service(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change/Cancel</masterLabel>
+            <translation><!-- Change/Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check Eligibility</masterLabel>
+            <translation><!-- Check Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cigna</masterLabel>
+            <translation><!-- Cigna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim Correction / Tracking</masterLabel>
+            <translation><!-- Claim Correction / Tracking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim Priced/Paid Date</masterLabel>
+            <translation><!-- Claim Priced/Paid Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim/Out of Pocket Expenses</masterLabel>
+            <translation><!-- Claim/Out of Pocket Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claims</masterLabel>
+            <translation><!-- Claims --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Password Reset by CSR</masterLabel>
+            <translation><!-- Client Password Reset by CSR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Password Reset by Client</masterLabel>
+            <translation><!-- Client Password Reset by Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clients</masterLabel>
+            <translation><!-- Clients --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint Letters</masterLabel>
+            <translation><!-- Complaint Letters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confidentiality</masterLabel>
+            <translation><!-- Confidentiality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coordination of Benefits</masterLabel>
+            <translation><!-- Coordination of Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copay</masterLabel>
+            <translation><!-- Copay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correcting</masterLabel>
+            <translation><!-- Correcting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coverage Comparison</masterLabel>
+            <translation><!-- Coverage Comparison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coverage/Relation</masterLabel>
+            <translation><!-- Coverage/Relation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered CL / NCL</masterLabel>
+            <translation><!-- Covered CL / NCL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D - F</masterLabel>
+            <translation><!-- D - F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOS</masterLabel>
+            <translation><!-- DOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleting</masterLabel>
+            <translation><!-- Deleting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deny Service(s)</masterLabel>
+            <translation><!-- Deny Service(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dependent Not Listed</masterLabel>
+            <translation><!-- Dependent Not Listed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dependent Update</masterLabel>
+            <translation><!-- Dependent Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diabetic Eyecare Program</masterLabel>
+            <translation><!-- Diabetic Eyecare Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnosis Code</masterLabel>
+            <translation><!-- Diagnosis Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disclosure of Information</masterLabel>
+            <translation><!-- Disclosure of Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor Access</masterLabel>
+            <translation><!-- Doctor Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor Information</masterLabel>
+            <translation><!-- Doctor Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMT</masterLabel>
+            <translation><!-- EMT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOP</masterLabel>
+            <translation><!-- EOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Services</masterLabel>
+            <translation><!-- Early Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligibility Report</masterLabel>
+            <translation><!-- Eligibility Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email/Mail Benefits</masterLabel>
+            <translation><!-- Email/Mail Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment</masterLabel>
+            <translation><!-- Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Messages</masterLabel>
+            <translation><!-- Error Messages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception Providers</masterLabel>
+            <translation><!-- Exception Providers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expedited grievance</masterLabel>
+            <translation><!-- Expedited grievance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EyeMed</masterLabel>
+            <translation><!-- EyeMed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Find a Doctor</masterLabel>
+            <translation><!-- Find a Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Time Redo</masterLabel>
+            <translation><!-- First Time Redo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frame Brands</masterLabel>
+            <translation><!-- Frame Brands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Service Plans</masterLabel>
+            <translation><!-- Full Service Plans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G - I</masterLabel>
+            <translation><!-- G - I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Certificate/Charity Claim</masterLabel>
+            <translation><!-- Gift Certificate/Charity Claim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Certificates</masterLabel>
+            <translation><!-- Gift Certificates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glasses Related</masterLabel>
+            <translation><!-- Glasses Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantees</masterLabel>
+            <translation><!-- Guarantees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Have member call</masterLabel>
+            <translation><!-- Have member call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Number</masterLabel>
+            <translation><!-- ID Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Number/ID Card Inquiry</masterLabel>
+            <translation><!-- ID Number/ID Card Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOF</masterLabel>
+            <translation><!-- IOF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Plan</masterLabel>
+            <translation><!-- Individual Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interim Benefits</masterLabel>
+            <translation><!-- Interim Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues / Security</masterLabel>
+            <translation><!-- Issues / Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issuing</masterLabel>
+            <translation><!-- Issuing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J - L</masterLabel>
+            <translation><!-- J - L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LVC</masterLabel>
+            <translation><!-- LVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LVC Facilities</masterLabel>
+            <translation><!-- LVC Facilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab</masterLabel>
+            <translation><!-- Lab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language Line - Face2Face</masterLabel>
+            <translation><!-- Language Line - Face2Face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language Line - Letter</masterLabel>
+            <translation><!-- Language Line - Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language Line - Phone</masterLabel>
+            <translation><!-- Language Line - Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laser Vision Correction</masterLabel>
+            <translation><!-- Laser Vision Correction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Log In Assistance</masterLabel>
+            <translation><!-- Log In Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M - O</masterLabel>
+            <translation><!-- M - O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material</masterLabel>
+            <translation><!-- Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mbr Search</masterLabel>
+            <translation><!-- Mbr Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Benefits</masterLabel>
+            <translation><!-- Medical Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medically Related</masterLabel>
+            <translation><!-- Medically Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Not Found</masterLabel>
+            <translation><!-- Member Not Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Promise</masterLabel>
+            <translation><!-- Member Promise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Search</masterLabel>
+            <translation><!-- Member Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Update</masterLabel>
+            <translation><!-- Member Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member/Patient Info</masterLabel>
+            <translation><!-- Member/Patient Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetLife</masterLabel>
+            <translation><!-- MetLife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Coverage</masterLabel>
+            <translation><!-- Multiple Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCL</masterLabel>
+            <translation><!-- NCL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Natural Disaster</masterLabel>
+            <translation><!-- Natural Disaster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negating</masterLabel>
+            <translation><!-- Negating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Active</masterLabel>
+            <translation><!-- Not Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Found</masterLabel>
+            <translation><!-- Not Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OON Benefit Explanation</masterLabel>
+            <translation><!-- OON Benefit Explanation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OON Payment</masterLabel>
+            <translation><!-- OON Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Occupational</masterLabel>
+            <translation><!-- Occupational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offers (Rebates)</masterLabel>
+            <translation><!-- Offers (Rebates) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Enrollment</masterLabel>
+            <translation><!-- Open Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding case</masterLabel>
+            <translation><!-- Outstanding case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over and Above</masterLabel>
+            <translation><!-- Over and Above --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P - R</masterLabel>
+            <translation><!-- P - R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Service Plans</masterLabel>
+            <translation><!-- Partial Service Plans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password Reset</masterLabel>
+            <translation><!-- Password Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Paid Privately</masterLabel>
+            <translation><!-- Patient Paid Privately --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential Quality of Care</masterLabel>
+            <translation><!-- Potential Quality of Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premiums/Billing</masterLabel>
+            <translation><!-- Premiums/Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promoting Individual Plan</masterLabel>
+            <translation><!-- Promoting Individual Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotions &amp; Offers</masterLabel>
+            <translation><!-- Promotions &amp; Offers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective/Member Not Active</masterLabel>
+            <translation><!-- Prospective/Member Not Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protec Safety Inquiry</masterLabel>
+            <translation><!-- Protec Safety Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protected Health Information (PHI)</masterLabel>
+            <translation><!-- Protected Health Information (PHI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided ID Number</masterLabel>
+            <translation><!-- Provided ID Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided Next Available Date</masterLabel>
+            <translation><!-- Provided Next Available Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to AP Questions</masterLabel>
+            <translation><!-- Refer to AP Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to Client</masterLabel>
+            <translation><!-- Refer to Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to Eligibility Report</masterLabel>
+            <translation><!-- Refer to Eligibility Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to Member Services</masterLabel>
+            <translation><!-- Refer to Member Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to Provider Services</masterLabel>
+            <translation><!-- Refer to Provider Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to Retail Service Center</masterLabel>
+            <translation><!-- Refer to Retail Service Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to provider manual</masterLabel>
+            <translation><!-- Refer to provider manual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred to 2020Source Manual</masterLabel>
+            <translation><!-- Referred to 2020Source Manual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred to Retail Corporate</masterLabel>
+            <translation><!-- Referred to Retail Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Register</masterLabel>
+            <translation><!-- Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reinstate/Terminate</masterLabel>
+            <translation><!-- Reinstate/Terminate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remaining Allowance</masterLabel>
+            <translation><!-- Remaining Allowance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remaining CL</masterLabel>
+            <translation><!-- Remaining CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remaining contact lens allowance</masterLabel>
+            <translation><!-- Remaining contact lens allowance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair/Replacement</masterLabel>
+            <translation><!-- Repair/Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Benefit Explanation</masterLabel>
+            <translation><!-- Retail Benefit Explanation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Payment</masterLabel>
+            <translation><!-- Retail Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S - U</masterLabel>
+            <translation><!-- S - U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety Plan</masterLabel>
+            <translation><!-- Safety Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Certified</masterLabel>
+            <translation><!-- Self Certified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Certified</masterLabel>
+            <translation><!-- Self-Certified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Verification</masterLabel>
+            <translation><!-- Service Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sign Language Translation</masterLabel>
+            <translation><!-- Sign Language Translation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status</masterLabel>
+            <translation><!-- Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submission</masterLabel>
+            <translation><!-- Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit</masterLabel>
+            <translation><!-- Submit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA</masterLabel>
+            <translation><!-- TPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to CAIR</masterLabel>
+            <translation><!-- Transfer to CAIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting</masterLabel>
+            <translation><!-- Troubleshooting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Account</masterLabel>
+            <translation><!-- Update Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Provider/Office</masterLabel>
+            <translation><!-- Update Provider/Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V - Z</masterLabel>
+            <translation><!-- V - Z --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP</masterLabel>
+            <translation><!-- VSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP TPA</masterLabel>
+            <translation><!-- VSP TPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP.com Profile</masterLabel>
+            <translation><!-- VSP.com Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verbal or Mail</masterLabel>
+            <translation><!-- Verbal or Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>2020Source Assistance</masterLabel>
+            <translation><!-- 2020Source Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AOB/OON Provider</masterLabel>
+            <translation><!-- AOB/OON Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorization</masterLabel>
+            <translation><!-- Authorization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefits</masterLabel>
+            <translation><!-- Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim Payment</masterLabel>
+            <translation><!-- Claim Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claims</masterLabel>
+            <translation><!-- Claims --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claims Adjustment</masterLabel>
+            <translation><!-- Claims Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Benefits</masterLabel>
+            <translation><!-- Client Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Confidentiality</masterLabel>
+            <translation><!-- Client Confidentiality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Exceptions</masterLabel>
+            <translation><!-- Client Exceptions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Website Assistance</masterLabel>
+            <translation><!-- Client Website Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confidentiality</masterLabel>
+            <translation><!-- Confidentiality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor Referral</masterLabel>
+            <translation><!-- Doctor Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligibility</masterLabel>
+            <translation><!-- Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyefinity Assistance</masterLabel>
+            <translation><!-- Eyefinity Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language lines/Miscellaneous</masterLabel>
+            <translation><!-- Language lines/Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Authorization</masterLabel>
+            <translation><!-- Member Authorization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Benefits</masterLabel>
+            <translation><!-- Member Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Caller</masterLabel>
+            <translation><!-- Member Caller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Confidentiality</masterLabel>
+            <translation><!-- Member Confidentiality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Experience</masterLabel>
+            <translation><!-- Member Experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Website Assistance</masterLabel>
+            <translation><!-- Member Website Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OON Caller</masterLabel>
+            <translation><!-- OON Caller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Network Claims</masterLabel>
+            <translation><!-- Out of Network Claims --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential Members</masterLabel>
+            <translation><!-- Potential Members --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Authorization</masterLabel>
+            <translation><!-- Provider Authorization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Benefits</masterLabel>
+            <translation><!-- Provider Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Confidentiality</masterLabel>
+            <translation><!-- Provider Confidentiality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider/Office Update</masterLabel>
+            <translation><!-- Provider/Office Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Partner Caller</masterLabel>
+            <translation><!-- Retail Partner Caller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Partner Claim Payment</masterLabel>
+            <translation><!-- Retail Partner Claim Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Partner Claims Adjustment</masterLabel>
+            <translation><!-- Retail Partner Claims Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Partner Complaint</masterLabel>
+            <translation><!-- Retail Partner Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Partner Eligibility</masterLabel>
+            <translation><!-- Retail Partner Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Partner Provider/Office Update</masterLabel>
+            <translation><!-- Retail Partner Provider/Office Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA/Individual Plan</masterLabel>
+            <translation><!-- TPA/Individual Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Membership</masterLabel>
+            <translation><!-- Update Membership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Updates</masterLabel>
+            <translation><!-- Updates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Doctor Caller</masterLabel>
+            <translation><!-- VSP Doctor Caller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Assistance</masterLabel>
+            <translation><!-- Website Assistance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Date --></label>
+        <name>Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SQ/QQ Steps --></label>
+        <name>Support_Queue_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic Links --></label>
+        <name>Topic_Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated --></label>
+        <name>Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version Comments --></label>
+        <name>Version_Comments__c</name>
+    </fields>
+    <layouts>
+        <layout>Additional Benefits Additional Benefits Layout</layout>
+        <sections>
+            <label><!-- Article Administration --></label>
+            <section>Article Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Additional Benefits Layout</layout>
+        <sections>
+            <label><!-- Article Administration --></label>
+            <section>Article Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>C&amp;G Article C&amp;G Article Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>C&amp;G Article Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Category Tab Link Category Tab Link Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Category Tab Link Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Core Benefit Core Benefit Layout</layout>
+        <sections>
+            <label><!-- Additional Benefits --></label>
+            <section>Additional Benefits</section>
+        </sections>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Core Benefit Layout</layout>
+        <sections>
+            <label><!-- Additional Benefits --></label>
+            <section>Additional Benefits</section>
+        </sections>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External Publication External Publication Layout</layout>
+        <sections>
+            <label><!-- Version Comments --></label>
+            <section>Version Comments</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External Publication Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Version Comments --></label>
+            <section>Version Comments</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>General Article Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Multi-Topic Details Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Multi-Topic Details Multi-Topic Details Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Multi-Topic Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Multi-Topic Multi-Topic Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Open Enrollment Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Benefits --></label>
+            <section>Benefits</section>
+        </sections>
+        <sections>
+            <label><!-- Change Cancel --></label>
+            <section>Change Cancel</section>
+        </sections>
+        <sections>
+            <label><!-- Confirmation --></label>
+            <section>Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Eligibility --></label>
+            <section>Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- How to Enroll --></label>
+            <section>How to Enroll</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- Premiums and Billing --></label>
+            <section>Premiums and Billing</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Open Enrollment Open Enrollment Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Benefits --></label>
+            <section>Benefits</section>
+        </sections>
+        <sections>
+            <label><!-- Change Cancel --></label>
+            <section>Change Cancel</section>
+        </sections>
+        <sections>
+            <label><!-- Confirmation --></label>
+            <section>Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Eligibility --></label>
+            <section>Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- How to Enroll --></label>
+            <section>How to Enroll</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- Premiums and Billing --></label>
+            <section>Premiums and Billing</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Procedure Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Version Comments --></label>
+            <section>Version Comments</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Procedure Procedure Layout</layout>
+        <sections>
+            <label><!-- Version Comments --></label>
+            <section>Version Comments</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Provider Solutions Community Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Provider Solutions Community Provider Solutions Community Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Single Topic Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Article Feedback --></label>
+            <section>Article Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+        <sections>
+            <label><!-- Version Comments --></label>
+            <section>Version Comments</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Single Topic Single Topic Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Queue Article Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Queue Article Support Queue Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>USC Article Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>USC Article USC Article Layout</layout>
+        <sections>
+            <label><!-- Administration --></label>
+            <section>Administration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- News --></label>
+            <section>News</section>
+        </sections>
+        <sections>
+            <label><!-- SQ/QQ Steps --></label>
+            <section>SQ/QQ Steps</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Additional Benefits --></label>
+        <name>Additional_Benefits</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- C&amp;G Article --></label>
+        <name>C_G_Article</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Category Tab Link --></label>
+        <name>Category_Tab_Link</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Core Benefit --></label>
+        <name>Core_Benefit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- External Publication --></label>
+        <name>External_Publication</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General Article Template --></label>
+        <name>General_Article_Template</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Multi Topic --></label>
+        <name>Multi_Topic</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Multi Topic Details --></label>
+        <name>Multi_Topic_Details</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Open Enrollment --></label>
+        <name>Open_Enrollment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Procedure --></label>
+        <name>Procedure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Provider Solutions Community --></label>
+        <name>Provider_Solutions_Community</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Single Topic --></label>
+        <name>Single_Topic</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Support Queue --></label>
+        <name>Support_Queue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Universal Service --></label>
+        <name>Universal_Service</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

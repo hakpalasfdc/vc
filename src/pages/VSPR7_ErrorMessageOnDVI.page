@@ -1,0 +1,5 @@
+<apex:page >
+
+    <h1><font size="3">No VSPOne Lab Account Number associated with this Account.</font></h1>
+
+</apex:page>

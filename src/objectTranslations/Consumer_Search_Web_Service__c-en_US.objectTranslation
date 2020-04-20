@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Consumer Search Web Service</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Consumer Search Web Service</value>
+    </caseValues>
+    <fields>
+        <label><!-- Consumer Search Token Header --></label>
+        <name>Consumer_Search_Token_Header__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer Search Web Service --></label>
+        <name>Consumer_Search_Web_Service__c</name>
+    </fields>
+    <fields>
+        <help><!-- Valid range: 1 - 120000. The system will interpret all other values as 10000. --></help>
+        <label><!-- Timeout (milliseconds) --></label>
+        <name>Timeout_milliseconds__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

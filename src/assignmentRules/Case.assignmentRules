@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Case Assignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Network_Administrator_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;VSP Plans/Networks&apos;) || ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;Reimbursement Fees&apos;) || ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;Practice Report&apos;) || ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;Lab Opt Out&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Network_Support_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;Retinal Imaging&apos;)  ||  ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;Office Hours Update&apos;)  &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Regional_Manager_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;Explanation of Payment (EOP)&apos;)  &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Premier_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;Premier&apos;)  ||  ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp;  ISPICKVAL(Product__c, &apos;Eye Health Management (EHM)&apos;)  &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;Email Update&apos;)  &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Mass_Affiliates_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Product__c, &apos;2020 Source (Affiliate)&apos;)  &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Network_Administrator_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Account/Contact Maintenance&apos;) || ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp;  ISPICKVAL(Classification__c, &apos;Credentialing/Recruiting&apos;)  &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Regional_Manager_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Training&apos;) || ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Claims&apos;) || ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Billing&apos;)  &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Regional_Manager_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Sales&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Premier_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Status&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Shipping&apos;) || ISPICKVAL(Line_of_Business__c, &apos;Vision Care&apos;) &amp;&amp;  ISPICKVAL(Classification__c, &apos;Product&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Account_Maintenance_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Account/Contact Maintenance&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Customer_Care_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Billing&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Claims&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Credentialing/Recruiting&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Customer_Care_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Product&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Customer_Care_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Sales&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Sales_Research_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Shipping&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Customer_Care_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Status&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Altair_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Altair&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Training&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>$RecordType.Name = &quot;VSP Global&quot; &amp;&amp; ISPICKVAL(Origin,&quot;Fax&quot;) &amp;&amp; NOT(ISBLANK(SuppliedEmail))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>GAAT_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Account/Contact Maintenance&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Optics_Doctor_Service_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Billing&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Optics_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Claims&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Optics_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Credentialing/Recruiting&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Optics_Doctor_Service_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Product&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Optics_Sales_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Sales&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Optics_Doctor_Service_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Shipping&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Optics_Doctor_Service_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Status&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Optics_Sales_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Optics Group&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Training&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Account/Contact Maintenance&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Billing&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Claims&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Credentialing/Recruiting&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Product&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Sales&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Shipping&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Status&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marchon_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Marchon&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Training&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Account/Contact Maintenance&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Billing&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Claims&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Credentialing/Recruiting&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Product&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Sales&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Shipping&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Status&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyefinity_Admin_Ops_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Eyefinity&apos;) &amp;&amp; ISPICKVAL(Classification__c, &apos;Training&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Vision_Care_Premier_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISPICKVAL(Line_of_Business__c, &apos;Retail&apos;) &amp;&amp; ISPICKVAL(Product__c , &apos;Premier&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Eyeconic_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &quot;VSP Global&quot; &amp;&amp; ISPICKVAL(Line_of_Business__c, &apos;Retail&apos;) &amp;&amp;  NOT (ISPICKVAL(Product__c , &apos;Premier&apos;)) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>VSPOne Labs</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Client Delivery</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Customer Care</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Eyeconic</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Onsite Clinics</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>NOT ISNEW()</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

@@ -1,0 +1,2 @@
+<apex:page standardController="QA_Review__c" extensions="VSPR28_CalculateFinalScoreExtension" action="{!getRecDetails}">
+</apex:page>

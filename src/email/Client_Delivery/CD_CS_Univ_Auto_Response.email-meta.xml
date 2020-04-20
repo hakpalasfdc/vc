@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Emails sent to csuniv@vsp.com will receive this auto-response</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CD CS Univ Auto Response</name>
+    <style>none</style>
+    <subject>RE: {!EmailMessage.Subject}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

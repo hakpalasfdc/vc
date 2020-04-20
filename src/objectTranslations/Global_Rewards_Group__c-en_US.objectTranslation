@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Global Rewards Group</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Global Rewards Groups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Applied Tier --></label>
+        <name>Applied_Tier__c</name>
+        <relationshipLabel><!-- Global Rewards Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Practice&apos;s spend on Eyewear divided by total number of locations --></help>
+        <label><!-- Average Tiering Eyewear Spend LTM --></label>
+        <name>Average_Tiering_Eyewear_Spend_LTM__c</name>
+    </fields>
+    <fields>
+        <help><!-- Practice&apos;s spend on Optics divided by total number of locations. --></help>
+        <label><!-- Average Tiering Optics Spend LTM --></label>
+        <name>Average_Tiering_Optics_Spend_LTM__c</name>
+    </fields>
+    <fields>
+        <help><!-- Practice&apos;s spend on Eyewear and Optics divided by total number of locations --></help>
+        <label><!-- Average Tiering Total Spend LTM --></label>
+        <name>Average_Tiering_Total_Spend_LTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Tier --></label>
+        <name>Calculated_Tier__c</name>
+        <relationshipLabel><!-- Global Rewards Groups (Calculated Tier) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type__c</name>
+        <picklistValues>
+            <masterLabel>AOP</masterLabel>
+            <translation><!-- AOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT2</masterLabel>
+            <translation><!-- CAT2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflict</masterLabel>
+            <translation><!-- Conflict --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAP</masterLabel>
+            <translation><!-- GAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent</masterLabel>
+            <translation><!-- Independent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LVC</masterLabel>
+            <translation><!-- LVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Near Site</masterLabel>
+            <translation><!-- Near Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Dev Excluded</masterLabel>
+            <translation><!-- Net Dev Excluded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Dev Purchasing Requirement</masterLabel>
+            <translation><!-- Net Dev Purchasing Requirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supported</masterLabel>
+            <translation><!-- Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pearle Vision CO</masterLabel>
+            <translation><!-- Pearle Vision CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pearle Vision LO</masterLabel>
+            <translation><!-- Pearle Vision LO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pop Up</masterLabel>
+            <translation><!-- Pop Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollup</masterLabel>
+            <translation><!-- Rollup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School</masterLabel>
+            <translation><!-- School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Retail</masterLabel>
+            <translation><!-- VSP Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Ventures</masterLabel>
+            <translation><!-- VSP Ventures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visionworks</masterLabel>
+            <translation><!-- Visionworks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EHM Rate --></label>
+        <name>EHM_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusive VSP Patient Offers --></label>
+        <name>Exclusive_VSP_Patient_Offers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyewear Sales Needed --></label>
+        <name>Eyewear_Sales_Needed_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyewear Sales Needed --></label>
+        <name>Eyewear_Sales_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyewear Sales Rolling Off --></label>
+        <name>Eyewear_Sales_Rolling_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frame Tier --></label>
+        <name>Frame_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Fitting and Adjustments --></label>
+        <name>Free_Fitting_and_Adjustments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyewear Sales Target --></label>
+        <name>Marchon_Sales_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon and Altair Net Sales LTM --></label>
+        <name>Marchon_and_Altair_Net_Sales_LTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meets Eyewear Target --></label>
+        <name>Meets_Eyewear_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meets UNITY Target --></label>
+        <name>Meets_UNITY_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months to Check-In --></label>
+        <name>Months_to_Check_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Premier UNITY Pair Count LTM --></label>
+        <name>Optics_UNITY_Order_Count_LTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Effective Date --></label>
+        <name>Override_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override End Date --></label>
+        <name>Override_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Tier Reason --></label>
+        <name>Override_Tier_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Tax ID --></label>
+        <name>Parent_Account_Tax_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account --></label>
+        <name>Parent_Account__c</name>
+        <relationshipLabel><!-- Global Rewards Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Premier Exception Reason --></label>
+        <name>Premier_Exception_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of eligible locations --></help>
+        <label><!-- Premier Location Count --></label>
+        <name>Premier_Location_Count_Future__c</name>
+    </fields>
+    <fields>
+        <label><!-- Premier Location Count --></label>
+        <name>Premier_Location_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Premier Reporting Month --></label>
+        <name>Premier_Reporting_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Premier Status --></label>
+        <name>Premier_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Description --></label>
+        <name>Program_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retinal Imaging Indicator --></label>
+        <name>Retinal_Imaging_Indicator_Future__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retinal Imaging Indicator --></label>
+        <name>Retinal_Imaging_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Agreement Type used to calculate the Premier Tier --></help>
+        <label><!-- Tier Agreement Type --></label>
+        <name>Tier_Agreement_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Net Altair Sales LTM --></label>
+        <name>Total_Net_Altair_Sales_LTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Net Marchon Sales LTM --></label>
+        <name>Total_Net_Marchon_Sales_LTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNITY Count Rolling Off --></label>
+        <name>UNITY_Count_Rolling_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNITY Pair Target --></label>
+        <name>UNITY_Pair_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNITY Pairs Needed --></label>
+        <name>UNITY_Pairs_Needed_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNITY Pairs Needed --></label>
+        <name>UNITY_Pairs_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Good Standing --></label>
+        <name>Vision_Care_Good_Standing__c</name>
+    </fields>
+    <layouts>
+        <layout>Global Rewards Program Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Path to Premier --></label>
+            <section>Path to Premier</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Global Rewards Tax ID Roll &amp; Contract Type Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Path to Premier --></label>
+            <section>Path to Premier</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tax ID Rollup --></label>
+        <name>Tax_ID_Rollup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tax ID Rollup &amp; Contract Type --></label>
+        <name>Tax_ID_Rollup_Contract_Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Premier Tier was not calculated at this Global Rewards Group level. You must override the tier on the associated Global Rewards Group --></errorMessage>
+        <name>VSPR32_GRG_Applied_Tier_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Override Tier Effective Date must be a future date --></errorMessage>
+        <name>VSPR32_Override_Effective_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Override Tier End Date must be a future date --></errorMessage>
+        <name>VSPR32_Override_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Required when Applied Tier is editied --></errorMessage>
+        <name>VSPR32_Override_Reason</name>
+    </validationRules>
+</CustomObjectTranslation>

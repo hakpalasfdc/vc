@@ -1,0 +1,21 @@
+<apex:page cache="false"  id="CandGArticlepageid" sidebar="false" renderAs="pdf" >
+<!--<apex:page standardController="C_G_Article__kav" cache="false"  id="CandGArticlepageid" sidebar="false" renderAs="pdf" >-->
+
+    <apex:pageBlock mode="detail" html-style="font:12px;width:90%;float:left;">
+        <apex:pageBlockSection columns="1">
+            <!--<apex:outputfield value="{!C_G_Article__kav.Title}"/><br/>
+            <apex:outputfield value="{!C_G_Article__kav.ArticleNumber}"/><br/>
+            <apex:outputfield value="{!C_G_Article__kav.VersionNumber}"/><br/>
+            <apex:outputfield value="{!C_G_Article__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield value="{!C_G_Article__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="================================================================================"/><br/><br/>
+
+        <apex:pageBlockSectionItem >
+            <apex:outputField label="Article Details" value="{!C_G_Article__kav.Article_Details__c}"/>
+        </apex:pageBlockSectionItem>
+            <apex:outputField label="Keyword" value="{!C_G_Article__kav.Keyword__c}"/>
+            <apex:outputField value="{!C_G_Article__kav.Support_Queue_Steps__c}"/>-->
+
+        </apex:pageBlockSection>
+    </apex:pageBlock>    
+</apex:page>

@@ -1,0 +1,68 @@
+<apex:page sidebar="false" showHeader="true"  id="page" title="Quest">
+    <!--script to rerender iframe when tab is clicked-->
+    <script language="JavaScript" type="text/javascript">    
+   
+    function cleariFrame(source){        
+        if(source == '')
+        { 
+            var iframe = document.getElementById('questframe').src="";     
+        }else{
+            var iframe = document.getElementById('questframe').src=""; 
+            var iframe = document.getElementById('questframe').src=source;
+        }        
+    }
+    </script>
+
+    <apex:stylesheet value="{!$Resource.versioning}"/>
+    <apex:stylesheet value="{!$Resource.extended}"/>
+      
+    <apex:tabPanel selectedTab="News" id="QuestTabPanel"  tabClass="activeTab" inactiveTabClass="inactiveTab"  switchType="client">
+            
+            
+            <!-- NEWS TAB -->
+        <apex:tab label="News" name="News" id="tab1" ontabenter="cleariFrame('/apex/QNews_VFP')"/>
+                                          
+            <!-- ELIGIBILITY TAB -->
+        <apex:tab label="Eligibility" name="Eligibility" id="tab2" ontabenter="cleariFrame('/apex/EligibilityTab_VFP')"/>
+                                          
+            <!-- BENEFITS TAB -->
+        <apex:tab label="Benefits" name="Benefits" id="tab3" ontabenter="cleariFrame('/apex/BenefitsTab_VFP')"/>           
+                                          
+            <!-- AUTHORIZATION TAB -->
+        <apex:tab label="Authorization" name="Authorization" id="tab4" ontabenter="cleariFrame('/apex/AuthorizationTab_VFP')"/>
+                                           
+            <!-- SUBMIT TAB -->
+        <apex:tab label="Submit" name="Submit" id="tab5" ontabenter="cleariFrame('/apex/SubmitTab_VFP')"/>
+                                           
+            <!-- DETERMINE PAYMENT TAB -->
+        <apex:tab label="Determine Payment" name="Determine Payment" id="tab6" ontabenter="cleariFrame('/apex/DeterminePaymentTab_VFP')"/>
+             
+             <!-- PROCESSING TAB -->
+        <apex:tab label="Processing" name="Processing" id="tab14" ontabenter="cleariFrame('/apex/ProcessingTab_VFP')"/>             
+                                            
+           <!-- COB TAB -->
+        <apex:tab label="COB" name="COB" id="tab7" ontabenter="cleariFrame('/apex/COBTab_VFP')"/>
+                                         
+            <!-- ADJUSTMENTS TAB -->
+        <apex:tab label="Adjustments" name="Adjustments" id="tab8" ontabenter="cleariFrame('/apex/AdjustmentsTab_VFP')"/>
+                                       
+            <!-- DR.INFO TAB -->
+        <apex:tab label="Dr Info" name="Dr Info" id="tab9" ontabenter="cleariFrame('/apex/DrInfoTab_VFP')"/>
+                                       
+            <!-- CLIENT EXCEPTIONS TAB -->
+        <apex:tab label="Client Exceptions" name="Client Exceptions" id="tab10" ontabenter="cleariFrame('/apex/ClientExceptionsTab_VFP')"/>
+                                         
+            <!-- COMPLIANCE TAB -->
+        <apex:tab label="Compliance" name="Compliance" id="tab11" ontabenter="cleariFrame('/apex/ComplianceTab_VFP')"/>
+                                          
+            <!-- PHONE BOOK TAB -->
+        <apex:tab label="Phone Book" name="Phone Book" id="tab12"  ontabenter="cleariFrame('/apex/PhoneBookTab_VFP')"/>
+                                          
+            <!-- QSEARCH TAB -->
+        <apex:tab label="QSearch" name="QSearch" id="tab13" ontabenter="cleariFrame('/apex/QSearch_VFP')" />
+                                                    
+    </apex:tabPanel>
+    <apex:iframe id="questframe" src="/apex/QNews_VFP" height="700" scrolling="true"/>
+  
+           
+</apex:page>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Lessonly_Link</links>
+    <links>ClearSlide_Link</links>
+    <links>VSPOne_Rewards_Link</links>
+    <links>Links_You_Can_Use</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

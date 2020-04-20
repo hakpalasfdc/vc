@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tax ID History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tax ID History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Tax ID History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IRS Name --></label>
+        <name>IRS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice Business Type --></label>
+        <name>Practice_Business_Type__c</name>
+        <picklistValues>
+            <masterLabel>C - Corporation</masterLabel>
+            <translation><!-- C - Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F - Laser Vision Correction</masterLabel>
+            <translation><!-- F - Laser Vision Correction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P - Partnership</masterLabel>
+            <translation><!-- P - Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S - Sole Proprietor</masterLabel>
+            <translation><!-- S - Sole Proprietor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U - Optometric School or University</masterLabel>
+            <translation><!-- U - Optometric School or University --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V - Affiliate Provider</masterLabel>
+            <translation><!-- V - Affiliate Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>W - Applicant Doctor</masterLabel>
+            <translation><!-- W - Applicant Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X - Group Authorized Provider</masterLabel>
+            <translation><!-- X - Group Authorized Provider --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax ID --></label>
+        <name>Tax_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Key --></label>
+        <name>Vision_Care_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Practice City --></label>
+        <name>Vision_Care_Practice_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Practice State --></label>
+        <name>Vision_Care_Practice_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Practice Street --></label>
+        <name>Vision_Care_Practice_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Practice Zip --></label>
+        <name>Vision_Care_Practice_Zip__c</name>
+    </fields>
+    <layouts>
+        <layout>Tax ID History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

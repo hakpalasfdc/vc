@@ -1,0 +1,105 @@
+<apex:page standardController="Opportunity" extensions="VSPR32_Strategic_Agree_Chart_Controller" lightningStylesheets="true" docType="html-5.0" applyBodyTag="False" applyHtmlTag="False" showHeader="False">
+    <apex:form >
+        <apex:pageBlock >
+            
+            <apex:outputPanel title="Read Only Section" rendered="{!!editSection}">
+                <table border="1px" align="center">
+                    <tr >
+                        <th ></th>
+                        <th style="padding: 5px;"><b><center>VSPOne Commitment</center></b></th>
+                        <th style="padding: 5px;"><b><center>Optics Brand Commitment</center></b></th>
+                        <th style="padding: 5px;"><b><center>Marchon/Altair Commitment</center></b></th>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 1</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.VSPOne_Commitment_Year_1__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Optics_Brand_Commitment_Year_1__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Marchon_Altair_Commitment_Year_1__c}"/></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 2</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.VSPOne_Commitment_Year_2__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Optics_Brand_Commitment_Year_2__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Marchon_Altair_Commitment_Year_2__c}"/></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 3</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.VSPOne_Commitment_Year_3__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Optics_Brand_Commitment_Year_3__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Marchon_Altair_Commitment_Year_3__c}"/></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 4</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.VSPOne_Commitment_Year_4__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Optics_Brand_Commitment_Year_4__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Marchon_Altair_Commitment_Year_4__c}"/></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 5</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.VSPOne_Commitment_Year_5__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Optics_Brand_Commitment_Year_5__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:outputField value="{!opportunity.Marchon_Altair_Commitment_Year_5__c}"/></td>
+                    </tr>
+                </table>  
+                <apex:outputPanel rendered="{! IF($Profile.Name == 'System Administrator' || $Profile.Name == 'VSP LOB Admin User' ||$Profile.Name == 'VSP Technical User' || $Profile.Name == 'VSP Sales User', true, false)}">
+                    <div align="center" draggable="false" style="padding-top: 10px;">
+                        <apex:commandButton value="Edit" action="{!EdittheSection}" immediate="true"/>
+                        <!--          <apex:commandButton value="Save" action="{!saveOpty}"/> -->
+                    </div>      
+                </apex:outputPanel>
+                
+            </apex:outputPanel>
+            
+            <apex:outputPanel title="Edit Section" rendered="{!editSection}">
+                <table border="1px" align="center">
+                    <tr >
+                        <th ></th>
+                        <th style="padding: 5px;"><b><center>VSPOne Commitment</center></b></th>
+                        <th style="padding: 5px;"><b><center>Optics Brand Commitment</center></b></th>
+                        <th style="padding: 5px;"><b><center>Marchon/Altair Commitment</center></b></th>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 1</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.VSPOne_Commitment_Year_1__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Optics_Brand_Commitment_Year_1__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Marchon_Altair_Commitment_Year_1__c}"/></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 2</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.VSPOne_Commitment_Year_2__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Optics_Brand_Commitment_Year_2__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Marchon_Altair_Commitment_Year_2__c}"/></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 3</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.VSPOne_Commitment_Year_3__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Optics_Brand_Commitment_Year_3__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Marchon_Altair_Commitment_Year_3__c}"/></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 4</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.VSPOne_Commitment_Year_4__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Optics_Brand_Commitment_Year_4__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Marchon_Altair_Commitment_Year_4__c}"/></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-left: 10px; padding-right: 10px;"><b>Year 5</b></th>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.VSPOne_Commitment_Year_5__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Optics_Brand_Commitment_Year_5__c}"/></td>
+                        <td style="padding-left: 10px; padding-right: 10px;"><apex:inputField value="{!opportunity.Marchon_Altair_Commitment_Year_5__c}"/></td>
+                    </tr>
+                </table>
+                
+                <apex:outputPanel rendered="{! IF($Profile.Name == 'System Administrator' || $Profile.Name == 'VSP LOB Admin User' ||$Profile.Name == 'VSP Technical User' || $Profile.Name == 'VSP Sales User', true, false)}">
+                    <div align="center" draggable="false" style="padding-top: 10px;">
+                        <!--          <apex:commandButton value="Edit" action="{!EdittheSection}" immediate="true"/> -->
+                        <apex:commandButton value="Save" action="{!saveOpty}"/>
+                        <apex:commandButton value="Cancel" action="{!cancelOpty}"/>
+                    </div>      
+                </apex:outputPanel>
+            </apex:outputPanel>
+            
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

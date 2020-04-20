@@ -1,0 +1,14 @@
+Thank you for contacting VSP's High Profile Senior Client Specialist Team, your inquiry is important to us. Your request has been received and your assigned Case Number is {!Case.CaseNumber}. 
+
+For urgent inquiries, you may call us at 800-852-7600 ext 6317 or 916-851-6317.
+
+
+____________________________________________________ 
+
+From: {!Case.SuppliedEmail} 
+Sent: {!Case.CreatedDate} 
+Subject: {!Case.Subject} 
+
+{!Case.Description} 
+
+ref: {!Case.Thread_Id}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sfdash@vsp.com</contactEmail>
+    <label>eNetwork Management</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/token</callbackUrl>
+        <consumerKey>3MVG9oZtFCVWuSwOvwwAVjUooDQ63oH.gCT3BLLdzOFTYDbXp1sYZUoeYrc52i9aytomLLvo5qGObLVH5iMWV</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

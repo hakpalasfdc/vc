@@ -1,0 +1,73 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="AlertNotificationListController" >
+	 <!--on component load call doInit javaScript function and fetch records from server-->  
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:attribute name="isFullList" type="Boolean"/>
+    <aura:attribute name="isAuthor" type="Boolean"/>
+   
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+    
+    <aura:attribute name="attFullList" type="List"/>
+
+    <aura:attribute name="paginationList" type="List"/>
+    
+    <aura:attribute name="pageSize" type="Integer" default="3"/>
+    
+    <aura:attribute name="totalSize" type="Integer"/>
+    
+    <aura:attribute name="start" type="Integer" default="0"/>
+    
+    <aura:attribute name="end" type="Integer" default="0"/>
+    
+    
+    <aura:if isTrue="{!v.showSpinner}">
+       	<lightning:spinner />        
+    </aura:if>
+ 	<aura:if isTrue="{!v.paginationList.length>0}">
+    <div class="slds-card slds-p-around_medium">
+        
+       <div class="slds-media slds-media--center slds-has-flexi-truncate" data-aura-rendered-by="2584:0">
+      <div class="slds-media__figure" data-aura-rendered-by="2585:0">
+          <lightning:icon iconName="action:goal" alternativeText="Approved" />
+      </div>
+      <div class="slds-media__body slds-text-heading--small" data-aura-rendered-by="2587:0">
+         <h2 data-aura-rendered-by="2588:0"><a class="slds-card__header-link slds-truncate slds-show--inline-block uiOutputURL" href="javascript:void(0);" dir="ltr" title="" data-aura-rendered-by="2592:0" data-aura-class="uiOutputURL" data-interactive-lib-uid="4">Alerts</a></h2>
+      </div>
+   </div>
+       <lightning:accordion  allowMultipleSectionsOpen ="true">
+            <aura:iteration items="{!v.paginationList}" var="con" >
+                <lightning:accordionSection aura:id="section" class="slds-wrap" name="{!con.Name}" label="{!con.Name}" >
+                    <aura:set attribute="body">
+                        <table>
+                        	<tr>
+                                <!--<td style="width:80%"><p><a onclick="{!c.redirectToRecord}" title="{!con.Alert_Description__c}" data-value="{!con.Id}"> {!con.Alert_Message__c}</a></p></td>-->
+                                <aura:if isTrue="{!v.isAuthor}"><td style="width:80%"><p><a onclick="{!c.redirectToRecord}" title="{!con.Alert_Description__c}" data-value="{!con.Id}">{!con.Alert_Message__c}</a></p></td>
+                                	<aura:set attribute="else">
+                                    	<td style="width:80%"><p>{!con.Alert_Message__c}</p></td>
+                                    </aura:set>
+                                </aura:if>
+                                
+                                <aura:if isTrue="{!v.isAuthor}"><td style="width:20%"><lightning:button label="Remove" value="{!con.Id}" title="Remove" onclick="{! c.handleRemoveClick }"/></td></aura:if>
+                            </tr>
+                        </table>
+                    </aura:set>
+                </lightning:accordionSection>
+            </aura:iteration>
+            </lightning:accordion>
+        
+        	<!-- Base variant: Makes a button look like a link -->
+        	<div class="slds-grid slds-wrap">
+              <div class="slds-col slds-size_6-of-12">
+                    <aura:if isTrue="{!not(v.start le 0)}">
+                    	<u><a onclick="{!c.previous}"  data-value="previous"><i class="leftArrow"></i>Previous</a></u>
+                   	</aura:if>
+              </div>
+              <div class="slds-col slds-size_6-of-12">
+                  <aura:if isTrue="{!not((v.end+1) == v.totalSize)}">
+                   <u><a onclick="{!c.next}" class="slds-p-left_xx-large" data-value="next">Next<i class="rightArrow"></i></a></u>
+                  </aura:if>
+              </div>
+        </div>
+    </div>
+    </aura:if> 
+</aura:component>

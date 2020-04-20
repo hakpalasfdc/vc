@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Contact_Consumer_RecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Consumer RecordTypeId</shortDescription>
+        <value>012U0000000QtnoIAC</value>
+    </labels>
+    <labels>
+        <fullName>Entitlement_Case_Business_Age_Id</fullName>
+        <categories>Entitlement Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Entitlement - Case Business Age Id</shortDescription>
+        <value>5500B000006JFKp</value>
+    </labels>
+    <labels>
+        <fullName>Optics_Only_Initial_Submitter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Optics Only Initial Submitter</shortDescription>
+        <value>005U0000005kUGs</value>
+    </labels>
+    <labels>
+        <fullName>PMO_Defect_Open</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PMO_Defect_Open</shortDescription>
+        <value>Open</value>
+    </labels>
+    <labels>
+        <fullName>PMO_Defect_Subject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PMO_Defect_Subject</shortDescription>
+        <value>Defect Found on Requirement #</value>
+    </labels>
+    <labels>
+        <fullName>PMO_TaskType_Customization</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PMO_TaskType_Customization</shortDescription>
+        <value>Customization</value>
+    </labels>
+    <labels>
+        <fullName>PMO_Task_CodeReview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PMO_Task_CodeReview</shortDescription>
+        <value>Code Review</value>
+    </labels>
+    <labels>
+        <fullName>PMO_Task_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PMO_Task_Error</shortDescription>
+        <value>Some error occured while creating a new Task</value>
+    </labels>
+    <labels>
+        <fullName>PMO_Task_Execution</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PMO_Task_Execution</shortDescription>
+        <value>Execution</value>
+    </labels>
+    <labels>
+        <fullName>PMO_Task_Review</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PMO_Task_Review</shortDescription>
+        <value>Review</value>
+    </labels>
+    <labels>
+        <fullName>Person_Account_RecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Person Account RecordTypeId</shortDescription>
+        <value>0124O000000NAuo</value>
+    </labels>
+    <labels>
+        <fullName>Premier_Monthly_Job_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Premier Monthly Job Date</shortDescription>
+        <value>6</value>
+    </labels>
+    <labels>
+        <fullName>Prod_Org_Id</fullName>
+        <categories>Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Prod Org Id</shortDescription>
+        <value>00D3C0000004r5s</value>
+    </labels>
+    <labels>
+        <fullName>VSP_Consumer_Account_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VSP Consumer Account Id</shortDescription>
+        <value>001U000001jMD3WIAW</value>
+    </labels>
+</CustomLabels>

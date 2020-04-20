@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.EmailMessages$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Case.EmailMessages$MessageDate</field>
+    </columns>
+    <columns>
+        <field>Case$Product__c</field>
+    </columns>
+    <description>USC email replies, w/Case number agent, dates emails sent</description>
+    <filter>
+        <criteriaItems>
+            <column>Case$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Customer_Care</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.EmailMessages$CreatedBy</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Katherine Boothe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.EmailMessages$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>5</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>USC Email Replies</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Emails_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

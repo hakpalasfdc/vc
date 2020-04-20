@@ -1,0 +1,106 @@
+<p>
+Thank you for contacting the VSP EDI Enrollment Integration Team; your inquiry is very important to us. Your request has been received and will be processed within 5 business days. 
+</p>
+
+<h3 style="color:red;">
+*IMPORTANT* Please read the below email in its entirety as it may address your inquiry.
+</h3>
+
+<p>
+<ul><b><i>
+ <li>If you are inquiring about our Open Enrollment process, please see guidelines at the bottom of this email.
+</li>
+<li>
+If you are inquiring about the file receipt and/or load, please allow 24 hours for the Electronic Verification Report (EVR) to be generated, which will serve as confirmation of the file load.  NO OTHER CONFIRMATIONS WILL BE SENT.  If you are not an EVR recipient, please confirm with the contact who is, or you may reach us directly at 877-396-8940 to confirm. 
+</li>
+<li>
+For urgent file related inquiries, you may reach us directly at 877-396-8940.  Please reference case number {!Case.CaseNumber} to expedite your call.
+</li>
+<li>The email address <a href = "mailto: eei@vsp.com">eei@vsp.com</a>
+is not intended for manual membership updates.  If you need assistance with managing your membership on <a href="https://na01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.vsp.com&amp;data=02%7C01%7C%7C28e1a22570a14b50e96a08d6023c2e9c%7C3510753d6c4048ae9b9e2fc672d5e5dd%7C0%7C0%7C636698854833096939&amp;sdata=q0JuUNO8TFHczM8G1%2BgQuNFRiPT3Pz%2FQtgByDtoSufw%3D&amp;reserved=0">www.vsp.com</a> please call 800-216-6248 option 2.
+</li>
+<li>
+If this is a billing inquiry, please call 800-216-6248 option 3.
+</i></b></li></ul></p>
+<p><b><u>
+Open Enrollment Guidelines
+</u></b></p>
+<p> 
+We have two options for OE.  Please let us know which one of these options you will use and provide dates if necessary.
+</p>
+
+
+<p><b>Option 1:
+</b></p>
+<ul><li> 
+Client/TPA may continue to send us the prior plan year data until the 23rd, prior to OE effective date.
+</li>
+<li>
+Send a separate OE file any time prior to the 23rd.
+</li>
+<li>
+Once OE file is received, we will automatically run a test against our database and the OE test results will be sent to the client/TPA for review. 
+</li>
+<li>
+We will hold the OE file until the 26th and the file will process between 26th and 31st depending on the OE month. 
+</li></ul></p>
+<p><b>
+Option 2:</b> 
+This is based on when the client/TPA plans to send their last production file for the current plan year. 
+</p>
+<ul><li>
+Client/TPA must provide:
+<ul><li><b>
+Date of the last production file for the current plan year:________
+</li>
+<li>
+Date of the OE file:_________
+</b></li></ul>
+<li><i><u>
+Note:</u> 
+If the client/TPA plans to send the OE file <u>after</u> the last production file, they must include a 3 day lag between the file transmission dates
+</i></li>
+<li>
+Continue to send the current plan year data until the last production file date occurs.
+</li>
+<li>
+If OE file is received prior to the last production file, we will run a test against our database and the OE test results will be sent to the client/TPA for review. 
+</li>
+<li>
+We will hold the OE file until the last production file date occurs and it will be loaded the next day.
+</li></ul></p>
+<p><b>
+The following applies to all OE files:
+</b><ul>
+<li>
+The OE file <u>must</u> be a full file and contain all of the new plan year elections.
+</li>
+<li>
+OE file should be sent utilizing the client's normal transmission method; however, the OE file name should be: <b>oe1234567</b> (1234567=the client's assigned File ID) 
+</li>
+<li>
+The term by omission date will be the last day of the month prior to OE effective date.  (<i><u>For example:</u></i> For January OE effective date, term by omission will be 12/31/19; coverage levels will be effective 01/01/20)
+</li>
+<li>
+Enrollment Verification Report (EVR) is sent after the Open/Annual file has loaded; this is used as confirmation that the file has loaded successfully; <u>no other confirmations are sent.
+</u></li>
+<li>
+VSP does not issue ID cards or send enrollment communications out to the members.  Members can print out an ID card for a reference from VSP Resource Center online.
+</li>
+<li>
+For any urgent manual updates, client/TPA can utilize the Client Portal at <a href="https://na01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.vsp.com&amp;data=02%7C01%7C%7C28e1a22570a14b50e96a08d6023c2e9c%7C3510753d6c4048ae9b9e2fc672d5e5dd%7C0%7C0%7C636698854833096939&amp;sdata=q0JuUNO8TFHczM8G1%2BgQuNFRiPT3Pz%2FQtgByDtoSufw%3D&amp;reserved=0">www.vsp.com</a>
+</li>
+<li>
+Regular production files should resume after OE effective date and the file name must be changed back to <b>a1234567</b> or <b>g1234567</b> (1234567=the client's assigned file id) depending on the file layout. 
+</li></ul></p>
+<h3><b><mark>
+Please Note: If there ARE going to be any changes to structure a dedicated Membership Coordinator will reach out directly.  
+</mark></b></h3>
+
+____________________________________________________
+
+<p><br>From: {!Case.SuppliedEmail}
+<br>Sent: {!Case.CreatedDate}
+<br>Subject: {!Case.Subject}
+<br>{!Case.Description}
+<br>ref: {!Case.Thread_Id}</p>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sfdash@vsp.com</contactEmail>
+    <label>DenodoRESTConnector</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost:9090/oauth/2.0/redirectURL.jsp</callbackUrl>
+        <consumerKey>3MVG9oZtFCVWuSwOvwwAVjUooDcX_oND_y0V5WpIwL4I6BdVGgUEzMAthLOCybdIWpV64SLdESaaC1ghaOZNV</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+</ConnectedApp>

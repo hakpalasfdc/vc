@@ -1,0 +1,9 @@
+The following account has been submitted for approval. 
+
+Account Name: {!Account.Name} 
+Account Status: {!Account.Status__c} 
+
+Click link below to view this account record. 
+{!Account.Link}
+
+Please follow your approval process for approving this Account.

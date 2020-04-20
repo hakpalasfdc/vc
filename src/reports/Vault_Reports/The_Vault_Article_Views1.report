@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticle$LastPublishedDate</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle$Title</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>KnowledgeArticle.ViewStats$ViewCount</field>
+    </columns>
+    <dataCategoryFilters>
+        <dataCategory>Account_Services</dataCategory>
+        <dataCategoryGroup>Vision_Care</dataCategoryGroup>
+        <operator>below</operator>
+    </dataCategoryFilters>
+    <filter>
+        <criteriaItems>
+            <column>KnowledgeArticle.ViewStats$Channel</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>-1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>The Vault Article Views</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SK__Knowledge_Articles_with_view__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>KnowledgeArticle.ViewStats$ViewCount</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticle$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

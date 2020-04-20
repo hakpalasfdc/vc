@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object to track network recruiting activity.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Account_Name_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Network Recruitments</relationshipLabel>
+        <relationshipName>Network_Recruitments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Office_Locations__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Additional Office Locations</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Business_Structure__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Structure</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sole Prop</fullName>
+                    <default>false</default>
+                    <label>Sole Prop</label>
+                </value>
+                <value>
+                    <fullName>S-Corp</fullName>
+                    <default>false</default>
+                    <label>S-Corp</label>
+                </value>
+                <value>
+                    <fullName>Prof. Corp</fullName>
+                    <default>false</default>
+                    <label>Prof. Corp</label>
+                </value>
+                <value>
+                    <fullName>PLLC</fullName>
+                    <default>false</default>
+                    <label>PLLC</label>
+                </value>
+                <value>
+                    <fullName>General Partnership (LLP)</fullName>
+                    <default>false</default>
+                    <label>General Partnership (LLP)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CAQH_Comments__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Provider Comments</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CAQH_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>CAQH ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CalOptima_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CalOptima Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Physical City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Client Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                    <label>Prospect</label>
+                </value>
+                <value>
+                    <fullName>Existing Client</fullName>
+                    <default>false</default>
+                    <label>Existing Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Closed_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Closed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Preference__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Preference</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Postal Mail</fullName>
+                    <default>false</default>
+                    <label>Postal Mail</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_Role__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact Role</label>
+        <referenceTo>Contact_Role__c</referenceTo>
+        <relationshipLabel>Network Recruitments</relationshipLabel>
+        <relationshipName>Network_Recruitments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contacts_Dispensed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact Lenses are dispensed at this office</inlineHelpText>
+        <label>Contacts Dispensed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Credentialing_Contact_Email__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Credentialing Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credentialing_Contact_Fax__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Credentialing Contact Fax</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Credentialing_Contact_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Credentialing Contact Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credentialing_Contact_Phone__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Credentialing Contact Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>DOB__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DOB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Days_Open__c</fullName>
+        <externalId>false</externalId>
+        <formula>Closed_Date__c - Opened_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Open</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Degree__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Degree</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dispensary_Ownership_Percentage__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Percentage of the dispensary the provider owns</inlineHelpText>
+        <label>Dispensary Ownership Percentage</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Send_NDA_Criteria_Forms__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Send NDA/Criteria Forms</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Doctor_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Doctor ID</label>
+        <length>9</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Doctor_Member_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Doctor Member Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>M - Member Doctor</fullName>
+                    <default>false</default>
+                    <label>M - Member Doctor</label>
+                </value>
+                <value>
+                    <fullName>S - School Faculty Doctor</fullName>
+                    <default>false</default>
+                    <label>S - School Faculty Doctor</label>
+                </value>
+                <value>
+                    <fullName>F - Laser Vision Correction</fullName>
+                    <default>false</default>
+                    <label>F - Laser Vision Correction</label>
+                </value>
+                <value>
+                    <fullName>A - Affiliate</fullName>
+                    <default>false</default>
+                    <label>A - Affiliate</label>
+                </value>
+                <value>
+                    <fullName>X - Special (GAP) Doctor</fullName>
+                    <default>false</default>
+                    <label>X - Special (GAP) Doctor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employed_at_Other_Locations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the provider employed at any other locations?</description>
+        <externalId>false</externalId>
+        <label>Employed at Other Locations</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Committee_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Estimated Committee Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fax__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Geographical_City__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Geographical City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Geographical_County__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Geographical County</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Geographical_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Geographical Request</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Geographical_State__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Geographical State</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Geographical_Street_Address__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Geographical Street Address</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Geographical_ZIP_Code__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Geographical ZIP Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours_Worked__c</fullName>
+        <description>Number of Hours per week provider works at this location.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Hours Worked</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Include_in_Todays_Report__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Number_of_working_days_between_2_dates__c == 2, TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Include in Todays Report?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LVC_Surgeon_NDA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>LVC Surgeon NDA</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Business_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Business Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meets_Insurance_Requirement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Provider has professional liability insurance of at least $1 million per occurrence / $3 million aggregate</description>
+        <externalId>false</externalId>
+        <label>Meets Insurance Requirement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Meets_Medicare_Requirement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The provider is enrolled with Medicare or has started the enrollment process</description>
+        <externalId>false</externalId>
+        <label>Meets Medicare Requirement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NPI__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>NPI</label>
+        <length>55</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Frames_Displayed_in_Dispensary__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of frames on display in dispensary</inlineHelpText>
+        <label>Number of Frames Displayed in Dispensary</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Locations_Owned__c</fullName>
+        <description>Number of locations provider owns</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Number of Locations Owned</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Members_Covered__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Members Covered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_working_days_between_2_dates__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Closed_Date__c  &lt;&gt;   TODAY() ,
+	IF(	/** Condition */
+		AND(
+			(5 - (CASE(MOD( Closed_Date__c   - DATE(1900, 1, 6), 7), 0, 0, 1, 5, 2, 5, 3, 4, 4, 3, 5, 2, 6, 1, 0)) &lt; (CASE(MOD(  TODAY()  - DATE(1900, 1, 6), 7), 0, 0, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 0)) ),
+			((( TODAY()  -   Closed_Date__c   ) + 1) &lt; 7)
+		),
+		/** Value to YES */
+		(
+			(CASE(MOD(  TODAY()  - DATE(1900, 1, 6), 7), 0, 0, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 0)) - (5 - (CASE(MOD(  Closed_Date__c    - DATE(1900, 1, 6), 7), 0, 0, 1, 5, 2, 5, 3, 4, 4, 3, 5, 2, 6, 1, 0)))
+		),
+		/** Value to NOT */
+		(	
+			((FLOOR((( TODAY()  -  Closed_Date__c   ) - (CASE(MOD(  Closed_Date__c  - DATE(1900, 1, 6), 7), 0, 0, 1, 6, 2, 5, 3, 4, 4, 3, 5, 2, 6, 1, 0))) / 7)) * 5) +
+			(CASE(MOD(  Closed_Date__c    - DATE(1900, 1, 6), 7), 0, 0, 1, 5, 2, 5, 3, 4, 4, 3, 5, 2, 6, 1, 0)) +
+			(CASE(MOD(  TODAY()  - DATE(1900, 1, 6), 7), 0, 0, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 0))
+		)
+	)
+,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number of working days between 2 dates</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opened_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Opened Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Employee__c</fullName>
+        <externalId>false</externalId>
+        <label>Owner/Employee</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>Employee</fullName>
+                    <default>false</default>
+                    <label>Employee</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Physical_County__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Physical County</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Practice_Ownership_Percentage__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Percentage of practice the provider owns</inlineHelpText>
+        <label>Practice Ownership Percentage</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Private_Recruitment_Notes__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Private Recruitment Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Provider_Name_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup field to Contact from Network Recruitment object. To be populated by trigger.</description>
+        <externalId>false</externalId>
+        <label>Provider Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Network Recruitments</relationshipLabel>
+        <relationshipName>Network_Recruitments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Not_Participating__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Not Participating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ABO/TPA</fullName>
+                    <default>false</default>
+                    <label>ABO/TPA</label>
+                </value>
+                <value>
+                    <fullName>Ownership</fullName>
+                    <default>false</default>
+                    <label>Ownership</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>No Dispensary</fullName>
+                    <default>false</default>
+                    <label>No Dispensary</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>Fees</fullName>
+                    <default>false</default>
+                    <label>Fees</label>
+                </value>
+                <value>
+                    <fullName>Doesn’t Provide Routine Exams</fullName>
+                    <default>false</default>
+                    <label>Doesn’t Provide Routine Exams</label>
+                </value>
+                <value>
+                    <fullName>Not Managed Care/VSP Friendly</fullName>
+                    <default>false</default>
+                    <label>Not Managed Care/VSP Friendly</label>
+                </value>
+                <value>
+                    <fullName>Non-responsive</fullName>
+                    <default>false</default>
+                    <label>Non-responsive</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Recruiting_Network__c</fullName>
+        <externalId>false</externalId>
+        <label>Recruiting Network</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VSP</fullName>
+                    <default>false</default>
+                    <label>VSP</label>
+                </value>
+                <value>
+                    <fullName>Choice</fullName>
+                    <default>false</default>
+                    <label>Choice</label>
+                </value>
+                <value>
+                    <fullName>Select</fullName>
+                    <default>false</default>
+                    <label>Select</label>
+                </value>
+                <value>
+                    <fullName>Advantage</fullName>
+                    <default>false</default>
+                    <label>Advantage</label>
+                </value>
+                <value>
+                    <fullName>Affiliate</fullName>
+                    <default>false</default>
+                    <label>Affiliate</label>
+                </value>
+                <value>
+                    <fullName>LVC</fullName>
+                    <default>false</default>
+                    <label>LVC</label>
+                </value>
+                <value>
+                    <fullName>Protec</fullName>
+                    <default>false</default>
+                    <label>Protec</label>
+                </value>
+                <value>
+                    <fullName>MCD</fullName>
+                    <default>false</default>
+                    <label>MCD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Recruitment_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Episoded/Rostered&quot; Recruitment Status indicates the practice meets VSP requirements and the application is in process.</inlineHelpText>
+        <label>Recruitment Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Lead</fullName>
+                    <default>false</default>
+                    <label>New Lead</label>
+                </value>
+                <value>
+                    <fullName>Office Contacted</fullName>
+                    <default>false</default>
+                    <label>Office Contacted</label>
+                </value>
+                <value>
+                    <fullName>In Process</fullName>
+                    <default>false</default>
+                    <label>In Process</label>
+                </value>
+                <value>
+                    <fullName>Episoded/Rostered</fullName>
+                    <default>false</default>
+                    <label>Episoded/Rostered</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Completed/Committee</fullName>
+                    <default>false</default>
+                    <label>Completed/Committee</label>
+                </value>
+                <value>
+                    <fullName>Completed/No Committee</fullName>
+                    <default>false</default>
+                    <label>Completed/No Committee</label>
+                </value>
+                <value>
+                    <fullName>Completed/Denied at Committee</fullName>
+                    <default>false</default>
+                    <label>Completed/Denied at Committee</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Recruitment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Recruitment Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Affiliate</fullName>
+                    <default>false</default>
+                    <label>Affiliate</label>
+                </value>
+                <value>
+                    <fullName>Doctor Initiated</fullName>
+                    <default>false</default>
+                    <label>Doctor Initiated</label>
+                </value>
+                <value>
+                    <fullName>GAP</fullName>
+                    <default>false</default>
+                    <label>GAP</label>
+                </value>
+                <value>
+                    <fullName>Proactive</fullName>
+                    <default>false</default>
+                    <label>Proactive</label>
+                </value>
+                <value>
+                    <fullName>Pro-Supplemental</fullName>
+                    <default>false</default>
+                    <label>Pro-Supplemental</label>
+                </value>
+                <value>
+                    <fullName>Reactive</fullName>
+                    <default>false</default>
+                    <label>Reactive</label>
+                </value>
+                <value>
+                    <fullName>Reactive Supplemental</fullName>
+                    <default>false</default>
+                    <label>Reactive Supplemental</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Recruitment_in_Progress_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISPICKVAL( Recruitment_Status__c , &quot;Completed&quot;)  || 
+ISPICKVAL( Recruitment_Status__c , &quot;Completed/Denied at Committee&quot;) ||
+ISPICKVAL( Recruitment_Status__c , &quot;Closed&quot;),
+0,1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Recruitment in Progress Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requestor_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Requestor Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requestor_Phone_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Requestor Phone Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Rostered_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Rostered Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>School_Associate_Doctor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>School Associate Doctor</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Special_Instructions_Notes__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>CVO Special Instructions</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Physical State</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Change_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Status Change Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Street_Address__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Physical Street</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Recruitment_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Target Recruitment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Tracking_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Tracking Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Use_Client_Name__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Use Client Name?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Works_at_10_or_more_VSP_Locations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Works at more than 10 VSP Locations</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ZIP__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Physical Zip Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Network Recruitment</label>
+    <listViews>
+        <fullName>My_Closed_Recruitments</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>notEqual</operation>
+            <value>New Lead,Office Contacted,In Process,Episoded/Rostered,Pending</value>
+        </filters>
+        <label>My Closed Recruitments</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Recruitments</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Days_Open__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>New Lead,Office Contacted,In Process,Episoded/Rostered,Pending</value>
+        </filters>
+        <label>My Open Recruitments</label>
+    </listViews>
+    <listViews>
+        <fullName>New_Become_a_VSP_Provider_Requests</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Days_Open__c</columns>
+        <columns>Recruitment_Status__c</columns>
+        <columns>Recruitment_Type__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OWNER.ALIAS</field>
+            <operation>equals</operation>
+            <value>dadmi</value>
+        </filters>
+        <filters>
+            <field>OWNER.ALIAS</field>
+            <operation>equals</operation>
+            <value>kboot</value>
+        </filters>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <label>New Become a VSP Provider Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_10_Yesterday_s_Completed_Recrui</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>WV,VA,NC,SC,ME,NH,MA,RI,VT</value>
+        </filters>
+        <label>Region 10 - Yesterday&apos;s Completed Recrui</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_1_Yesterday_s_Completed_Recruit</fullName>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>AK,HI</value>
+        </filters>
+        <filters>
+            <field>ZIP__c</field>
+            <operation>startsWith</operation>
+            <value>90,91,92</value>
+        </filters>
+        <label>Region 1 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_2_Yesterday_s_Completed_Recruit</fullName>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>WA</value>
+        </filters>
+        <filters>
+            <field>ZIP__c</field>
+            <operation>startsWith</operation>
+            <value>93,94,95,96</value>
+        </filters>
+        <label>Region 2 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_3_Yesterday_s_Completed_Recruit</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>OR,NV,ID,UT,AZ,MT,WY,CO,ND,SD,NE</value>
+        </filters>
+        <label>Region 3 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_4_Yesterday_s_Completed_Recruit</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>NM,TX,OK,WI</value>
+        </filters>
+        <label>Region 4 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_5_Yesterday_s_Completed_Recruit</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>KS,MN,IA,MO,AR,LA,MS,AL</value>
+        </filters>
+        <label>Region 5 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_6_Yesterday_s_Completed_Recruit</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>IL,PA,MD,CT</value>
+        </filters>
+        <label>Region 6 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_7_Yesterday_s_Completed_Recruit</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>TN,GA,FL,DE,DC,PR,VI</value>
+        </filters>
+        <label>Region 7 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_8_Yesterday_s_Completed_Recruit</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>MI,OH,KY</value>
+        </filters>
+        <label>Region 8 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <listViews>
+        <fullName>Region_9_Yesterday_s_Completed_Recruit</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name_Lookup__c</columns>
+        <columns>Account_Name_Lookup__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>ZIP__c</columns>
+        <columns>Estimated_Committee_Date__c</columns>
+        <columns>Closed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Recruitment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Closed_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+            <value>IN,NY,NJ</value>
+        </filters>
+        <label>Region 9 - Yesterday&apos;s Completed Recruit</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000}</displayFormat>
+        <label>Network Recruitment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Network Recruitments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Provider_Name_Lookup__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Name_Lookup__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Recruitment_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Recruiting_Network__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Tracking_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Recruitment_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status_Change_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Opened_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Days_Open__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Provider_Name_Lookup__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name_Lookup__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Recruitment_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Street_Address__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>City__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>State__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ZIP__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VSPR34_Close_Date_Validation</fullName>
+        <active>true</active>
+        <description>Validation rule to not allow users to modify the Closed Date once it is set.</description>
+        <errorConditionFormula>NOT(ISBLANK(PRIORVALUE(Closed_Date__c)))
+&amp;&amp;
+ISCHANGED(Closed_Date__c)
+&amp;&amp;
+NOT($Profile.Name = &quot;System Administrator&quot; ||
+$Profile.Name = &quot;VSP Technical User&quot;)</errorConditionFormula>
+        <errorMessage>Only System Admin or LOB Admin can change the Closed Date once it&apos;s been set.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR6_Contact_Preference_Email</fullName>
+        <active>true</active>
+        <description>Requires a value in &quot;Credentialing Contact Email&quot; field if &quot;Contact Preference&quot; is email and Recruitment Status is Episoded/Rostered.</description>
+        <errorConditionFormula>ISPICKVAL( Recruitment_Status__c, &quot;Episoded/Rostered&quot;)
+&amp;&amp;
+ISPICKVAL( Contact_Preference__c, &quot;Email&quot;)
+&amp;&amp;
+ISBLANK( Credentialing_Contact_Email__c)</errorConditionFormula>
+        <errorMessage>Credentialing Contact Email is required if Contact Preference is &quot;Email&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR6_Contact_Preference_Fax</fullName>
+        <active>true</active>
+        <description>Requires a value in &quot;Credentialing Contact Fax&quot; field if &quot;Contact Preference&quot; is fax and Recruitment Status is Episoded/Rostered.</description>
+        <errorConditionFormula>ISPICKVAL( Recruitment_Status__c, &quot;Episoded/Rostered&quot;)
+&amp;&amp;
+ISPICKVAL( Contact_Preference__c, &quot;Fax&quot;)
+&amp;&amp;
+ISBLANK( Credentialing_Contact_Fax__c)</errorConditionFormula>
+        <errorMessage>Credentialing Contact Fax is required if Contact Preference is &quot;Fax&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR6_Req_Contact_Fields_Status</fullName>
+        <active>true</active>
+        <description>Requires certain Contact and Account fields to be populated when the Recruitment Status is changed to Episoded/Rostered.</description>
+        <errorConditionFormula>ISPICKVAL(Recruitment_Status__c , &quot;Episoded/Rostered&quot;)
+
+&amp;&amp;
+
+OR(ISBLANK(Provider_Name_Lookup__c),
+ISBLANK(Degree__c),
+ISBLANK(DOB__c),
+ISBLANK(NPI__c),
+ISBLANK(CAQH_ID__c),
+ISBLANK(Account_Name_Lookup__c),
+ISBLANK(Street_Address__c),
+ISBLANK(City__c),
+ISBLANK(State__c),
+ISBLANK(ZIP__c))</errorConditionFormula>
+        <errorMessage>Provider Name, Degree, DOB, CAQH ID, NPI, Account Name, and Account Address fields are required if Recruitment Status is Episoded/Rostered. Please update the information on the Contact and try again.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR6_Req_Recruitment_Fields_Status</fullName>
+        <active>true</active>
+        <description>Requires certain fields to be populated when the Recruitment Status is changed to Episoded/Rostered.</description>
+        <errorConditionFormula>ISPICKVAL(Recruitment_Status__c , &quot;Episoded/Rostered&quot;)
+
+&amp;&amp;
+
+OR(ISPICKVAL((Doctor_Member_Type__c), &quot;&quot;),
+ISPICKVAL(Owner_Employee__c, &quot;&quot;),
+ISPICKVAL(Contact_Preference__c, &quot;&quot;),
+ISBLANK(Doctor_ID__c), 
+ISBLANK(Credentialing_Contact_Name__c),
+ISBLANK(Credentialing_Contact_Phone__c), 
+ISBLANK(Estimated_Committee_Date__c))</errorConditionFormula>
+        <errorMessage>Doctor ID, Credentialing Contact Name, Credentialing Contact Phone, Estimated Committee Date, Doctor Member Type, Owner/Employee and Contact Preference are required if Recruitment Status is Episoded/Rostered.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Create_New_Network_Recruitment</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Create New Network Recruitment</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VSPR3_NetworkRecruitement?cRoleid={!Contact_Role__c.Id}&amp;dob={!Contact.Birthdate}</url>
+    </webLinks>
+</CustomObject>

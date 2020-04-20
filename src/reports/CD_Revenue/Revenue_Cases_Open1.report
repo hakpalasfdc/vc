@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_74205654</developerName>
+        <masterLabel>Revenue Groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Allison E Parrish</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Britany McAlister</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Domonique Watkins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julie McLaughlin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karla Garcia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kavita Devi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marianne Sanchez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suzanne Wuehler</sourceValue>
+            </sourceValues>
+            <value>Fernando</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bryan Kim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cassandra Rodriguez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chantelle Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daphne Breamejia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Helaine Uhlig</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karen Copple</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kisha Russell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marianne Sparks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Naomi Lewis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Parise Stroughter</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah Vang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sheila Holcomb</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stanley Yu</sourceValue>
+            </sourceValues>
+            <value>Adrian</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anna Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandi Nuss</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evelyn Mendoza</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Francisco Sanchez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Holli Linder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jacie Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Headley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julio Murrieta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Megan Koehler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oksana Rogalskaya</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Travis Johnson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Travis Ortlip</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Xee Vang</sourceValue>
+            </sourceValues>
+            <value>Nick</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <description>All cases by open date</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Client_Delivery</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CD spam Queue,CD No Reply Queue,CD Billing,CD Cash Receipts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Product__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Billing,Cash Receipts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.User_Role__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>The Vault Users</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.User_Role__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Revenue Cases Open</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2018-10-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-09-01</startDate>
+    </timeFrameFilter>
+</Report>

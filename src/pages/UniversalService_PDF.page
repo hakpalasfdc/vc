@@ -1,0 +1,22 @@
+<apex:page cache="false"  id="universalservicepageid" sidebar="false" renderAs="pdf" >
+<!--<apex:page standardController="Universal_Service__kav" cache="false"  id="universalservicepageid" sidebar="false" renderAs="pdf" >-->
+
+    <apex:pageBlock mode="detail" html-style="font:12px;width:90%;float:left;">
+        <apex:pageBlockSection columns="1">
+            <!--<apex:outputfield value="{!Universal_Service__kav.Title}"/><br/>
+            <apex:outputfield value="{!Universal_Service__kav.ArticleNumber}"/><br/>
+            <apex:outputfield value="{!Universal_Service__kav.VersionNumber}"/><br/>
+            <apex:outputfield value="{!Universal_Service__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield value="{!Universal_Service__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="================================================================================"/><br/><br/>
+
+        <apex:pageBlockSectionItem >
+            <apex:outputField label="Article Details" value="{!Universal_Service__kav.Article_Details__c}"/>
+        </apex:pageBlockSectionItem>
+            
+            <apex:outputField label="Keyword" value="{!Universal_Service__kav.Keyword__c}"/>
+            <apex:outputField label="SQ/QQ Steps" value="{!Universal_Service__kav.Support_Queue_Steps__c}"/>-->
+
+        </apex:pageBlockSection>
+    </apex:pageBlock>    
+</apex:page>

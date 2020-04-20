@@ -1,0 +1,13 @@
+Hi {!Key_Action_Decision__c.OwnerFirstName}, 
+
+The following Key Action/ Decision(s) assigned to you have become past due: {!Key_Action_Decision__c.Link} 
+
+To help keep our VSP Global CRM project work on track, please take one of the following actions as soon as possible.
+
+1. If the Key Action/Decision is yours to resolve, please review and close it out as soon as possible. 
+2. If the Key Action/ Decision was assigned to you incorrectly, please reassign it to the correct person. As a courtesy, remember to select the checkbox to let the new assignee know by email that a past due Key Action/Decision was re-assigned to them. 
+3. If you need assistance determining the appropriate new owner, please contact Todd Klaman for assistance. 
+
+Thanks in advance for your prompt attention, it is much appreciated. 
+
+VSP Global CRM Project Team

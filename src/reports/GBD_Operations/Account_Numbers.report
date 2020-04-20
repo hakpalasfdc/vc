@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Premier_Exception_Reason__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Marchon_Key_s__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Key_s__c</field>
+    </columns>
+    <columns>
+        <field>Account.Optics_Key__c</field>
+    </columns>
+    <columns>
+        <field>Account.Plexus_Key_s__c</field>
+    </columns>
+    <description>Account numbers for all LOBs for CAT2 practices.</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4 or 5)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Practice_Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Vision_Care_VSP_Network_Provider__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Tax_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>010785317,010803444,043677931,050565083,061646942,113763525,204589631,204589686,204606141,208568387,208568533,208901521,260010195,260459701,261503261,261503312,262491705,263287618,263976956,264030891,270615054,271152970,271596112,271774096,274845289,300502958,352223596,352237724,371099270,371303471,382394920,383299681,451862272,452316348,452577982,454269970,460664572,460785220,460799364,460903352,461443291,461449123,461610689,461634131,462165884,462622779,462696109,463014133,463079193,464069205,464192156,464212169,464341895,464533841,464746102,464751197,464781015,464956595,465516227,470896546,471086744,472015921,473787658,475021769,475451766,475525260,475528353,480775376,522345991,522346765,522389463,541829390,542047754,561151799,562557061,611306579,611356815,621593939,631159628,743091460,743156665</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Tax_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>753141715,810596681,810636866,812298500,812856399,822732091,841688711,861142740</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Premier_Exception_Reason__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>pearle vision</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CAT2 and PV SAP IDs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Premier_Exception_Reason__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,25 @@
+<apex:page standardController="Account" tabstyle="Account" >
+
+          <script>
+          var strOpticKey = '{!Account.Optics_Key__c}'; 
+    //123
+            //alert(strOpticKey ); 
+            var strWithOutZeros = strOpticKey.replace(/^0+/,''); 
+            var arrayStrings = strWithOutZeros.split(','); 
+            //alert(arrayStrings); 
+            if(typeof(srcUp)!='function') 
+            { 
+            if(strOpticKey=='') 
+            window.open("/apex/VSPR7_ErrorMessageOnDVI", '_self'); 
+            else 
+            window.open("/apex/VSPR7_OrderSummary?optickey="+arrayStrings[0], '_self'); 
+            } 
+            else 
+            { 
+            if(strOpticKey=='') 
+            srcUp("/apex/VSPR7_ErrorMessageOnDVI?isdtp=vw", '_self'); 
+            else 
+            srcUp("/apex/VSPR7_OrderSummary?optickey="+arrayStrings[0] + "&isdtp=vw", '_self'); 
+			}
+          </script> 
+</apex:page>

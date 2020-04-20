@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>QA_Review__c.NPI__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.Degree__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Review_Date_Scheduled__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Original_DocuSign_Sent_Date__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Review_Received_Date__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Result_Letter_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>QA_Review__c.QA_Review_DTP__c</field>
+    </columns>
+    <description>Scheduled - Monthly Report</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>QA_Review__c.QA_Administrator__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Monthly Review Completed by ADMIN</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$QA_Review__c@QA_Review__c.Provider_Name__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>QA_Review__c.Result_Letter_Date__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,71 @@
+<!-- c:VSP_MatchingCriteriaComponent -->
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="AlertNotificationListController">
+  <aura:attribute name="disabled" type="Boolean" default="false" />
+    <aura:attribute name="saved" type="Boolean" default="false" />
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="isCreated" type="Boolean"  default="false" />
+    <aura:attribute name="clientIds" type="string" default=""/>
+	<aura:attribute name="divisionIds" type="string" default=""/>
+    
+    <aura:handler event="force:showToast" action="{!c.init}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:notificationsLibrary aura:id="notificationsLibrary"/>
+    
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+    <aura:if isTrue="{!!v.saved}">
+        <lightning:recordEditForm
+                                  aura:id="form"
+            onload="{!c.handleLoad}"
+            onsubmit="{!c.handleSubmit}"
+            onsuccess="{!c.handleSuccess}"
+            recordId="{!v.recordId}"
+            objectApiName="Alerts_and_notification__c">
+            <!-- the messages component is for error messages -->
+            <lightning:messages />
+            
+            
+            <lightning:inputField fieldName="Call_Type__c" />
+            <!--<lightning:inputField fieldName="CallTypeLogic__c" />-->
+           <!-- <div class="slds-p-bottom_medium">
+                <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_6-of-12">
+                        <div class="slds-form-element__label slds-form-element__legend">Client IDs: </div>
+						<ui:outputText value="{!v.clientIds}" class="slds-p-right_large"/>	
+                      </div>
+                      <div class="slds-col slds-size_6-of-12">
+                        <lightning:button variant="brand"  aura:id="clientid" label="Add Client Id Criteria"  onclick="{!c.handleClick}"/>
+                      </div>
+                </div>
+                
+           	</div> -->
+           <!-- <lightning:inputField fieldName="ClientIdLogic__c" /> -->
+            
+            <!--<lightning:inputField fieldName="Consumer__c" />-->
+            <!--<lightning:inputField fieldName="Division__c" />-->
+            <lightning:inputField fieldName="Member_Status__c" />
+            <!--<lightning:inputField fieldName="MemberStatusLogic__c" />-->
+            <!--<div class="slds-p-bottom_medium">
+                <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_6-of-12">
+                        <div class="slds-form-element__label slds-form-element__legend">Division IDs: </div>
+            			<ui:outputText value="{!v.divisionIds}" class="slds-p-right_large"/> 
+                      </div>
+                      <div class="slds-col slds-size_6-of-12">
+                        <lightning:button variant="brand"  aura:id="divisionid" label="Add Division Id Criteria" onclick="{!c.handleClick}"/>
+                      </div>
+                </div>
+                
+           	</div>-->
+            <lightning:inputField fieldName="Consumer__c" />
+            
+            <div class="slds-m-top_medium">
+                <lightning:button disabled="{!v.disabled}" variant="brand" class="slds-align_absolute-center" type="submit" name="save" label="Save" />
+            </div>
+        </lightning:recordEditForm>
+        <aura:set attribute="else">
+            <p>Saved!</p>
+        </aura:set>
+    </aura:if>
+</aura:component>

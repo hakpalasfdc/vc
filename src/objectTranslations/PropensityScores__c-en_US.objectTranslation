@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PropensityScores</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PropensityScores</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- PropensityScores --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Classification --></label>
+        <name>Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confidence --></label>
+        <name>Confidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- ConsumerId --></label>
+        <name>ConsumerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer To --></label>
+        <name>Offer_To__c</name>
+        <picklistValues>
+            <masterLabel>CignaVision Members &amp; Dependents</masterLabel>
+            <translation><!-- CignaVision Members &amp; Dependents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dragon Customers</masterLabel>
+            <translation><!-- Dragon Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyeconic Customers</masterLabel>
+            <translation><!-- Eyeconic Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level Customers</masterLabel>
+            <translation><!-- Level Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetLife Vision Members &amp; Dependents</masterLabel>
+            <translation><!-- MetLife Vision Members &amp; Dependents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nike Customers</masterLabel>
+            <translation><!-- Nike Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Premiere Providers</masterLabel>
+            <translation><!-- VSP Premiere Providers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Providers</masterLabel>
+            <translation><!-- VSP Providers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision Benefits Members &amp; Dependents</masterLabel>
+            <translation><!-- Vision Benefits Members &amp; Dependents --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PersonAccount --></label>
+        <name>PersonAccount__c</name>
+        <relationshipLabel><!-- PropensityScores --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Propensity Priority --></label>
+        <name>Propensity_Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- States --></label>
+        <name>States__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Span Begin --></label>
+        <name>Time_Span_Begin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Span End --></label>
+        <name>Time_Span_End__c</name>
+    </fields>
+    <layouts>
+        <layout>PropensityScores Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

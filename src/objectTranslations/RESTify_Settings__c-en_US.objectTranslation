@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RESTify Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RESTify Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACCESS_KEY --></label>
+        <name>ACCESS_KEY__c</name>
+    </fields>
+    <fields>
+        <label><!-- END_POINT --></label>
+        <name>END_POINT__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTTP_VERB --></label>
+        <name>HTTP_VERB__c</name>
+    </fields>
+    <fields>
+        <label><!-- PATH --></label>
+        <name>PATH__c</name>
+    </fields>
+    <fields>
+        <label><!-- SECRET_KEY --></label>
+        <name>SECRET_KEY__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$QA_Review__c.QA_Review_Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_$QA_Review__c.Provider_Name__c</field>
+    </columns>
+    <columns>
+        <field>dsfs__DocuSign_Status__c.dsfs__Envelope_Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_$QA_Review__c.Review_Received_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$QA_Review__c.DocuSign_Completion_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$QA_Review__c.Review_Date_Scheduled__c</field>
+    </columns>
+    <columns>
+        <field>FK_$QA_Review__c.QA_Administrator__c</field>
+    </columns>
+    <description>Complete - Provider that Declined the DocuSign Envelope</description>
+    <filter>
+        <criteriaItems>
+            <column>dsfs__DocuSign_Status__c.dsfs__Envelope_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Declined</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>DocuSign in Declined Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$dsfs__DocuSign_Status__c@dsfs__DocuSign_Status__c.QA_Review__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Phone</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <field>Contact$Vision_Care_Network_Provider__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Contact_Roles__r$Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Contact_Roles__r$Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Contact_Roles__r$End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Contact_Roles__r$Status_Formula__c</field>
+    </columns>
+    <description>Shows all Contacts that have a potential duplicate Contact Role</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Account</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Duplicate Contact Roles</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_and_Contact_Roles__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

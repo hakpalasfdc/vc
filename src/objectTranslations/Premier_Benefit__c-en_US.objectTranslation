@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Premier Benefit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Premier Benefits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Benefit Amount --></label>
+        <name>Benefit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefit Category --></label>
+        <name>Benefit_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefit Checkbox --></label>
+        <name>Benefit_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefit Discount --></label>
+        <name>Benefit_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefit Type --></label>
+        <name>Benefit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Checkbox</masterLabel>
+            <translation><!-- Checkbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Currency</masterLabel>
+            <translation><!-- Currency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount</masterLabel>
+            <translation><!-- Discount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future</masterLabel>
+            <translation><!-- Future --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Benefit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must check Benefit Checkbox. Benefit Amount and Benefit Discount is not allowed. --></errorMessage>
+        <name>Premier_WhenBenefitTypeIsCheckbox</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a Benefit Amount. Benefit Discount and Benefit Checkbox is not allowed. --></errorMessage>
+        <name>Premier_WhenBenefitTypeIsCurrency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a Benefit Discount. Benefit Amount and Benefit Checkbox is not allowed. --></errorMessage>
+        <name>Premier_WhenBenefitTypeIsDiscount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only End Date can be changed on an Active Premier Benefit --></errorMessage>
+        <name>VSPR32_Active_Benefit_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot enter an Effective Date as of today or in the past --></errorMessage>
+        <name>VSPR32_Effective_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot enter an End Date the same or earlier than Effective Date --></errorMessage>
+        <name>VSPR32_End_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot make changes to an Inactive benefit --></errorMessage>
+        <name>VSPR32_Inactive_Benefit_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

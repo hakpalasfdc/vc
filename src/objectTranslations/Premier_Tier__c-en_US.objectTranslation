@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Premier Tier</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Premier Tiers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>Agreement_Type__c</name>
+        <picklistValues>
+            <masterLabel>DOLP1</masterLabel>
+            <translation><!-- DOLP1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOLP2</masterLabel>
+            <translation><!-- DOLP2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOLP3</masterLabel>
+            <translation><!-- DOLP3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOLP4</masterLabel>
+            <translation><!-- DOLP4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Strategic Agreement</masterLabel>
+            <translation><!-- Global Strategic Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optics Agreements</masterLabel>
+            <translation><!-- Optics Agreements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathways - Expansion</masterLabel>
+            <translation><!-- Pathways - Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathways - Recruitment</masterLabel>
+            <translation><!-- Pathways - Recruitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shift Series</masterLabel>
+            <translation><!-- Shift Series --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bypass Validation --></label>
+        <name>Bypass_Validation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type__c</name>
+        <picklistValues>
+            <masterLabel>AOP</masterLabel>
+            <translation><!-- AOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT2</masterLabel>
+            <translation><!-- CAT2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflict</masterLabel>
+            <translation><!-- Conflict --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAP</masterLabel>
+            <translation><!-- GAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent</masterLabel>
+            <translation><!-- Independent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LVC</masterLabel>
+            <translation><!-- LVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Near Site</masterLabel>
+            <translation><!-- Near Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Dev Excluded</masterLabel>
+            <translation><!-- Net Dev Excluded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Dev Purchasing Requirement</masterLabel>
+            <translation><!-- Net Dev Purchasing Requirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supported</masterLabel>
+            <translation><!-- Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pearle Vision CO</masterLabel>
+            <translation><!-- Pearle Vision CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pearle Vision LO</masterLabel>
+            <translation><!-- Pearle Vision LO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pop Up</masterLabel>
+            <translation><!-- Pop Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollup</masterLabel>
+            <translation><!-- Rollup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School</masterLabel>
+            <translation><!-- School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Retail</masterLabel>
+            <translation><!-- VSP Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Ventures</masterLabel>
+            <translation><!-- VSP Ventures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visionworks</masterLabel>
+            <translation><!-- Visionworks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Blank Date = No end date. --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusive VSP Patient Offers --></label>
+        <name>Exclusive_VSP_Patient_Offers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyewear Minimum Formula --></label>
+        <name>Eyewear_Minimum_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyewear Minimum --></label>
+        <name>Eyewear_Minimum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Fitting and Adjustments --></label>
+        <name>Free_Fitting_and_Adjustments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The selection of &quot;&lt;&quot; below or &quot;Top Tier&quot;, will determine the hierarchy location of where the new or edited tier needs to go in the list of existing tiers. --></help>
+        <label><!-- Hierarchy Action --></label>
+        <name>Hierarchy_Action__c</name>
+        <picklistValues>
+            <masterLabel>&lt;</masterLabel>
+            <translation><!-- &lt; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top Tier</masterLabel>
+            <translation><!-- Top Tier --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If Hierarchy Action = Top Tier, Hierarchy Selection must be blank. --></help>
+        <label><!-- Hierarchy Selection --></label>
+        <lookupFilter>
+            <errorMessage><!-- The selected Hierarchy Selection Tier has a status of Inactive. --></errorMessage>
+        </lookupFilter>
+        <name>Hierarchy_Selection__c</name>
+        <relationshipLabel><!-- Premier Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lens Minimum Formula --></label>
+        <name>Lens_Minimum_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lens Minimum --></label>
+        <name>Lens_Minimum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Order # --></label>
+        <name>Order_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Order # --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retinal Imaging Indicator --></label>
+        <name>Retinal_Imaging_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future</masterLabel>
+            <translation><!-- Future --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tier Name AutoNumber --></label>
+        <name>Tier_Name_AutoNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier Name Id --></label>
+        <name>Tier_Name_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Purchases LTM Formula --></label>
+        <name>Total_Purchases_LTM_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Purchases LTM --></label>
+        <name>Total_Purchases_LTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Flex Amount --></label>
+        <name>VSP_Flex_Amount__c</name>
+    </fields>
+    <layouts>
+        <layout>Tier Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Targets --></label>
+            <section>Targets</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter an Effective Date greater than today --></errorMessage>
+        <name>VSPR32_Effective_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter an End Date greater than Effective Date --></errorMessage>
+        <name>VSPR32_End_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Tier can not be edited when it is Active. --></errorMessage>
+        <name>VSP_Premier_Active_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t select a Parent record that is lower than your current order. --></errorMessage>
+        <name>VSP_Premier_Child_Hierarchy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The End Date must be greater than the Effective Date. The End Date must be in the future. --></errorMessage>
+        <name>VSP_Premier_End_Date_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tier must have a Hierarchy Selection. --></errorMessage>
+        <name>VSP_Premier_Hierarchy_Selection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Tier can not be edited when it is Inactive. --></errorMessage>
+        <name>VSP_Premier_Inactive_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Top Tier cannot have a Hierarchy Selection. --></errorMessage>
+        <name>VSP_Premier_Top_Tier</name>
+    </validationRules>
+</CustomObjectTranslation>

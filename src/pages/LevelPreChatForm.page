@@ -1,0 +1,207 @@
+<apex:page standardStylesheets="true" sidebar="false" showHeader="false" docType="html-5.0" >
+
+<!--<script type='text/javascript' src='https://c.la2-c2cs-ord.salesforceliveagent.com/content/g/js/42.0/deployment.js'></script>
+<script type='text/javascript'>
+liveagent.init('https://d.la2-c2cs-ord.salesforceliveagent.com/chat', '5720B000000PFXV', '00D1h0000008hXt');
+</script>-->
+
+
+<link rel="stylesheet" href="{!URLFOR($Resource.Chatjs,'jquery-ui.css')}"/>  
+  <script src="{!URLFOR($Resource.Chatjs,'jquery-1.12.4.js')}"></script>
+  <script src="{!URLFOR($Resource.Chatjs,'jquery-ui.js')}"></script>
+
+<!-- This script takes the endpoint URL parameter passed from the deployment page and makes it the action for the form -->
+<script type='text/javascript'>
+(function() {
+function handlePageLoad() {
+var endpointMatcher = new RegExp("[\\?\\&]endpoint=([^&#]*)");
+document.getElementById('prechatForm').setAttribute('action',
+decodeURIComponent(endpointMatcher.exec(document.location.search)[1]));
+} if (window.addEventListener) {
+window.addEventListener('load', handlePageLoad, false);
+} else { window.attachEvent('onload', handlePageLoad, false);
+}})();
+
+
+$( function() {
+    $( "#date" ).datepicker({
+    dateFormat: 'yy-mm-dd',
+    changeMonth: true,
+    yearRange: "-100:+0",
+    changeYear: true});
+  } );
+function validateDOBReq() {
+    var dtVal = document.getElementById('date').value;
+    if(dtVal == '' || dtVal == null || dtVal == undefined) {
+      alert('Please fill all the required fields');
+      return false;
+    } 
+    return true;
+  }
+</script>
+
+
+<style type="text/css">
+p {font-weight: bolder }
+h1{
+    padding: 150px;
+    font-family: "Gotham";
+    color:#00AEF8;
+    font-size:50px;
+    text-align: center;
+}
+.select {  width:300px;   }
+div{ background:#D3D3D3;}
+form{
+background:white;
+}
+.button {
+    background: #00ba34;
+    font-size: 12px;
+    border: none;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.control-label:after {
+  content:"*";
+  color:red;
+}
+.control-labelBef:before {
+  content:"*";
+  color:red;
+}
+</style>
+<div class='bg' style="min-width:482px;">
+<center>
+<apex:image value="{!$Resource.LevelLogo}" width="200px" style="margin-top:20px;"/>
+
+<div style="border-radius: 60px;">
+<!-- Form that gathers information from the chat visitor and sets the values to Live Agent Custom Details used later in the example -->
+<form method='post' id='prechatForm'  style=" border-radius: 50px;width:35%;min-width:430px;">  
+
+<!-- <action="https://d.la4-c1cs-phx.salesforceliveagent.com/content/s/chat?language=en_US#deployment_id=5720B000000PFXV&org_id=00D29000000DvyE&button_id=5730B000000PGHv"> -->
+
+   <table style=" padding: 25px 50px;">
+  <tr><th class ='control-label'>
+    Choose a Subject:
+ </th>
+    </tr>
+   <tr><td colspan="2">
+    <select name='liveagent.prechat:Pre-Chat Subject' style="border-radius: 6px;  height: 20px" id='subject' class='select'  required="true">
+        <option value=""></option>
+        <option value="Benefits">Benefits</option>
+        <option value="Contact Lens">Contact Lens</option>
+        <option value="Claims">Claims</option>
+        <option value="Doctor List">Doctor List</option>
+        <option value="Level App">Level App</option>
+        <option value="Level Glasses">Level Glasses</option>
+        <option value="Other">Other</option>
+    </select> 
+    </td>
+    </tr>
+  <tr>
+    <th class='control-label'>Your First Name:</th>
+    <th class='control-label'>Your Last Name: </th>
+  </tr>
+  <tr>
+    <td><input type='text' style="border-radius: 6px;  height: 20px" name='liveagent.prechat:Pre-Chat First Name' id='firstName' required="true"/></td>
+    <td><input type='text' style="border-radius: 6px;  height: 20px" name='liveagent.prechat:Pre-Chat Last Name' id='lastname' required="true"/></td>
+    </tr>
+    <tr>
+    <th class='control-label'>Email Address: </th>
+    <th class='control-label'>Your Date of Birth </th>
+    </tr>
+   <tr>
+    <td><input type='email' style="border-radius: 6px; height: 20px" name='liveagent.prechat:Pre-Chat Email Address' id='email' required="true"/></td>
+    <td><input type='text' style="border-radius: 6px; height: 20px" name='liveagent.prechat:Pre-Chat Date of Birth' id='date' placeholder="YYYY-MM-DD" required="true" readonly="true" /></td>
+   <td></td></tr>
+   
+    <tr><td class='control-labelBef'>Required Fields</td> 
+        <td align="center"><input type='submit' value='Start Chat' id="liveagent_button_online_5730B000000PGHv" class='button' onclick="return validateDOBReq();" /><!-- setName();-->
+        </td>
+    </tr>    
+    <tr><td colspan="2" style="color:grey;"><br/><br/>
+     Please refrain from entering your glasses or contact lens prescription, credit card, or financial institution information within the chat feature. If you believe your inquiry will require that information, please call us.
+    </td>
+    </tr>
+ </table>
+   <div style="display:none">
+                    <!--<input type="hidden" name="liveagent.prechat.findorcreate.map:Contact" value="FirstName,Pre-Chat First Name;LastName,Pre-Chat Last Name;Email,Email;DOB_Text__c,Pre-Chat Date of Birth" /-->     
+                    <!-- contact start --->
+                    <!--<input type="hidden" name="liveagent.prechat:ContactRecordType" value="{!$Label.Contact_Consumer_RecordTypeId}" />-->
+       				<input type="hidden" name="liveagent.prechat:PersonAccountRecordType" value="{!$Label.Person_Account_RecordTypeId}" />
+                    <!--<input type="hidden" name="liveagent.prechat:AccountRec" value="{!$Label.VSP_Consumer_Account_Id}" />-->
+                    <!--<input type="hidden" name="liveagent.prechat.findorcreate.map:Contact" value="FirstName,Pre-Chat First Name;LastName,Pre-Chat Last Name;All_Emails__c,Pre-Chat Email Address;Email,Pre-Chat Email Address;RecordTypeId,ContactRecordType;AccountId,AccountRec;DOB_Text__c,Pre-Chat Date of Birth" />     -->
+       				<input type="hidden" name="liveagent.prechat.findorcreate.map:Account" value="FirstName,Pre-Chat First Name;LastName,Pre-Chat Last Name;All_Emails__pc,Pre-Chat Email Address;PersonEmail,Pre-Chat Email Address;RecordTypeId,PersonAccountRecordType;DOB_Text__pc,Pre-Chat Date of Birth" />     
+                    <!-- contact end --->
+                        
+                    <input type="hidden" name="liveagent.prechat.findorcreate.map:Case" value="Subject,Pre-Chat Subject;Status,CaseStatus;Origin,CaseOrigin;RecordTypeId,CaseRecordType;Product__c,Product__c;Type,Type;Description,Description;Line_of_Business__c,Line_of_Business__c;" />
+                    
+                    <!-- contact start --->
+                    <!--<input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Contact" value="All_Emails__c,true;RecordTypeId,true" />-->
+       				<input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Account" value="All_Emails__pc,true;RecordTypeId,true" />
+                    <!--<input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Contact" value="All_Emails__c,false" />-->
+       				<input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Account" value="All_Emails__pc,false" />
+                    <!--<input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Contact" value="FirstName,true;LastName,true;Email,true;RecordTypeId,true;AccountId,true;DOB_Text__c,true" /> -->
+       				<input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Account" value="FirstName,true;LastName,true;PersonEmail,true;RecordTypeId,true;DOB_Text__pc,true" />
+                    <!-- contact end --->
+                    
+                    <!-- Hidden fields used to set additional custom details -->
+                    <input type="hidden" name="liveagent.prechat:CaseStatus" value="New" /><br />
+    
+                    <!-- This example assumes that "Chat" was added as picklist value to the Case Origin field -->
+                    <input type="hidden" name="liveagent.prechat:CaseOrigin" value="Chat" /><br />
+                    <input type="hidden" name="liveagent.prechat:Description" value="Description" /><br />
+                    <input type="hidden" name="liveagent.prechat:Line_of_Business__c" value="Global Customer Care" /><br />
+                    <input type="hidden" name="liveagent.prechat:Type" value="Issue" /><br />
+                    <input type="hidden" name="liveagent.prechat:Product__c" value="Level" /><br />
+
+
+    
+                    <!-- This example will set the Case Record Type to a specific value for the record type configured on the org. Lookup the case record type's id on your org and set it here -->
+                    <input type="hidden" name="liveagent.prechat:CaseRecordType" value="012U0000000N2u0" />                    
+    
+                    <!-- Used to set the visitor's name for the agent in the Console -->
+                    <input type="hidden" name="liveagent.prechat.name" id="prechat_field_name" />
+                        
+                    <!-- Save the entered data in Live Chat Transcript object -->
+                    <input type="hidden" name="liveagent.prechat.save:Pre-Chat Date of Birth" value="Pre_Chat_Date_of_Birth__c" />
+                    <input type="hidden" name="liveagent.prechat.save:Pre-Chat First Name" value="Pre_Chat_First_Name__c" />
+                    <input type="hidden" name="liveagent.prechat.save:Pre-Chat Last Name" value="Pre_Chat_Last_Name__c" />
+                    <input type="hidden" name="liveagent.prechat.save:Pre-Chat Subject" value="Pre_Chat_Subject__c" />
+                    <input type="hidden" name="liveagent.prechat.save:Pre-Chat Email Address" value="Pre_Chat_Email_Address__c" />
+      
+                    <input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Case" value="Subject,true;Status,true;Origin,true;RecordTypeId,true;Product__c,true;Type,true;Description,true;Line_of_Business__c,true;" />
+                                
+                     <!-- contact start --->
+                    <!--<input type="hidden" name="liveagent.prechat.findorcreate.linkToEntity:Contact" value="Case,ContactId" />-->
+       				<input type="hidden" name="liveagent.prechat.findorcreate.linkToEntity:Account" value="Case,AccountId" />
+            
+                    <!--<input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Contact" value="true" />-->
+       				<input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Account" value="true" />
+                    <input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Case" value="true" />
+                                
+                    <!--<input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Contact" value="ContactId" />-->
+       				<input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Account" value="AccountId" />
+                    <!-- contact end--->      
+                    
+                    <input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Case" value="true" />
+                                
+                    <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Case" value="Case" />
+                    
+         
+                    <!-- Create a Case every time -->
+                    <!-- displayToAgent: Hides the case record type from the agent -->
+                    <input type="hidden" name="liveagent.prechat.findorcreate.displayToAgent:CaseRecordType" value="false" />
+
+                    <!-- searchKnowledge: Searches knowledge article based on the text, this assumes that Knowledge is setup -->
+                    <input type="hidden" name="liveagent.prechat.knowledgeSearch:CaseSubject" value="true" />
+                        </div>
+</form>
+</div>
+</center>
+<br/><br/>
+</div>
+</apex:page>

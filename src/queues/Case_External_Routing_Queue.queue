@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>abc@123.com</email>
+    <name>Case External Routing Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>CC_USC_Omni_Users</publicGroup>
+        </publicGroups>
+        <users>
+            <user>melinda.cordell@vsp.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>ExternalRoutingConfig</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

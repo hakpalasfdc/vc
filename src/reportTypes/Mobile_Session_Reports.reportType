@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject></baseObject>
+    <category>admin</category>
+    <deployed>true</deployed>
+    <description>Mobile Session Reports</description>
+    <label>Mobile Session Reports</label>
+    <sections>
+        <masterLabel>Mobile Session</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>User Profile/Role</masterLabel>
+    </sections>
+</ReportType>

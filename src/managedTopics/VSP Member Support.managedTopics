@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>VSP Member Support.Featured:Appointments</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Appointments</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Featured:Benefits and Coverage</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Benefits and Coverage</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Featured:Claims and Reimbursement</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Claims and Reimbursement</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Featured:Laser Vision</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Laser Vision</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Featured:Login Registration</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Login Registration</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Featured:My Information</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>My Information</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Featured:Purchase or Enrollment</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Purchase or Enrollment</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Featured:Vision Doctors</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Vision Doctors</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Navigational:Appointments</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Appointments</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Navigational:Benefits and Coverage</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Benefits and Coverage</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Navigational:Claims and Reimbursement</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Claims and Reimbursement</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Navigational:Laser Vision</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Laser Vision</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Navigational:Login Registration</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Login Registration</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Navigational:My Information</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>My Information</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Navigational:Purchase or Enrollment</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Purchase or Enrollment</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSP Member Support.Navigational:Vision Doctors</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Vision Doctors</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

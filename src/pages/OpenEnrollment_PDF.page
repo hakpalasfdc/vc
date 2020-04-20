@@ -1,0 +1,27 @@
+<apex:page id="openenrollmentpageid" showHeader="true" renderAs="pdf">
+<!--<apex:page standardController="Open_Enrollment__kav"  id="openenrollmentpageid" showHeader="true" renderAs="pdf">-->
+
+    <apex:pageBlock mode="detail">
+        <apex:pageBlockSection columns="1">
+            <!--<apex:outputfield label="Title" value="{!Open_Enrollment__kav.Title}"/><br/>
+            <apex:outputfield label="Article Number" value="{!Open_Enrollment__kav.ArticleNumber}"/><br/>
+            <apex:outputfield label="Version Number" value="{!Open_Enrollment__kav.VersionNumber}"/><br/>
+            <apex:outputfield label="Last Published Date" value="{!Open_Enrollment__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield label="Version Comments" value="{!Open_Enrollment__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="===================================================================="/><br/><br/>
+
+            <apex:outputField label="Enrollment Start Date" value="{!Open_Enrollment__kav.Enrollment_Start_Date__c}"/> 
+            <apex:outputField label="Enrollment End Date" value="{!Open_Enrollment__kav.Enrollment_End_Date__c}"/> 
+            <apex:outputField label="Benefits Effective Date" value="{!Open_Enrollment__kav.Benefit_Effective_Data__c}"/> 
+            <apex:outputField label="General Description" value="{!Open_Enrollment__kav.General_Description__c}"/>                                      
+            <apex:outputField label="Benefits" value="{!Open_Enrollment__kav.Benefit__c}"/>                                      
+            <apex:outputField label="Eligibility" value="{!Open_Enrollment__kav.Eligibility__c}"/>                                      
+            <apex:outputField label="How to Enroll" value="{!Open_Enrollment__kav.How_To_Enroll__c}"/>                                      
+            <apex:outputField label="Premiums and Billing" value="{!Open_Enrollment__kav.Premiums_and_Billing__c}"/>                                      
+            <apex:outputField label="Confirmation" value="{!Open_Enrollment__kav.Confirmation__c}"/>                                      
+            <apex:outputField label="Change or Cancel" value="{!Open_Enrollment__kav.Change_Cancel__c}"/>
+            <apex:outputField label="Key Word" value="{!Open_Enrollment__kav.Keyword__c}"/>
+            <apex:outputField label="SQ/QQ Steps" value="{!Open_Enrollment__kav.Support_Queue_Steps__c}"/>-->
+        </apex:pageBlockSection>
+    </apex:pageBlock>   
+</apex:page>

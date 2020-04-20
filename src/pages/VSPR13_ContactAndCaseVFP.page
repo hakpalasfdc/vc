@@ -1,0 +1,136 @@
+<apex:page standardController="contact" extensions="VSPR13_ContactAndCaseExtensionController" >
+
+     <apex:includeScript value="/support/console/22.0/integration.js"/>
+  
+     <script type="text/javascript">
+            function defaultTabTitle() {
+                //Set the current tab's title
+                sforce.console.setTabTitle('Eyeconic New Contact And Case');
+          }
+            var pageLoad = window.onload;
+             window.onload = function() {
+          ﻿      ﻿if(pageLoad) {
+          ﻿          ﻿    pageLoad();
+          ﻿      ﻿}
+                 ﻿﻿defaultTabTitle();
+          ﻿}
+     </script>
+        
+   <apex:includeScript value="/support/console/22.0/integration.js"/>
+    <script type="text/javascript">
+        function testCloseTab() {
+            if (sforce.console.isInConsole()) {
+                  
+                  sforce.console.getEnclosingTabId(closeSubtab);
+               } else {
+                  
+                  CallApexMethodCancel();
+            }
+        }
+        var closeSubtab = function closeSubtab(result) {
+            //Now that we have the tab ID, we can close it
+            var tabId = result.id;
+            sforce.console.closeTab(tabId);
+        };
+    
+    </script>
+     
+     <apex:detail subject="{!contact.Id}" relatedList="false" title="false" inlineedit="true"/>
+
+    <apex:form >
+    
+        <apex:actionFunction name="CallApexMethodCancel" action="{!cancel}" />     
+        <apex:pageblock title="Contact" >
+        <apex:pagemessages />
+            <apex:pageBlockSection title="Contact Information" showHeader="true" collapsible="false">
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2">
+                          
+             <apex:pageBlockSectionItem >                
+                               
+                    <apex:outputlabel value="First Name" />
+                        <apex:outputpanel >
+                            <apex:inputfield taborderhint="1" value="{!objcontact.FirstName}" required="true" />
+                        </apex:outputpanel>
+                    </apex:pageBlockSectionItem>
+                
+                <!--apex:inputField value="{!contact.ownerId}"/-->
+                <apex:inputField taborderhint="2" Value="{!objcontact.lastname}"/>
+                <apex:outputText Value="VSP Consumer" label="Common Account Name" /> 
+                       
+                <apex:pageBlockSectionItem >
+                    <apex:outputlabel value="Record Type" />
+                        <apex:outputpanel >
+                            <apex:selectList tabindex="4" value="{!selectedrecordType}" multiselect="false" size="1">                              
+                                <apex:selectOption itemValue="Consumer" itemLabel="Consumer"/>
+                            </apex:selectList>
+        
+                        </apex:outputpanel>
+                    </apex:pageBlockSectionItem>
+                    
+           <apex:pageBlockSectionItem >
+            <apex:outputlabel value="Email" />
+            <apex:outputpanel >
+                <apex:inputField taborderhint="5" value="{!objcontact.Email}" required="true" />                
+            </apex:outputpanel>
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+            <apex:outputlabel value="Phone" />
+            <apex:outputpanel >
+                <apex:inputField taborderhint="6" value="{!objcontact.Phone}" />
+            </apex:outputpanel>
+        </apex:pageBlockSectionItem>
+                &nbsp;
+                &nbsp;
+        </apex:pageBlockSection>
+          <apex:pageBlockButtons location="top">
+            <apex:commandButton action="{!save}" value="Save" />
+            <!--apex:commandButton action="{!doSaveAndNew}" value="Save & New"/-->
+            <apex:commandButton onClick="testCloseTab();return false" value="Cancel" immediate="true">
+            
+            </apex:commandButton>
+        </apex:pageBlockButtons>
+           </apex:pageblock>
+                              
+        <apex:pageblock title="Case" >
+            
+             <apex:pageBlockSection title="Information" showHeader="true" collapsible="false">
+             </apex:pageBlockSection>
+             <apex:pageBlockSection columns="2" >  
+                        
+                <apex:pageBlockSectionItem >
+                    <apex:outputlabel value="Record Type" />
+                        <apex:outputpanel >                        
+                            <apex:selectList tabindex="130" value="{!caseSelectedRecordType}" multiselect="false" size="1">                                
+                                <apex:selectOption itemValue="Eyeconic" itemLabel="Eyeconic" />
+                            </apex:selectList>
+                        </apex:outputpanel>
+                  </apex:pageBlockSectionItem>  
+                <apex:inputField taborderhint="14" value="{!objCase.Subject}" required="true"/>
+                <apex:inputField taborderhint="15" value="{!objCase.Description}" required="true"/>
+                <apex:inputfield taborderhint="16" value="{!objCase.Notes__c}"/>             
+                <apex:inputField taborderhint="17" value="{!objCase.Line_of_Business__c}" required="true" />  
+                <apex:inputField taborderhint="18" value="{!objCase.Status}" required="true"/>
+                <apex:inputField taborderhint="19" value="{!objCase.Origin}" required="true"/> 
+                <apex:inputField taborderhint="20" value="{!objCase.Type}" required="true"/> 
+                <apex:inputField taborderhint="21" value="{!objCase.Product__c}" required="true"/>
+                <apex:inputField taborderhint="22" value="{!objCase.Reason_for_Contact__c}" />  
+                <apex:inputField taborderhint="23" value="{!objCase.Caller_Type__c}" /> 
+                <apex:inputField taborderhint="24" value="{!objCase.Other_Reason_Detail__c}" />    
+                <apex:inputField taborderhint="25" value="{!objCase.Complaint__c}" /> 
+                <apex:outputText value="{!objCase.Resolution_of_Contact_Formula_1__c} {!objCase.Resolution_of_Contact_Formula_2__c}" label="Resolution of Contact" />
+                <apex:inputField taborderhint="26" value="{!objCase.Escalation__c}"/> 
+                <apex:inputField taborderhint="28" value="{!objCase.Other_Resolution_Detail__c}" />   
+                <apex:inputField taborderhint="27" value="{!objCase.Referred_to_Call__c}"/>
+             </apex:pageBlockSection>
+             
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!save}" value="Save"/>
+            <!--apex:commandButton action="{!doSaveAndNew}" value="Save & New"/-->  
+            <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+         
+        </apex:pageBlockButtons>
+            </apex:pageblock>
+    </apex:form>
+</apex:page>

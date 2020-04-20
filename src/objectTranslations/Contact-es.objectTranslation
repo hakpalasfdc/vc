@@ -1,0 +1,1935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accommodates Children 0-3 years --></label>
+        <name>Accommodates_Children_0_3_years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accommodates Children 3-5 years --></label>
+        <name>Accommodates_Children_3_5_years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Vision Care Location Key --></label>
+        <name>Account_Vision_Care_Location_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active or Future Vision Care Provider --></label>
+        <name>Active_or_Future_Vision_Care_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Languages Spoken --></label>
+        <name>Additional_Languages_Spoken__c</name>
+        <picklistValues>
+            <masterLabel>Afghan Farsi</masterLabel>
+            <translation><!-- Afghan Farsi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Afghan Persian</masterLabel>
+            <translation><!-- Afghan Persian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Afrikaans</masterLabel>
+            <translation><!-- Afrikaans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Albanian</masterLabel>
+            <translation><!-- Albanian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>American Sign Language</masterLabel>
+            <translation><!-- American Sign Language --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amharic</masterLabel>
+            <translation><!-- Amharic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armenian</masterLabel>
+            <translation><!-- Armenian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assyrian</masterLabel>
+            <translation><!-- Assyrian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bengali</masterLabel>
+            <translation><!-- Bengali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulgarian</masterLabel>
+            <translation><!-- Bulgarian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burmese</masterLabel>
+            <translation><!-- Burmese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodian</masterLabel>
+            <translation><!-- Cambodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cantonese</masterLabel>
+            <translation><!-- Cantonese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catalan</masterLabel>
+            <translation><!-- Catalan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chamorro</masterLabel>
+            <translation><!-- Chamorro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chichewa</masterLabel>
+            <translation><!-- Chichewa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coptic</masterLabel>
+            <translation><!-- Coptic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creole</masterLabel>
+            <translation><!-- Creole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croatia</masterLabel>
+            <translation><!-- Croatia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech</masterLabel>
+            <translation><!-- Czech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish</masterLabel>
+            <translation><!-- Danish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch</masterLabel>
+            <translation><!-- Dutch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Egyptian</masterLabel>
+            <translation><!-- Egyptian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estonian</masterLabel>
+            <translation><!-- Estonian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faroese</masterLabel>
+            <translation><!-- Faroese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farsi</masterLabel>
+            <translation><!-- Farsi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filipino</masterLabel>
+            <translation><!-- Filipino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish</masterLabel>
+            <translation><!-- Finnish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flemish</masterLabel>
+            <translation><!-- Flemish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fukienese</masterLabel>
+            <translation><!-- Fukienese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ga</masterLabel>
+            <translation><!-- Ga --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goatian</masterLabel>
+            <translation><!-- Goatian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greek</masterLabel>
+            <translation><!-- Greek --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gujarati</masterLabel>
+            <translation><!-- Gujarati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haitian</masterLabel>
+            <translation><!-- Haitian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hakka</masterLabel>
+            <translation><!-- Hakka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hebrew</masterLabel>
+            <translation><!-- Hebrew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindi</masterLabel>
+            <translation><!-- Hindi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindustani</masterLabel>
+            <translation><!-- Hindustani --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hmong</masterLabel>
+            <translation><!-- Hmong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hungarian</masterLabel>
+            <translation><!-- Hungarian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic</masterLabel>
+            <translation><!-- Icelandic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Igbo</masterLabel>
+            <translation><!-- Igbo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ilocano</masterLabel>
+            <translation><!-- Ilocano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indian</masterLabel>
+            <translation><!-- Indian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian</masterLabel>
+            <translation><!-- Indonesian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kannada</masterLabel>
+            <translation><!-- Kannada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kiswahili</masterLabel>
+            <translation><!-- Kiswahili --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kurdish</masterLabel>
+            <translation><!-- Kurdish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lao</masterLabel>
+            <translation><!-- Lao --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin</masterLabel>
+            <translation><!-- Latin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latvian</masterLabel>
+            <translation><!-- Latvian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lebanese</masterLabel>
+            <translation><!-- Lebanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lithuanian</masterLabel>
+            <translation><!-- Lithuanian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luxambourgeous</masterLabel>
+            <translation><!-- Luxambourgeous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macedonian</masterLabel>
+            <translation><!-- Macedonian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay</masterLabel>
+            <translation><!-- Malay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malayalam</masterLabel>
+            <translation><!-- Malayalam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandarin</masterLabel>
+            <translation><!-- Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandingo</masterLabel>
+            <translation><!-- Mandingo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marathi</masterLabel>
+            <translation><!-- Marathi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maya</masterLabel>
+            <translation><!-- Maya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nahua</masterLabel>
+            <translation><!-- Nahua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Navajo</masterLabel>
+            <translation><!-- Navajo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nepalese</masterLabel>
+            <translation><!-- Nepalese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nepali</masterLabel>
+            <translation><!-- Nepali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nigerian</masterLabel>
+            <translation><!-- Nigerian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian</masterLabel>
+            <translation><!-- Norwegian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oriya</masterLabel>
+            <translation><!-- Oriya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paiute</masterLabel>
+            <translation><!-- Paiute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panjabi</masterLabel>
+            <translation><!-- Panjabi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Papiamento</masterLabel>
+            <translation><!-- Papiamento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pashtu</masterLabel>
+            <translation><!-- Pashtu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish</masterLabel>
+            <translation><!-- Polish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese</masterLabel>
+            <translation><!-- Portuguese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjabi</masterLabel>
+            <translation><!-- Punjabi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Romanian</masterLabel>
+            <translation><!-- Romanian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rumanian</masterLabel>
+            <translation><!-- Rumanian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samoan</masterLabel>
+            <translation><!-- Samoan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sara</masterLabel>
+            <translation><!-- Sara --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serbo-Croatian</masterLabel>
+            <translation><!-- Serbo-Croatian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sesotho</masterLabel>
+            <translation><!-- Sesotho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shtokavian</masterLabel>
+            <translation><!-- Shtokavian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slavic</masterLabel>
+            <translation><!-- Slavic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovak</masterLabel>
+            <translation><!-- Slovak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somali</masterLabel>
+            <translation><!-- Somali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southern Sotho</masterLabel>
+            <translation><!-- Southern Sotho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surinamese</masterLabel>
+            <translation><!-- Surinamese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swahili</masterLabel>
+            <translation><!-- Swahili --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish</masterLabel>
+            <translation><!-- Swedish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tagalog</masterLabel>
+            <translation><!-- Tagalog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tahitian</masterLabel>
+            <translation><!-- Tahitian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taishan</masterLabel>
+            <translation><!-- Taishan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taiwanese</masterLabel>
+            <translation><!-- Taiwanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tamil</masterLabel>
+            <translation><!-- Tamil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telugu</masterLabel>
+            <translation><!-- Telugu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation><!-- Thai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish</masterLabel>
+            <translation><!-- Turkish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukrainian</masterLabel>
+            <translation><!-- Ukrainian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urdu</masterLabel>
+            <translation><!-- Urdu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welsh</masterLabel>
+            <translation><!-- Welsh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wolof</masterLabel>
+            <translation><!-- Wolof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yiddish</masterLabel>
+            <translation><!-- Yiddish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yugoslavian</masterLabel>
+            <translation><!-- Yugoslavian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zulu</masterLabel>
+            <translation><!-- Zulu --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Adjusted Subscriber Coverage End Date --></label>
+        <name>Adjusted_Subscriber_Coverage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Emails --></label>
+        <name>All_Emails__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Altair&apos;s marketing communications. --></help>
+        <label><!-- Altair Marketing-Communications --></label>
+        <name>Altair_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Altair&apos;s general communications. --></help>
+        <label><!-- Altair Marketing-General --></label>
+        <name>Altair_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Altair Score --></label>
+        <name>Altair_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- As of Date --></label>
+        <name>As_of_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birthdate --></label>
+        <name>Birthdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bypass VC Validation Rules --></label>
+        <name>Bypass_VC_Validation_Rules__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAQHIDLastName --></label>
+        <name>CAQHIDLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAQH ID --></label>
+        <name>CAQH_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPUV Score 1 --></label>
+        <name>CPUV_Score_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPUV Score 2 --></label>
+        <name>CPUV_Score_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPUV Score 3 --></label>
+        <name>CPUV_Score_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPUV Score 4 --></label>
+        <name>CPUV_Score_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPUV Score 5 --></label>
+        <name>CPUV_Score_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPUV Score 6 --></label>
+        <name>CPUV_Score_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPUV Score 7 --></label>
+        <name>CPUV_Score_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Ineligibility --></label>
+        <name>Campaign_Ineligibility__c</name>
+        <picklistValues>
+            <masterLabel>Data Issue</masterLabel>
+            <translation><!-- Data Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Requested</masterLabel>
+            <translation><!-- Member Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign Segment --></label>
+        <name>Campaign_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Exclusion Reason --></label>
+        <name>Client_Exclusion_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Name --></label>
+        <name>Client_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the client has a full service product, or not based on the client&apos;s primary product. --></help>
+        <label><!-- Client Product Type --></label>
+        <name>Client_Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Status --></label>
+        <name>Client_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Strategic Business Unit --></label>
+        <name>Client_Strategic_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Termination Date --></label>
+        <name>Client_Termination_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Contact ID --></label>
+        <name>Comm_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vision Care Committee Date --></help>
+        <label><!-- Committee Date --></label>
+        <name>Committee_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vision Care Committee Status --></help>
+        <label><!-- Committee Status --></label>
+        <name>Committee_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vision Care Committee Type --></help>
+        <label><!-- Committee Type --></label>
+        <name>Committee_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- ConsumerIdLeft4_index --></label>
+        <name>ConsumerIdLeft4_index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer ID --></label>
+        <name>Consumer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Count --></label>
+        <name>Contact_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Exception --></label>
+        <name>Contact_Exception__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if consumer had an elective contact lens claim over the last 4 years prior to their Adjusted Coverage End Date. --></help>
+        <label><!-- Contact Lens --></label>
+        <name>Contact_Lens__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role Exception Count --></label>
+        <name>Contact_Role_Exception_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Source Details --></label>
+        <name>Contact_Source_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Status --></label>
+        <name>Contact_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Record --></label>
+        <name>Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Active Contact Roles --></label>
+        <name>Count_Active_Contact_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count All Contact Roles --></label>
+        <name>Count_All_Contact_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credential Non-Standard Provider --></label>
+        <name>Credential_Non_Standard_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Age --></label>
+        <name>Current_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- D2C Contact --></label>
+        <name>D2C_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- D2C Contact index --></label>
+        <name>D2C_Contact_index__c</name>
+    </fields>
+    <fields>
+        <label><!-- D2C Pre Sales Opt In --></label>
+        <name>D2C_Pre_Sales_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOB_Text --></label>
+        <name>DOB_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applied with the Center for Medicare Services to provide services to the Medicare population --></help>
+        <label><!-- Date of CMS Application Submission --></label>
+        <name>Date_of_CMS_Medicare_Application_Submiss__c</name>
+    </fields>
+    <fields>
+        <help><!-- The educational degree of the Vision Care Doctor. --></help>
+        <label><!-- Degree --></label>
+        <name>Degree__c</name>
+        <picklistValues>
+            <masterLabel>DO</masterLabel>
+            <translation><!-- DO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OD</masterLabel>
+            <translation><!-- OD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DS Owner ID --></label>
+        <name>DialSource__DS_Owner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Datetime of Last Disposition --></label>
+        <name>DialSource__Datetime_of_Last_Disposition_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Call Campaign Name --></label>
+        <name>DialSource__Last_Call_Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Disposition --></label>
+        <name>DialSource__Last_Disposition_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Call --></label>
+        <name>DialSource__Next_Call_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Call Count --></label>
+        <name>DialSource__Total_Call_Count_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disposition of Call --></label>
+        <name>Disposition_of_Call__c</name>
+        <picklistValues>
+            <masterLabel>Do Not Contact</masterLabel>
+            <translation><!-- Do Not Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interested, but not now</masterLabel>
+            <translation><!-- Interested, but not now --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Action Taken</masterLabel>
+            <translation><!-- No Action Taken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred caller to StayWithVSP.com</masterLabel>
+            <translation><!-- Referred caller to StayWithVSP.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send IP Offer email</masterLabel>
+            <translation><!-- Send IP Offer email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred to Sales Agent</masterLabel>
+            <translation><!-- Transferred to Sales Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Division Id --></label>
+        <name>Division_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Contact Member - Client Level --></label>
+        <name>Do_Not_Contact_Member_Client_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contact has requested we do not contact them. --></help>
+        <label><!-- Do Not Contact --></label>
+        <name>Do_Not_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Send Survey --></label>
+        <name>Do_Not_Send_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor ID --></label>
+        <name>Doctor_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor Type --></label>
+        <name>Doctor_Type__c</name>
+        <picklistValues>
+            <masterLabel>A - Affiliate Provider</masterLabel>
+            <translation><!-- A - Affiliate Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F - Laser Vision Correction (LVC)</masterLabel>
+            <translation><!-- F - Laser Vision Correction (LVC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M - VSP Member Doctor</masterLabel>
+            <translation><!-- M - VSP Member Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S - School Faculty Provider</masterLabel>
+            <translation><!-- S - School Faculty Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X - Client Authorized Provider (GAP)</masterLabel>
+            <translation><!-- X - Client Authorized Provider (GAP) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Effective Date Issue --></label>
+        <name>Effective_Date_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Contact Activities --></label>
+        <name>Eloqua_Contact_Activities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Contact ID --></label>
+        <name>Eloqua_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Eloqua Score --></label>
+        <name>Eloqua_Contact_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Match 1 --></label>
+        <name>Email_Match_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Match 2 --></label>
+        <name>Email_Match_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>American Indian or Alaskan Native</masterLabel>
+            <translation><!-- American Indian or Alaskan Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian/Pacific Islander</masterLabel>
+            <translation><!-- Asian/Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black/African American</masterLabel>
+            <translation><!-- Black/African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caucasian</masterLabel>
+            <translation><!-- Caucasian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic or Latino</masterLabel>
+            <translation><!-- Hispanic or Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expected Effective Date --></label>
+        <name>Expected_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Address Phone --></label>
+        <name>Eyeconic_Address_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Benefit Token Number --></label>
+        <name>Eyeconic_Benefit_Token_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Benefit Token Number --></label>
+        <name>Eyeconic_Benefit_Token_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Birthdate --></label>
+        <name>Eyeconic_Birthdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Customer Number --></label>
+        <name>Eyeconic_Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Email --></label>
+        <name>Eyeconic_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic First Name --></label>
+        <name>Eyeconic_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Last Name --></label>
+        <name>Eyeconic_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Login Email --></label>
+        <name>Eyeconic_Login_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Primary Phone --></label>
+        <name>Eyeconic_Primary_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Recent Order Number --></label>
+        <name>Eyeconic_Recent_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyeconic Registered User --></label>
+        <name>Eyeconic_Registered_User__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Eyefinity&apos;s marketing communications. --></help>
+        <label><!-- Eyefinity Marketing-Communications --></label>
+        <name>Eyefinity_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Eyefinity&apos;s general communications. --></help>
+        <label><!-- Eyefinity Marketing-General --></label>
+        <name>Eyefinity_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Eyefinity Score --></label>
+        <name>Eyefinity_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- FNameLNameEmail --></label>
+        <name>FNameLNameEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- FNameLNamePhone --></label>
+        <name>FNameLNamePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- FNameLName --></label>
+        <name>FNameLName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Originally stored in Degree Code in PROS --></help>
+        <label><!-- Facility Type --></label>
+        <name>Facility_Type__c</name>
+        <picklistValues>
+            <masterLabel>EF - Laser Vision Center</masterLabel>
+            <translation><!-- EF - Laser Vision Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES - School</masterLabel>
+            <translation><!-- ES - School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA - Optical Shop</masterLabel>
+            <translation><!-- NA - Optical Shop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Gender of Contact. --></help>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates if consumer received L, F, or LF paid claim over the last 4 years prior to their Adjusted Coverage End Date. --></help>
+        <label><!-- Glasses --></label>
+        <name>Glasses__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Profile Count --></label>
+        <name>High_Profile_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Profile --></label>
+        <name>High_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Behavioral Score --></label>
+        <name>IP_Behavioral_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Interest --></label>
+        <name>IP_Interest__c</name>
+        <picklistValues>
+            <masterLabel>No, add caller to Do Not Contact</masterLabel>
+            <translation><!-- No, add caller to Do Not Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No, but the caller is a candidate/interested</masterLabel>
+            <translation><!-- No, but the caller is a candidate/interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No, the caller is not a candidate</masterLabel>
+            <translation><!-- No, the caller is not a candidate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes, Transfer to Sales Agent</masterLabel>
+            <translation><!-- Yes, Transfer to Sales Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IP Purchase Date --></label>
+        <name>IP_Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Volunteering for --></label>
+        <name>Interested_in_Volunteering_for__c</name>
+        <picklistValues>
+            <masterLabel>Client health/benefit fairs</masterLabel>
+            <translation><!-- Client health/benefit fairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus groups</masterLabel>
+            <translation><!-- Focus groups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interviews for print articles</masterLabel>
+            <translation><!-- Interviews for print articles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media/educational events</masterLabel>
+            <translation><!-- Media/educational events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pilot programs</masterLabel>
+            <translation><!-- Pilot programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presentations</masterLabel>
+            <translation><!-- Presentations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio interviews</masterLabel>
+            <translation><!-- Radio interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Television interviews</masterLabel>
+            <translation><!-- Television interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP Mobile Eyes</masterLabel>
+            <translation><!-- VSP Mobile Eyes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IsFromVFPage --></label>
+        <name>IsFromVFPage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the date of the last claim for contact lenses. --></help>
+        <label><!-- Last Contact Lens Date --></label>
+        <name>Last_Contact_Lens_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Contact Lens Network --></label>
+        <name>Last_Contact_Lens_Network__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Exam Date --></label>
+        <name>Last_Exam_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Exam Network --></label>
+        <name>Last_Exam_Network__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the date of the last claim for glasses (L, F, or LF). --></help>
+        <label><!-- Last Glasses Date --></label>
+        <name>Last_Glasses_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Glasses Network --></label>
+        <name>Last_Glasses_Network__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Survey Sent --></label>
+        <name>Last_Survey_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source - Most Recent --></label>
+        <name>Lead_Source_Most_Recent__c</name>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar</masterLabel>
+            <translation><!-- Seminar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Marchon&apos;s marketing communications. --></help>
+        <label><!-- Marchon Marketing-Communications --></label>
+        <name>Marchon_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Marchon&apos;s general communications. --></help>
+        <label><!-- Marchon Marketing-General --></label>
+        <name>Marchon_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Marchon Score --></label>
+        <name>Marchon_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contact&apos;s name used for Marketing Campaigns. --></help>
+        <label><!-- Marketing Name --></label>
+        <name>Marketing_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medicare ID Number --></label>
+        <name>Medicare_ID_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Id --></label>
+        <name>Member_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Type --></label>
+        <name>Member_Type__c</name>
+        <picklistValues>
+            <masterLabel>Dependent</masterLabel>
+            <translation><!-- Dependent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Middle Initial --></label>
+        <name>Middle_Initial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months Since Last Exam --></label>
+        <name>Months_Since_Last_Exam__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months Since Last Glasses --></label>
+        <name>Months_Since_Last_Glasses__c</name>
+    </fields>
+    <fields>
+        <label><!-- NDA Sign Date --></label>
+        <name>NDA_Sign_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Network Participation Agreement Sign Date must be on or prior to today&apos;s date. --></help>
+        <label><!-- NPA Sign Date --></label>
+        <name>NPA_Sign_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- National Provider Indicator for a Vision Care Doctor. --></help>
+        <label><!-- NPI --></label>
+        <name>NPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Email Address Added --></label>
+        <name>New_Email_Address_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Recred Date --></label>
+        <name>Next_Recred_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Standard Credentialing --></label>
+        <name>Non_Standard_Credentialing__c</name>
+        <picklistValues>
+            <masterLabel>Credential - Gemini</masterLabel>
+            <translation><!-- Credential - Gemini --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credential - VSP</masterLabel>
+            <translation><!-- Credential - VSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegated Credential - Davis</masterLabel>
+            <translation><!-- Delegated Credential - Davis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegated Credential - NVI</masterLabel>
+            <translation><!-- Delegated Credential - NVI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Count of Paid Eye Exam Claims since 4 years from the Coverage End Date --></help>
+        <label><!-- Number of Exam Claims --></label>
+        <name>Number_of_Exam_Claims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offered IP Opportunity --></label>
+        <name>Offered_IP_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Optic&apos;s marketing communications. --></help>
+        <label><!-- Optics Marketing-Communications --></label>
+        <name>Optics_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Optic&apos;s general communications. --></help>
+        <label><!-- Optics Marketing-General --></label>
+        <name>Optics_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Optics Score --></label>
+        <name>Optics_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contacts other email address. --></help>
+        <label><!-- Other Email --></label>
+        <name>Other_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Persona --></label>
+        <name>Persona__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contacts email address. --></help>
+        <label><!-- Personal Email --></label>
+        <name>Personal_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Extension of the contact phone number. --></help>
+        <label><!-- Phone Extension --></label>
+        <name>Phone_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy Id --></label>
+        <name>Policy_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Active Coverage Match --></label>
+        <name>Potential_Active_Coverage_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Active Coverage Type --></label>
+        <name>Potential_Active_Coverage_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Self reported Preferred method of communication by contact. --></help>
+        <label><!-- Preferred Communication --></label>
+        <name>Preferred_Communication__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Doctor ID 1 --></label>
+        <name>Previous_Doctor_ID_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Doctor ID 2 --></label>
+        <name>Previous_Doctor_ID_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Effective Date 1 --></label>
+        <name>Previous_Effective_Date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Effective Date 2 --></label>
+        <name>Previous_Effective_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous End Date 1 --></label>
+        <name>Previous_End_Date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous End Date 2 --></label>
+        <name>Previous_End_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Channel --></label>
+        <name>Purchase_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- R.A.M.P --></label>
+        <name>R_A_M_P__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for IP --></label>
+        <name>Reason_for_IP__c</name>
+        <picklistValues>
+            <masterLabel>Cobra Ending</masterLabel>
+            <translation><!-- Cobra Ending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dependent age-out</masterLabel>
+            <translation><!-- Dependent age-out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer dropping coverage</masterLabel>
+            <translation><!-- Employer dropping coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leaving Company</masterLabel>
+            <translation><!-- Leaving Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation><!-- Retirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopping for a family member</masterLabel>
+            <translation><!-- Shopping for a family member --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recruitment in Progress --></label>
+        <name>Recruitment_in_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce ID --></label>
+        <name>Salesforce_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shop on Behalf --></label>
+        <name>Shop_on_Behalf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Program Participation --></label>
+        <name>Special_Program_Participation__c</name>
+        <picklistValues>
+            <masterLabel>LTC - Long Term Care Facility Provider</masterLabel>
+            <translation><!-- LTC - Long Term Care Facility Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBIL - Mobile Clinic Interest</masterLabel>
+            <translation><!-- MOBIL - Mobile Clinic Interest --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specializes in Hard-to-fit Contacts --></label>
+        <name>Specializes_in_Hard_to_fit_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specializes in Low Vision --></label>
+        <name>Specializes_in_Low_Vision__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specializes in Vision Therapy --></label>
+        <name>Specializes_in_Vision_Therapy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty Board Award Date --></label>
+        <name>Specialty_Board_Award_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty Board Expiration Date --></label>
+        <name>Specialty_Board_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty Board Lifetime Certification --></label>
+        <name>Specialty_Board_Lifetime_Certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty Board Status --></label>
+        <name>Specialty_Board_Status__c</name>
+        <picklistValues>
+            <masterLabel>Board Certified</masterLabel>
+            <translation><!-- Board Certified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certification Expired - Extension Granted</masterLabel>
+            <translation><!-- Certification Expired - Extension Granted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Certified - Grace Extension Granted</masterLabel>
+            <translation><!-- Not Certified - Grace Extension Granted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Certified - Pending</masterLabel>
+            <translation><!-- Not Certified - Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Certified - SPA</masterLabel>
+            <translation><!-- Not Certified - SPA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specialty Board Type --></label>
+        <name>Specialty_Board_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ophthalmology</masterLabel>
+            <translation><!-- Ophthalmology --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Status of Contact. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subscriber Coverage End Date --></label>
+        <name>Subscriber_Coverage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscriber Status --></label>
+        <name>Subscriber_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPS Return Label --></label>
+        <name>UPS_Return_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update --></label>
+        <name>Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- VC --></label>
+        <name>VC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Global&apos;s marketing communications. --></help>
+        <label><!-- VSP Global Marketing-Communications --></label>
+        <name>VSP_Global_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Global&apos;s general communications. --></help>
+        <label><!-- VSP Global Marketing-General --></label>
+        <name>VSP_Global_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Member --></label>
+        <name>VSP_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Network Provider Count --></label>
+        <name>VSP_Network_Provider_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Term Reason Code --></label>
+        <name>VSP_Term_Reason_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Doctor Exception --></label>
+        <name>Vision_Care_Doctor_Exception__c</name>
+        <picklistValues>
+            <masterLabel>ABO - Not ABO Certified</masterLabel>
+            <translation><!-- ABO - Not ABO Certified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AWP - Willing Provider State</masterLabel>
+            <translation><!-- AWP - Willing Provider State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAD1 - Consent Agreement - NM</masterLabel>
+            <translation><!-- CAD1 - Consent Agreement - NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAD2 - Consent Agreement - A&amp;H</masterLabel>
+            <translation><!-- CAD2 - Consent Agreement - A&amp;H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAD3 - Consent Agreement - SIU</masterLabel>
+            <translation><!-- CAD3 - Consent Agreement - SIU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAD4 - Consent Agreement - promo</masterLabel>
+            <translation><!-- CAD4 - Consent Agreement - promo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CED1 - Legal Approved - 2002</masterLabel>
+            <translation><!-- CED1 - Legal Approved - 2002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CED2 - Legal Approved - 2006</masterLabel>
+            <translation><!-- CED2 - Legal Approved - 2006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CED3 - Legal Approved - 2009</masterLabel>
+            <translation><!-- CED3 - Legal Approved - 2009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEC - Covering for Deceased Owner Dr.</masterLabel>
+            <translation><!-- DEC - Covering for Deceased Owner Dr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAP - GAP eClaim Capability</masterLabel>
+            <translation><!-- GAP - GAP eClaim Capability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRF - Grandfather</masterLabel>
+            <translation><!-- GRF - Grandfather --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INS - Insufficient Insurance Coverage</masterLabel>
+            <translation><!-- INS - Insufficient Insurance Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEV - Maternity Leave/Sabbatical</masterLabel>
+            <translation><!-- LEV - Maternity Leave/Sabbatical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LFU - Not Fully DPA/TPA Licensed</masterLabel>
+            <translation><!-- LFU - Not Fully DPA/TPA Licensed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TFH - Alleged contract violation/investigation</masterLabel>
+            <translation><!-- TFH - Alleged contract violation/investigation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Effective Date --></label>
+        <name>Vision_Care_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care End Date --></label>
+        <name>Vision_Care_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact wants to opt-out of Vision Care&apos;s marketing communications. --></help>
+        <label><!-- Vision Care Marketing-Communications --></label>
+        <name>Vision_Care_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contacts want to opt-out of Vision Care&apos;s general communications. --></help>
+        <label><!-- Vision Care Marketing-General --></label>
+        <name>Vision_Care_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provides services for Vision Care. --></help>
+        <label><!-- Vision Care Provider --></label>
+        <name>Vision_Care_Network_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Primary Location Key --></label>
+        <name>Vision_Care_Primary_Location_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- VSP Board Member and/or Providers’ that advocate on VSP behalf --></help>
+        <label><!-- Vision Care Provider Advocate --></label>
+        <name>Vision_Care_Provider_Advocate__c</name>
+        <picklistValues>
+            <masterLabel>Current Board Member</masterLabel>
+            <translation><!-- Current Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Committee Member</masterLabel>
+            <translation><!-- Current Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Professional Representative</masterLabel>
+            <translation><!-- Current Professional Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current QA Representative</masterLabel>
+            <translation><!-- Current QA Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former Board Member</masterLabel>
+            <translation><!-- Former Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former Committee Member</masterLabel>
+            <translation><!-- Former Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former Professional Representative</masterLabel>
+            <translation><!-- Former Professional Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former QA Representative</masterLabel>
+            <translation><!-- Former QA Representative --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Based on Active Location Relationships --></help>
+        <label><!-- Vision Care Relationship Type(s) --></label>
+        <name>Vision_Care_Relationship_Type_s__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Vision Care Score --></label>
+        <name>Vision_Care_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Term Reason --></label>
+        <name>Vision_Care_Term_Reason__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Informed Consent Date --></label>
+        <name>qualtrics__Informed_Consent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Informed Consent --></label>
+        <name>qualtrics__Informed_Consent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Survey Invitation --></label>
+        <name>qualtrics__Last_Survey_Invitation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Survey Response --></label>
+        <name>qualtrics__Last_Survey_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Promoter Score --></label>
+        <name>qualtrics__Net_Promoter_Score__c</name>
+    </fields>
+    <layouts>
+        <layout>Client Contact Layout</layout>
+        <sections>
+            <label><!-- Email --></label>
+            <section>Email</section>
+        </sections>
+        <sections>
+            <label><!-- Phone --></label>
+            <section>Phone</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Consumer Contact Layout</layout>
+        <sections>
+            <label><!-- Email --></label>
+            <section>Email</section>
+        </sections>
+        <sections>
+            <label><!-- Eyeconic Information --></label>
+            <section>Eyeconic Information</section>
+        </sections>
+        <sections>
+            <label><!-- IP Candidate --></label>
+            <section>IP Candidate</section>
+        </sections>
+        <sections>
+            <label><!-- Phone --></label>
+            <section>Phone</section>
+        </sections>
+        <sections>
+            <label><!-- Recent Retail Orders --></label>
+            <section>Recent Retail Orders</section>
+        </sections>
+        <sections>
+            <label><!-- Vision Care Information --></label>
+            <section>Vision Care Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Classifications --></label>
+            <section>Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Eloqua Marketing Information --></label>
+            <section>Eloqua Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Email --></label>
+            <section>Email</section>
+        </sections>
+        <sections>
+            <label><!-- License and Specialty Information --></label>
+            <section>License and Specialty Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Information &amp; Opt-Outs --></label>
+            <section>Marketing Information &amp; Opt-Outs</section>
+        </sections>
+        <sections>
+            <label><!-- Phone --></label>
+            <section>Phone</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ECP Contact Layout</layout>
+        <sections>
+            <label><!-- Classifications --></label>
+            <section>Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Eloqua Marketing Information --></label>
+            <section>Eloqua Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Email --></label>
+            <section>Email</section>
+        </sections>
+        <sections>
+            <label><!-- Email Direct Behavior History --></label>
+            <section>Email Direct Behavior History</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Information &amp; Opt-Outs --></label>
+            <section>Marketing Information &amp; Opt-Outs</section>
+        </sections>
+        <sections>
+            <label><!-- Phone --></label>
+            <section>Phone</section>
+        </sections>
+        <sections>
+            <label><!-- Previous Doctor IDs --></label>
+            <section>Previous Doctor IDs</section>
+        </sections>
+        <sections>
+            <label><!-- Specialty Information --></label>
+            <section>Specialty Information</section>
+        </sections>
+        <sections>
+            <label><!-- Vision Care Details --></label>
+            <section>Vision Care Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Eyeconic Case --></label>
+        <name>New_Eyeconic_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Person Account --></label>
+        <name>Person_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Store Note Case --></label>
+        <name>Store_Note_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Client Contact --></label>
+        <name>UpdateClientContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Consumer Contact --></label>
+        <name>UpdateConsumerContact</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Client --></label>
+        <name>Client</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Consumer --></label>
+        <name>Consumer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Eye Care Professional --></label>
+        <name>Eye_Care_Professional</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- NPI number does not pass the check digit logic --></errorMessage>
+        <name>VSPR16_NPI_Type1_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter the Previous Doctor ID, Previous Effective Date, and Previous End Date when changing a Doctor ID --></errorMessage>
+        <name>VSPR19b_ReqdFields_Changing_DoctorID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select either a Degree or Facility Type for a Vision Care Contact. Note: You cannot select both. --></errorMessage>
+        <name>VSPR19b_SelectDegreeOrFacilityType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot enter a Vision Care End Date without a Vision Care Effective Date. --></errorMessage>
+        <name>VSPR19b_VCEndDateRequiresEffectiveDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Doctor ID must be 9 digits --></errorMessage>
+        <name>VSPR19b_Validate_Doctor_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter First Name, Last Name, NPI, Doctor ID, and Doctor Type for a Vision Care Facility Contact. --></errorMessage>
+        <name>VSPR19b_VisionCareFacilityRequiredFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter First Name, Last Name, NPI, Doctor ID, Doctor Type, Gender, and Birthdate for a Vision Care Contact. --></errorMessage>
+        <name>VSPR19b_VisionCareRequiredFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Vision Care End Date must be greater than the Vision Care Effective Date. The Vision Care End Date cannot be in the past --></errorMessage>
+        <name>VSPR19b_Vision_Care_End_Date_ECP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vision Care End Date must be greater than or equal to today&apos;s date and requires a Termination Reason. &quot;REAC&quot; is not a valid Term Reason Code. --></errorMessage>
+        <name>VSPR19b_Vision_Care_Term_Reason_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit fields for Vision Care Network Providers.  Please contact a Vision Care Network Administrator to make a change. --></errorMessage>
+        <name>VSPR1_VisionCareNetworkProvider</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Primary location must be an Active or Future-Dated Vision Care Business Account. --></errorMessage>
+        <name>VSPR27_CheckForVCAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must add Term Reason Code &quot;REAC&quot; to the Vision Care Term Reason field when reactivating a Vision Care Provider. --></errorMessage>
+        <name>VSPR27_Check_Term_Reason_Is_REAC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Doctor ID&apos;s Effective and End Dates must not overlap. --></errorMessage>
+        <name>VSPR30_DoctorId_EffectiveDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An email address is required on all VSP Client Contacts --></errorMessage>
+        <name>VSPR32_EmailRequiredMemCoordUser</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NPA Sign Date must be today or in the past --></errorMessage>
+        <name>VSPR34_NPASignDateValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot enter a Vision Care End Date without a Vision Care Effective Date. --></errorMessage>
+        <name>VSRP19b_VCEndDateRequiresEffectiveDate</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Email_Pitch --></label>
+        <name>CLS4SF__Email_Pitch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Pitch_List --></label>
+        <name>CLS4SF__Email_Pitch_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Live_Pitch --></label>
+        <name>CLS4SF__Live_Pitch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ContactActivityOverview --></label>
+        <name>ContactActivityOverview</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DS_InstaQueue --></label>
+        <name>DialSource__DS_InstaQueue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DS_InstaQueue_List --></label>
+        <name>DialSource__DS_InstaQueue_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EmailUnsubscribe --></label>
+        <name>EmailUnsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Eyeconic_New_Contact_and_Case --></label>
+        <name>Eyeconic_New_Contact_and_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Relocate --></label>
+        <name>Relocate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Relocate_Old --></label>
+        <name>Relocate_Old</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CallToPhoneButton --></label>
+        <name>cnx__CallToPhoneButton</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Qualtrics_Survey --></label>
+        <name>qualtrics__Send_Qualtrics_Survey</name>
+    </webLinks>
+</CustomObjectTranslation>

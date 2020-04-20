@@ -1,0 +1,18 @@
+<apex:page id="multitopicdetailspageid" showHeader="true" renderAs="pdf">
+<!--<apex:page standardController="Multi_Topic_Details__kav"  id="multitopicdetailspageid" showHeader="true" renderAs="pdf">-->
+
+    <apex:pageBlock mode="detail">
+        <apex:pageBlockSection columns="1">
+            <!--<apex:outputfield label="Title" value="{!Multi_Topic_Details__kav.Title}"/><br/>
+            <apex:outputfield label="Article Number" value="{!Multi_Topic_Details__kav.ArticleNumber}"/><br/>
+            <apex:outputfield label="Version Number" value="{!Multi_Topic_Details__kav.VersionNumber}"/><br/>
+            <apex:outputfield label="Last Published Date" value="{!Multi_Topic_Details__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield label="Version Comments" value="{!Multi_Topic_Details__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="===================================================================="/><br/><br/>
+
+            <apex:outputField label="Article Details" value="{!Multi_Topic_Details__kav.Article_Details__c}"/>
+            <apex:outputField label="Keyword" value="{!Multi_Topic_Details__kav.Keyword__c}"/>
+            <apex:outputField label="SQ/QQ Steps" value="{!Multi_Topic_Details__kav.Support_Queue_Steps__c}"/>-->
+        </apex:pageBlockSection>
+    </apex:pageBlock>   
+</apex:page>

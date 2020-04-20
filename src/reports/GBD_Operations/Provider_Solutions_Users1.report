@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Id</field>
+    </columns>
+    <columns>
+        <field>User$Title</field>
+    </columns>
+    <columns>
+        <field>User$CompanyName</field>
+    </columns>
+    <columns>
+        <field>User$Department</field>
+    </columns>
+    <columns>
+        <field>User$Division</field>
+    </columns>
+    <columns>
+        <field>User$UserRole</field>
+    </columns>
+    <columns>
+        <field>User$Manager</field>
+    </columns>
+    <columns>
+        <field>User$LastLoginDate</field>
+    </columns>
+    <columns>
+        <field>User$LastModifiedDate</field>
+    </columns>
+    <description>We currently have 155 available licenses as of 5/16/2019</description>
+    <filter>
+        <criteriaItems>
+            <column>User$Division</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Provider Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Profile</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>vsp the vault user,vsp sales user chatter only,vsp quest user,chatter free user</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$IsActive</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Profile</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Provider Solutions Salesforce License</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_with_Manager__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

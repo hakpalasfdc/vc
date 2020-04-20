@@ -1,0 +1,21 @@
+<apex:page sidebar="false">
+    <script language="JavaScript" type="text/javascript">
+    <!--script to show/ hide header if page opens within an iframe-->   
+            if (window.location != window.parent.location) {        
+                document.getElementById('AppBodyHeader').style.display = "none";
+                document.getElementById('sidebarCell').style.display = "none";
+                
+            }
+         
+    </script>
+    <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"/>
+    <script>
+        j$ = jQuery.noConflict();
+        j$(document).ready(function() {
+        j$('.bPageFooter').hide();
+        });
+    </script>
+    
+
+    <apex:enhancedList type="QNews__c" height="500" rowsPerPage="10" id="QNewsList"   />
+</apex:page>

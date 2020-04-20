@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89316158</developerName>
+        <masterLabel>Role</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER_ROLE</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Optics Brand - Eastern Region</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Brand RM - East</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Brand - Eastern Region Lead</sourceValue>
+            </sourceValues>
+            <value>Brand East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Optics Brand - Western Region</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Brand RM - West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Brand - Western Region Lead</sourceValue>
+            </sourceValues>
+            <value>Brand West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Columbus</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - Fort Lauderdale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - Tampa Bay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD East - Fort Lauderdale / Tampa Bay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - Dallas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD East - Dallas</sourceValue>
+            </sourceValues>
+            <value>VSPONE East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Olympia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - Sacramento</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - San Diego</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD West - Olympia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD West - Sacramento</sourceValue>
+            </sourceValues>
+            <value>VSPONE West</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>Activity.Type__c</field>
+    </columns>
+    <columns>
+        <field>Activity.Event_Type__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Activity.Event_Description__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>optics brand,vspone</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>customer service,manager,leadership,production,operations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>brand rm,vspone sd,vspone rsd,otto</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_89316158</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Optics Group 4C Activity</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ASSIGNED</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

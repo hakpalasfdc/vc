@@ -1,0 +1,20 @@
+<apex:page standardController="Knowledge__kav"  id="knowpageid" cache="false" showHeader="true" renderAs="pdf" sidebar="false">
+    <apex:pageBlock mode="detail">
+        <apex:pageBlockSection columns="1">
+            <apex:outputfield label="Title" value="{!Knowledge__kav.Title}"/><br/>
+            <apex:outputfield label="Article Number" value="{!Knowledge__kav.ArticleNumber}"/><br/>
+            <apex:outputfield label="Version Number" value="{!Knowledge__kav.VersionNumber}"/><br/>
+            <apex:outputfield label="Last Published Date" value="{!Knowledge__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield label="Version Comments" value="{!Knowledge__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="===================================================================="/><br/><br/>
+            
+			<apex:pageBlockSectionItem >
+            	<apex:outputField label="Article Details" value="{!Knowledge__kav.Article_Details__c}"/>
+        	</apex:pageBlockSectionItem>
+            
+            <apex:outputField label="Topic Links" value="{!Knowledge__kav.Topic_Links__c}" rendered="{!IF(Knowledge__kav.Article_Record_Type_Name__c == 'Multi_Topic', true, false)}"/>
+            <apex:outputField label="Keyword" value="{!Knowledge__kav.Keyword__c}"/>
+            <apex:outputField label="SQ/QQ Steps" value="{!Knowledge__kav.Support_Queue_Steps__c}"/>
+        </apex:pageBlockSection>                          
+    </apex:pageBlock>    
+</apex:page>

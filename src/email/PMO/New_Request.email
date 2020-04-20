@@ -1,0 +1,7 @@
+The following Request has been added to the toolkit.
+
+{!Request__c.Request_Title__c}
+
+{!Request__c.Request_Description__c}
+
+{!Request__c.Link}
