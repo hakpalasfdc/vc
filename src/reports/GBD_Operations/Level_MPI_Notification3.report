@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Status</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Comments__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Parent</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$ActivityDateTime</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Description</field>
+    </columns>
+    <description>Level Tasks from Sales Enablement for Julia Robinson that trigger tasks within the &apos;Level Salesforce Process&apos;, Trigger Merchandise. A duplicate report is also stored in Unified Public Reports. &apos;Time&apos; column is intentionally blank as a placeholder.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Activities$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Level MPI Notification</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Level MPI Notification</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Tasks_and_Events__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Activities$ActivityDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Activities$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

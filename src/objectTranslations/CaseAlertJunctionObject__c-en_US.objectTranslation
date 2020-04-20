@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CaseAlertJunctionObject</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CaseAlertJunctionObjects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alerts and Notifications --></label>
+        <name>Alerts_and_Notifications__c</name>
+        <relationshipLabel><!-- CaseAlertJunctions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- recordId --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

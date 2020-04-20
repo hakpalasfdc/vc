@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>QNews</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>QNews</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article ID --></label>
+        <name>Article_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Link --></label>
+        <name>Article_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Title --></label>
+        <name>Article_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Type --></label>
+        <name>Article_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article URL --></label>
+        <name>Article_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Version Number --></label>
+        <name>Article_Version_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best Practice --></label>
+        <name>Best_Practice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Category Group --></label>
+        <name>Data_Category_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Category Selection Id --></label>
+        <name>Data_Category_Selection_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Category --></label>
+        <name>Data_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Federal Compliance --></label>
+        <name>Federal_Compliance__c</name>
+    </fields>
+    <fields>
+        <label><!-- ForSharePointService --></label>
+        <name>ForSharePointService__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Published --></label>
+        <name>Last_Published__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check box in order to display in QNews feed. --></help>
+        <label><!-- QNews Display --></label>
+        <name>QNews_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Compliance --></label>
+        <name>State_Compliance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version Comments --></label>
+        <name>Version_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version History Id --></label>
+        <name>Version_History_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version History Parent Id --></label>
+        <name>Version_History_Parent_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version History Version Id --></label>
+        <name>Version_History_Version_Id__c</name>
+    </fields>
+    <layouts>
+        <layout>QNews Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

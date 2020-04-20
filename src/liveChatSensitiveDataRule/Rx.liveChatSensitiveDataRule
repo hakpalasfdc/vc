@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatSensitiveDataRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionType>Replace</actionType>
+    <enforceOn>7</enforceOn>
+    <isEnabled>true</isEnabled>
+    <pattern>[+]\d{1}[.]\d{2}
+[-]\d{1}[.]\d{2}
+\s[+]\d{1}[.]\d{2}
+\s[-]\d{1}[.]\d{2}
+\s\s[+]\d{1}[.]\d{2}
+\s\s[-]\d{1}[.]\d{2}
+\s\s\s[+]\d{1}[.]\d{2}
+\s\s\s[-]\d{1}[.]\d{2}
+\s\s\s\s[+]\d{1}[.]\d{2}
+\s\s\s\s[-]\d{1}[.]\d{2}
+\s\s\s\s\s[+]\d{1}[.]\d{2}
+\s\s\s\s\s[-]\d{1}[.]\d{2}
+\s\s\s\s\s\s[+]\d{1}[.]\d{2}
+\s\s\s\s\s\s[-]\d{1}[.]\d{2}</pattern>
+    <priority xsi:nil="true"/>
+    <replacement>XXX</replacement>
+</LiveChatSensitiveDataRule>

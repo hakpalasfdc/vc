@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Agreement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Agreements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Reason --></label>
+        <name>End_Date_Reason__c</name>
+        <picklistValues>
+            <masterLabel>End of Agreement</masterLabel>
+            <translation><!-- End of Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination of Agreement</masterLabel>
+            <translation><!-- Termination of Agreement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>DOLP1</masterLabel>
+            <translation><!-- DOLP1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOLP2</masterLabel>
+            <translation><!-- DOLP2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOLP3</masterLabel>
+            <translation><!-- DOLP3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOLP4</masterLabel>
+            <translation><!-- DOLP4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Strategic Agreement</masterLabel>
+            <translation><!-- Global Strategic Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optics Agreements</masterLabel>
+            <translation><!-- Optics Agreements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathways - Expansion</masterLabel>
+            <translation><!-- Pathways - Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathways - Recruitment</masterLabel>
+            <translation><!-- Pathways - Recruitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shift Series</masterLabel>
+            <translation><!-- Shift Series --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Agreement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Effective Date cannot be prior than today’s date --></errorMessage>
+        <name>VSPR31_EffectiveDateValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When an End Date is entered, End Date Reason is required. --></errorMessage>
+        <name>VSPR31_EndDateReasonRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date can only be a future date --></errorMessage>
+        <name>VSPR31_EndDateValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

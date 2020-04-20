@@ -1,0 +1,68 @@
+<apex:page controller="VSP_CTI_Controller" showHeader="false" sidebar="false">
+    <apex:includeScript value="{!URLFOR($Resource.cnx__CnxSfdcResources,'js/ConnectsIntegrationAPI.min.js')}"/> 
+    <apex:includeScript value="/support/console/43.0/integration.js"/>
+ 
+    <apex:outputPanel id="PortalUrl">
+        <apex:form >
+            <script>  
+            
+            ConnectsIntegrationAPI.onWorkItemConnect = function (event) {
+                if (event.item.Channel == "VOICE") {
+                    var workItemType = ConnectsIntegrationAPI.WORKITEM.TYPE.VOICE;
+                    var firstWorkItemData = ConnectsIntegrationAPI.getFirstWorkItem(workItemType);
+                    //     alert('Page Info '+firstWorkItemData.PerVar6);
+                    if (firstWorkItemData.PerVar6 != null && firstWorkItemData.Direction == 'inbound' && !firstWorkItemData.IsInternalCall){
+                        //  alert('Page Info '+firstWorkItemData.PerVar2);
+                            sforce.console.setCustomConsoleComponentPopoutable(false);
+                           sforce.console.setCustomConsoleComponentVisible(true);
+                          document.getElementById("showPortal").src = "https://csrportal-was-acpt.vsp.com/csrportal/ctiEvent/answered?contactId=" + firstWorkItemData.PerVar4;
+                        
+                        var conId = Object.keys(firstWorkItemData.CrmData.SearchResult.returnValue);
+                        callAccept(conId[0], firstWorkItemData.PerVar7);
+                    }
+                }
+            } 
+            
+            
+            ConnectsIntegrationAPI.onWorkItemEnd = function (event) {
+                if (event.item.Channel == "VOICE") {
+                    sforce.console.setCustomConsoleComponentVisible(false);
+                }
+            }
+            function getPrimaryTab(){
+                
+                //  alert('Case Id ' + primaryTabId);
+                sforce.console.getFocusedPrimaryTabId(openSubTab);
+                //  alert('Case Id ' + primaryTabId);
+                //   sforce.console.openSubtab( null, '/'+caseId, false, 'NewCase', null, null, null);
+                //alert('SubTab');
+            }
+            function openSubTab(result){
+                var caseId = '{!caseId}';
+                // alert('http://csrportal-was.vsp.com/csrportal/ctiEvent/answered?contactId=' + firstWorkItemData.PerVar4 + '&sfCaseId=' + caseId;
+                //  sforce.console.setCustomConsoleComponentPopoutable(false);
+                //       sforce.console.setCustomConsoleComponentVisible(true);
+                //      document.getElementById("showPortal").src = "https://csrportal-was-acpt.vsp.com/csrportal/ctiEvent/answered?contactId=" + firstWorkItemData.PerVar4 + '&sfCaseId=' + caseId;
+                //alert('Tab Id ' + result.id + ' Case Id ');
+                sforce.console.openPrimaryTab( null, '/'+caseId, false, 'Case: {!caseNum}', null, null, null);
+            }
+          
+        
+            </script>
+            
+            <apex:actionFunction name="callAccept" action="{!VSP_cti_Controller}" reRender="PortalUrl" oncomplete="getPrimaryTab()" >
+                <apex:param name="conIdValue" value="" assignTo="{!conIdValue}"/>
+                <apex:param name="Call_Intent" value="" assignTo="{!Call_Intent}"/>
+                
+            </apex:actionFunction>
+            
+           
+            
+          
+        </apex:form>
+        
+    </apex:outputPanel> 
+    
+    <apex:iframe id="showPortal" src="https://csrportal-was-acpt.vsp.com/csrportal/ctiEvent/answered?contactId=" scrolling="true">
+    </apex:iframe>      
+</apex:page>

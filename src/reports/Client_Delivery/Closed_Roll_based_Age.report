@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_75137422</developerName>
+        <masterLabel>Aging</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.Status_Number__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>Above Standard</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>In Standard</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+            </sourceValues>
+            <value>Out of Standard</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59597439</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.User_Role__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery Supervisor - Adrian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Adrian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Adrian</sourceValue>
+            </sourceValues>
+            <value>Team Adrian</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Nick</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Nick</sourceValue>
+            </sourceValues>
+            <value>Team Nick</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Fernando</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Fernando</sourceValue>
+            </sourceValues>
+            <value>Team Fernando</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery Supervisor - Sara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Sara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Sara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>System Administrator</sourceValue>
+            </sourceValues>
+            <value>Team Sara</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Amber</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Amber</sourceValue>
+            </sourceValues>
+            <value>Team Amber</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Delivery User - Team Leah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Team Leah</sourceValue>
+            </sourceValues>
+            <value>Team Leah</value>
+        </values>
+        <values>
+            <value>The Vault Users</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Case.User_Role__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_75137422</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <description>Using new SLA rules</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Client_Delivery</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CD Spam queue,cd no reply queue</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_75137422</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.User_Role__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Role based_Closed_SLA</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
+    </timeFrameFilter>
+</Report>

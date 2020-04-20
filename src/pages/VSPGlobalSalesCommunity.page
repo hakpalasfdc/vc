@@ -1,0 +1,9 @@
+<apex:page controller="vsphighlights">
+<script>
+    <apex:repeat value="{!vspurl }" var="sURL">
+      var cURL="{!sURL.communityurl__c}";
+    </apex:repeat>
+
+    window.open(cURL,'_blank'); 
+</script>
+</apex:page>

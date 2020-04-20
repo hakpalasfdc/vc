@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>VSP_Email_Correspondence_Template</letterhead>
+    <name>VSP Email Correspondence Template</name>
+    <style>freeForm</style>
+    <subject>Email Member Services Inquiry</subject>
+    <textOnly>Hello,
+
+
+
+
+
+
+
+
+
+
+
+
+{!User.First_Name_Last_Initial__c}
+Metlife Correspondence Team
+Metlife Vision
+
+How was our service? Please take a survey and tell us.
+
+Attention: This message is intended only for the individual to whom it is addressed and may contain information that is confidential or privileged. If you are not the intended recipient, or the employee or person responsible for delivering it to the intended recipient, you are hereby notified that any dissemination, distribution, copying or use is strictly prohibited. If you have received this communication in error, please notify the sender immediately.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

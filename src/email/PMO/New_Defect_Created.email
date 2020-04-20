@@ -1,0 +1,9 @@
+The following Defect has been added to the toolkit by {!Defect__c.CreatedBy}:
+
+Defect: {!Defect__c.Name}
+
+Subject: {!Defect__c.Subject__c}
+
+Defect Description: {!Defect__c.Detailed_Description__c}
+
+Defect Link: {!Defect__c.Link}

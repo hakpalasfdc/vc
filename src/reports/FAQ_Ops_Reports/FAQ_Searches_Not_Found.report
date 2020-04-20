@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>KnowledgeKeywordSearchHistory$Count</field>
+    </columns>
+    <columns>
+        <field>KnowledgeKeywordSearchHistory$Channel</field>
+    </columns>
+    <description>2016 Search strings returning no articles</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeKeywordSearchHistory$Keyword</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FAQ Searches Not Found</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SK__Knowledge_Keyword_Search__c</reportType>
+    <scope>durationYear</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeKeywordSearchHistory$AsOfDate</dateColumn>
+        <endDate>2016-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-06-01</startDate>
+    </timeFrameFilter>
+</Report>

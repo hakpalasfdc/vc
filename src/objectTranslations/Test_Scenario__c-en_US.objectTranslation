@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Test Scenario</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Test Scenarios</value>
+    </caseValues>
+    <fields>
+        <label><!-- Capability --></label>
+        <name>Capability__c</name>
+        <relationshipLabel><!-- Test Scenarios --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Functional Area --></label>
+        <name>Functional_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- List of Users --></label>
+        <name>List_of_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release --></label>
+        <name>Release__c</name>
+        <relationshipLabel><!-- Test Scenarios --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Additional Clarification Requested</masterLabel>
+            <translation><!-- Additional Clarification Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clarification Provided</masterLabel>
+            <translation><!-- Clarification Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release: Build</masterLabel>
+            <translation><!-- Release: Build --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIT: Fail</masterLabel>
+            <translation><!-- SIT: Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIT: In Process</masterLabel>
+            <translation><!-- SIT: In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIT: Pass</masterLabel>
+            <translation><!-- SIT: Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT: Fail</masterLabel>
+            <translation><!-- UAT: Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT: In Process</masterLabel>
+            <translation><!-- UAT: In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT: Pass</masterLabel>
+            <translation><!-- UAT: Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test Scenario Name --></label>
+        <name>Test_Scenario_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Test Scenario Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

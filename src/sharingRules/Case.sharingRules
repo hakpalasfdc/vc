@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>All_Case_Record_Types_Public</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>All Case Record Types Public</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Eyeconic,Customer Care,VSPOne Labs,Client Delivery,Onsite Clinics,VSP Global</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>VSPGlobalSales.Featured:Communications</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Communications</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSPGlobalSales.Featured:Reports</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Reports</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSPGlobalSales.Featured:Resources</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Resources</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSPGlobalSales.Featured:Training</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Training</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSPGlobalSales.Navigational:Communications</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Communications</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSPGlobalSales.Navigational:Reports</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Reports</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSPGlobalSales.Navigational:Resources</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Resources</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>VSPGlobalSales.Navigational:Training</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Training</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

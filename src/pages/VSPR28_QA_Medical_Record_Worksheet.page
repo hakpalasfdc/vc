@@ -1,0 +1,924 @@
+<apex:page id="QAMedicalWorksheet" title="QA Medical Record Worksheet" sidebar="false" standardController="QA_Patient_Review__c" lightningStylesheets="true" >
+    <script>
+    window.onload = function(){
+        window.scrollTo(0,0); 
+    };
+    </script>
+    
+    <apex:form >
+        <h1><font size="4">QA Medical Record Worksheet</font></h1>
+        <br></br>
+    <apex:pageBlock title="Patient Information" >
+        <div style = "font-size:14px">
+            <apex:outputLabel value="Name: " for="PatientName" style="font-weight:bold"/>
+            <apex:outputText value="{!QA_Patient_Review__c.Patient_First_Name__c + ' '}" />
+            <apex:outputText value="{!QA_Patient_Review__c.Patient_MI__c + ' '}" />
+            <apex:outputText value="{!QA_Patient_Review__c.Patient_Last_Name__c}" /><br></br>
+        <apex:outputLabel value="Age: " for="PatientAge" style="font-weight:bold"/>
+        <apex:outputText value="{!FLOOR(QA_Patient_Review__c.Patient_Age__c)}"/><br></br>
+    <apex:outputLabel value="Claim Type: " for="PatientAge" style="font-weight:bold"/>
+    <apex:outputText value="{!QA_Patient_Review__c.Claim_Type__c}"/><br></br>
+ 	<apex:outputLabel value="Patients Date of Service: " for="PatientAge" style="font-weight:bold"/>
+<apex:outputText value="{0, date, MM'/'dd'/'yyyy}">              
+    <apex:param value="{!QA_Patient_Review__c.Date_of_Service__c}"/>
+</apex:outputText><br></br>
+<apex:outputLabel value="Level: " for="PatientAge" style="font-weight:bold"/>
+<apex:outputText value="{!QA_Patient_Review__c.Level__c}"/>
+</div>
+</apex:pageBlock>
+<apex:pageBlock id="QAPageBlock"> <b>EYE EXAM PROCEDURES AND DOCUMENTATION </b> <br></br><br></br>
+<apex:pageBlockButtons location="both">
+    <apex:commandButton value="Save" action="{!save}" id="saveButton" />
+    <apex:commandButton value="Cancel" action="{!cancel}" id="cancelButton"/> 
+</apex:pageBlockButtons>
+
+<apex:pageBlockSection title="Comprehensive"  rendered="{!QA_Patient_Review__c.Level__c == 'Comprehensive'}" id="ComprehensiveInfoBlock" columns="1">
+    <!--    <apex:panelGrid columns="8" border="0" styleClass="tableStyle" width="100%" columnClasses="colStyle1,colStyle2,colStyle3,colStyle4,colStyle5,colStyle6,colStyle7,colStyle8">  -->
+    <apex:actionRegion >   
+        <table style="width: 100%">
+            <colgroup>
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+            </colgroup>
+            <tbody>
+                <!-- First Row  -->
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Case Hx (Perf)</apex:outputLabel>                         
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Case_Hx_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Enter. VA (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Enter_VA_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Pupil Ref (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Pupil_Ref_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Pupil Ref (Doc)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Pupil_Ref_Doc__c}"></apex:inputField>
+                    </td>
+                </tr>
+                <!-- 2nd Row -->
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Versions (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Versions_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Versions (Doc)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Versions_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Subj. Rx (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Subj_Rx_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Corr VA (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Corr_VA_Perf__c}"></apex:inputField>
+                    </td>
+                </tr>
+                <!--- 3rd Row  -->
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Binoc (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Binoc_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Binoc (Doc)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Binoc_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Ext Bio (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Ext_Bio_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Ext Bio (Doc)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Ext_Bio_Doc__c}"></apex:inputField>
+                    </td>
+                </tr>
+                <!--- 4th Row -->
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Tonometry 19 yrs &amp; Over (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Tonometry_19_over_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Tonometry 19 yrs &amp; Over (Doc)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Tonometry_19_over_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Ophthal (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Ophthal_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Ophthal (Doc)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Ophthal_Doc__c}"></apex:inputField>
+                    </td>
+                </tr>
+                <!-- 5th Row -->
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">GV Fields (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.GV_Fields_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">GV Fields (Doc)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.GV_Fields_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Dilation Diabetic Pts and Dilations (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Dilation_Diabetic_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Dilation Diabetic Pts and Dilations (Doc)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Dilation_Diabetic_Doc__c}"></apex:inputField>
+                    </td>                    
+                </tr>
+                <!-- 6th Row -->
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Diagnosis (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Diagnosis_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Diagnosis (Doc)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Diagnosis_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Treatment (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Treatment_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <!--- 7th Row -->
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">High Cholesterol</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.High_Cholesterol__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Hypertension</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Hypertension__c}"></apex:inputField> 
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Diabetes identified?</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Diabetes__c}">
+                            <apex:actionSupport event="onchange" rerender="QAPageBlock"/>
+                        </apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Glaucoma identified?</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Glaucoma__c}">
+                            <apex:actionSupport event="onchange" rerender="QAPageBlock"/>
+                        </apex:inputField>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </apex:actionRegion>  
+    <!--  </apex:panelGrid>  -->
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Intermediate"  rendered="{!QA_Patient_Review__c.Level__c == 'Intermediate'}" id="IntermediateInfoBlock" columns="1">
+    <!--   <apex:panelGrid columns="8" border="0" styleClass="tableStyle" width="100%" columnClasses="colStyle1,colStyle2,colStyle3,colStyle4,colStyle5,colStyle6,colStyle7,colStyle8">  -->
+    
+    <apex:actionRegion > 
+        <table style="width: 100%">
+            <colgroup>
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+                <col span="1" style="width: 12.5%;"/> 
+            </colgroup>
+            <tbody>
+                <!--    1st Row Start  -->  
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Case Hx (Perf)</apex:outputLabel>
+                    </td> 
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Case_Hx_Perf__c}"></apex:inputField>
+                    </td>                    
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Subj. Rx (Perf)</apex:outputLabel>                     
+                    </td>                    
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Subj_Rx_Perf__c}"></apex:inputField>
+                    </td>
+                    
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Corr VA (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Corr_VA_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Binoc (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Binoc_Perf__c}"></apex:inputField>
+                    </td>
+                    
+                </tr>
+                <!--    2nd Row Start  -->  
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Binoc (Doc)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Binoc_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Ext Bio (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Ext_Bio_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Ext Bio (Doc)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Ext_Bio_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Ophthal (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Ophthal_Perf__c}"></apex:inputField>
+                    </td>
+                    
+                    
+                </tr>
+                <!--    3rd Row Start  -->  
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Ophthal (Doc)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Ophthal_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Dilation (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Dilation_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Dilation (Doc)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Dilation_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Diagnosis (Perf)</apex:outputLabel>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Diagnosis_Perf__c}"></apex:inputField>                        
+                    </td>             
+                </tr>
+                <!--    4th Row Start  -->                 
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Diagnosis (Doc)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Diagnosis_Doc__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Treatment (Perf)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Treatment_Perf__c}"></apex:inputField>
+                    </td>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Treatment (Doc)</apex:outputLabel> 
+                    </td>
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Treatment_Doc__c}"></apex:inputField> 
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    
+                </tr>
+                <!---  5th Row Start   -->
+                <tr>
+                    <td>
+                        <apex:outputLabel style="font-weight:600">High Cholesterol</apex:outputLabel> 
+                    </td> 
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.High_Cholesterol__c}"></apex:inputField> 
+                    </td> 
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Hypertension</apex:outputLabel>
+                    </td> 
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Hypertension__c}"></apex:inputField> 
+                    </td> 
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Diabetes identified?</apex:outputLabel> 
+                    </td> 
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Diabetes__c}">
+                            <apex:actionSupport event="onchange" rerender="QAPageBlock"/>
+                        </apex:inputField>
+                    </td> 
+                    <td>
+                        <apex:outputLabel style="font-weight:600">Glaucoma identified?</apex:outputLabel>
+                    </td> 
+                    <td>
+                        <apex:inputField value="{!QA_Patient_Review__c.Glaucoma__c}">
+                            <apex:actionSupport event="onchange" rerender="QAPageBlock"/>
+                        </apex:inputField>
+                    </td> 
+                </tr>
+                
+                
+            </tbody>
+        </table>
+    </apex:actionRegion> 
+    <!--   </apex:panelGrid>  -->
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Diabetes & Diabetic Retinopathy CPG"  rendered="{!QA_Patient_Review__c.Diabetes__c == 'Yes'}" id="DiabetesInfoBlock" columns="2">
+    <!--   <apex:panelGrid columns="2" border="0" styleClass="tableStyle" width="100%" columnClasses="colStyle1,colStyle2">   -->
+    <apex:actionRegion >   
+        <table style="width: 100%; table-layout: fixed">
+            <colgroup>
+                <col span="1" style="width: 60%;"/> 
+                <col span="1" style="width: 40%;"/> 
+            </colgroup>
+            <tbody>
+                <!-- 1st Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Diabetes_Present__c_Label">
+                            
+                            <apex:outputLabel style="font-weight:600" >1. Is diabetes present at the time of exam?</apex:outputLabel>
+                            
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Diabetes_Present__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.Diabetes_Present__c}" required="{!IF(QA_Patient_Review__c.Diabetes__c == 'Yes', true, false)}">
+                                    <apex:actionSupport event="onchange" rerender=""/>
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 2nd Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Diabetes_Suspected__c_Label">
+                            <apex:outputLabel style="font-weight:600" >2. Diabetes suspect based on exam findings?</apex:outputLabel> 
+                        </apex:outputPanel> 
+                    </td>                    
+                    <td>
+                        <apex:outputPanel id="Diabetes_Suspected__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.Diabetes_Suspected__c}" required="{!IF(QA_Patient_Review__c.Diabetes__c == 'Yes', true, false)}">
+                                    <apex:actionSupport event="onchange" rerender=""/>
+                                </apex:inputField> 
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 3rd Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Dilation_Performed__c_Label">
+                            <apex:outputLabel style="font-weight:600">3. Was Dilation Performed?</apex:outputLabel> 
+                        </apex:outputPanel> 
+                    </td>                    
+                    <td>
+                        <apex:outputPanel id="Dilation_Performed__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.Dilation_Performed__c}" required="{!IF(QA_Patient_Review__c.Diabetes__c == 'Yes', true, false)}">
+                                    <apex:actionSupport event="onchange" rerender="Dilation_Rationale__c_Input"/>
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 4th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Dilation_Rationale__c_Label">
+                            <apex:outputLabel style="font-weight:600">3.A.      If 3 is No, what was the valid rationale?:</apex:outputLabel>
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Dilation_Rationale__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Dilation_Rationale__c}" required="{!IF(QA_Patient_Review__c.Dilation_Performed__c == 'No', true, false)}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 5th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Retinal_Imaging_Type__c_Label">
+                            <apex:outputLabel style="font-weight:600">3.B.     If 3 is No, select (if applicable):</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Retinal_Imaging_Type__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Retinal_Imaging_Type__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 6th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Diabetic_Retinopathy__c_Label">
+                            <apex:outputLabel style="font-weight:600" >4. Is diabetic retinopathy documented? If No, skip to question 5.</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Diabetic_Retinopathy__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.Diabetic_Retinopathy__c}" required="{!IF(QA_Patient_Review__c.Diabetes__c == 'Yes', true, false)}">
+                                    <apex:actionSupport event="onchange" rerender="Is_Mascular_encroachment_1_disc_diameter__c_Input"/>
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 7th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Is_Mascular_encroachment_1_disc_diameter__c_Label">
+                            <apex:outputLabel style="font-weight:600">4.A.   Is macular encroachment within 1 disc diameter of macula?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Is_Mascular_encroachment_1_disc_diameter__c_Input">
+                            <apex:actionRegion >            
+                                <apex:inputField value="{!QA_Patient_Review__c.Is_Mascular_encroachment_1_disc_diameter__c}" required="{!IF(QA_Patient_Review__c.Diabetic_Retinopathy__c == 'Yes', true, false)}">
+                                    <apex:actionSupport event="onchange" rerender="Was_a_Consultation_Documented__c_Input"/>
+                                </apex:inputField>  
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 8th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Was_a_Consultation_Documented__c_Label">
+                            <apex:outputLabel style="font-weight:600">4.B.   If 4.A is Yes, was a consultation documented?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Was_a_Consultation_Documented__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Was_a_Consultation_Documented__c}" required="{!IF(QA_Patient_Review__c.Is_Mascular_encroachment_1_disc_diameter__c == 'Yes', true, false)}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>  
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 9th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Is_PCP_Communication_Documented__c_Label">
+                            <apex:outputLabel style="font-weight:600" >5. Is PCP communication documented?  </apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Is_PCP_Communication_Documented__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.Is_PCP_Communication_Documented__c}" required="{!IF(QA_Patient_Review__c.Diabetes__c == 'Yes', true, false)}">
+                                    <apex:actionSupport event="onchange" rerender="What_is_Communication_Rationale__c_Input"/>
+                                </apex:inputField>  
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 10th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="What_is_Communication_Rationale__c_Label">
+                            <apex:outputLabel style="font-weight:600">5.A.     If 5 is No, what was the valid rationale?:</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="What_is_Communication_Rationale__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.What_is_Communication_Rationale__c}" required="{!IF(QA_Patient_Review__c.Is_PCP_Communication_Documented__c == 'No', true, false)}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>  
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 11th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Patient_to_return_within_12_months__c_Label">
+                            <apex:outputLabel style="font-weight:600" >6. Patient instructed to return within 12 months?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Patient_to_return_within_12_months__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Patient_to_return_within_12_months__c}" required="{!IF(QA_Patient_Review__c.Diabetes__c == 'Yes', true, false)}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>  
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 12th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Algorithm_Followed__c_Label">
+                            <apex:outputLabel style="font-weight:600" >7. Algorithm followed?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Algorithm_Followed__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Algorithm_Followed__c}" required="{!IF(QA_Patient_Review__c.Diabetes__c == 'Yes', true, false)}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+    </apex:actionRegion>  
+    <!--  </apex:panelGrid>  -->
+</apex:pageBlockSection>     
+
+<apex:pageBlockSection title="Glaucoma CPG"  rendered="{!QA_Patient_Review__c.Glaucoma__c == 'Yes'}" id="GlaucomaInfoBlock" columns="8">
+    <!-- <apex:panelGrid columns="2" border="0" styleClass="tableStyle" width="75%" columnClasses="colStyle1,colStyle2">-->
+    <apex:actionRegion >  
+        <table style="width: 100%; table-layout: fixed">
+            <colgroup>
+                <col span="1" style="width: 60%;"/> 
+                <col span="1" style="width: 40%;"/> 
+            </colgroup>
+            <tbody>
+                <!-- 1st Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Glaucoma_Noted_in_History__c_Label">
+                            <apex:outputLabel style="font-weight:600">1. Is glaucoma noted in history (present at the time of exam)?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Glaucoma_Noted_in_History__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Glaucoma_Noted_in_History__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField> 
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 2nd Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Glaucoma_Diagnosed__c_Label">
+                            <apex:outputLabel style="font-weight:600">2. Glaucoma diagnosed during this exam?</apex:outputLabel>
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Glaucoma_Diagnosed__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Glaucoma_Diagnosed__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField> 
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 3rd Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Medication_to_Control_IOP__c_Label">
+                            <apex:outputLabel style="font-weight:600">3. Is medication to control IOP documented?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Medication_to_Control_IOP__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Medication_to_Control_IOP__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 4th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Modify_Glaucoma_Meds__c_Label">
+                            <apex:outputLabel style="font-weight:600">4. Documentation evident to modify therapy to control IOP?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Modify_Glaucoma_Meds__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Modify_Glaucoma_Meds__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 5th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Reason_for_No_Glaucoma_Meds__c_Label">
+                            <apex:outputLabel style="font-weight:600">5. If meds are not prescribed or modified, is rationale documented?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Reason_for_No_Glaucoma_Meds__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.Reason_for_No_Glaucoma_Meds__c}">
+                                    <apex:actionSupport event="onchange" rerender="If_Other_was_selected__c_Input"/>
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 6th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="If_Other_was_selected__c_Label">
+                            <apex:outputLabel style="font-weight:600">5a. If Other was selected for question 5, explain.</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="If_Other_was_selected__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.If_Other_was_selected__c}" required="{!IF(QA_Patient_Review__c.Reason_for_No_Glaucoma_Meds__c == 'Other', true, false)}">
+                                    <apex:actionSupport event="onchange" rerender=""/>
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 7th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Optic_Nerve_Stable__c_Label">
+                            <apex:outputLabel style="font-weight:600">6. Documentation supports that optic nerve status assessed in exam or ordered?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Optic_Nerve_Stable__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Optic_Nerve_Stable__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 8th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Visual_Field_Progression_Stabilized__c_Label">
+                            <apex:outputLabel style="font-weight:600">7. Documentation supports that visual field status assessed in exam or ordered?</apex:outputLabel> 
+                            
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Visual_Field_Progression_Stabilized__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Visual_Field_Progression_Stabilized__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField> 
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 9th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Under_Care_of_Specialist__c_Label">
+                            <apex:outputLabel style="font-weight:600">8. Is the patient under care of Ophthalmologist or Glaucoma Specialist?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Under_Care_of_Specialist__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.Under_Care_of_Specialist__c}">
+                                    <apex:actionSupport event="onchange" rerender="PCP_Communication__c_Input"/>
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 10th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Referred_to_Health_Plan_Specialist__c_Label">
+                            <apex:outputLabel style="font-weight:600">9. Was the patient referred to health plan ophthalmologist or glaucoma specialist?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Referred_to_Health_Plan_Specialist__c_Input">
+                            <apex:actionRegion >
+                                <apex:inputField value="{!QA_Patient_Review__c.Referred_to_Health_Plan_Specialist__c}">
+                                    <apex:actionSupport event="onchange" rerender="PCP_Communication__c_Input"/>
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+      <!--  
+        <apex:outputPanel id="PCP_Communication__c_Label">
+            <apex:outputLabel style="font-weight:600">10. If you answered "Yes" to 8 or 9, was there PCP communication?</apex:outputLabel>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="PCP_Communication__c_Input">
+            <apex:inputField required="{!IF(QA_Patient_Review__c.Under_Care_of_Specialist__c == 'Yes' || QA_Patient_Review__c.Referred_to_Health_Plan_Specialist__c == 'Yes',true,false)}" value="{!QA_Patient_Review__c.PCP_Communication__c}">
+                <apex:actionSupport event="onchange" rerender=""/>
+            </apex:inputField>
+        </apex:outputPanel>
+        -->
+                <!-- 11th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Follow_Up_Time_Frame__c_Label">
+                            <apex:outputLabel style="font-weight:600">10. If follow-up is documented: If Yes select time frame?</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Follow_Up_Time_Frame__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Follow_Up_Time_Frame__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField> 
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <!-- 12th Row -->
+                <tr>
+                    <td>
+                        <apex:outputPanel id="Algorithm_followed_also_mark_answer__c_Label">
+                            <apex:outputLabel style="font-weight:600">11. Algorithm followed (also mark answer on Medical record form) - mark no if 3, 5-7 or 10 = No, otherwise mark Yes</apex:outputLabel> 
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <apex:outputPanel id="Algorithm_followed_also_mark_answer__c_Input">
+                            <apex:inputField value="{!QA_Patient_Review__c.Algorithm_followed_also_mark_answer__c}">
+                                <apex:actionSupport event="onchange" rerender=""/>
+                            </apex:inputField> 
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </apex:actionRegion> 
+    <!-- </apex:panelGrid> -->
+</apex:pageBlockSection>     
+
+<apex:pageBlockSection title="Contact Lens"  id="ContactLensInfoBlock" columns="1">
+    <apex:panelGrid columns="8" border="0" styleClass="tableStyle" width="100%" columnClasses="colStyle1,colStyle2,colStyle3,colStyle4,colStyle5,colStyle6,colStyle7,colStyle8">
+        
+        <apex:outputLabel style="font-weight:600">First 1/1 (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.First_1_1_Perf__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Refitting (3 Fields) (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Refitting_3_Fields_Perf__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Replacement - N/A (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Replacement_N_A_Perf__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Additional CL Hx (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Additional_CL_Hx_Perf__c}"></apex:inputField> 
+        
+        <apex:outputLabel style="font-weight:600">Keratometry (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Keratometry_Perf__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Slit Lamp Evaluation w/CL (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Slit_Lamp_Evaluation_w_CL_Perf__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Slit Lamp Evaluation w/o CL (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Slit_Lamp_Evaluation_w_o_CL_Perf__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Over Refraction (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Over_Refraction_Perf__c}"></apex:inputField> 
+        
+        <apex:outputLabel style="font-weight:600">VA w/CL (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.VA_w_CL_Perf__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">VA w/o CL (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.VA_w_o_CL_Perf__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Response Subj. Obj. (Perf)</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Response_Subj_Obj_Perf__c}"></apex:inputField> 
+        
+    </apex:panelGrid>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Medical Record"  id="MedicalRecordInfoBlock" columns="1">
+    <apex:panelGrid columns="8" border="0" styleClass="tableStyle" width="100%" columnClasses="colStyle1,colStyle2,colStyle3,colStyle4,colStyle5,colStyle6,colStyle7,colStyle8">
+        
+        <apex:outputLabel style="font-weight:600">Exam components performed according to VSP Guidelines?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Exam_according_to_VSP_guidelines__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Exam record and claim have some DOS?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Exam_record_have_DOS__c}"></apex:inputField>        
+        <apex:outputLabel style="font-weight:600">Past medical history noted?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Past_medical_history_noted__c}"></apex:inputField>
+        <apex:outputLabel style="font-weight:600">Current significant illnesses and medical conditions?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Current_illnesses_and_medical_conditions__c}"></apex:inputField>
+        
+        <apex:outputLabel style="font-weight:600">Current medications noted?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Current_medications_noted__c}"></apex:inputField> 
+        <apex:outputLabel style="font-weight:600">Current medications allergies/reations noted?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Current_medication_allergies_noted__c}"></apex:inputField>        
+        <apex:outputLabel style="font-weight:600">Subjective / Objective information noted is pertinent to the patient's presenting complaints?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Info_noted_is_pertinent_to_patient__c}"></apex:inputField>
+        <apex:outputLabel style="font-weight:600">Working diagnoses consistent with the exam findings?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Diagnoses_consistent_with_exam__c}"></apex:inputField>
+        
+        <apex:outputLabel style="font-weight:600">Treatment Plan consistent with diagnosis?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Treatment_consistent_with_diagnosis__c}"></apex:inputField>
+        <apex:outputLabel style="font-weight:600">Follow-up care/visits noted on encounter forms/notes?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Follow_up_care_noted__c}"></apex:inputField>
+        <apex:outputLabel style="font-weight:600">Chart notes indicate rendering doctor by initials, unique electronic ID or circle (if multi-doctor practice)?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Chart_notes_rendering_doctor_by_initials__c}"></apex:inputField>
+        <apex:outputLabel style="font-weight:600">Were appropriate procedures performed to complete a contact lens fitting evaluation?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Were_procedures_performed_contact_lens__c}"></apex:inputField>
+        
+        <apex:outputLabel style="font-weight:600">Were appropriate procedures/treatments performed so the patient was not placed at risk?</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.Were_appropriate_procedures_performed__c}"></apex:inputField>
+        <apex:outputLabel style="font-weight:600">     If "No", state reason:</apex:outputLabel> 
+        <apex:inputField value="{!QA_Patient_Review__c.If_no_State_Reason__c}"></apex:inputField>
+        
+    </apex:panelGrid>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Comments"  id="CommentsInfoBlock" columns="1">
+    <apex:inputField value="{!QA_Patient_Review__c.Comments_pick__c}"></apex:inputField>
+    <apex:inputTextarea value="{!QA_Patient_Review__c.Other_Comments__c}" cols="112" rows="6"></apex:inputTextarea>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="California Only"  id="CaliforniaonlyInfoBlock" columns="1">
+    <apex:inputField value="{!QA_Patient_Review__c.Pt_preferred_language_documented__c}"></apex:inputField> 
+    <apex:inputField value="{!QA_Patient_Review__c.Pt_requested_interpreter__c}"></apex:inputField>        
+    <apex:inputField value="{!QA_Patient_Review__c.Pt_refused_interpreter__c}"></apex:inputField>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

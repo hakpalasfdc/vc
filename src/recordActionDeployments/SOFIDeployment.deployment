@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordActionDeployment xmlns="http://soap.sforce.com/2006/04/metadata">
+    <channelConfigurations>
+        <channel>Chat</channel>
+        <isAutopopEnabled>false</isAutopopEnabled>
+    </channelConfigurations>
+    <channelConfigurations>
+        <channel>Phone</channel>
+        <isAutopopEnabled>false</isAutopopEnabled>
+    </channelConfigurations>
+    <channelConfigurations>
+        <channel>Other</channel>
+        <isAutopopEnabled>false</isAutopopEnabled>
+    </channelConfigurations>
+    <deploymentContexts>
+        <entityName>Case</entityName>
+    </deploymentContexts>
+    <hasGuidedActions>true</hasGuidedActions>
+    <hasRecommendations>false</hasRecommendations>
+    <masterLabel>SOFI Deployment</masterLabel>
+    <selectableItems>
+        <action>SendEmail</action>
+        <type>QuickAction</type>
+    </selectableItems>
+    <selectableItems>
+        <action>Case.SendEmail</action>
+        <type>QuickAction</type>
+    </selectableItems>
+    <selectableItems>
+        <action>NBA_IP_Opportunity_Offer</action>
+        <type>Flow</type>
+    </selectableItems>
+    <selectableItems>
+        <action>NBA_In_Network_Influencing_Flow</action>
+        <type>Flow</type>
+    </selectableItems>
+    <selectableItems>
+        <action>Case.PPP_Calculator</action>
+        <type>QuickAction</type>
+    </selectableItems>
+</RecordActionDeployment>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>uscwritteninquiries@vsp.com</email>
+    <name>CC Written Inquiries Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>CC_Written_Inquiries_Queue</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

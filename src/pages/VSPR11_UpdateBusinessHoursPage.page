@@ -1,0 +1,49 @@
+<apex:page standardController="Account" showheader="false" extensions="VSPR11_UpdateBusinessHours" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/JavaScript" /> 
+    <style>
+        .myButt{
+        }
+        .myButt2{
+        }
+        
+    </style>
+    <script>
+        $( document ).ready(function() {
+            $('.myButt').click(function() { 
+                    saveIt();
+            });
+            
+            
+            
+        });
+    </script>
+    
+    <apex:form id="myfrm" >
+        <apex:actionfunction name="saveIt"    />
+        <apex:pagemessages />
+        <apex:pageblock id="mypb" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}" rerender="myfrm" oncomplete="if('{!str}'=='true1'){window.parent.opener.refreshPage();window.close();}"  />
+                <!--- <button class="myButt2" id="myButt22" type="button">Cancel</button>    ---->
+                <apex:commandButton value="Cancel" onclick="window.close();" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Edit Hours" columns="2" >
+                <apex:inputField id="M1" value="{!Account.Monday_Open__c}"  />              
+                <apex:inputField id="M2" value="{!Account.Monday_Close__c}"  />   
+                <apex:inputField value="{!Account.Tuesday_Open__c}"  />              
+                <apex:inputField value="{!Account.Tuesday_Close__c}"  />             
+                <apex:inputField value="{!Account.Wednesday_Open__c}"  />              
+                <apex:inputField value="{!Account.Wednesday_Close__c}"  />             
+                <apex:inputField value="{!Account.Thursday_Open__c}"  />              
+                <apex:inputField value="{!Account.Thursday_Close__c}"  />             
+                <apex:inputField value="{!Account.Friday_Open__c}"  />              
+                <apex:inputField value="{!Account.Friday_Close__c}"  />             
+                <apex:inputField value="{!Account.Saturday_Open__c}"  />              
+                <apex:inputField value="{!Account.Saturday_Close__c}"  />             
+                <apex:inputField value="{!Account.Sunday_Open__c}"  />              
+                <apex:inputField value="{!Account.Sunday_Close__c}"  />                       
+            </apex:pageBlockSection>
+            
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

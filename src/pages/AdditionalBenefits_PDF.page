@@ -1,0 +1,23 @@
+<apex:page sidebar="false" showHeader="true" renderAs="pdf">
+<!--<apex:page standardController="Additional_Benefits__kav"  sidebar="false" showHeader="true" renderAs="pdf">-->
+    <apex:pageBlock mode="detail">
+        <apex:pageBlockSection columns="1">
+            <!--<apex:outputfield label="Title" value="{!Additional_Benefits__kav.Title}"/><br/>
+            <apex:outputfield label="Article Number" value="{!Additional_Benefits__kav.ArticleNumber}"/><br/>
+            <apex:outputfield label="Version Number" value="{!Additional_Benefits__kav.VersionNumber}"/><br/>
+            <apex:outputfield label="Last Published Date" value="{!Additional_Benefits__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield label="Version Comments" value="{!Additional_Benefits__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="===================================================================="/><br/><br/>
+                      
+            <apex:outputField label="Exam" value="{!Additional_Benefits__kav.Exam__c}"/>
+            <apex:outputField label="Lens" value="{!Additional_Benefits__kav.Lens__c}"/>
+            <apex:outputField label="Lens Enhancement" value="{!Additional_Benefits__kav.Lens_Enhancements__c}"/>
+            <apex:outputField label="Frame" value="{!Additional_Benefits__kav.Frame__c}"/>
+            <apex:outputField label="Contacts" value="{!Additional_Benefits__kav.Contacts__c}"/>
+            <apex:outputField label="Doctor Network" value="{!Additional_Benefits__kav.Doctor_Network__c}"/>
+            <apex:outputField label="Lab" value="{!Additional_Benefits__kav.Lab__c}"/>
+            <apex:outputField label="Keyword" value="{!Additional_Benefits__kav.Keyword__c}"/>
+            <apex:outputField label="SQ/QQ Steps" value="{!Additional_Benefits__kav.Support_Queue_Steps__c}"/>-->
+        </apex:pageBlockSection>
+    </apex:pageBlock>   
+</apex:page>

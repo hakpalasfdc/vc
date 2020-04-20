@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CMI</fullName>
+        <default>false</default>
+        <label>CMI</label>
+    </customValue>
+    <customValue>
+        <fullName>CMF</fullName>
+        <default>false</default>
+        <label>CMF</label>
+    </customValue>
+    <customValue>
+        <fullName>SA</fullName>
+        <default>false</default>
+        <label>SA</label>
+    </customValue>
+    <customValue>
+        <fullName>D2</fullName>
+        <default>false</default>
+        <label>D2</label>
+    </customValue>
+    <customValue>
+        <fullName>HGM </fullName>
+        <default>false</default>
+        <label>HGM </label>
+    </customValue>
+    <masterLabel>SBU</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

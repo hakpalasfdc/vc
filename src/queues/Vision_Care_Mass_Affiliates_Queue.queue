@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Vision Care Retail Chain Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Vision_Care_Retail_Chain_Queue</publicGroup>
+        </publicGroups>
+        <users>
+            <user>amber.jones@vsp.com</user>
+            <user>bretwa@vsp.com</user>
+            <user>charba@vsp.com</user>
+            <user>shawn.oneal@vsp.com</user>
+            <user>thomre@vsp.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

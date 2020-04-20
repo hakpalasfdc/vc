@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deliverables</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deliverables</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual End Date --></label>
+        <name>Actual_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the person with authorization to approve these deliverable. --></help>
+        <label><!-- Deliverable Approver --></label>
+        <name>Authorized_Sign_Off__c</name>
+        <relationshipLabel><!-- Deliverables --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Complete --></label>
+        <name>Complete__c</name>
+        <picklistValues>
+            <masterLabel>0%: Not Started</masterLabel>
+            <translation><!-- 0%: Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%: Complete</masterLabel>
+            <translation><!-- 100%: Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%: Draft Created</masterLabel>
+            <translation><!-- 25%: Draft Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%: Draft Reviewed by Stakeholders</masterLabel>
+            <translation><!-- 50%: Draft Reviewed by Stakeholders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%: Stakeholder Input Incorporated into Draft</masterLabel>
+            <translation><!-- 75%: Stakeholder Input Incorporated into Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90%: Final Draft Submitted for Sign-off</masterLabel>
+            <translation><!-- 90%: Final Draft Submitted for Sign-off --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Document assumptions, dependencies, and activities that will be performed in a future state of the project. --></help>
+        <label><!-- Contingent Sign-Off Notes --></label>
+        <name>Contingent_Sign_Off_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deliverable Name --></label>
+        <name>Deliverable_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Key Action/Decision --></label>
+        <name>Key_Action_Decision__c</name>
+        <relationshipLabel><!-- Deliverables --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>Milestone__c</name>
+        <relationshipLabel><!-- Deliverables --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned End Date --></label>
+        <name>Planned_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Start Date --></label>
+        <name>Planned_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Explanation --></label>
+        <name>Rejection_Explanation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release --></label>
+        <name>Release__c</name>
+        <relationshipLabel><!-- Deliverables --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SOW --></label>
+        <name>SOW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stakeholder Review List --></label>
+        <name>Stakeholder_Review_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status of the approval process for the Deliverable. --></help>
+        <label><!-- Deliverable Approval Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Deliverables Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,7 @@
+<apex:page Controller="OpenEnrollmentFlowController" showHeader="true" sidebar="false" id="smartFlow">
+   <flow:interview name="Open_Enrollment" interview="{!flowInstance}" finishlocation="{!finishLocation}"/>
+   <style type="text/css">
+        body button, body .x-btn, body .btn, body .btnDisabled, body .btnCancel, body .menuButton .menuButtonButton {float: left;}
+        .bPageBlock .pbTitle {display: none;}
+    </style>
+</apex:page>

@@ -1,0 +1,5134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>VSPR1_OpportunityName</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>New Release Sales Process</fullName>
+        <description>Used for New Release Sales</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Strategic Agreement Sales Process</fullName>
+        <description>Used for Strategic Agreement Opportunities</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Approval Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualify</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>VSP Consignment Sales Process</fullName>
+        <description>Used for Consignment Sales</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>VSP Sales Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AR__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Profitable practices will be 60% or greater</inlineHelpText>
+        <label>% AR</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Name</formula>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Phone</formula>
+        <label>Account Phone Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Physical_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.ShippingCity</formula>
+        <label>Account Physical City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Physical_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.ShippingState</formula>
+        <label>Account Physical State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Physical_Street_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.ShippingStreet</formula>
+        <label>Account Physical Street Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Physical_ZIP_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.ShippingPostalCode</formula>
+        <label>Account Physical ZIP Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Altair__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Altair</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Amount_Value_Timeframe__c</fullName>
+        <description>Timeline for expected Amount.</description>
+        <externalId>false</externalId>
+        <label>Amount Value Timeframe</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 Month</fullName>
+                    <default>false</default>
+                    <label>1 Month</label>
+                </value>
+                <value>
+                    <fullName>12 Months</fullName>
+                    <default>false</default>
+                    <label>12 Months</label>
+                </value>
+                <value>
+                    <fullName>24 Months</fullName>
+                    <default>false</default>
+                    <label>24 Months</label>
+                </value>
+                <value>
+                    <fullName>36 Months</fullName>
+                    <default>false</default>
+                    <label>36 Months</label>
+                </value>
+                <value>
+                    <fullName>48 Months</fullName>
+                    <default>false</default>
+                    <label>48 Months</label>
+                </value>
+                <value>
+                    <fullName>60 Months</fullName>
+                    <default>false</default>
+                    <label>60 Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bifocal__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Profitable practices will be less than 10%</inlineHelpText>
+        <label>% Bifocal</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Buying_Alliance_Affiliation__c</fullName>
+        <externalId>false</externalId>
+        <label>Buying Alliance Affiliation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PECAA</fullName>
+                    <default>false</default>
+                    <label>PECAA</label>
+                </value>
+                <value>
+                    <fullName>IDOC</fullName>
+                    <default>false</default>
+                    <label>IDOC</label>
+                </value>
+                <value>
+                    <fullName>VISION SOURCE</fullName>
+                    <default>false</default>
+                    <label>VISION SOURCE</label>
+                </value>
+                <value>
+                    <fullName>VISION TRENDS</fullName>
+                    <default>false</default>
+                    <label>VISION TRENDS</label>
+                </value>
+                <value>
+                    <fullName>TODAY&apos;S VISION</fullName>
+                    <default>false</default>
+                    <label>TODAY&apos;S VISION</label>
+                </value>
+                <value>
+                    <fullName>PEN</fullName>
+                    <default>false</default>
+                    <label>PEN</label>
+                </value>
+                <value>
+                    <fullName>OPTI-PORT</fullName>
+                    <default>false</default>
+                    <label>OPTI-PORT</label>
+                </value>
+                <value>
+                    <fullName>HEA</fullName>
+                    <default>false</default>
+                    <label>HEA</label>
+                </value>
+                <value>
+                    <fullName>PERC/IVA</fullName>
+                    <default>false</default>
+                    <label>PERC/IVA</label>
+                </value>
+                <value>
+                    <fullName>TSO</fullName>
+                    <default>false</default>
+                    <label>TSO</label>
+                </value>
+                <value>
+                    <fullName>FIRST EYE CARE</fullName>
+                    <default>false</default>
+                    <label>FIRST EYE CARE</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Contact_Lens_Kit_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(TEXT(Contact_Lens_Kit__c),
+																&apos;FK UNITY BIOSYNC B SPH 8.8&apos;, &apos;00194315004607&apos;
+																,&apos;&apos;)</formula>
+        <label>Contact Lens Kit ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Lens_Kit__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Full Kit Name</inlineHelpText>
+        <label>Contact Lens Kit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Division_Brand__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FK UNITY BIOSYNC B SPH 8.8</fullName>
+                    <default>false</default>
+                    <label>FK UNITY BIOSYNC B SPH 8.8</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Contact Lenses</controllingFieldValue>
+                <valueName>FK UNITY BIOSYNC B SPH 8.8</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_from_Lead__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Created from Lead?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cross_Sell__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Opportunity a Cross Sell?</description>
+        <externalId>false</externalId>
+        <label>Cross-Sell</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Current_Lab_Affiliation__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Lab of Choice</inlineHelpText>
+        <label>Current Lab Affiliation</label>
+        <length>120</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Custom_Product_Promotion__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Custom Product/Promotion</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DS_Description__c</fullName>
+        <description>Shortened description to be displayed on embedded visualforce page</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DS_Description</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Days_Left__c</fullName>
+        <externalId>false</externalId>
+        <formula>End_Date__c - TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Left</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>DialSource__DS_Owner_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The record owner&apos;s Salesforce ID. Used in Campaign source reports to distribute the records using the Record Owner Distribution feature</description>
+        <externalId>false</externalId>
+        <formula>OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DS Owner ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Datetime_of_Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time stamp of when the last Disposition was clicked</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Datetime of Last Disposition</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Call_Campaign_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Call Campaign the record was last called from</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Call Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the last Disposition clicked</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Disposition</label>
+        <length>140</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Next_Call_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime field used to set the next call datetime for reference in automation or Reports/List Views</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Next Call</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Total_Call_Count_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total number of calls made on this record</description>
+        <externalId>false</externalId>
+        <label>Total Call Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division_Brand__c</fullName>
+        <description>What Division/Brand is the Opportunity?</description>
+        <externalId>false</externalId>
+        <label>Division/Brand</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Line_of_Business__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VSPOne</fullName>
+                    <default>false</default>
+                    <label>VSPOne</label>
+                </value>
+                <value>
+                    <fullName>UNITY</fullName>
+                    <default>false</default>
+                    <label>UNITY</label>
+                </value>
+                <value>
+                    <fullName>TechShield</fullName>
+                    <default>false</default>
+                    <label>TechShield</label>
+                </value>
+                <value>
+                    <fullName>otto</fullName>
+                    <default>false</default>
+                    <label>otto</label>
+                </value>
+                <value>
+                    <fullName>IOF</fullName>
+                    <default>false</default>
+                    <label>IOF</label>
+                </value>
+                <value>
+                    <fullName>sunsync</fullName>
+                    <default>false</default>
+                    <label>sunsync</label>
+                </value>
+                <value>
+                    <fullName>Ethos</fullName>
+                    <default>false</default>
+                    <label>Ethos</label>
+                </value>
+                <value>
+                    <fullName>Network Participation</fullName>
+                    <default>false</default>
+                    <label>Network Participation</label>
+                </value>
+                <value>
+                    <fullName>Marchon</fullName>
+                    <default>false</default>
+                    <label>Marchon</label>
+                </value>
+                <value>
+                    <fullName>Altair</fullName>
+                    <default>false</default>
+                    <label>Altair</label>
+                </value>
+                <value>
+                    <fullName>Global Business Development</fullName>
+                    <default>false</default>
+                    <label>Global Business Development</label>
+                </value>
+                <value>
+                    <fullName>Contact Lenses</fullName>
+                    <default>false</default>
+                    <label>Contact Lenses</label>
+                </value>
+                <value>
+                    <fullName>Global</fullName>
+                    <default>false</default>
+                    <label>Global</label>
+                </value>
+                <value>
+                    <fullName>Optics Only</fullName>
+                    <default>false</default>
+                    <label>Optics Only</label>
+                </value>
+                <value>
+                    <fullName>Pathways Expansion</fullName>
+                    <default>false</default>
+                    <label>Pathways Expansion</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Optics</controllingFieldValue>
+                <valueName>VSPOne</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optics</controllingFieldValue>
+                <valueName>UNITY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optics</controllingFieldValue>
+                <valueName>TechShield</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optics</controllingFieldValue>
+                <valueName>otto</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optics</controllingFieldValue>
+                <valueName>IOF</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optics</controllingFieldValue>
+                <valueName>sunsync</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optics</controllingFieldValue>
+                <valueName>Contact Lenses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Eyewear</controllingFieldValue>
+                <valueName>Marchon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Eyewear</controllingFieldValue>
+                <valueName>Altair</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Global Business Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Optics Only</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Pathways Expansion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Unknown</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>The date the Product/Program ends.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Eyefinity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Eyefinity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_Provided__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Feedback Provided</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IqScore</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>LOB_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB Feedback</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOB_Referral__c</fullName>
+        <description>Which LOB is referring an Opportunity?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Which LOB is referring an Opportunity?</inlineHelpText>
+        <label>LOB Referral Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Optics</fullName>
+                    <default>false</default>
+                    <label>Optics</label>
+                </value>
+                <value>
+                    <fullName>Vision Care</fullName>
+                    <default>false</default>
+                    <label>Vision Care</label>
+                </value>
+                <value>
+                    <fullName>Eyefinity</fullName>
+                    <default>false</default>
+                    <label>Eyefinity</label>
+                </value>
+                <value>
+                    <fullName>Eyewear</fullName>
+                    <default>false</default>
+                    <label>Eyewear</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LTM_Revenue_Benchmark__c</fullName>
+        <externalId>false</externalId>
+        <label>LTM Revenue Benchmark</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lab_spend_of_new_practice__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Lab spend of new practice</label>
+        <length>120</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Conversion_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  Created_from_Lead__c , CreatedDate, NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Conversion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Line_of_Business__c</fullName>
+        <description>Which LOB is the Opportunity for?</description>
+        <externalId>false</externalId>
+        <label>Line of Business</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Optics</fullName>
+                    <default>false</default>
+                    <label>Optics</label>
+                </value>
+                <value>
+                    <fullName>Eyewear</fullName>
+                    <default>false</default>
+                    <label>Eyewear</label>
+                </value>
+                <value>
+                    <fullName>Eyefinity</fullName>
+                    <default>false</default>
+                    <label>Eyefinity</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>Global</fullName>
+                    <default>false</default>
+                    <label>Global</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Locations_to_use_for_analysis__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Does practice want all locations to be considered for funding or a specific location only? Please provide Address and MDM# of location(s)</inlineHelpText>
+        <label>Locations to use for analysis</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lost_Reason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Competition-The Account prefers other brands or companies
+Performance-The Account is not happy with company/brand
+VSP Rejected-LOB decided not to proceed with this Opportunity
+Not Interested-The Account is not interested in this promotion or product</inlineHelpText>
+        <label>Lost Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Competition</fullName>
+                    <default>false</default>
+                    <label>Competition</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>VSP Rejected</fullName>
+                    <default>false</default>
+                    <label>VSP Rejected</label>
+                </value>
+                <value>
+                    <fullName>Not Interested</fullName>
+                    <default>false</default>
+                    <label>Not Interested</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Marchon_Altair_Commitment_Year_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Marchon/Altair Commitment Year 1</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marchon_Altair_Commitment_Year_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Marchon/Altair Commitment Year 2</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marchon_Altair_Commitment_Year_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Marchon/Altair Commitment Year 3</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marchon_Altair_Commitment_Year_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Marchon/Altair Commitment Year 4</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marchon_Altair_Commitment_Year_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Marchon/Altair Commitment Year 5</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marchon_Funding__c</fullName>
+        <externalId>false</externalId>
+        <label>Marchon Funding</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marchon__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Marchon</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>New_LOB_Business__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is this Opportunity a new sale for the LOB?</description>
+        <externalId>false</externalId>
+        <label>New LOB Business</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>New_Practice_Information__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>If account has identified a practice to purchase, please provide practice name, address and tax id</inlineHelpText>
+        <label>New Practice Information</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>New_Practice_Tax_ID__c</fullName>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>New Practice Tax ID</label>
+        <length>9</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_or_Existing_Practice__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this a new build or are they purchasing another practice?</inlineHelpText>
+        <label>New or Existing Practice</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Existing Practice</fullName>
+                    <default>false</default>
+                    <label>Existing Practice</label>
+                </value>
+                <value>
+                    <fullName>New Build</fullName>
+                    <default>false</default>
+                    <label>New Build</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Number_of_Doctors__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Doctors</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Jobs__c</fullName>
+        <description>Number of jobs the for the Opportunity.</description>
+        <externalId>false</externalId>
+        <label>Number of Jobs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityNameDefault__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Division_Brand__c)&amp; &quot; - &quot; &amp;  Product_Program__c  &amp; &quot; - &quot; &amp;TEXT(Planned_Closed_Month__c)</formula>
+        <label>OpportunityNameDefault</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Optics_Brand_Commitment_Year_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Optics Brand Commitment Year 1</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Optics_Brand_Commitment_Year_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Optics Brand Commitment Year 2</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Optics_Brand_Commitment_Year_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Optics Brand Commitment Year 3</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Optics_Brand_Commitment_Year_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Optics Brand Commitment Year 4</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Optics_Brand_Commitment_Year_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Optics Brand Commitment Year 5</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Optics_Funding__c</fullName>
+        <externalId>false</externalId>
+        <label>Optics Funding</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Optics_Pre_Screen_Calculator__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://visionserviceplan.sharepoint.com/:x:/r/teams/CorpComm/Corp/SchoolsAssoc/Shared%20Documents/Premier%20Pathways/Expansion%20Model/Processes/Strategic%20Agreement%20Pre-Screen%20Calculator.xlsx?d=w42924d195533439593154c51a8fa294b&amp;csf=1&amp;e=g0mxLt&quot;, &quot;Pre-Screen Calculator&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>RVP to complete pre-screen and attach document to the opportunity</inlineHelpText>
+        <label>Optics Pre-Screen Calculator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Optics__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Optics</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_Buying_Alliance_Affiliation__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Other Buying Alliance Affiliation</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Insurance__c</fullName>
+        <externalId>false</externalId>
+        <label>% Other Insurance</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Other_Purpose_of_Funds__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Required when &quot;Other&quot; is chosen from the Purpose of Funds field</inlineHelpText>
+        <label>Other Purpose of Funds</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership_Structure__c</fullName>
+        <externalId>false</externalId>
+        <label>Ownership Structure</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sole Owner</fullName>
+                    <default>false</default>
+                    <label>Sole Owner</label>
+                </value>
+                <value>
+                    <fullName>Group Practice</fullName>
+                    <default>false</default>
+                    <label>Group Practice</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Photochromic__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Profitable practices will be 25% or greater</inlineHelpText>
+        <label>% Photochromic</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Closed_Month__c</fullName>
+        <description>When is the Opportunity planning on Closing?</description>
+        <externalId>false</externalId>
+        <label>Planned Closed Month</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>January</fullName>
+                    <default>false</default>
+                    <label>January</label>
+                </value>
+                <value>
+                    <fullName>February</fullName>
+                    <default>false</default>
+                    <label>February</label>
+                </value>
+                <value>
+                    <fullName>March</fullName>
+                    <default>false</default>
+                    <label>March</label>
+                </value>
+                <value>
+                    <fullName>April</fullName>
+                    <default>false</default>
+                    <label>April</label>
+                </value>
+                <value>
+                    <fullName>May</fullName>
+                    <default>false</default>
+                    <label>May</label>
+                </value>
+                <value>
+                    <fullName>June</fullName>
+                    <default>false</default>
+                    <label>June</label>
+                </value>
+                <value>
+                    <fullName>July</fullName>
+                    <default>false</default>
+                    <label>July</label>
+                </value>
+                <value>
+                    <fullName>August</fullName>
+                    <default>false</default>
+                    <label>August</label>
+                </value>
+                <value>
+                    <fullName>September</fullName>
+                    <default>false</default>
+                    <label>September</label>
+                </value>
+                <value>
+                    <fullName>October</fullName>
+                    <default>false</default>
+                    <label>October</label>
+                </value>
+                <value>
+                    <fullName>November</fullName>
+                    <default>false</default>
+                    <label>November</label>
+                </value>
+                <value>
+                    <fullName>December</fullName>
+                    <default>false</default>
+                    <label>December</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Premier_Value_Program_Received_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premier_Value_Program__c</fullName>
+        <externalId>false</externalId>
+        <label>Premier Value Program</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Eyefinity EHR</fullName>
+                    <default>false</default>
+                    <label>Eyefinity EHR</label>
+                </value>
+                <value>
+                    <fullName>MMT (My Marketing Team)</fullName>
+                    <default>false</default>
+                    <label>MMT (My Marketing Team)</label>
+                </value>
+                <value>
+                    <fullName>Optovue</fullName>
+                    <default>false</default>
+                    <label>Optovue</label>
+                </value>
+                <value>
+                    <fullName>Synemed</fullName>
+                    <default>false</default>
+                    <label>Synemed</label>
+                </value>
+                <value>
+                    <fullName>Vision One (Credit Union)</fullName>
+                    <default>false</default>
+                    <label>Vision One (Credit Union)</label>
+                </value>
+                <value>
+                    <fullName>Solutionreach</fullName>
+                    <default>false</default>
+                    <label>Solutionreach</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Private_Pay__c</fullName>
+        <externalId>false</externalId>
+        <label>% Private Pay</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Product_Program_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Product/Program Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>25/250 Unity</fullName>
+                    <default>false</default>
+                    <label>25/250 Unity</label>
+                </value>
+                <value>
+                    <fullName>25/250 Both</fullName>
+                    <default>false</default>
+                    <label>25/250 Both</label>
+                </value>
+                <value>
+                    <fullName>Both AR Growth</fullName>
+                    <default>false</default>
+                    <label>Both AR Growth</label>
+                </value>
+                <value>
+                    <fullName>Both SunSync Growth</fullName>
+                    <default>false</default>
+                    <label>Both SunSync Growth</label>
+                </value>
+                <value>
+                    <fullName>Both PAL Growth</fullName>
+                    <default>false</default>
+                    <label>Both PAL Growth</label>
+                </value>
+                <value>
+                    <fullName>Both Ethos Growth</fullName>
+                    <default>false</default>
+                    <label>Both Ethos Growth</label>
+                </value>
+                <value>
+                    <fullName>Brand AR Growth</fullName>
+                    <default>false</default>
+                    <label>Brand AR Growth</label>
+                </value>
+                <value>
+                    <fullName>Brand SunSync Growth</fullName>
+                    <default>false</default>
+                    <label>Brand SunSync Growth</label>
+                </value>
+                <value>
+                    <fullName>Brand PAL Growth</fullName>
+                    <default>false</default>
+                    <label>Brand PAL Growth</label>
+                </value>
+                <value>
+                    <fullName>ClearSlide</fullName>
+                    <default>false</default>
+                    <label>ClearSlide</label>
+                </value>
+                <value>
+                    <fullName>Custom Product/Promotion</fullName>
+                    <default>false</default>
+                    <label>Custom Product/Promotion</label>
+                </value>
+                <value>
+                    <fullName>Limited Time Offer (LTO)</fullName>
+                    <default>false</default>
+                    <label>Limited Time Offer (LTO)</label>
+                </value>
+                <value>
+                    <fullName>PB Voucher</fullName>
+                    <default>false</default>
+                    <label>PB Voucher</label>
+                </value>
+                <value>
+                    <fullName>PB Voucher 1.67/Polar</fullName>
+                    <default>false</default>
+                    <label>PB Voucher 1.67/Polar</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Program__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Product/Program</label>
+        <length>128</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Program_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Program_Status__c</fullName>
+        <description>Status of the Product/Program.</description>
+        <externalId>false</externalId>
+        <label>Program Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Incomplete</fullName>
+                    <default>false</default>
+                    <label>Incomplete</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Removed</fullName>
+                    <default>false</default>
+                    <label>Removed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Progressive__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Profitable practices will be 40% or greater</inlineHelpText>
+        <label>% Progressive</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Project_Type__c</fullName>
+        <description>Used to auto populate a Project on an Opportunity</description>
+        <externalId>false</externalId>
+        <label>Project Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Shift Series Phase 1</fullName>
+                    <default>false</default>
+                    <label>Shift Series Phase 1</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Purpose_of_Funds__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose of Funds</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Acquisition</fullName>
+                    <default>false</default>
+                    <label>Acquisition</label>
+                </value>
+                <value>
+                    <fullName>Equipment Purchase</fullName>
+                    <default>false</default>
+                    <label>Equipment Purchase</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Remodeling</fullName>
+                    <default>false</default>
+                    <label>Remodeling</label>
+                </value>
+                <value>
+                    <fullName>Remodeling &amp; Adding New Dr. Space</fullName>
+                    <default>false</default>
+                    <label>Remodeling &amp; Adding New Dr. Space</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>NA</label>
+                </value>
+                <value>
+                    <fullName>Renovation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Renovation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>true</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Related_Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Delivery_Date__c</fullName>
+        <description>Requested Delivery Date of the Optics Contact Lens kits being ordered</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Requested Delivery Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Funding_Amount__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Did account specify amount of $ needed for investment?</inlineHelpText>
+        <label>Requested Funding Amount</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RightEye__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Are they interested in RightEye Unit as a part of their agreement</inlineHelpText>
+        <label>RightEye</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SAP_Order_Details__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>SAP Order Details</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Order_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>SAP Order Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Order_Status__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>SAP Order Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Up_Sell__c,&quot;Up sell&quot;,&quot;&quot;) + 
+IF((Cross_Sell__c || NOT(ISPICKVAL( LOB_Referral__c,&quot;&quot; )) &amp;&amp; Up_Sell__c),&quot;,&quot;,&quot;&quot;) + 
+(IF(Cross_Sell__c || NOT(ISPICKVAL( LOB_Referral__c,&quot;&quot; )),&quot;Cross sell&quot;,&quot;&quot;))</formula>
+        <label>Sales generated  from</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shift_Opportunity_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Shift Series Phase 1&quot; &amp; &quot;-&quot; &amp; LEFT(Account.Common_Account_Name_Report__c , 43) &amp; &quot;-&quot; &amp;   Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Shift Opportunity Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Status__c</fullName>
+        <description>Shipping status of Contact Lens Kits, to be populated via integration by SAP.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Shipping Status</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Single_Vision__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Profitable practices will be less than 50%</inlineHelpText>
+        <label>% Single Vision</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date_New__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Strategic_AP_Global_RVP_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Strategic AP Global RVP Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Strategic_AP_Global_RVP_Manager</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Strategic_Agreement_Approval__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Strategic Agreement Approval</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Total_Funding__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Funding</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Monthly_Lab_Spend__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Includes VSP and Private Pay from All Labs</inlineHelpText>
+        <label>Total Monthly Lab Spend</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tracking_Info__c</fullName>
+        <description>Tracking Info of contact lens kit populated via SAP Integration.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Tracking Info</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Up_Sell__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is Opportunity an up sell?</description>
+        <externalId>false</externalId>
+        <label>Up-Sell</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>VSPOne_Commitment_Year_1__c</fullName>
+        <externalId>false</externalId>
+        <label>VSPOne Commitment Year 1</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VSPOne_Commitment_Year_2__c</fullName>
+        <externalId>false</externalId>
+        <label>VSPOne Commitment Year 2</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VSPOne_Commitment_Year_3__c</fullName>
+        <externalId>false</externalId>
+        <label>VSPOne Commitment Year 3</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VSPOne_Commitment_Year_4__c</fullName>
+        <externalId>false</externalId>
+        <label>VSPOne Commitment Year 4</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VSPOne_Commitment_Year_5__c</fullName>
+        <externalId>false</externalId>
+        <label>VSPOne Commitment Year 5</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VSP_Contact_Role__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>VSP Contact Role</label>
+        <referenceTo>Contact_Role__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vision_Care__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Vision Care</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>of_VSP_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>% of VSP Business</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>Altair_NR_All_Open_and_Closed_Won</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Planned_Closed_Month__c</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Reason__c</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Release_Opportunity</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost,Closed Cancelled</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.NAME</field>
+            <operation>contains</operation>
+            <value>Altair</value>
+        </filters>
+        <label>Altair - NR -All Open and Closed Won</label>
+    </listViews>
+    <listViews>
+        <fullName>Altair_NR_specifically_for_NR_xxx</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Planned_Closed_Month__c</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Reason__c</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Release_Opportunity</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost,Closed Cancelled,Closed Won</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.NAME</field>
+            <operation>contains</operation>
+            <value>Altair</value>
+        </filters>
+        <filters>
+            <field>Product_Program__c</field>
+            <operation>contains</operation>
+            <value>AK</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>contains</operation>
+            <value>Florida eye clinic</value>
+        </filters>
+        <label>Altair - NR Open for NR #xxx</label>
+    </listViews>
+    <listViews>
+        <fullName>Altair_New_Release_I_Manage</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Planned_Closed_Month__c</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Release_Opportunity</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed</value>
+        </filters>
+        <label>Altair - New Release - I Manage</label>
+    </listViews>
+    <listViews>
+        <fullName>Altair_Prospect</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Planned_Closed_Month__c</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.VSP_Opportunity</value>
+        </filters>
+        <filters>
+            <field>Division_Brand__c</field>
+            <operation>equals</operation>
+            <value>Altair</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Won,Closed Lost,Closed Cancelled</value>
+        </filters>
+        <label>Altair - Prospect - I Manage</label>
+    </listViews>
+    <listViews>
+        <fullName>Barb_s_Altair_Action</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Planned_Closed_Month__c</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.VSP_Opportunity</value>
+        </filters>
+        <filters>
+            <field>Division_Brand__c</field>
+            <operation>equals</operation>
+            <value>Altair</value>
+        </filters>
+        <filters>
+            <field>Product_Program__c</field>
+            <operation>contains</operation>
+            <value>action</value>
+        </filters>
+        <label>Altair - 3+ Location Action plan</label>
+        <sharedTo>
+            <roleAndSubordinates>Altair_General_Manager</roleAndSubordinates>
+            <roleAndSubordinates>Altair_IT_Director</roleAndSubordinates>
+            <roleAndSubordinates>Altair_Sales_Leadership</roleAndSubordinates>
+            <roleAndSubordinates>Altair_Sales_Operations</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>Default_Opportunity_Pipeline</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_MONTHS:3</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Opportunity Pipeline</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Opportunities1</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Product_Program_Name__c</columns>
+        <columns>Start_Date_New__c</columns>
+        <columns>Program_Count__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Won,Closed Lost,Closed Cancelled</value>
+        </filters>
+        <label>My Open Opportunities</label>
+        <sharedTo>
+            <roleAndSubordinates>Optics_CRM_Support</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Promos</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Program_Count__c</columns>
+        <columns>Product_Program_Name__c</columns>
+        <columns>Custom_Product_Promotion__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Won,Closed Lost,Closed Cancelled</value>
+        </filters>
+        <filters>
+            <field>Line_of_Business__c</field>
+            <operation>equals</operation>
+            <value>Optics</value>
+        </filters>
+        <label>My Open Promos</label>
+        <sharedTo>
+            <roleAndSubordinates>Optics_CRM_Support</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Opportunities_Closing_Soon</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Opps Created Last 30 days</label>
+        <sharedTo>
+            <roleAndSubordinates>Optics_CRM_Support</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Opportunities_Closing_This_Month</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>My Opportunities Closing This Month</label>
+        <sharedTo>
+            <roleAndSubordinates>Optics_CRM_Support</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Open_Otto_Opportunities</fullName>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Division_Brand__c</field>
+            <operation>equals</operation>
+            <value>otto</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Open Otto Opportunities</label>
+        <sharedTo>
+            <role>General_CRM</role>
+            <role>Optics_CRM_Support</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Optics_Altair_Premier_Collaboration</fullName>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>4/1/2014 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <operation>equals</operation>
+            <value>bgold</value>
+        </filters>
+        <label>Optics/Altair Premier Collaboration</label>
+    </listViews>
+    <listViews>
+        <fullName>Won</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Won</label>
+    </listViews>
+    <listViews>
+        <fullName>kamra_NR_Open_for_NR_xxx</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Planned_Closed_Month__c</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Reason__c</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Release_Opportunity</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>,Closed Lost,Closed Cancelled</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.NAME</field>
+            <operation>contains</operation>
+            <value>Altair</value>
+        </filters>
+        <filters>
+            <field>Product_Program__c</field>
+            <operation>contains</operation>
+            <value>415</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>contains</operation>
+            <value>Florida eye clinic</value>
+        </filters>
+        <label>kamra - NR Open for NR #xxx</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>New_Release_Opportunity</fullName>
+        <active>true</active>
+        <businessProcess>New Release Sales Process</businessProcess>
+        <description>Used for New Release Opportunities</description>
+        <label>New Release Opportunity</label>
+        <picklistValues>
+            <picklist>Amount_Value_Timeframe__c</picklist>
+            <values>
+                <fullName>1 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Buying_Alliance_Affiliation__c</picklist>
+            <values>
+                <fullName>FIRST EYE CARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IDOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OPTI-PORT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PECAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PERC%2FIVA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TODAY%27S VISION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TSO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VISION SOURCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VISION TRENDS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Lens_Kit__c</picklist>
+            <values>
+                <fullName>FK UNITY BIOSYNC B SPH 8%2E8</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Division_Brand__c</picklist>
+            <values>
+                <fullName>Altair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Lenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marchon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Participation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSPOne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>otto</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_Feedback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_Referral__c</picklist>
+            <values>
+                <fullName>Eyefinity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision Care</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Line_of_Business__c</picklist>
+            <values>
+                <fullName>Eyefinity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optics</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_or_Existing_Practice__c</picklist>
+            <values>
+                <fullName>Existing Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Build</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership_Structure__c</picklist>
+            <values>
+                <fullName>Group Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Owner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Planned_Closed_Month__c</picklist>
+            <values>
+                <fullName>April</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>August</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>December</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>February</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>January</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>July</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>June</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>March</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>May</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>November</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>October</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>September</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Premier_Value_Program__c</picklist>
+            <values>
+                <fullName>Eyefinity EHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMT %28My Marketing Team%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optovue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutionreach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Synemed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision One %28Credit Union%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Program_Name__c</picklist>
+            <values>
+                <fullName>Custom Product%2FPromotion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_Funds__c</picklist>
+            <values>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodeling %26 Adding New Dr%2E Space</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Quantity__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RightEye__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Shift_Opportunity</fullName>
+        <active>true</active>
+        <businessProcess>VSP Sales Process</businessProcess>
+        <description>Record type used for Global Business Development Shift Opportunities</description>
+        <label>Shift Opportunity</label>
+        <picklistValues>
+            <picklist>Amount_Value_Timeframe__c</picklist>
+            <values>
+                <fullName>1 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Buying_Alliance_Affiliation__c</picklist>
+            <values>
+                <fullName>FIRST EYE CARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IDOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OPTI-PORT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PECAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PERC%2FIVA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TODAY%27S VISION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TSO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VISION SOURCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VISION TRENDS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Lens_Kit__c</picklist>
+            <values>
+                <fullName>FK UNITY BIOSYNC B SPH 8%2E8</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Division_Brand__c</picklist>
+            <values>
+                <fullName>Altair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ethos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Global Business Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IOF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marchon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Participation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSPOne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>otto</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>sunsync</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_Feedback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_Referral__c</picklist>
+            <values>
+                <fullName>Eyefinity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision Care</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_or_Existing_Practice__c</picklist>
+            <values>
+                <fullName>Existing Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Build</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership_Structure__c</picklist>
+            <values>
+                <fullName>Group Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Owner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Planned_Closed_Month__c</picklist>
+            <values>
+                <fullName>April</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>August</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>December</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>February</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>January</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>July</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>June</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>March</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>May</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>November</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>October</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>September</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Premier_Value_Program__c</picklist>
+            <values>
+                <fullName>Eyefinity EHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMT %28My Marketing Team%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optovue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutionreach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Synemed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision One %28Credit Union%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Program_Name__c</picklist>
+            <values>
+                <fullName>Custom Product%2FPromotion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Type__c</picklist>
+            <values>
+                <fullName>Shift Series Phase 1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_Funds__c</picklist>
+            <values>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodeling %26 Adding New Dr%2E Space</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Quantity__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RightEye__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Strategic_Agreement_Opportunity</fullName>
+        <active>true</active>
+        <businessProcess>Strategic Agreement Sales Process</businessProcess>
+        <description>Used for Strategic Agreement Pathways Opportunities</description>
+        <label>Strategic Agreement Opportunity</label>
+        <picklistValues>
+            <picklist>Amount_Value_Timeframe__c</picklist>
+            <values>
+                <fullName>1 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Buying_Alliance_Affiliation__c</picklist>
+            <values>
+                <fullName>FIRST EYE CARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IDOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OPTI-PORT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PECAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PERC%2FIVA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TODAY%27S VISION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TSO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VISION SOURCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VISION TRENDS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Lens_Kit__c</picklist>
+            <values>
+                <fullName>FK UNITY BIOSYNC B SPH 8%2E8</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Division_Brand__c</picklist>
+            <values>
+                <fullName>Altair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Lenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Global</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marchon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Participation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optics Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pathways Expansion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSPOne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>otto</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_Feedback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_Referral__c</picklist>
+            <values>
+                <fullName>Eyefinity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision Care</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Warehouse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased Neustar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Form %28Direct%2FNone%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Line_of_Business__c</picklist>
+            <values>
+                <fullName>Eyefinity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Global</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_or_Existing_Practice__c</picklist>
+            <values>
+                <fullName>Existing Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Build</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership_Structure__c</picklist>
+            <values>
+                <fullName>Group Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Owner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Planned_Closed_Month__c</picklist>
+            <values>
+                <fullName>April</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>August</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>December</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>February</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>January</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>July</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>June</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>March</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>May</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>November</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>October</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>September</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Premier_Value_Program__c</picklist>
+            <values>
+                <fullName>Eyefinity EHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMT %28My Marketing Team%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optovue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutionreach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Synemed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision One %28Credit Union%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Program_Name__c</picklist>
+            <values>
+                <fullName>25%2F250 Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25%2F250 Unity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both AR Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Ethos Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both PAL Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both SunSync Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand AR Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand PAL Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand SunSync Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ClearSlide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Product%2FPromotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Limited Time Offer %28LTO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PB Voucher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PB Voucher 1%2E67%2FPolar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Type__c</picklist>
+            <values>
+                <fullName>Shift Series Phase 1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_Funds__c</picklist>
+            <values>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodeling %26 Adding New Dr%2E Space</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Quantity__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RightEye__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>VSP_Opportunity</fullName>
+        <active>true</active>
+        <businessProcess>VSP Sales Process</businessProcess>
+        <label>VSP Opportunity</label>
+        <picklistValues>
+            <picklist>Amount_Value_Timeframe__c</picklist>
+            <values>
+                <fullName>1 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Buying_Alliance_Affiliation__c</picklist>
+            <values>
+                <fullName>FIRST EYE CARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IDOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OPTI-PORT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PECAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PERC%2FIVA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TODAY%27S VISION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TSO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VISION SOURCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VISION TRENDS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Lens_Kit__c</picklist>
+            <values>
+                <fullName>FK UNITY BIOSYNC B SPH 8%2E8</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Division_Brand__c</picklist>
+            <values>
+                <fullName>Altair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Lenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ethos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Global Business Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IOF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marchon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Participation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TechShield</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSPOne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>otto</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>sunsync</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_Feedback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_Referral__c</picklist>
+            <values>
+                <fullName>Eyefinity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision Care</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Line_of_Business__c</picklist>
+            <values>
+                <fullName>Eyefinity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_or_Existing_Practice__c</picklist>
+            <values>
+                <fullName>Existing Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Build</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership_Structure__c</picklist>
+            <values>
+                <fullName>Group Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Owner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Planned_Closed_Month__c</picklist>
+            <values>
+                <fullName>April</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>August</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>December</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>February</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>January</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>July</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>June</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>March</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>May</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>November</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>October</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>September</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Premier_Value_Program__c</picklist>
+            <values>
+                <fullName>Eyefinity EHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMT %28My Marketing Team%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optovue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutionreach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Synemed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision One %28Credit Union%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Program_Name__c</picklist>
+            <values>
+                <fullName>25%2F250 Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25%2F250 Unity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both AR Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Ethos Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both PAL Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both SunSync Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand AR Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand PAL Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand SunSync Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ClearSlide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Product%2FPromotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Limited Time Offer %28LTO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PB Voucher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PB Voucher 1%2E67%2FPolar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_Funds__c</picklist>
+            <values>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodeling %26 Adding New Dr%2E Space</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Quantity__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RightEye__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Amount_Required_ShiftOpp</fullName>
+        <active>true</active>
+        <description>The Amount cannot be null when a Shift Opportunity is changed to Closed Won.</description>
+        <errorConditionFormula>AND( 
+$RecordType.Name = &quot;Shift Opportunity&quot;, 
+ISPICKVAL(StageName, &quot;Closed Won&quot;), 
+ISBLANK( Amount )
+)</errorConditionFormula>
+        <errorDisplayField>Amount</errorDisplayField>
+        <errorMessage>The Amount cannot be null when a Shift Opportunity is changed to Closed Won.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Amount_Value_Timeframe_Required_ShiftOpp</fullName>
+        <active>true</active>
+        <description>The Amount Value Timeframe cannot be null when a Shift Opportunity is changed to Closed Won.</description>
+        <errorConditionFormula>AND( 
+$RecordType.Name = &quot;Shift Opportunity&quot;,
+ISPICKVAL(StageName, &quot;Closed Won&quot;), 
+ISPICKVAL(Amount_Value_Timeframe__c, &quot;&quot; )
+)</errorConditionFormula>
+        <errorDisplayField>Amount_Value_Timeframe__c</errorDisplayField>
+        <errorMessage>The Amount Value Timeframe cannot be null when a Shift Opportunity is changed to Closed Won.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Competitor_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( Lost_Reason__c , &quot;Competition&quot;),
+ISPICKVAL(Lost_Reason__c, &quot;Cancelled&quot;),
+ISNULL( Reason__c ))</errorConditionFormula>
+        <errorMessage>Please provide the competitors name in the &quot;Competitor&quot; field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lost_reason_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+ISPICKVAL(Lost_Reason__c, &quot;&quot;))</errorConditionFormula>
+        <errorMessage>Closed Lost opportunities require a &quot;Lost Reason&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR16_SHIFT_CLOSED_OPP_NOT_EDITABLE</fullName>
+        <active>true</active>
+        <errorConditionFormula>$RecordType.Name = &quot;Shift Opportunity&quot;
+
+&amp;&amp; 
+
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Won&quot;)
+
+&amp;&amp;
+
+(ISCHANGED(Name) || 
+ISCHANGED( AccountId ) || 
+ISCHANGED(Line_of_Business__c) || 
+ISCHANGED(Division_Brand__c) || 
+ISCHANGED(Product_Program__c) || 
+ISCHANGED(NextStep) || 
+ISCHANGED(Description) || 
+ISCHANGED( CampaignId ) || 
+ISCHANGED(StageName) ||
+ISCHANGED(Probability)|| 
+ISCHANGED(CloseDate) || 
+ISCHANGED(Amount) || 
+ISCHANGED(Amount_Value_Timeframe__c) || 
+ISCHANGED(Project_Type__c) || 
+ISCHANGED(Lost_Reason__c) || 
+ISCHANGED(LeadSource))
+
+&amp;&amp;
+
+NOT(OR( $Profile.Name = &quot;System Administrator&quot; ,$Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;))</errorConditionFormula>
+        <errorMessage>Opportunities in closed/won status are not editable</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR1_ClosedCancelled</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Cancelled&quot;)
+
+&amp;&amp;
+ 
+ISCHANGED(StageName)
+
+&amp;&amp;
+
+NOT(OR($Profile.Name = &quot;VSP LOB Admin User&quot;, $Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP CRM Support User&quot;))
+
+||
+
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Cancelled&quot;) 
+
+&amp;&amp;
+
+(ISCHANGED(Altair__c) ||
+ISCHANGED(Amount_Value_Timeframe__c) ||
+ISCHANGED(Cross_Sell__c) ||
+ISCHANGED(Days_Left__c) ||
+ISCHANGED(Division_Brand__c) ||
+ISCHANGED(End_Date__c) ||
+ISCHANGED(Eyefinity__c) ||
+ISCHANGED(LOB_Referral__c) ||
+ISCHANGED(Line_of_Business__c) ||
+ISCHANGED(Lost_Reason__c) ||
+ISCHANGED(Marchon__c) ||
+ISCHANGED(New_LOB_Business__c) ||
+ISCHANGED(Number_of_Jobs__c) ||
+ISCHANGED(Optics__c) ||
+ISCHANGED(Planned_Closed_Month__c) ||
+ISCHANGED(CampaignId) ||
+ISCHANGED(Product_Program__c) ||
+ISCHANGED(Product_Program_Name__c) ||
+ISCHANGED(Program_Status__c) ||
+ISCHANGED(Reason__c) ||
+ISCHANGED(Related_Case__c) ||
+
+ISCHANGED(Up_Sell__c) ||
+ISCHANGED(Vision_Care__c) ||
+ISCHANGED( AccountId ) ||
+ISCHANGED(Amount) ||
+ISCHANGED(CloseDate) ||
+ISCHANGED(Description) ||
+ISCHANGED(LeadSource) ||
+ISCHANGED(NextStep) ||
+ISCHANGED(Name) ||
+ISCHANGED( OwnerId )) 
+
+&amp;&amp; 
+
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP CRM Support User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;))</errorConditionFormula>
+        <errorMessage>You do not have edit permission once Stage is Closed Cancelled. Please contact your Support Admin.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR1_ClosedLost</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Lost&quot;)
+
+&amp;&amp;
+ 
+ISCHANGED(StageName)
+
+&amp;&amp;
+
+NOT(OR($Profile.Name = &quot;VSP LOB Admin User&quot;, $Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP CRM Support User&quot;))
+
+||
+
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Cancelled&quot;) 
+
+&amp;&amp;
+
+(ISCHANGED(Altair__c) ||
+ISCHANGED(Amount_Value_Timeframe__c) ||
+ISCHANGED(Cross_Sell__c) ||
+ISCHANGED(Days_Left__c) ||
+ISCHANGED(Division_Brand__c) ||
+ISCHANGED(End_Date__c) ||
+ISCHANGED(Eyefinity__c) ||
+ISCHANGED(LOB_Referral__c) ||
+ISCHANGED(Line_of_Business__c) ||
+ISCHANGED(Lost_Reason__c) ||
+ISCHANGED(Marchon__c) ||
+ISCHANGED(New_LOB_Business__c) ||
+ISCHANGED(Number_of_Jobs__c) ||
+ISCHANGED(Optics__c) ||
+ISCHANGED(Planned_Closed_Month__c) ||
+ISCHANGED(CampaignId) ||
+ISCHANGED(Product_Program__c) ||
+ISCHANGED(Product_Program_Name__c) ||
+ISCHANGED(Program_Status__c) ||
+ISCHANGED(Reason__c) ||
+ISCHANGED(Related_Case__c) ||
+
+ISCHANGED(Up_Sell__c) ||
+ISCHANGED(Vision_Care__c) ||
+ISCHANGED( AccountId ) ||
+ISCHANGED(Amount) ||
+ISCHANGED(CloseDate) ||
+ISCHANGED(Description) ||
+ISCHANGED(LeadSource) ||
+ISCHANGED(NextStep) ||
+ISCHANGED(Name) ||
+ISCHANGED(OwnerId )) 
+
+&amp;&amp; 
+
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP CRM Support User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;))</errorConditionFormula>
+        <errorMessage>You do not have edit permission once Stage is Closed Lost.  Please contact your Support Admin.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR1_ClosedWon</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Won&quot;)
+
+&amp;&amp;
+ 
+ISCHANGED(StageName)
+
+&amp;&amp;
+
+NOT(OR($Profile.Name = &quot;VSP LOB Admin User&quot;, $Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP CRM Support User&quot;))
+
+||
+
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Cancelled&quot;) 
+
+&amp;&amp;
+
+(ISCHANGED(Altair__c) ||
+ISCHANGED(Amount_Value_Timeframe__c) ||
+ISCHANGED(Cross_Sell__c) ||
+ISCHANGED(Days_Left__c) ||
+ISCHANGED(Division_Brand__c) ||
+ISCHANGED(End_Date__c) ||
+ISCHANGED(Eyefinity__c) ||
+ISCHANGED(LOB_Referral__c) ||
+ISCHANGED(Line_of_Business__c) ||
+ISCHANGED(Lost_Reason__c) ||
+ISCHANGED(Marchon__c) ||
+ISCHANGED(New_LOB_Business__c) ||
+ISCHANGED(Number_of_Jobs__c) ||
+ISCHANGED(Optics__c) ||
+ISCHANGED(Planned_Closed_Month__c) ||
+ISCHANGED(CampaignId) ||
+ISCHANGED(Product_Program__c) ||
+ISCHANGED(Product_Program_Name__c) ||
+ISCHANGED(Program_Status__c) ||
+ISCHANGED(Reason__c) ||
+ISCHANGED(Related_Case__c) ||
+
+ISCHANGED(Up_Sell__c) ||
+ISCHANGED(Vision_Care__c) ||
+ISCHANGED( AccountId ) ||
+ISCHANGED(Amount) ||
+ISCHANGED(CloseDate) ||
+ISCHANGED(Description) ||
+ISCHANGED(LeadSource) ||
+ISCHANGED(NextStep) ||
+ISCHANGED(Name) ||
+ISCHANGED( OwnerId )) 
+
+&amp;&amp; 
+
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP CRM Support User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;))</errorConditionFormula>
+        <errorMessage>You do not have edit permission once Stage is Closed Won.  Please contact your Support Admin.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR1_Pending_account</fullName>
+        <active>true</active>
+        <description>Prevents the closure of an Opportunity on a New, Pending, or Not Approved Account.</description>
+        <errorConditionFormula>AND(
+OR(
+ISPICKVAL(StageName,&quot;Closed Won&quot;), 
+ISPICKVAL(StageName,&quot;Closed Lost&quot;)),
+
+OR(
+ISPICKVAL(Account.Status__c ,&quot;New&quot;),
+ISPICKVAL(Account.Status__c ,&quot;Submit for Approval&quot;),
+ISPICKVAL(Account.Status__c ,&quot;Not Approved&quot;),
+ISPICKVAL(Account.Status__c ,&quot;Marked for Deletion&quot;)),  
+$Profile.Name  &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
+        <errorMessage>Opportunities may not be closed on New or Pending Accounts.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR1_StartDateIsSetIschangeEndDate</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+(ISCHANGED(End_Date__c)),
+NOT(ISPICKVAL(PRIORVALUE(Product_Program_Name__c), &quot;&quot;)), 
+
+
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP CRM Support User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;)), 
+
+NOT(OR(ISPICKVAL( StageName, &quot;Closed Cancelled&quot;), ISPICKVAL( StageName, &quot;Closed Lost&quot;), ISPICKVAL(StageName, &quot;Closed Won&quot;))))</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>You don&apos;t have permission to change End Date once Start Date is set.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR1_StartDateIsSetIschangeProgramName</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+(ISCHANGED( Start_Date_New__c )),
+NOT(ISPICKVAL(PRIORVALUE(Product_Program_Name__c), &quot;&quot;)),
+
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP CRM Support User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;)), 
+
+NOT(OR(ISPICKVAL( StageName, &quot;Closed Cancelled&quot;), ISPICKVAL( StageName, &quot;Closed Lost&quot;), ISPICKVAL(StageName, &quot;Closed Won&quot;))))</errorConditionFormula>
+        <errorMessage>You do not have permission to change the Start Date once it has been set.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR31_Contact_Lens_Kit_Validate</fullName>
+        <active>true</active>
+        <description>Validates that Contact Lens Kit can not be null when LOB = Optics and Division = Contact Lenses</description>
+        <errorConditionFormula>ISPICKVAL(Line_of_Business__c, &apos;Optics&apos;) &amp;&amp; 
+ISPICKVAL(Division_Brand__c, &apos;Contact Lenses&apos;) &amp;&amp; 
+ISBLANK(TEXT( Contact_Lens_Kit__c )) &amp;&amp; 
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;))</errorConditionFormula>
+        <errorDisplayField>Contact_Lens_Kit__c</errorDisplayField>
+        <errorMessage>Contact Lens Kit field is required when Division/Brand is Contact Lenses.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR31_Contact_Lenses_Quantity_Validate</fullName>
+        <active>true</active>
+        <description>Quantity field is required when Division Brand field = Contact Lenses</description>
+        <errorConditionFormula>ISPICKVAL(Division_Brand__c, &apos;Contact Lenses&apos;) &amp;&amp; 
+ISBLANK(TEXT(Quantity__c)) &amp;&amp; 
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, 
+							$Profile.Name = &quot;VSP Technical User&quot;))</errorConditionFormula>
+        <errorDisplayField>Quantity__c</errorDisplayField>
+        <errorMessage>Quantity field is required when Division Brand is Contact Lenses.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR31_OrderingCLKitsRequiredFields</fullName>
+        <active>true</active>
+        <description>Enforce fields required to be populated on Opportunity and associated Account in order for the Contact Lens Kit Order to be sent to SAP.</description>
+        <errorConditionFormula>AND(NOT(ISBLANK(TEXT(Contact_Lens_Kit__c))),
+				ISPICKVAL(StageName,&apos;Closed/Won&apos;),
+			OR(
+							ISBLANK(AccountId),
+						 ISBLANK(Account.ShippingStreet),
+							ISBLANK(Account.ShippingCity),
+							ISBLANK(Account.ShippingState),
+							ISBLANK(Account.ShippingPostalCode)
+			))</errorConditionFormula>
+        <errorMessage>Ensure this Contact Lens Kit Order is associated with a Business Account that has a valid Physical Address</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR31_RequestedDeliveryDateValidation</fullName>
+        <active>true</active>
+        <description>Ensures the Requested Delivery Date is no earlier than 14 days out.</description>
+        <errorConditionFormula>OR(ISNEW(), ISCHANGED( Requested_Delivery_Date__c))
+&amp;&amp;
+Requested_Delivery_Date__c &lt; (TODAY()+14)
+&amp;&amp;
+NOT(OR($Profile.Name  = &apos;System Administrator&apos;, $Profile.Name  = &apos;VSP Technical User&apos;, $Profile.Name  = &apos;VSP Integration User&apos;))</errorConditionFormula>
+        <errorMessage>Requested Delivery Date cannot be less than 14 days in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR33_FeedbackProvidedRequired</fullName>
+        <active>true</active>
+        <description>the picklist value &quot;Yes&quot; is selected from the LOB Feedback field, a value must be entered in the &quot;Feedback Provided&quot; field before the record can be saved.</description>
+        <errorConditionFormula>AND( ISPICKVAL( LOB_Feedback__c , &quot;Yes&quot;) , ISBLANK( Feedback_Provided__c ) ,NOT(OR( $Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;VSP Technical User&quot;)))</errorConditionFormula>
+        <errorMessage>Feedback Provided cannot be left blank if LOB Feedback is Yes</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR33_NewPracticeTaxID</fullName>
+        <active>true</active>
+        <description>For the new field &quot;New Practice Tax ID,&quot; the user must be restricted from entering any text in this field and should only be able to enter a number in order to save the record. They also should be required to enter exactly 9 numbers.</description>
+        <errorConditionFormula>AND( NOT( ISBLANK( New_Practice_Tax_ID__c ) ) , OR(NOT(ISNUMBER(New_Practice_Tax_ID__c )),  NOT( LEN( New_Practice_Tax_ID__c ) == 9 ) ) ,NOT(OR( $Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;VSP Technical User&quot;)))</errorConditionFormula>
+        <errorMessage>New Practice Tax ID field must contain numbers only and must contain no less than 9 numbers</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR33_OtherBuyingAllianceRequired</fullName>
+        <active>true</active>
+        <description>the picklist value &quot;Other&quot; is selected from the Buying Alliance Affiliation field, a value must be entered in the &quot;Other Buying Alliance Affiliation&quot; field before the record can be saved.</description>
+        <errorConditionFormula>AND( ISPICKVAL( Buying_Alliance_Affiliation__c , &quot;Other&quot;),  ISBLANK( Other_Buying_Alliance_Affiliation__c ),  NOT( OR( $Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;VSP Technical User&quot;) )  )</errorConditionFormula>
+        <errorMessage>Other Buying Group Alliance Affiliation is required when Other is selected in Buying Alliance Affiliation</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR33_Other_Purpose_Funds</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL( Purpose_of_Funds__c , &quot;Other&quot;),
+			  	 ISBLANK(Other_Purpose_of_Funds__c),
+				NOT(OR( $Profile.Name = &quot;System Administrator&quot;,$Profile.Name = &quot;VSP Technical User&quot;)))</errorConditionFormula>
+        <errorDisplayField>Other_Purpose_of_Funds__c</errorDisplayField>
+        <errorMessage>Other Purpose of Funds is required when Other is selected in Purpose of Funds field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR33_PurposeofFunds</fullName>
+        <active>true</active>
+        <description>If the picklist value &quot;Acquisition&quot; is selected from the Purpose of Funds field, then the following fields must contain a value in order for the record to be saved. The error message related to this rule should read &quot;New or Existing Practice, New Practice</description>
+        <errorConditionFormula>AND( ISPICKVAL( Purpose_of_Funds__c , &quot;Acquisition&quot;) , OR( ISBLANK( TEXT(New_or_Existing_Practice__c )) , ISBLANK(New_Practice_Information__c) , ISBLANK( New_Practice_Tax_ID__c ) ),   NOT(OR( $Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;VSP Technical User&quot;))  )</errorConditionFormula>
+        <errorMessage>New or Existing Practice, New Practice Information and New Practice Tax ID are required when Acquisition is selected for Purpose of Funds</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR5_Restrict_Change_to_CustomProdPromo</fullName>
+        <active>true</active>
+        <description>Restricts most users from changing the values in Custom Product/Promotion field after the initial value (other than blank) has been selected and saved.</description>
+        <errorConditionFormula>AND(
+NOT( ISNEW() ),
+PRIORVALUE( Custom_Product_Promotion__c ) &lt;&gt; &quot;&quot;,
+ISCHANGED( Custom_Product_Promotion__c )
+)
+&amp;&amp; 
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;,$Profile.Name = &quot;VSP CRM Support User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;))</errorConditionFormula>
+        <errorDisplayField>Custom_Product_Promotion__c</errorDisplayField>
+        <errorMessage>You cannot change the value of the Custom Product/Promotion field after a value has previously been saved.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR5_Restrict_Change_to_ProductProgram</fullName>
+        <active>true</active>
+        <description>Restricts most users from changing the values in Product/Program Name field after the initial value (other than blank) has been selected and saved.</description>
+        <errorConditionFormula>AND( 
+NOT( ISNEW() ), 
+PRIORVALUE(  Product_Program_Name__c  ) &lt;&gt; &quot;&quot;,
+ISCHANGED(  Product_Program_Name__c  ) 
+)
+&amp;&amp; 
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;,$Profile.Name = &quot;VSP CRM Support User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;))</errorConditionFormula>
+        <errorDisplayField>Product_Program_Name__c</errorDisplayField>
+        <errorMessage>You cannot change the value of the Product/Program Name field after a value has previously been saved.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR7_RestrictCloseifProdProgNamePresent</fullName>
+        <active>true</active>
+        <description>Restricts most users&apos; ability to close an opportunity if the Product/Program Name field has data present.</description>
+        <errorConditionFormula>(ISPICKVAL ( StageName, &quot;Closed Won&quot;)
+||
+ISPICKVAL ( StageName, &quot;Closed Lost&quot;)
+||
+ISPICKVAL ( StageName, &quot;Closed Cancelled&quot;))
+&amp;&amp;
+
+(NOT(ISBLANK(TEXT(Product_Program_Name__c)))
+&amp;&amp;
+
+(NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;VSP Technical User&quot;,$Profile.Name = &quot;VSP CRM Support User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;))))</errorConditionFormula>
+        <errorMessage>You cannot change the Sales Stage to Closed if the Product/Program Name has a value.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>CLS4SF__Email_Pitch</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated)ClearSlide Email</masterLabel>
+        <openType>newWindow</openType>
+        <page>CLS4SF__EmailPitchOpptyDetail</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>CLS4SF__Live_Pitch</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated)ClearSlide Meeting</masterLabel>
+        <openType>newWindow</openType>
+        <page>CLS4SF__LivePitchOpptyDetail</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Opportunity</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Opportunity</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/006/e?
+CF00N0B000005UPct={!Contact_Role__c.Name}&amp;
+CF00N0B000005UPct_1kid={!Contact_Role__c.Id}&amp;
+opp4={!Contact_Role__c.Account__c}&amp;
+opp4_1kid={!Contact_Role__c.AccountId__c}&amp;
+opp3=Auto Generated&amp;
+opp11=Prospect&amp;
+retURL=%2F{!Opportunity.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Opportunity</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromOpportunity</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

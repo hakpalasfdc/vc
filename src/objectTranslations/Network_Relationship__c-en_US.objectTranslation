@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Network Relationship</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Network Relationships</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Network Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bypass VC Validation Rules --></label>
+        <name>Bypass_VC_Validation_Rules__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claims Priced --></label>
+        <name>Claims_Priced__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Role --></label>
+        <name>Contact_Role__c</name>
+        <relationshipLabel><!-- Network Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Directory Effective Date --></label>
+        <name>Directory_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directory End Date --></label>
+        <name>Directory_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor ID --></label>
+        <name>Doctor_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Reason Calculation --></label>
+        <name>Exception_Reason_Calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Reason --></label>
+        <name>Exception_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Code --></label>
+        <name>Fee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Worked --></label>
+        <name>Hours_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- LVC Negotiated Discount --></label>
+        <name>LVC_Negotiated_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number --></label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership --></label>
+        <name>Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Effective Date --></label>
+        <name>Program_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program End Date --></label>
+        <name>Program_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program ID Code --></label>
+        <name>Program_ID_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program ID --></label>
+        <name>Program_ID__c</name>
+        <relationshipLabel><!-- Network Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Program Term Reason --></label>
+        <name>Program_Term_Reason__c</name>
+        <picklistValues>
+            <masterLabel>NOEN - Provider Not Enrolled/Registered with State</masterLabel>
+            <translation><!-- NOEN - Provider Not Enrolled/Registered with State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLEF - Provider Left Office</masterLabel>
+            <translation><!-- PLEF - Provider Left Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PREQ - Provider Requested/Provider Initiated</masterLabel>
+            <translation><!-- PREQ - Provider Requested/Provider Initiated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Provider Name --></label>
+        <name>Provider_Name__c</name>
+        <relationshipLabel><!-- Network Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role ID --></label>
+        <name>Role_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update --></label>
+        <name>Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Geo Code --></label>
+        <name>VSP_Geo_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Network Provider Flag --></label>
+        <name>VSP_Network_Provider_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Location Key --></label>
+        <name>Vision_Care_Location_Key__c</name>
+    </fields>
+    <layouts>
+        <layout>Network Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden Fields --></label>
+            <section>Hidden Fields</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Claims have been priced against this Network Relationship. You cannot make any changes. --></errorMessage>
+        <name>VSPR19b_Claims_Priced_Restriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter an LVC Negotiated Discount of 0-100 --></errorMessage>
+        <name>VSPR19b_Negotiated_Discount_0_To_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter an LVC Negotiated Discount for this Program ID --></errorMessage>
+        <name>VSPR19b_Negotiated_Discount_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Program Effective Date cannot be less than Vision Care Effective Date on associated Business Account. --></errorMessage>
+        <name>VSPR19b_Program_Effective_Date_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Program Effective Date cannot be less than Vision Care Effective Date on the associated Contact Record --></errorMessage>
+        <name>VSPR19b_Program_Effective_Date_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Program End Date must be greater than the Program Effective Date --></errorMessage>
+        <name>VSPR19b_Program_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Fee Code for this Network Relationship. --></errorMessage>
+        <name>VSPR19b_Restrict_Fee_Code_on_Non_CGVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The associated Contact must be Active or Future Dated Vision Care Provider. --></errorMessage>
+        <name>VSPR26_NonVisionCareValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The associated Account must be an Active or Future Dated Vision Care Business Account. --></errorMessage>
+        <name>VSPR27_NonVisionCareAcctValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

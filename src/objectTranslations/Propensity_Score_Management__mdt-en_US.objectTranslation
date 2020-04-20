@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Propensity Score Management</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Propensity Score Management</value>
+    </caseValues>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- States --></label>
+        <name>States__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Span Begin --></label>
+        <name>Time_Span_Begin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Span End --></label>
+        <name>Time_Span_End__c</name>
+    </fields>
+    <layouts>
+        <layout>Propensity Score Management Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

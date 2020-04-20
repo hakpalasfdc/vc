@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Altair Marketing-Communications --></label>
+        <name>Altair_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Altair Marketing-General --></label>
+        <name>Altair_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Altair Score --></label>
+        <name>Altair_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Altair --></label>
+        <name>Altair__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSR/Sales Agent Name --></label>
+        <name>CSR_Sales_Agent_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Back Date --></label>
+        <name>Call_Back_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Ineligibility --></label>
+        <name>Campaign_Ineligibility__c</name>
+        <picklistValues>
+            <masterLabel>Data Issue</masterLabel>
+            <translation><!-- Data Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Requested</masterLabel>
+            <translation><!-- Member Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Consumer ID --></label>
+        <name>Consumer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Level Needed --></label>
+        <name>Coverage_Level_Needed__c</name>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self</masterLabel>
+            <translation><!-- Self --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self+1</masterLabel>
+            <translation><!-- Self+1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created By VSP User --></label>
+        <name>Created_By_VSP_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- D2C Batch Qualify --></label>
+        <name>D2C_Batch_Qualify__c</name>
+    </fields>
+    <fields>
+        <label><!-- D2C Pre Sales Opt In --></label>
+        <name>D2C_Pre_Sales_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Owner ID --></label>
+        <name>DialSource__DS_Owner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Datetime of Last Disposition --></label>
+        <name>DialSource__Datetime_of_Last_Disposition_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Call Campaign Name --></label>
+        <name>DialSource__Last_Call_Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Disposition --></label>
+        <name>DialSource__Last_Disposition_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Call --></label>
+        <name>DialSource__Next_Call_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Call Count --></label>
+        <name>DialSource__Total_Call_Count_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disposition of Call --></label>
+        <name>Disposition_of_Call__c</name>
+        <picklistValues>
+            <masterLabel>Do Not Contact</masterLabel>
+            <translation><!-- Do Not Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No action taken</masterLabel>
+            <translation><!-- No action taken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred back to Partner/Broker</masterLabel>
+            <translation><!-- Referred back to Partner/Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred caller to Stay website</masterLabel>
+            <translation><!-- Referred caller to Stay website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred caller to vspdirect.com</masterLabel>
+            <translation><!-- Referred caller to vspdirect.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent email flyer or direct mailer</masterLabel>
+            <translation><!-- Sent email flyer or direct mailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred to Sales Agent</masterLabel>
+            <translation><!-- Transferred to Sales Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Contact ID --></label>
+        <name>Eloqua_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Lead Activities --></label>
+        <name>Eloqua_Lead_Activitis__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Eloqua Score --></label>
+        <name>Eloqua_Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyefinity Marketing-Communications --></label>
+        <name>Eyefinity_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyefinity Marketing-General --></label>
+        <name>Eyefinity_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Eyefinity Score --></label>
+        <name>Eyefinity_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eyefinity --></label>
+        <name>Eyefinity__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Lead Indicator --></label>
+        <name>From_Lead_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IP Behavioral Score --></label>
+        <name>IP_Behavioral_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Purchase Date --></label>
+        <name>IP_Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value &gt; 0 indicates consumer has viewed the Abandoned Cart Marketing Email. --></help>
+        <label><!-- LPUV Score 1 --></label>
+        <name>LPUV_Score_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value &gt; 0 indicates consumer clicked through a marketing email. --></help>
+        <label><!-- LPUV Score 2 --></label>
+        <name>LPUV_Score_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value &gt; 0 indicates consumer has visited the website. --></help>
+        <label><!-- LPUV Score 3 --></label>
+        <name>LPUV_Score_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value &gt; 0 indicates consumer viewed D2Cs Web Extra email --></help>
+        <label><!-- LPUV Score 4 --></label>
+        <name>LPUV_Score_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- LPUV Score 5 --></label>
+        <name>LPUV_Score_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- LPUV Score 6 --></label>
+        <name>LPUV_Score_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- LPUV Score 7 --></label>
+        <name>LPUV_Score_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Capture Date --></label>
+        <name>Lead_Capture_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source Details --></label>
+        <name>Lead_Source_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source - Most Recent --></label>
+        <name>Lead_Source_Most_Recent__c</name>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased Neustar</masterLabel>
+            <translation><!-- Purchased Neustar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased Other</masterLabel>
+            <translation><!-- Purchased Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar</masterLabel>
+            <translation><!-- Seminar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Type --></label>
+        <name>Lead_Type__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D2C</masterLabel>
+            <translation><!-- D2C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Likely IP Start Date --></label>
+        <name>Likely_IP_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lock For Assignment --></label>
+        <name>LockForAssignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon Marketing-Communications --></label>
+        <name>Marchon_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon Marketing-General --></label>
+        <name>Marchon_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Marchon Score --></label>
+        <name>Marchon_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marchon --></label>
+        <name>Marchon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Marketing-Communications --></label>
+        <name>Optics_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics Marketing-General --></label>
+        <name>Optics_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Optics Score --></label>
+        <name>Optics_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optics --></label>
+        <name>Optics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Persona --></label>
+        <name>Persona__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plans of Interest --></label>
+        <name>Plans_of_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Easy Options</masterLabel>
+            <translation><!-- Easy Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhanced</masterLabel>
+            <translation><!-- Enhanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyewear Only</masterLabel>
+            <translation><!-- Eyewear Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Every 2</masterLabel>
+            <translation><!-- New Every 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Channel --></label>
+        <name>Purchase_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for IP --></label>
+        <name>Reason_for_IP__c</name>
+        <picklistValues>
+            <masterLabel>Age-out (26+)</masterLabel>
+            <translation><!-- Age-out (26+) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer dropped group coverage</masterLabel>
+            <translation><!-- Employer dropped group coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left company/lost job</masterLabel>
+            <translation><!-- Left company/lost job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part-time</masterLabel>
+            <translation><!-- Part-time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending or In Retirement</masterLabel>
+            <translation><!-- Pending or In Retirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Employed</masterLabel>
+            <translation><!-- Self-Employed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopping for a family member</masterLabel>
+            <translation><!-- Shopping for a family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stay-at-home</masterLabel>
+            <translation><!-- Stay-at-home --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SBU --></label>
+        <name>SBU__c</name>
+        <picklistValues>
+            <masterLabel>CMF</masterLabel>
+            <translation><!-- CMF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMI</masterLabel>
+            <translation><!-- CMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D2C</masterLabel>
+            <translation><!-- D2C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HGM</masterLabel>
+            <translation><!-- HGM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA</masterLabel>
+            <translation><!-- SA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CorrelationID --></label>
+        <name>SFGA__CorrelationID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correlation Data --></label>
+        <name>SFGA__Correlation_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Source --></label>
+        <name>SFGA__Web_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source of Phone Call --></label>
+        <name>Source_of_Phone_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscriber Status --></label>
+        <name>Subscriber_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTM Campaign Content --></label>
+        <name>UTM_Campaign_Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTM Campaign Medium --></label>
+        <name>UTM_Campaign_Medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTM Campaign Name --></label>
+        <name>UTM_Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTM Campaign Source --></label>
+        <name>UTM_Campaign_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTM Campaign Term --></label>
+        <name>UTM_Campaign_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Global Marketing-Communications --></label>
+        <name>VSP_Global_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <label><!-- VSP Global Marketing-General --></label>
+        <name>VSP_Global_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Marketing-Communications --></label>
+        <name>Vision_Care_Marketing_Communications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Marketing-General --></label>
+        <name>Vision_Care_Marketing_General__c</name>
+    </fields>
+    <fields>
+        <help><!-- This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest. --></help>
+        <label><!-- Vision Care Score --></label>
+        <name>Vision_Care_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care --></label>
+        <name>Vision_Care__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Survey Invitation --></label>
+        <name>qualtrics__Last_Survey_Invitation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Survey Response --></label>
+        <name>qualtrics__Last_Survey_Response__c</name>
+    </fields>
+    <layouts>
+        <layout>D2C Lead Page Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- IP Interest Info --></label>
+            <section>IP Interest Info</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Information --></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Opt-Outs --></label>
+            <section>Opt-Outs</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Areas of Interest --></label>
+            <section>Areas of Interest</section>
+        </sections>
+        <sections>
+            <label><!-- Eloqua Marketing Information --></label>
+            <section>Eloqua Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Opt-Outs --></label>
+            <section>Opt-Outs</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SMOD Lead Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Classification --></label>
+            <section>Lead Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Lead records for Direct-to-Consumer Effort --></description>
+        <label><!-- D2C Lead --></label>
+        <name>D2C_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SMOD Lead Record Type --></description>
+        <label><!-- SMOD Lead --></label>
+        <name>SMOD_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- General Lead records created for VSP Global --></description>
+        <label><!-- VSP Leads --></label>
+        <name>VSP_Leads</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please do not enter a Company Name for D2C Leads. --></errorMessage>
+        <name>VSPR2_Donot_allow_Company_in_D2C_Leads</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Pitch --></label>
+        <name>CLS4SF__Email_Pitch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Pitch_List --></label>
+        <name>CLS4SF__Email_Pitch_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Live_Pitch --></label>
+        <name>CLS4SF__Live_Pitch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DS_InstaQueue --></label>
+        <name>DialSource__DS_InstaQueue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DS_InstaQueue_List --></label>
+        <name>DialSource__DS_InstaQueue_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EmailUnsubscribe --></label>
+        <name>EmailUnsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LeadActivityOverview --></label>
+        <name>LeadActivityOverview</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Qualtrics_Survey --></label>
+        <name>qualtrics__Send_Qualtrics_Survey</name>
+    </webLinks>
+</CustomObjectTranslation>

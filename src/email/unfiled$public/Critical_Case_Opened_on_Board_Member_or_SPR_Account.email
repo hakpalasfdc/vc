@@ -1,0 +1,8 @@
+A new Critical Case was opened on a VSP Board Member or State Professional Rep Account.
+
+Account Name: {!Account.Name}
+Contact Name: {!Contact.Name}
+Case Number: {!Case.CaseNumber}
+Case Subject: {!Case.Subject}
+
+{!Case.Link}

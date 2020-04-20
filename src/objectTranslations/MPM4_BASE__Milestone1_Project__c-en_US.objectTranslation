@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Current Milestone --></label>
+        <name>Current_Milestone__c</name>
+        <picklistValues>
+            <masterLabel>Completed Phase 1</masterLabel>
+            <translation><!-- Completed Phase 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerging Consumer</masterLabel>
+            <translation><!-- Emerging Consumer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Shift</masterLabel>
+            <translation><!-- Investment Shift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practice Assessment</masterLabel>
+            <translation><!-- Practice Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Shift</masterLabel>
+            <translation><!-- Retail Shift --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trending --></label>
+        <name>Trending__c</name>
+        <picklistValues>
+            <masterLabel>Above Target</masterLabel>
+            <translation><!-- Above Target --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below Target</masterLabel>
+            <translation><!-- Below Target --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Target</masterLabel>
+            <translation><!-- On Target --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Create_Follow_Up_Task</name>
+        <label>Create Follow Up Task</label>
+        <locationX>154</locationX>
+        <locationY>187</locationY>
+        <actionName>DSTaskDueDatePB</actionName>
+        <actionType>apex</actionType>
+        <inputParameters>
+            <name>assignedTo</name>
+            <value>
+                <elementReference>assignedTo</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>contactRoleID</name>
+            <value>
+                <elementReference>WhatId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>dueDate</name>
+            <value>
+                <elementReference>dueDate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>priority</name>
+            <value>
+                <elementReference>priority</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>status</name>
+            <value>
+                <elementReference>status</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>taskType</name>
+            <value>
+                <elementReference>taskType</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>businessDaysOption</name>
+            <value>
+                <elementReference>businessDaysOptions</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>pendingDateOption</name>
+            <value>
+                <elementReference>pendingDateOption</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>eventType</name>
+            <value>
+                <elementReference>eventType</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>eventClassification</name>
+            <value>
+                <elementReference>eventClassification</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <description>Added the Event variables.</description>
+    <formulas>
+        <description>Formula for the due date</description>
+        <name>dueDate</name>
+        <dataType>Number</dataType>
+        <expression>CASE ({!VMCount},
+0, 2,
+1, 2,
+2, 3,
+3, 4,
+4, 5,
+5, 6,
+6, 7, 
+7, 30,
+NULL, 0,
+30)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Create Follow Up Tasks {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DS V3 Create Follow Up Tasks</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Contact_Role</name>
+        <label>Contact Role</label>
+        <locationX>151</locationX>
+        <locationY>83</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Follow_Up_Task</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>WhatId</elementReference>
+            </value>
+        </filters>
+        <object>Contact_Role__c</object>
+        <outputAssignments>
+            <assignToReference>VMCount</assignToReference>
+            <field>DS_VM_Count__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Contact_Role</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Who the Follow Up Task should be assigned to.</description>
+        <name>assignedTo</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Whether the due date of the Follow Up Task should account for business days.</description>
+        <name>businessDaysOptions</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The classification for the follow up Event.</description>
+        <name>eventClassification</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The type for the follow up Event.</description>
+        <name>eventType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Whether the due date of the Follow Up Task should account for one of the pending date fields.</description>
+        <name>pendingDateOption</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The priority of the Follow Up Task.</description>
+        <name>priority</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The status of the Follow Up Task.</description>
+        <name>status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The subject of the Follow Up Task.</description>
+        <name>subject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The type for the Follow Up Task.</description>
+        <name>taskType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The VM Count field on the Contact Role.</description>
+        <name>VMCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <description>The what id of the Task.</description>
+        <name>WhatId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

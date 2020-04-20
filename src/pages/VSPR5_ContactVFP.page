@@ -1,0 +1,171 @@
+<apex:page standardController="contact" extensions="VSPR5_ContactExtensionController" >
+
+     <apex:includeScript value="/support/console/22.0/integration.js"/>
+     <script type="text/javascript">
+            function defaultTabTitle() {
+                //Set the current tab's title
+                sforce.console.setTabTitle('New Contact');
+          }
+            var pageLoad = window.onload;
+             window.onload = function() {
+                if(pageLoad) {
+                        pageLoad();
+                }
+                 defaultTabTitle();
+          }
+     </script>
+     
+   <apex:includeScript value="/support/console/22.0/integration.js"/>
+    <script type="text/javascript">
+        function testCloseTab() {
+            if (sforce.console.isInConsole()) {
+                  
+                  sforce.console.getEnclosingTabId(closeSubtab);
+               } else {
+                  
+                  CallApexMethodCancel();
+            }
+        }
+        var closeSubtab = function closeSubtab(result) {
+            //Now that we have the tab ID, we can close it
+            var tabId = result.id;
+            sforce.console.closeTab(tabId);
+        };
+    
+    </script>
+     
+     <apex:detail subject="{!contact.Id}" relatedList="false" title="false" inlineedit="true"/>
+
+    <apex:form >
+    
+        <apex:actionFunction name="CallApexMethodCancel" action="{!cancel}" />        
+        <apex:pageblock title="Contact" >
+        <apex:pagemessages />
+            <apex:pageBlockSection title="Contact Information" showHeader="true" collapsible="false">
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2">
+            
+              
+             <apex:pageBlockSectionItem >
+                    <apex:outputlabel value="First Name" />
+                        <apex:outputpanel >
+                            <apex:inputfield taborderhint="1" value="{!objcontact.salutation}" />
+                            &nbsp;
+                            <apex:inputfield taborderhint="2" value="{!objcontact.FirstName}" />
+                        </apex:outputpanel>
+                    </apex:pageBlockSectionItem>
+                    
+                
+                <apex:inputField taborderhint="9" Value="{!objcontact.Accountid}" required="true"/>	
+                <apex:inputField taborderhint="3" Value="{!objcontact.Middle_Initial__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}"/>
+                <apex:outputlabel rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                <apex:inputField taborderhint="4" Value="{!objcontact.lastname}"/>
+                <apex:inputField taborderhint="10" value="{!objcontact.Degree__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                <apex:inputField taborderhint="5" value="{!objcontact.Marketing_Name__c}"/>
+                <apex:inputField taborderhint="11" value="{!objcontact.Title}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                <apex:inputField taborderhint="6" value="{!objcontact.NPI__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" /> 
+                <apex:inputField taborderhint="12" value="{!objcontact.CAQH_ID__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                
+  				<apex:inputField taborderhint="7" value="{!objcontact.Special_Program_Participation__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                <apex:inputField taborderhint="13" value="{!objcontact.Doctor_ID__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                
+                <apex:inputField taborderhint="8" value="{!objcontact.Gender__c}" />
+                <apex:inputField taborderhint="7" value="{!objcontact.VSP_Member__c}" rendered="{!objcontact.RecordTypeId == consumerRecordTypeId}" />
+                &nbsp;
+                
+                <apex:inputField taborderhint="15" value="{!objcontact.Consumer_ID__c}" rendered="{!objcontact.RecordTypeId == consumerRecordTypeId}" />
+                &nbsp;
+
+                <apex:inputField taborderhint="14" value="{!objcontact.Birthdate__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                &nbsp;
+               
+                
+               
+                  
+            
+        </apex:pageBlockSection>
+          <apex:pageBlockButtons location="top">
+            <apex:commandButton action="{!save}" value="Save" />
+            <apex:commandButton action="{!doSaveAndNew}" value="Save & New"/>
+            <apex:commandButton onClick="testCloseTab();return false" value="Cancel" immediate="true">
+            
+            </apex:commandButton>
+        </apex:pageBlockButtons>
+           </apex:pageblock>
+          
+        
+        <apex:pageblock > 
+            <apex:pageBlockSection title="Phone" showHeader="true" collapsible="false" >
+            </apex:pageBlockSection>
+           <apex:pageBlockSection >
+                <apex:inputField taborderhint="16" value="{!objcontact.Phone}" />
+                <apex:inputField taborderhint="17" value="{!objcontact.MobilePhone}" />
+                <apex:inputField taborderhint="18" value="{!objcontact.Phone_Extension__c}" />
+            </apex:pageBlockSection>
+        </apex:pageblock>
+        
+        
+        
+         <apex:pageblock > 
+            <apex:pageBlockSection title="Email" showHeader="true" collapsible="false" >
+            </apex:pageBlockSection>
+           <apex:pageBlockSection >
+                <apex:inputField taborderhint="19" value="{!objcontact.Email}" />
+                <apex:inputField taborderhint="20" value="{!objcontact.Other_Email__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                <apex:inputField taborderhint="21" value="{!objcontact.Personal_Email__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                
+            </apex:pageBlockSection>
+        </apex:pageblock>
+        
+        <apex:pageblock rendered="{!renderFlagVisionCareDetails}"> 
+            <apex:pageBlockSection title="Vision Care Details" showHeader="true" collapsible="false" >
+            </apex:pageBlockSection>
+           <apex:pageBlockSection columns="2">
+                <apex:inputField taborderhint="22" value="{!objcontact.Doctor_Type__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                &nbsp;
+                <apex:inputField taborderhint="23" value="{!objcontact.Facility_Type__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                &nbsp; 
+                <apex:inputField taborderhint="24" value="{!objcontact.Vision_Care_Effective_Date__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                &nbsp;
+                <apex:inputField taborderhint="25" value="{!objcontact.Vision_Care_End_Date__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                &nbsp;
+                <apex:inputField taborderhint="26" value="{!objcontact.Vision_Care_Doctor_Exception__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                &nbsp;
+                <apex:inputField taborderhint="27" value="{!objcontact.Vision_Care_Term_Reason__c}" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" />
+                &nbsp;
+                <!--apex:inputField taborderhint="28" value="{!objcontact.Contact_Source_Details__c}" rendered="{!IF(objcontact.RecordTypeId == consumerRecordTypeID, TRUE, FALSE)}" /-->                             
+                
+            </apex:pageBlockSection>
+        </apex:pageblock>
+        
+        
+        <apex:pageblock rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" > 
+            <apex:pageBlockSection title="Additional Information" showHeader="true" collapsible="false" >
+            </apex:pageBlockSection>
+           <apex:pageBlockSection >
+                <apex:inputField taborderhint="36" value="{!objcontact.AssistantName}" />
+                &nbsp;
+                <apex:inputField taborderhint="37" value="{!objcontact.AssistantPhone}" />
+                </apex:pageBlockSection>
+        </apex:pageblock>       
+                       
+        <apex:pageblock title="Contact Role" rendered="{!IF(AND(objcontact.RecordTypeId != clientRecordTypeId,objcontact.RecordTypeId != consumerRecordTypeId), TRUE, FALSE)}" >
+            
+             <apex:pageBlockSection title="Information" showHeader="true" collapsible="false">
+             </apex:pageBlockSection>
+             <apex:pageBlockSection >     
+                <apex:inputField taborderhint="38" value="{!objCrole.Type__c}" required="true"/>
+                <apex:inputField taborderhint="39" value="{!objCrole.Start_Date__c}"/>
+                <!--apex:inputfield taborderhint="40" value="{!objCrole.Credentialing_Contact__c}"/-->                
+                <apex:inputField taborderhint="40" value="{!objCrole.End_Date__c}"/> 
+                                              
+            </apex:pageBlockSection>
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!save}" value="Save"/>
+            <apex:commandButton action="{!doSaveAndNew}" value="Save & New"/>
+            <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+         
+        </apex:pageBlockButtons>
+            </apex:pageblock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,13 @@
+Thank you for contacting the VSP Billing Team, your inquiry is very important to us. Your request has been received, and your assigned Case Number is {!Case.CaseNumber}. Your request will be processed within 3-5 business days.
+
+For urgent inquiries, you may call us at 800-216-6248 option 3.
+
+
+____________________________________________________
+
+From: {!Case.SuppliedEmail}
+Sent: {!Case.CreatedDate}
+Subject: {!Case.Subject}
+{!Case.Description}
+
+ref: {!Case.Thread_Id}

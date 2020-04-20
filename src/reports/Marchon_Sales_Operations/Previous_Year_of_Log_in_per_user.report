@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LOGIN_STATUS</field>
+    </columns>
+    <columns>
+        <field>ROLE</field>
+    </columns>
+    <columns>
+        <field>BROWSER_TYPE</field>
+    </columns>
+    <description>Needs to be run by Barb Davis and exported for Mike Dooling&apos;s to calculate District Adoption and usage created 2/1/16</description>
+    <filter>
+        <criteriaItems>
+            <column>DIVISION</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Marchon Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PROFILE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Chatter only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LOGIN_STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Success</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Year</dateGranularity>
+        <field>LOGIN_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Previous Year # of Log in per user</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LOGIN_DATE</dateColumn>
+        <interval>INTERVAL_PREVY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$Product__c</field>
+    </columns>
+    <columns>
+        <field>Case$ClosedDate</field>
+    </columns>
+    <columns>
+        <field>Case$Owner.Id</field>
+    </columns>
+    <columns>
+        <field>Case$Origin</field>
+    </columns>
+    <columns>
+        <field>Case.LiveChatTranscripts$ChatDuration</field>
+    </columns>
+    <columns>
+        <field>Case$Date_Time_Accepted__c</field>
+    </columns>
+    <columns>
+        <field>Case$Date_Time_First_Email_Response__c</field>
+    </columns>
+    <description>USC Email Chat Counts &amp; Times for Export into Verint</description>
+    <filter>
+        <criteriaItems>
+            <column>Case$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Eyeconic,Case.Customer_Care</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Product__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Eyeconic Ops,Dragon Ops</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Origin</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Email,Chat</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>USC Email Chat Counts &amp; Times</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Transcripts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

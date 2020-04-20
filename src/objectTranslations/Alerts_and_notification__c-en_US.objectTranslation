@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alert</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alerts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alert Begins --></label>
+        <name>Alert_Begins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Description --></label>
+        <name>Alert_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Ends --></label>
+        <name>Alert_Ends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Message --></label>
+        <name>Alert_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- CallTypeLogic --></label>
+        <name>CallTypeLogic__c</name>
+        <picklistValues>
+            <masterLabel>AND</masterLabel>
+            <translation><!-- AND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IVR Call Type --></label>
+        <name>Call_Type__c</name>
+        <picklistValues>
+            <masterLabel>2020Source</masterLabel>
+            <translation><!-- 2020Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AONExchVSP</masterLabel>
+            <translation><!-- AONExchVSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliates</masterLabel>
+            <translation><!-- Affiliates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AffiliatesE</masterLabel>
+            <translation><!-- AffiliatesE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AffiliatesELF</masterLabel>
+            <translation><!-- AffiliatesELF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AffiliatesLF</masterLabel>
+            <translation><!-- AffiliatesLF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS</masterLabel>
+            <translation><!-- BCBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BankofAmerica</masterLabel>
+            <translation><!-- BankofAmerica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIGNAVision</masterLabel>
+            <translation><!-- CIGNAVision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSTxrEyec</masterLabel>
+            <translation><!-- CSTxrEyec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSTxrSP</masterLabel>
+            <translation><!-- CSTxrSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada Provider</masterLabel>
+            <translation><!-- Canada Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cigna</masterLabel>
+            <translation><!-- Cigna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cigna Spanish</masterLabel>
+            <translation><!-- Cigna Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cigna VNSP</masterLabel>
+            <translation><!-- Cigna VNSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consult</masterLabel>
+            <translation><!-- Consult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Costco</masterLabel>
+            <translation><!-- Costco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dental &amp; Vision Savings Plan</masterLabel>
+            <translation><!-- Dental &amp; Vision Savings Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DragonAllOther</masterLabel>
+            <translation><!-- DragonAllOther --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DragonExistOrder</masterLabel>
+            <translation><!-- DragonExistOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DragonNewOrder</masterLabel>
+            <translation><!-- DragonNewOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EycncExistOrder</masterLabel>
+            <translation><!-- EycncExistOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EyecncAllOther</masterLabel>
+            <translation><!-- EyecncAllOther --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EyecnicNewOrder</masterLabel>
+            <translation><!-- EyecnicNewOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyeconic</masterLabel>
+            <translation><!-- Eyeconic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EyeconicDr</masterLabel>
+            <translation><!-- EyeconicDr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EyeconicRetail</masterLabel>
+            <translation><!-- EyeconicRetail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EyeconicTxfr</masterLabel>
+            <translation><!-- EyeconicTxfr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyefinity</masterLabel>
+            <translation><!-- Eyefinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal</masterLabel>
+            <translation><!-- Federal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOF</masterLabel>
+            <translation><!-- IOF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IndividualPlan</masterLabel>
+            <translation><!-- IndividualPlan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intel</masterLabel>
+            <translation><!-- Intel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JC Penny</masterLabel>
+            <translation><!-- JC Penny --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab</masterLabel>
+            <translation><!-- Lab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level</masterLabel>
+            <translation><!-- Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luxottica</masterLabel>
+            <translation><!-- Luxottica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchon</masterLabel>
+            <translation><!-- Marchon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchon MP3r</masterLabel>
+            <translation><!-- Marchon MP3r --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchon OON</masterLabel>
+            <translation><!-- Marchon OON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MedLifeEmployee</masterLabel>
+            <translation><!-- MedLifeEmployee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Met</masterLabel>
+            <translation><!-- Met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetLifeAON</masterLabel>
+            <translation><!-- MetLifeAON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetLifeDiscount</masterLabel>
+            <translation><!-- MetLifeDiscount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metlife</masterLabel>
+            <translation><!-- Metlife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTTO</masterLabel>
+            <translation><!-- OTTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operator</masterLabel>
+            <translation><!-- Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regence</masterLabel>
+            <translation><!-- Regence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RetailChain</masterLabel>
+            <translation><!-- RetailChain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SQ</masterLabel>
+            <translation><!-- SQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SpanishIP</masterLabel>
+            <translation><!-- SpanishIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SpanishTxfr</masterLabel>
+            <translation><!-- SpanishTxfr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supervisor</masterLabel>
+            <translation><!-- Supervisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Shop</masterLabel>
+            <translation><!-- The Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK Caller</masterLabel>
+            <translation><!-- UK Caller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USAA</masterLabel>
+            <translation><!-- USAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WalMart Assoc</masterLabel>
+            <translation><!-- WalMart Assoc --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CaseIds --></label>
+        <name>CaseIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClientIdLogic --></label>
+        <name>ClientIdLogic__c</name>
+        <picklistValues>
+            <masterLabel>AND</masterLabel>
+            <translation><!-- AND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Consumer --></label>
+        <name>Consumer__c</name>
+        <picklistValues>
+            <masterLabel>Dependent</masterLabel>
+            <translation><!-- Dependent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Member</masterLabel>
+            <translation><!-- Primary Member --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MemberStatusLogic --></label>
+        <name>MemberStatusLogic__c</name>
+        <picklistValues>
+            <masterLabel>AND</masterLabel>
+            <translation><!-- AND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Member Status --></label>
+        <name>Member_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pended</masterLabel>
+            <translation><!-- Pended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termed</masterLabel>
+            <translation><!-- Termed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Published</masterLabel>
+            <translation><!-- Published --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Alert Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Alerts --></label>
+        <name>Alerts</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

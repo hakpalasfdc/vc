@@ -1,0 +1,583 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" controller="PPPCalcController">
+    <aura:handler name="change" value="{!v.exam1}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.exam2}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.exam3}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.lens1}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.lens2}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.lens3}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.frame1}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.frame2}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.frame3}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.other1}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.other2}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.other3}" action="{!c.Change1}"/>
+    <aura:handler name="change" value="{!v.copay}" action="{!c.Change2}"/>
+    <aura:handler name="change" value="{!v.copay3}" action="{!c.Change3}"/>
+    <aura:handler name="change" value="{!v.exam22}" action="{!c.Change2}"/>
+    <aura:handler name="change" value="{!v.exam23}" action="{!c.Change2}"/>
+    <aura:handler name="change" value="{!v.lens22}" action="{!c.Change2}"/>
+    <aura:handler name="change" value="{!v.lens23}" action="{!c.Change2}"/>
+    <aura:handler name="change" value="{!v.frame22}" action="{!c.Change2}"/>
+    <aura:handler name="change" value="{!v.frame23}" action="{!c.Change2}"/>
+    <aura:handler name="change" value="{!v.other22}" action="{!c.Change2}"/>
+    <aura:handler name="change" value="{!v.other23}" action="{!c.Change2}"/>
+
+    <aura:handler name="change" value="{!v.exam31}" action="{!c.Change3}"/>
+    <aura:handler name="change" value="{!v.exam32}" action="{!c.Change3}"/>
+    <aura:handler name="change" value="{!v.exam33}" action="{!c.Change3}"/>
+    <aura:handler name="change" value="{!v.other31}" action="{!c.Change3}"/>
+    <aura:handler name="change" value="{!v.other32}" action="{!c.Change3}"/>
+    <aura:handler name="change" value="{!v.other33}" action="{!c.Change3}"/>
+    <aura:handler name="change" value="{!v.ucfee}" action="{!c.Change4}"/>
+    <aura:handler name="change" value="{!v.exam41}" action="{!c.Change4}"/>
+    <aura:handler name="change" value="{!v.exam42}" action="{!c.Change4}"/>
+    <aura:handler name="change" value="{!v.exam43}" action="{!c.Change4}"/>
+    <aura:handler name="change" value="{!v.lens41}" action="{!c.Change4}"/>
+    <aura:handler name="change" value="{!v.other41}" action="{!c.Change4}"/>
+    <aura:handler name="change" value="{!v.other42}" action="{!c.Change4}"/>
+    <aura:handler name="change" value="{!v.other43}" action="{!c.Change4}"/>
+    <aura:handler name="change" value="{!v.exam52}" action="{!c.Change5}"/>
+    <aura:handler name="change" value="{!v.exam53}" action="{!c.Change5}"/>
+    <aura:handler name="change" value="{!v.lens53}" action="{!c.Change5}"/>
+    <aura:handler name="change" value="{!v.exam61}" action="{!c.Change6}"/>
+    <aura:handler name="change" value="{!v.exam62}" action="{!c.Change6}"/>
+    <aura:handler name="change" value="{!v.exam63}" action="{!c.Change6}"/>
+    <aura:handler name="change" value="{!v.lens61}" action="{!c.Change6}"/>
+    <aura:handler name="change" value="{!v.lens62}" action="{!c.Change6}"/>
+    <aura:handler name="change" value="{!v.lens63}" action="{!c.Change6}"/>
+    <aura:attribute name="copay" type="decimal" default="0"/>
+    <aura:attribute name="copay3" type="decimal" default="0"/>
+    <aura:attribute name="ucfee" type="decimal" default="0"/>
+    <aura:attribute name="selectedOption" type="string"/>
+    <aura:attribute name="reset" type="string" default="0"/>
+    <aura:attribute name="tab" type="decimal"/>
+    <aura:attribute name="exam0" type="string" default="Exam"/>
+    <aura:attribute name="exam1" type="decimal" default="0"/>
+    <aura:attribute name="exam2" type="decimal" default="0"/>
+    <aura:attribute name="exam3" type="decimal" default="0"/>
+    <aura:attribute name="exam4" type="decimal" default="0"/>
+    <aura:attribute name="exam5" type="decimal" default="0"/>
+    <aura:attribute name="exam6" type="decimal" default="0"/>
+    <aura:attribute name="lens0" type="string" default="Lens"/>
+    <aura:attribute name="lens1" type="decimal" default="0"/>
+    <aura:attribute name="lens2" type="decimal" default="0"/>
+    <aura:attribute name="lens3" type="decimal" default="0"/>
+    <aura:attribute name="lens4" type="decimal" default="0"/>
+    <aura:attribute name="lens5" type="decimal" default="0"/>
+    <aura:attribute name="lens6" type="decimal" default="0"/>
+    <aura:attribute name="frame0" type="string" default="Frame"/>
+    <aura:attribute name="frame1" type="decimal" default="0"/>
+    <aura:attribute name="frame2" type="decimal" default="0"/>
+    <aura:attribute name="frame3" type="decimal" default="0"/>
+    <aura:attribute name="frame4" type="decimal" default="0"/>
+    <aura:attribute name="frame5" type="decimal" default="0"/>
+    <aura:attribute name="frame6" type="decimal" default="0"/>
+    <aura:attribute name="other0" type="string" default="Other"/>
+    <aura:attribute name="other1" type="decimal" default="0"/>
+    <aura:attribute name="other2" type="decimal" default="0"/>
+    <aura:attribute name="other3" type="decimal" default="0"/>
+
+    <aura:attribute name="exam22" type="decimal" default="0"/>
+    <aura:attribute name="exam23" type="decimal" default="0"/>
+    <aura:attribute name="lens22" type="decimal" default="0"/>
+    <aura:attribute name="lens23" type="decimal" default="0"/>
+    <aura:attribute name="frame22" type="decimal" default="0"/>
+    <aura:attribute name="frame23" type="decimal" default="0"/>
+    <aura:attribute name="other22" type="decimal" default="0"/>
+    <aura:attribute name="other23" type="decimal" default="0"/>
+    <aura:attribute name="exam31" type="decimal" default="0"/>
+    <aura:attribute name="exam32" type="decimal" default="0"/>
+    <aura:attribute name="exam33" type="decimal" default="0"/>
+    <aura:attribute name="other31" type="decimal" default="0"/>
+    <aura:attribute name="other32" type="decimal" default="0"/>
+    <aura:attribute name="other33" type="decimal" default="0"/>
+    <aura:attribute name="exam41" type="decimal" default="0"/>
+    <aura:attribute name="exam42" type="decimal" default="0"/>
+    <aura:attribute name="exam43" type="decimal" default="0"/>
+    <aura:attribute name="lens41" type="decimal" default="0"/>
+    <aura:attribute name="lens42" type="decimal" default="0"/>
+    <aura:attribute name="lens43" type="decimal" default="0"/>
+    <aura:attribute name="other41" type="decimal" default="0"/>
+    <aura:attribute name="other42" type="decimal" default="0"/>
+    <aura:attribute name="other43" type="decimal" default="0"/>
+    <aura:attribute name="lens53" type="decimal" default="0"/>
+    <aura:attribute name="exam52" type="decimal" default="0"/>
+    <aura:attribute name="exam53" type="decimal" default="0"/>
+    <aura:attribute name="lens61" type="decimal" default="0"/>
+    <aura:attribute name="lens62" type="decimal" default="0"/>
+    <aura:attribute name="lens63" type="decimal" default="0"/>
+    <aura:attribute name="exam61" type="decimal" default="0"/>
+    <aura:attribute name="exam62" type="decimal" default="0"/>
+    <aura:attribute name="exam63" type="decimal" default="0"/>
+
+    <aura:attribute name="other4" type="decimal" default="0"/>
+    <aura:attribute name="other5" type="decimal" default="0"/>
+    <aura:attribute name="other6" type="decimal" default="0"/>
+    <aura:attribute name="total4" type="decimal" default="0"/>
+    <aura:attribute name="total5" type="decimal" default="0"/>
+    <aura:attribute name="total6" type="decimal" default="0"/>
+   
+ <lightning:tabset selectedTabId="one" onselect="{!c.clear}" >
+
+        <lightning:tab label="Glasses" id="one">
+        <form> 
+        <div class="slds-grid slds-wrap">
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">OON Plan</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Up to 50%+</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Up to 2x</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">All Services</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Allowance</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Amount of</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">(Max)</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">That Were</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">(CC Portal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Itemized</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Received</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Copay</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Product Tab)</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Receipts</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">1st Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">2nd Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Final Offer</span>
+
+	<span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam0}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam1" value="{!v.exam1}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam2" value="{!v.exam2}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam3" value="{!v.exam3}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens0}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="lens1" value="{!v.lens1}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="lens2" value="{!v.lens2}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="lens3" value="{!v.lens3}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.frame0}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="frame1" value="{!v.frame1}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="frame2" value="{!v.frame2}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="frame3" value="{!v.frame3}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.frame4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.frame5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.frame6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other0}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>            
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other2" value="{!v.other2}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other3" value="{!v.other3}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="Material" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other1" value="{!v.other1}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>            
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>            
+   
+    <span style="color:red;" class="slds-size_1-of-1">The reimbursement total will account for all services and materials:</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>            
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total4}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total5}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total6}" /></span>
+    <span style="color:blue;" class="slds-size_1-of-1">Select the one you want to copy to case:</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="1" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="2" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="3" change="{!c.hdlRadio}"/></span>
+<span style="color:brown;" class="slds-size_1-of-1">.  The maximum reimbursement cannot exceed the in-network allowance.</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  If the OON allowance for contact lens is greater than $130, no additional payment can be offered.</span>
+            </div>
+       </form>
+        </lightning:tab>
+    
+        <lightning:tab label="Glasses with Total Copay" id="two">
+        <form>    
+
+<div class="slds-grid slds-wrap">
+    <span style="color:red;" class="slds-size_1-of-6 slds-align_absolute-center">Total Copay</span>
+    <span style="color:red;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="copay" value="{!v.copay}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">OON Plan</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Up to 50%+</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Up to 2x</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">All Services</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Allowance</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Amount of</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">(Max)</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">That Were</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">(CC Portal</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Itemized</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Received</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Product Tab)</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Receipts</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">1st Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">2nd Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">Final Offer</span>
+
+	<span style="color:green;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.exam0}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="exam22" value="{!v.exam22}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="exam23" value="{!v.exam23}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.exam4}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.exam5}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.exam6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.lens0}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="lens22" value="{!v.lens22}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="lens23" value="{!v.lens23}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.lens4}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.lens5}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.lens6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.frame0}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="frame22" value="{!v.frame22}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="frame23" value="{!v.frame23}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.frame4}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.frame5}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.frame6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.other0}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="other22" value="{!v.other22}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputText aura:id="other23" value="{!v.other23}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.other4}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.other5}" /></span>
+    <span class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.other6}" /></span>
+    <span style="color:red;" class="slds-size_1-of-1">The reimbursement total will account for all services and materials:</span>
+    <span style="color:red;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>            
+    <span style="color:red;" class="slds-size_1-of-6 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total4}" /></span>
+    <span style="color:red;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.total5}" /></span>
+    <span style="color:red;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:outputText value="{!v.total6}" /></span>
+    <span style="color:blue;" class="slds-size_1-of-1">Select the one you want to copy to case:</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputRadio name="select" label="1" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputRadio name="select" label="2" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-6 slds-align_absolute-center"><ui:inputRadio name="select" label="3" change="{!c.hdlRadio}"/></span>
+<span style="color:brown;" class="slds-size_1-of-1">.  Do Not Discuss the individual benefit reimbursement amounts.</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  These fields do not reflect the Total copay deduction. </span>
+<span style="color:brown;" class="slds-size_1-of-1">.  The correct reimbursement amounts are the Reimbursement Totals.</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  The Total copay amount is taken off the combined total of the individual benefits entered in the Amount of Receipt Services. </span>
+    </div>
+        </form>
+     </lightning:tab>
+     
+        <lightning:tab label="Exam and Combined" id="three">
+        <form> 
+        <div class="slds-grid slds-wrap">
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">OON Plan</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Up to 50%+</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Up to 2x</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">All Services</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Allowance</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Amount of</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">(Max)</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">That Were</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">(CC Portal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Itemized</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Received</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Copay</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Product Tab)</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Receipts</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">1st Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">2nd Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Final Offer</span>
+
+	<span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="Exam" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam31" value="{!v.exam31}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam32" value="{!v.exam32}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam33" value="{!v.exam33}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="ECL Materials" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other31" value="{!v.other31}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other32" value="{!v.other32}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other33" value="{!v.other33}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="Total Copay" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="copay3" value="{!v.copay3}" /></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-1">The reimbursement total will account for all services and materials:</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>            
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total4}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total5}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total6}" /></span>
+    <span style="color:blue;" class="slds-size_1-of-1">Select the one you want to copy to case:</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="1" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="2" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="3" change="{!c.hdlRadio}"/></span>
+<span style="color:brown;" class="slds-size_1-of-1">.  The maximum ECL reimbursement cannot exceed the in-network allowance.</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  If the OON allowance for contact lens is greater than $130, no additional payment can be offered.</span>
+    </div>
+       </form>
+     </lightning:tab>
+
+     <lightning:tab label="ECL Materials, Exams, and UC" id="four">
+        <form> 
+        <div class="slds-grid slds-wrap">
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">CL Exam UC Fee</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="ucfee" value="{!v.ucfee}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">OON Plan</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Up to 50%+</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Up to 2x</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">All Services</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Allowance</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Amount of</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">(Max)</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">That Were</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">(CC Portal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Itemized</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Received</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Copay</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Product Tab)</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Receipts</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">1st Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">2nd Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Final Offer</span>
+
+	<span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam0}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam41" value="{!v.exam41}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam42" value="{!v.exam42}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam43" value="{!v.exam43}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="CL Exam" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="lens41" value="{!v.lens41}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText aura:id="lens42" value="{!v.lens42}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText aura:id="lens43" value="{!v.lens43}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="ECL Materials" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other41" value="{!v.other41}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other42" value="{!v.other42}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="other43" value="{!v.other43}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.other6}" /></span>
+   
+    <span style="color:red;" class="slds-size_1-of-1">The reimbursement total will account for all services and materials:</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>            
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.total4}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.total5}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.total6}" /></span>
+    <span style="color:blue;" class="slds-size_1-of-1">Select the one you want to copy to case:</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputRadio name="select" label="1" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputRadio name="select" label="2" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputRadio name="select" label="3" change="{!c.hdlRadio}"/></span>
+<span style="color:brown;" class="slds-size_1-of-1">.  CL Exam: 85% of U and C fee less copay*</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  *Supervisor approval needed for payment over $100</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  The maximum ECL reimbursement cannot exceed the in-network allowance.</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  If the OON allowance for contact lens is greater than $130, no additional payment can be offered.</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  * For CL F and E - Supervisor approval needed for reimbursements over $100.</span>
+            </div>
+            </form>
+     </lightning:tab> 
+     <lightning:tab label="Total" id="five">            
+            <form>    
+<div class="slds-grid slds-wrap">
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Receipt Name</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Receipt Amount</span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center">-</span>
+    <span style="color:green;" class="slds-size_1-of-4 slds-align_absolute-center">Exam Receipt</span>
+    <span style="color:green;" class="slds-size_1-of-4 slds-align_absolute-center"><ui:inputText aura:id="exam53" value="{!v.exam53}" /></span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center">-</span>
+    <span style="color:green;" class="slds-size_1-of-4 slds-align_absolute-center">Contact Lens Receipt</span>
+    <span style="color:green;" class="slds-size_1-of-4 slds-align_absolute-center"><ui:inputText aura:id="lens53" value="{!v.lens53}" /></span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center">-</span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center">-</span>
+    
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">OON Plan</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Up to 50%+</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Up to 2x</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Allowance</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">(Max)</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">(CC Portal</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Product Tab)</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">1st Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">2nd Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">Final Offer</span>
+
+    <span class="slds-size_1-of-4 slds-align_absolute-center"><ui:inputText aura:id="exam52" value="{!v.exam52}" /></span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center"><ui:outputText value="{!v.exam4}" /></span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center"><ui:outputText value="{!v.exam5}" /></span>
+    <span class="slds-size_1-of-4 slds-align_absolute-center"><ui:outputText value="{!v.exam6}" /></span>
+    <span style="color:red;" class="slds-size_1-of-1">The reimbursement total will account for all services and materials:</span>
+    <span style="color:red;" class="slds-size_1-of-4 slds-align_absolute-center">-</span>            
+    <span style="color:red;" class="slds-size_1-of-4 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total4}" /></span>
+    <span style="color:red;" class="slds-size_1-of-4 slds-align_absolute-center"><ui:outputText value="{!v.total5}" /></span>
+    <span style="color:red;" class="slds-size_1-of-4 slds-align_absolute-center"><ui:outputText value="{!v.total6}" /></span>
+    <span style="color:blue;" class="slds-size_1-of-1">Select the one you want to copy to case:</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center"><ui:inputRadio name="select" label="1" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center"><ui:inputRadio name="select" label="2" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-4 slds-align_absolute-center"><ui:inputRadio name="select" label="3" change="{!c.hdlRadio}"/></span>
+<span style="color:brown;" class="slds-size_1-of-1">.  The maximum reimbursement cannot exceed the in-network allowance.</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  If the OON allowance for frame is greater than $130, no additional payment can be offered.</span>
+    </div>
+        </form>
+     </lightning:tab>
+         
+     <lightning:tab label="CCL/NCL" id="six">
+        <form> 
+        <div class="slds-grid slds-wrap">
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">OON Plan</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Up to 50%+</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Up to 2x</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">All Services</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Allowance</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Amount of</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Normal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">(Max)</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">That Were</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">(CC Portal</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Itemized</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Reimbursmt</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Received</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Copay</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Product Tab)</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Receipts</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">1st Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">2nd Offer</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">Final Offer</span>
+
+	<span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam0}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam61" value="{!v.exam61}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam62" value="{!v.exam62}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="exam63" value="{!v.exam63}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.exam6}" /></span>
+    <span style="color:green;" class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="Covered CL" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="lens61" value="{!v.lens61}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="lens62" value="{!v.lens62}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:inputText aura:id="lens63" value="{!v.lens63}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens4}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens5}" /></span>
+    <span class="slds-size_1-of-7 slds-align_absolute-center"><ui:outputText value="{!v.lens6}" /></span>
+   
+    <span style="color:red;" class="slds-size_1-of-1">The reimbursement total will account for all services and materials:</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>            
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total4}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total5}" /></span>
+    <span style="color:red;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:outputText value="{!v.total6}" /></span>
+    <span style="color:blue;" class="slds-size_1-of-1">Select the one you want to copy to case:</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center">-</span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="1" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="2" change="{!c.hdlRadio}"/></span>
+    <span style="color:blue;" class="slds-size_1-of-7 slds-align_absolute-center slds-align_absolute-center"><ui:inputRadio name="select" label="3" change="{!c.hdlRadio}"/></span>
+<span style="color:brown;" class="slds-size_1-of-1">.  Exam covered under the routine benefits.</span>
+<span style="color:brown;" class="slds-size_1-of-1">.  If the OON allowance for contact lens is greater than $130, no additional payment can be offered.</span>
+            </div>
+       </form>
+     </lightning:tab>
+
+    </lightning:tabset>
+<div>.  The total reimbursement amount cannot be larger than what the patient's out-of-pocket expense would have been had they notified the VSP Network Provider the they had VSP.</div>
+<div>.  If you see a negative amount on any of the line items, this means the member will not receive reimbursement for the item.</div>
+            
+        <lightning:button label="Clear" onclick="{!c.clear}"/>
+        <lightning:button label="Copy Results to Case" onclick="{!c.copytocase}"/>
+
+</aura:component>

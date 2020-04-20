@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.FeedItems$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Account.FeedItems$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.FeedItems.Comments$InsertedBy</field>
+    </columns>
+    <columns>
+        <field>Account.FeedItems.Comments$CommentBody</field>
+    </columns>
+    <description>Accounts with #PassPlay hashtag and comments</description>
+    <filter>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <column>Account.FeedItems$Body</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>#passplay</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.FeedItems.Comments$CommentBody</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>#passplay</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Tax_ID__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.FeedItems$Body</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>#PassPlay with Comments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>test5__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Altair_Consignment_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

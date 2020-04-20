@@ -1,0 +1,36 @@
+<apex:page standardController="Contact">
+    <apex:includeScript value="/support/console/29.0/integration.js"/>
+        <script type="text/javascript">
+            function renameTabTitle() {
+            //Set the current tab's title
+            var salutation = '{!$CurrentPage.parameters.salutation}';
+            var fname = '{!$CurrentPage.parameters.fname}';
+            if(salutation == 'null') {
+                salutation = '';
+            }
+            else {
+                salutation = salutation + ' ';
+            }
+            if(fname == 'null') {
+                fname = '';
+            }
+            sforce.console.setTabTitle(salutation + fname + ' {!$CurrentPage.parameters.lname}');
+            }
+            
+            function redirect() {
+                window.location.href = '/{!$CurrentPage.parameters.id}';
+            }
+            
+            var pageLoad = window.onload;
+            window.onload = function() {
+            ﻿if(pageLoad) {
+                pageLoad();
+﻿            }
+﻿﻿            renameTabTitle();
+            redirect();
+        }
+        </script>
+
+        
+
+</apex:page>

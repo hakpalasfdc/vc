@@ -1,0 +1,85 @@
+<apex:page standardController="Account" extensions="VSPR30_Acc_Brand_History_LTM_Ctrl">
+    <style>          
+
+ .headerStyle {  
+        font-size:13px;   
+       font-family: Helvetica;
+        }
+    </style>
+    
+    <apex:form >
+        <apex:pageBlock id="Brand_History">
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Close" onclick="window.close()" id="CloseButton"/>
+                
+            </apex:pageBlockButtons>
+            <table width="100%">
+                 <tr >
+                    <td style="padding-bottom: 20px; font-family: Helvetica; font-size: 25px">
+                        <h1>Marchon Brand History LTM</h1>
+                    </td>
+                </tr>                  
+            </table>
+                   
+            <table width="100%">
+                <colgroup>
+                    <col width="10%"/>
+                    <col width="90%"/>
+                </colgroup>
+                
+                
+                <tr style="padding-bottom: 10px; font-family: Helvetica; font-size: 15px">
+                    <td>
+                        Marchon SAP Acct#:
+                        
+                    </td>
+                    <td>
+                        <apex:outputText style="padding-bottom: 10px; font-family: Helvetica; font-size: 15px" value="{!Account.Marchon_SAP_Account_Number__c}"/>
+                    </td>
+                    
+                </tr>
+                
+                <tr style="padding-bottom: 10px; font-family: Helvetica; font-size: 15px">
+                    <td>
+                        Account Name:
+                        
+                    </td>
+                    
+                    <td>
+                        <apex:outputText style="padding-bottom: 10px; font-family: Helvetica; font-size: 15px" value="{!Account.Name}"/>
+                    </td>
+                    
+                </tr>
+                
+                <tr style="padding-bottom: 10px; font-family: Helvetica; font-size: 15px">
+                    <td>
+                        Address:
+                    </td>
+                    <td>
+                        <apex:outputText style="padding-bottom: 10px; font-family: Helvetica; font-size: 15px" value="{!Account.ShippingStreet}"/>
+                    </td>
+                    <td>
+                    <apex:outputText style="padding-bottom: 10px; font-family: Helvetica; font-size: 15px" value="{!Account.ShippingCity} + ', '+ {!Account.ShippingState}+'  ' {!Account.ShippingPostalCode}"/>
+                    </td>
+                    
+                </tr>
+                
+                
+            </table>
+            <apex:pageBlockSection >
+            <apex:pageBlockTable value="{!eBS}" var="e" headerClass="headerStyle">
+            
+       			<apex:column style="font-family: Helvetica; font-size: 13px" value="{!e.Marketing_Group_Description__c}" headerValue="Collections"/>
+                <apex:column style="font-family: Helvetica; font-size: 13px" value="{!e.Net_Frame_Sales_LTM__c}" headerValue="Units"/>
+                <apex:column style="font-family: Helvetica; font-size: 13px" value="{!e.Net_Sales_LTM__c}" headerValue="Revenue"/>
+                <apex:column style="font-family: Helvetica; font-size: 13px" value="{!e.Last_Date_Ordered__c}" headerValue="Last Date Ordered"/>
+            </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            
+            
+        </apex:pageBlock>
+        
+        
+        
+    </apex:form>
+</apex:page>

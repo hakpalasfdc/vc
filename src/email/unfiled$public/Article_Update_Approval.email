@@ -1,0 +1,10 @@
+User Name: {!User.Name}
+User Email Address: {!User.Email}
+User Location: {!User.Vision_Care_Agent_Location__c}
+User Skill Level: {!User.Skill_Level__c}
+User Desk Location: {!User.Desk_Location__c}
+User Comments: {!ApprovalRequest.Comments}
+Knowledge Article: https://vsp--knowledge.lightning.force.com/lightning/r/Knowledge__kav/{!Knowledge__kav.Id}/view
+
+Respond to the request below: 
+{!ApprovalRequest.External_URL}

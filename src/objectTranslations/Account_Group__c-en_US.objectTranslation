@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Relationship</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Relationships</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group --></label>
+        <name>Account_Group__c</name>
+        <relationshipLabel><!-- Account Relationships (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Account Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Number --></label>
+        <name>Membership_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Doctor has chosen to receive Optics Group discounts through this Account Group. --></help>
+        <label><!-- Optics Primary --></label>
+        <name>Optics_Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q1 IncentivEYES --></label>
+        <name>Q1_IncentivEYES__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q2 IncentivEYES --></label>
+        <name>Q2_IncentivEYES__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3 IncentivEYES --></label>
+        <name>Q3_IncentivEYES__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q4 IncentivEYES --></label>
+        <name>Q4_IncentivEYES__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Can only be a number or N/A --></errorMessage>
+        <name>Q_IncentivEYES_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date cannot be prior to start date. --></errorMessage>
+        <name>VSPR6_End_Date_lessthan_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

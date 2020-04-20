@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89316158</developerName>
+        <masterLabel>Role</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER_ROLE</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Optics Brand - Eastern Region</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Brand RM - East</sourceValue>
+            </sourceValues>
+            <value>Brand East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Optics Brand - Western Region</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Brand RM - West</sourceValue>
+            </sourceValues>
+            <value>Brand West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>otto - West Zone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>otto - East Zone</sourceValue>
+            </sourceValues>
+            <value>Otto</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Columbus</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne Columbus - Customer Service Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD East - Columbus</sourceValue>
+            </sourceValues>
+            <value>Columbus</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Dallas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne Dallas - Customer Service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD East - Dallas</sourceValue>
+            </sourceValues>
+            <value>Dallas</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Fort Lauderdale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD East - Fort Lauderdale / Tampa Bay</sourceValue>
+            </sourceValues>
+            <value>Ft. Lauderdale</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Olympia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD West - Olympia</sourceValue>
+            </sourceValues>
+            <value>Olympia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Sacramento</sourceValue>
+            </sourceValues>
+            <value>Sacramento</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - San Diego</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD West - San Diego</sourceValue>
+            </sourceValues>
+            <value>San Diego</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Tampa Bay</sourceValue>
+            </sourceValues>
+            <value>Tampa Bay</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>TASK</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>Activity.Type__c</field>
+    </columns>
+    <columns>
+        <field>Activity.Event_Type__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Activity.Event_Description__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 and (2 or 3 or 4)</booleanFilter>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>vspone,otto,optics,unity,brand,lab</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>dallas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_DESCRIPTION</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>dallas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Event_Description__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>dallas</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dallas Activities Last Week</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>DUE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

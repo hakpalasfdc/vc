@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Lens Kit Order Shipment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Lens Kit Order Shipments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Contact Lens Kit Order Shipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- UPS Tracking --></label>
+        <name>UPS_Tracking_Url__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

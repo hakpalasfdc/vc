@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>MEMBER_STATUS</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS2_LINE1</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS2_STATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_PHONE1</field>
+    </columns>
+    <columns>
+        <field>Account.Premier_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Status__c</field>
+    </columns>
+    <description>Reporting multiple Invite campaign waves and tracking RSVPs to the VSP Global Premier Party 2017</description>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>VSP Global Premier Party</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>VSP Global Premier Party Invite/RSVP</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

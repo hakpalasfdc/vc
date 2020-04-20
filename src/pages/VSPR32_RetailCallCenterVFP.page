@@ -1,0 +1,12 @@
+<apex:page lightningStylesheets="true">
+    <style type="text/css">
+        body button, body .x-btn, body .btn, body .btnDisabled, body .btnCancel, body .menuButton .menuButtonButton {float: left;}
+        .bPageBlock .pbTitle {display: none;}
+        
+        .actionButtonBar{
+        float:left;
+        }
+    </style>
+    <flow:interview name="Retail_Call_Center_Visual_Flow" buttonLocation="bottom"/>
+    
+</apex:page>

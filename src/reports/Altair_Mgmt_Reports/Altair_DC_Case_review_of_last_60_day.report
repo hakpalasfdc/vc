@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_22482226</developerName>
+        <masterLabel>Issue groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>SUBJECT</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Correct Invoice / Incorrect Frames in Box</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Correct Invoice/Incorrect Frame</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: Shipment -Correct Invoice / Incorrect Frames in Box</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shipment -Correct Invoice / Incorrect Frames in Box</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shipment-Correct Invoice / Incorrect Frames in Box</sourceValue>
+            </sourceValues>
+            <value>Correct inv / Wrong frame</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Subject: Issue with an Inbound Shipment (Returns)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Issue with an Inbound Shipment (pricing dispute)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Issue with an Inbound Shipment (Returns)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Issue with Inbound</sourceValue>
+            </sourceValues>
+            <value>issue with return</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Shipment Received for a different account:</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: Shipment Received for a different account:</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Altair SAP Shipment Received for a Different Account</sourceValue>
+            </sourceValues>
+            <value>Wrong office</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Subject: Short Ship - &lt;5 Frames</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: Short Ship - 1 to 4 Frames</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subject: Short Ship - &lt;6 Frames</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Short Ship - 1 to 4 Frames</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Short Ship - &lt;6 Frames</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Short Ship - More than 5 frames</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Short Ship- &lt;6 frame</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Short-Ship 1-4 Frames</sourceValue>
+            </sourceValues>
+            <value>Short ship</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>Case.Total_Escalation_Count__c</field>
+    </columns>
+    <columns>
+        <field>Case.Notes__c</field>
+    </columns>
+    <columns>
+        <field>Case.Resolution__c</field>
+    </columns>
+    <columns>
+        <field>Case.Classification__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Standard__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Reps__c</field>
+    </columns>
+    <description>Grouped by issue identified by Subject. Will miss ones that were not created with a standard subjects. Created 2/12/18</description>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>DC Queue,ron wood,Adriana Kane,Nou Vang,Elizabeth Gamez,Sonja Visscher</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_22482226</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SUBJECT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Altair DC Case review of last 60 day</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST60</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Rep Assignment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Rep Assignments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_ID__c</name>
+        <relationshipLabel><!-- Account Rep Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Acct Sales Order Block --></label>
+        <name>Acct_Sales_Order_Block__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Qualification --></label>
+        <name>Brand_Qualification__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Manager Name --></label>
+        <name>District_Manager_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Manager --></label>
+        <name>District_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand/Marketing Group Code --></label>
+        <name>Marketing_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand/Marketing Group Description --></label>
+        <name>Marketing_Group_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- RVP Name --></label>
+        <name>RVP_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Vice President --></label>
+        <name>Regional_Vice_President__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Last Updated Date --></label>
+        <name>SAP_Last_Updated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Org --></label>
+        <name>Sales_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep Name --></label>
+        <name>Sales_Rep_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep --></label>
+        <name>Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To MDM Account Key --></label>
+        <name>Sold_To_MDM_Account_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To MDM Location Key --></label>
+        <name>Sold_To_MDM_Location_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To --></label>
+        <name>Sold_To__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Rep Assignment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

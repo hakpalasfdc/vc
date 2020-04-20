@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalDataSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authProvider>SharePoint_Auth</authProvider>
+    <customConfiguration>{&quot;singleSiteCollection&quot;:&quot;false&quot;,&quot;sharepointConnectorUrl&quot;:&quot;https://visionserviceplan.sharepoint.com/sites/SalesForce/&quot;}</customConfiguration>
+    <isWritable>false</isWritable>
+    <label>SharePoint Files</label>
+    <principalType>PerUser</principalType>
+    <protocol>Oauth</protocol>
+    <type>ContentHubSharepointOffice365</type>
+</ExternalDataSource>

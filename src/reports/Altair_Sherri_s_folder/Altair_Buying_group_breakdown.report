@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_90114898</developerName>
+        <masterLabel>Altair Buying Groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Altair_Discount_Programs__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>ST Prem; 20%; VISION WEST INC;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST Prem; 25%; VISION WEST INC;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 20%; VISION WEST INC;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 20%; VISION WEST INC; Group X</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 25%; VISION WEST INC;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 25%; VISION WEST INC; CG G30 Altair</sourceValue>
+            </sourceValues>
+            <value>Vision West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ST Prem; 20%; PRIMARY EYECARE NETWORK;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST Prem; 25%; PRIMARY EYECARE NETWORK;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST Prem; 25%; PRIMARY EYECARE NETWORK; CG G30 Altair</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 25%; PRIMARY EYECARE NETWORK;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 25%; PRIMARY EYECARE NETWORK; CG G30 Altair</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 20%; PRIMARY EYECARE NETWORK;</sourceValue>
+            </sourceValues>
+            <value>Primary Eyecare Network</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ST Prem; 20%; C &amp; E VISION SERV INC;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST Prem; 25%; C &amp; E VISION SERV INC;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 20%; C &amp; E VISION SERV INC;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 25%; C &amp; E VISION SERV INC;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 25%; C &amp; E VISION SERV INC; CG G30 Altair</sourceValue>
+            </sourceValues>
+            <value>C&amp;E Vision Serv Inc</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ST Prem; 20%; ADO BUYING GROUP;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST Prem; 25%; ADO BUYING GROUP;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST Prem; 25%; ADO BUYING GROUP; CG G30 Altair</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 20%; ADO BUYING GROUP;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 20%; ADO BUYING GROUP; Altair Key Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 20%; ADO BUYING GROUP; Group X</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 25%; ADO BUYING GROUP;</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ST; 25%; ADO BUYING GROUP; CG G30 Altair</sourceValue>
+            </sourceValues>
+            <value>ADO Buying Group</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Marchon_Buying_Group__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Marchon_SAP_Account_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account.Total_Net_Marchon_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_SAP_Consignment_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account.Total_Net_Altair_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Consignment_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Customer__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STREET</field>
+    </columns>
+    <description>Report showing  Buckets of the Buying Group in SF&apos;s Discount Program field  Created 2/20/19</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Marchon__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Marchon_Buying_Group__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Consignment_Location__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Altair_Discount_Programs__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ADO,Alliance,block,C &amp; E,Diversified,Hayes,Red Tray,Newton,oogp,primary Eyecare Network,Rite Style,Vision West,Wisconsin Vision,Clubzero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Altair_Discount_Programs__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Business_Account</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_90114898</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Altair_Discount_Programs__c</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Altair Buying group breakdown</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Account_Group__c@Account_Group__c.Account_Group__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

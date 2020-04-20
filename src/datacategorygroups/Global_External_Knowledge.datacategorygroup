@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Appointments</label>
+                <name>Appointments</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Benefits &amp; Coverage</label>
+                <name>Benefits_Coverage</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Laser Vision</label>
+                <name>Laser_Vision</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Vision Doctors</label>
+                <name>Vision_Doctors</name>
+            </dataCategory>
+            <dataCategory>
+                <label>My Information</label>
+                <name>My_Information</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Claims &amp; Reimbursement</label>
+                <name>Claims_Reimbursement</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Purchase or Enrollment</label>
+                <name>Purchasing_or_Enrollment</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Login Registration</label>
+                <name>Login_Registration</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Patient Reviews</label>
+                <name>Patient_Reviews</name>
+            </dataCategory>
+            <label>Member Portal</label>
+            <name>Member_Portal</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Global External Knowledge</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

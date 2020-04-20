@@ -1,0 +1,15 @@
+The following account has been submitted for approval.
+
+Account Name: {!Account.Name}
+Account Status: {!Account.Status__c}
+
+To approve this Account:
+1. Step One of Account Approval Procedure 
+2. Step Two of Account Approval Procedure 
+3. Step Three of Account Approval Procedure 
+4. Step Four of Account Approval Procedure 
+5. Step Five of Account Approval Procedure
+
+
+Click link below to view this account record.
+https://cs9.salesforce.com/001K000000cEsvz

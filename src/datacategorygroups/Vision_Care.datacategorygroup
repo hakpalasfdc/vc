@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Additional Benefits</label>
+                    <name>Additional_Benefits</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Core Benefits</label>
+                    <name>Core_Benefits</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Benefits Related</label>
+                    <name>Benefits_Related</name>
+                </dataCategory>
+                <label>Benefits</label>
+                <name>Benefits</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Coverage Status</label>
+                    <name>Coverage_Status</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Service Status</label>
+                    <name>Service_Status</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Eligibility Related</label>
+                    <name>Eligibility_Related</name>
+                </dataCategory>
+                <label>Eligibility</label>
+                <name>Eligibility</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Authorization</label>
+                    <name>Authorization</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Determine Payment</label>
+                    <name>Determine_Payment</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Processing</label>
+                    <name>Processing</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>COB</label>
+                    <name>COB</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Adjustments</label>
+                    <name>Adjustments</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Submitting</label>
+                    <name>Submitting</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Claims Related</label>
+                    <name>Claims_Related</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>ADJINV</label>
+                        <name>ADJINV</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>ADJLAB</label>
+                        <name>ADJLAB</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>ADJPRD</label>
+                        <name>ADJPRD</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>ADJREF</label>
+                        <name>ADJREF</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>ADJUDI</label>
+                        <name>ADJUDI</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>PRELIQ</label>
+                        <name>PRELIQ</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>PROVID</label>
+                        <name>PROVID</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>ELIGIB</label>
+                        <name>ELIGIB</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>CLMVAL</label>
+                        <name>CLMVAL</name>
+                    </dataCategory>
+                    <label>Edits</label>
+                    <name>Edits</name>
+                </dataCategory>
+                <label>Claims</label>
+                <name>Claims</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Practice Information</label>
+                    <name>Practice_Information</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Doctor Payment</label>
+                    <name>Doctor_Payment</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Network Related</label>
+                    <name>Network_Related</name>
+                </dataCategory>
+                <label>Network</label>
+                <name>Network</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Cigna</label>
+                    <name>Cigna_2</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Client Benefits &amp; Claims</label>
+                    <name>Client_Benefits_Claims</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Client Enrollment</label>
+                    <name>Client_Enrollment</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Client Exceptions Related</label>
+                    <name>Client_Exceptions_Related</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>MetLife</label>
+                    <name>MetLife</name>
+                </dataCategory>
+                <label>Client Exceptions</label>
+                <name>Client_Exceptions</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Complaints</label>
+                    <name>Complaints</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Confidentiality</label>
+                    <name>Confidentiality</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Letters</label>
+                    <name>Letters</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Phone Book</label>
+                    <name>Phone_Book</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Retail Partner</label>
+                        <name>Retail_Partner</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>CSR Role</label>
+                        <name>CSR_Role</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Processor Role</label>
+                        <name>Processor_Role</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Support Queue</label>
+                        <name>Support_Queue</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Universal</label>
+                        <name>Universal</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Email Communications</label>
+                        <name>Email_Communications</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Chat Communications</label>
+                        <name>Chat_Communications</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>C&amp;G</label>
+                        <name>C_G</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Question Queue</label>
+                        <name>Question_Queue</name>
+                    </dataCategory>
+                    <label>Specialty Teams</label>
+                    <name>Specialty_Teams</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>KSI</label>
+                    <name>KSI</name>
+                </dataCategory>
+                <label>Miscellaneous</label>
+                <name>Miscellaneous</name>
+            </dataCategory>
+            <label>Customer Care</label>
+            <name>Customer_Care</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Account Changes/Updates</label>
+                    <name>Account_Changes_Updates</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Administrative Services</label>
+                    <name>Administrative_Services</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Commissions</label>
+                    <name>Commissions</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Delinquency</label>
+                    <name>Delinquency</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Document Processing</label>
+                    <name>Document_Processing</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Implementation</label>
+                    <name>Implementation</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Membership</label>
+                    <name>Membership</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Plan</label>
+                    <name>Plan</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Prospecting &amp; Selling</label>
+                    <name>Prospecting_Selling</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Regulations</label>
+                    <name>Regulations</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Renewals</label>
+                    <name>Renewals</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Reporting</label>
+                    <name>Reporting</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Revenue</label>
+                    <name>Revenue</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Terminations</label>
+                    <name>Terminations</name>
+                </dataCategory>
+                <label>**SUBJECT**</label>
+                <name>SUBJECT</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Cash Receipts</label>
+                    <name>Cash_Receipts</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>CIGNA</label>
+                    <name>CIGNA</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>COBRA</label>
+                    <name>COBRA</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Commission Team</label>
+                    <name>Commission_Team</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>General Agents</label>
+                    <name>General_Agents</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Individual Billing</label>
+                    <name>Individual_Billing</name>
+                </dataCategory>
+                <label>**SPECIALTY AREAS**</label>
+                <name>SPECIALTY_AREAS</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Automated MBS Tool</label>
+                    <name>Automated_MBS_Tool</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Document Direct</label>
+                    <name>Document_Direct</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>InfoSource</label>
+                    <name>InfoSource</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Mainframe</label>
+                    <name>Mainframe</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Resource Center</label>
+                    <name>Resource_Center</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>SAP-Client/Broker</label>
+                        <name>SAP_Client_Broker</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>SAP-Individual Billing</label>
+                        <name>SAP_Individual_Billing</name>
+                    </dataCategory>
+                    <label>SAP</label>
+                    <name>SAP</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Siebel</label>
+                    <name>Siebel</name>
+                </dataCategory>
+                <label>**SYSTEMS**</label>
+                <name>SYSTEMS</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Client/Broker</label>
+                    <name>Client_Broker</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Direct to Consumer</label>
+                    <name>Direct_to_Consumer</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Health Plan</label>
+                    <name>Health_Plan</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Strategic Alliance</label>
+                    <name>Strategic_Alliance</name>
+                </dataCategory>
+                <label>**SBU**</label>
+                <name>SBU</name>
+            </dataCategory>
+            <label>Account Services</label>
+            <name>Account_Services</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>INTERNAL TRAINING</label>
+                <name>INTERNAL_TRAINING</name>
+            </dataCategory>
+            <dataCategory>
+                <label>LEGAL</label>
+                <name>LEGAL</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Plans</label>
+                    <name>Plans</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>UNITY</label>
+                    <name>UNITY</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>EHM</label>
+                    <name>EHM</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>VSP Retail</label>
+                    <name>VSP_Retail</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Practice Report</label>
+                    <name>Practice_Report</name>
+                </dataCategory>
+                <label>PRODUCTS AND SERVICES</label>
+                <name>PRODUCTS_AND_SERVICES</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>My Marketing Team</label>
+                    <name>My_Marketing_Team</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Premier Portal</label>
+                    <name>Premier_Portal</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Criteria</label>
+                    <name>Criteria</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Benefits</label>
+                    <name>Premier_Benefits</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Exclusive Offers</label>
+                    <name>Exclusive_Offers</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Jump Start</label>
+                    <name>Jump_Start</name>
+                </dataCategory>
+                <label>PREMIER</label>
+                <name>PREMIER</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Credentialing</label>
+                    <name>Credentialing</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Recruitment</label>
+                    <name>Recruitment</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Provider Training</label>
+                    <name>Provider_Training</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>FAD Directory</label>
+                    <name>FAD_Directory</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Network Types</label>
+                    <name>Network_Types</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Network Communications</label>
+                    <name>Network_Communications</name>
+                </dataCategory>
+                <label>VSP PROVIDER NETWORK</label>
+                <name>VSP_PROVIDER_NETWORK</name>
+            </dataCategory>
+            <label>Network Development</label>
+            <name>Network_Development</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Vision Care</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

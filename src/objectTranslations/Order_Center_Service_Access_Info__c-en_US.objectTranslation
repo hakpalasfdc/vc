@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Center Service Access Info</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Center Service Access Info</value>
+    </caseValues>
+    <fields>
+        <label><!-- Apitoken --></label>
+        <name>Apitoken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Center Link --></label>
+        <name>Order_Center_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Detail EndPoint --></label>
+        <name>Order_Detail_EndPoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Search Endpoint --></label>
+        <name>Order_Search_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>GAAT Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>GAAT_Queue</publicGroup>
+        </publicGroups>
+        <users>
+            <user>bianca@vsp.com</user>
+            <user>debbne@vsp.com</user>
+            <user>lani.foster@vsp.com</user>
+            <user>lieung@vsp.com</user>
+            <user>mattbe@vsp.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SearchActivity$ClickRank</field>
+    </columns>
+    <columns>
+        <field>SearchActivity$Period</field>
+    </columns>
+    <columns>
+        <field>SearchActivity$CountQueries</field>
+    </columns>
+    <columns>
+        <field>SearchActivity$AvgNumResults</field>
+    </columns>
+    <columns>
+        <field>SearchActivity$QueryDate</field>
+    </columns>
+    <columns>
+        <field>SearchActivity$SearchTerm</field>
+    </columns>
+    <columns>
+        <field>SearchActivity$ClickedRecordName</field>
+    </columns>
+    <columns>
+        <field>SearchActivity$CountUsers</field>
+    </columns>
+    <description>Filter: Clicked article Title starts with Altair. Report Type: Knowledge Search Activity
+Created 7/31/18</description>
+    <filter>
+        <criteriaItems>
+            <column>SearchActivity$ClickedRecordName</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Altair</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Altair&apos;s Knowledge search activity</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Search_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>SearchActivity$Period</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SearchActivity$QueryDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

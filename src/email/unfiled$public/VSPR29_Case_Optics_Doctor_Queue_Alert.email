@@ -1,0 +1,8 @@
+A new critical or major case was opened in the Optics Doctor Service Queue.  
+
+Account name - {!Case.Account}
+Contact Name - {!Case.Contact}
+Case Number -  {!Case.CaseNumber}
+Subject - {!Case.Subject}
+
+Link to Case - {!Case.Link}

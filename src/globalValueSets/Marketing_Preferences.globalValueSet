@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>No Gifts </fullName>
+        <default>false</default>
+        <label>No Gifts </label>
+    </customValue>
+    <customValue>
+        <fullName>Don’t Call </fullName>
+        <default>false</default>
+        <label>Don’t Call </label>
+    </customValue>
+    <customValue>
+        <fullName>Don’t Email </fullName>
+        <default>false</default>
+        <label>Don’t Email </label>
+    </customValue>
+    <customValue>
+        <fullName>Don’t Mail </fullName>
+        <default>false</default>
+        <label>Don’t Mail </label>
+    </customValue>
+    <customValue>
+        <fullName>Don’t Contact Members</fullName>
+        <default>false</default>
+        <label>Don’t Contact Members</label>
+    </customValue>
+    <masterLabel>Marketing Preferences</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

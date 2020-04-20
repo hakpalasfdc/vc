@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_69629742</developerName>
+        <masterLabel>GBDM</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Global_Business_Development_Partner__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A01</sourceValue>
+            </sourceValues>
+            <value>Adrian Tatarakis</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A02</sourceValue>
+            </sourceValues>
+            <value>Bridgett Zelasko</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A03</sourceValue>
+            </sourceValues>
+            <value>Carrie Garten</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A04</sourceValue>
+            </sourceValues>
+            <value>Chris Cornell</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A05</sourceValue>
+            </sourceValues>
+            <value>Dan Stegall</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A06</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A07</sourceValue>
+            </sourceValues>
+            <value>Eric Irons</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A08</sourceValue>
+            </sourceValues>
+            <value>Joy Denny</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A09</sourceValue>
+            </sourceValues>
+            <value>Patrick Donovan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A10</sourceValue>
+            </sourceValues>
+            <value>Robin Cooper</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GBD1A11</sourceValue>
+            </sourceValues>
+            <value>Open 2</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS2_STATE</field>
+    </columns>
+    <columns>
+        <field>Contact.Salesforce_ID__c</field>
+    </columns>
+    <columns>
+        <field>MEMBER_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>MEMBER_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>Account.Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Global_Business_Development_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Account.Premier_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Premier_Exception_Reason__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_MEMBER_ID</field>
+    </columns>
+    <description>This report shows the members that are connected or interested in connecting their Facebook with Shoutlet through My Marketing Team.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Social Media Management</name>
+    <params>
+        <name>scopeid</name>
+        <value>701U0000001Y4NS</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>one</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>MEMBER_CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

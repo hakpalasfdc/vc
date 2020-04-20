@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Vision_Care_VSP_Network_Provider__c</field>
+    </columns>
+    <columns>
+        <field>Account.Vision_Care_VSP_Other__c</field>
+    </columns>
+    <columns>
+        <field>Account.Vision_Care_VSP_Affiliate__c</field>
+    </columns>
+    <columns>
+        <field>Account.Eyefinity_ExamWRITER__c</field>
+    </columns>
+    <columns>
+        <field>Account.Eyefinity_OfficeMate__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_SAP_Consignment_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Consignment_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Frames_on_Consignment__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marchon_and_Altair_Net_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Total_Net_Altair_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Total_Net_Marchon_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Altair_Discount_Programs__c</field>
+    </columns>
+    <description>4/22/15 Sherri requested this report for all Accounts that roll up to Opti-Port group.</description>
+    <filter>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Bard Optical,EyeOne (Augusta Eye Associates),Eye Express,Eye Care Specialties,Eye Care Management,Eye Associates of New Mexico,Eye Associates (Kansas City),Crown Vision,Accurate Optical,Accurate Optical (H Rubin),Barnet,Dulaney,Perkins,Buffalo Optical</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Grene Vision,Wing Eyecare,Vision Pro,Vision Point,Virginia Eye Institute,Union Eye Care,The Hour Glass,Standard Optical,Simon Eye Associates,Rosin Eyecare,Rinkov Eyecare Centers,Real Optics,Optyx,One Hour Optical,Ocala Eye,Northeastern Eye Institute,Midwest Vision Center,Kennedy &amp; Perkins,Jefferson Eye Care,Hettler &amp; Associates,Henry Ford Optimeyes,Harvey &amp; Lewis</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Tax_ID__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opti Port Location report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>RECORDTYPE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

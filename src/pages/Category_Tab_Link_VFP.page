@@ -1,0 +1,21 @@
+<apex:page standardController="Knowledge__kav" extensions="MultiTopic_FeedbackctrlLEX" id="CTL" showHeader="true">
+    <style>
+        .activeTab {background-color: #4F81BD; color:white; background-image:none}
+        .inactiveTab { background-color: #D8E3F0; color:black; background-image:none}
+        h1 {font:18px arial,sans-serif,bold;}
+        .hasMotif {margin: 0 0px !important;}
+    </style>
+    <apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/versioning.css" />
+    <apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/extended.css" />
+    <h1><strong><apex:outputfield value="{!cbk.Title}"/></strong></h1><br/>
+    <knowledge:articleRendererToolBar id="toolbarid" articleId="{! $CurrentPage.parameters.id}" canVote="true" showChatter="true"/><br/>
+    <apex:pageBlock mode="maindetail" id="pageblockid"> 
+        <apex:tabPanel selectedTab="InformationTab" id="SingleTopicTabPanel"  tabClass="activeTab" inactiveTabClass="inactiveTab"  switchType="client">
+        <apex:tab label="Information" name="Information" id="InformationTab" >
+                <apex:pageBlockSection columns="1">
+                    <apex:outputField id="links" value="{!Knowledge__kav.Links__c}"/>
+                </apex:pageBlockSection>               
+        </apex:tab>
+            </apex:tabPanel>
+    </apex:pageBlock>
+</apex:page>

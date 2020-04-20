@@ -1,0 +1,294 @@
+<apex:page standardController="Case" extensions="VSPR3_ConsumerSearch_USC" lightningStylesheets="true" Title="Consumer Search" name="ConsumerSearch" id="searchpage">
+<apex:includeScript value="{!URLFOR($Resource.cnx__CnxSfdcResources,'js/ConnectsIntegrationAPI.min.js')}"/>
+<apex:includeScript value="/support/console/43.0/integration.js"/>
+<apex:includeScript value="/soap/ajax/38.0/connection.js"/>
+<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+    <script type="text/javascript">
+        window.onload = function(){        
+            var showObjectId = function showObjectId(result) {
+                if(result.id){
+                    console.log('HUB result.id = '+result.id);
+                    execUSCSearch(result.id);
+                }
+            };
+            sforce.console.getEnclosingPrimaryTabObjectId(showObjectId);
+        }
+   
+        function refreshCCPortal(clientId,divId,dependentConsumerId,ciscoContactId,channel,sfAOD,ccp,primaryMemberConsumerId){
+            if(sfAOD === '' || sfAOD === null ){
+                var today = new Date();
+                var month = today.getMonth()+1;
+                if(month < 10){
+                    month = '0'+month;
+                }
+                var day = today.getDate();
+                if(day < 10){
+                    day = '0'+day;
+                }
+                sfAOD = today.getFullYear()+''+month+''+day;
+            }
+            var ccpWindow = window.open('','CCPortalWindow');
+            var ccpURL;
+
+            if(dependentConsumerId === '' || dependentConsumerId === null){
+                ccpURL = ccp+'/csrportal/ctiEvent/answered?SalesforceReadOnlyMode=True&clientId='+clientId+'&divisionId='+divId+'&sfAsOfDate='+sfAOD+'&subscriberConsumerId='+primaryMemberConsumerId;
+            }
+            else{
+                ccpURL = ccp+'/csrportal/ctiEvent/answered?SalesforceReadOnlyMode=True&clientId='+clientId+'&divisionId='+divId+'&dependentConsumerId='+dependentConsumerId+'&sfAsOfDate='+sfAOD+'&subscriberConsumerId='+primaryMemberConsumerId;
+            }
+
+            if(channel == 'VOICE'){
+                ccpURL = ccpURL + '&contactId='+ciscoContactId;
+            }
+
+            ccpWindow.document.getElementById("showPortal").src = ccpURL;
+            console.log('HUB-823 ===== ccpURL ==== ' + ccpURL);
+        }
+
+        function redirectToCase(caseNumber,creationStatus,clientId,divId,dependentConsumerId,ciscoContactId,channel,sfAOD,ccp,primaryMemberConsumerId){
+            console.log('redirect to case');
+            if(creationStatus == 'Success'){
+                btn2= document.getElementById("{!$Component.searchpage:searchform:entry:CrCaseloc:CrCase:btnGo2}");
+                btn2.disabled = false;
+                btn2.style.background = 'green';
+                btn2= document.getElementById("{!$Component.searchpage:searchform:entry:btnGo}");
+                btn2.disabled = false;
+                btn2.style.background = 'green';
+                var primTab = function(result){
+                    //sforce.console.refreshPrimaryTabById(result.id);
+                    sforce.console.refreshSubtabByNameAndPrimaryTabId(caseNumber,result.id,true);
+                }
+                sforce.console.getEnclosingPrimaryTabId(primTab);
+                
+                var closeCSTab = function(result){
+                    sforce.console.closeTab(result.id);
+                    refreshCCPortal(clientId,divId,dependentConsumerId,ciscoContactId,channel,sfAOD,ccp,primaryMemberConsumerId);
+                }
+                sforce.console.getEnclosingTabId(closeCSTab);
+            }
+        }
+    
+        function executeSearch(){
+            if (window.event && window.event.keyCode == 13){
+                var searchButton = document.getElementById("{!$Component.searchpage.searchform.entry.btnSearch}");
+                searchButton.click();
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    
+    	function disableButton(btn,btname){
+            btn.style.background = 'grey';
+            btn.disabled = true;
+            var btn2;
+            var callername = document.getElementById("{!$Component.searchpage.searchform.newCase.callerNameField}").value;
+            if (btname  == 'AttachT' && callername !='')
+                {
+                	btn2= document.getElementById("{!$Component.searchpage:searchform:entry:CrCaseloc:CrCase:btnGo2}");
+                    btn2.disabled = true;
+                    btn2.style.background = 'grey';
+                } 
+                  if (btname  == 'AttachB' && callername !='')
+                {
+                	btn2= document.getElementById("{!$Component.searchpage:searchform:entry:btnGo}");
+                    btn2.disabled = true;
+                    btn2.style.background = 'grey';
+                } 
+        }
+    </script>
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="x-ua-compatible" content="ie=edge" />
+            <title>SLDS ResponsiveDesign Visualforce Page in Salesforce Mobile</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <apex:slds />
+        </head>
+        <div class = "slds-scope"> 
+            <apex:form id="searchform">
+                <apex:actionFunction name="execUSCSearch" action="{!executeUSCSearch}" reRender="searchform,err" focus="callerNameField">
+                    <apex:param name="caseObjId" value="" assignTo="{!uscCaseId}"/>
+                </apex:actionFunction>
+                
+                <apex:pageBlock id="newCase" >
+                    <apex:variable var="s" value="{!consumerid}"/>
+
+                    <table id="tableId" style="width:100%">
+                    	<tr>
+                    		<td height="20" width="33%" style="color:red">*Caller Name</td>
+                    		<td height="20" width="33%" >Caller Intent</td>
+                    		<td height="20" width="33%" style="color:red">IVR Call Type</td>
+                    	</tr>
+                    	<tr>
+                    		<td height="10"><apex:inputText id="callerNameField" value="{!callerName}" onkeypress="return executeSearch();" style="width: 200px; height: 20px"/></td>
+                    		<td height="10"><apex:outputText id="callintentText" value="{!callerintentText}" style="width: 200px; height: 20px" /></td>
+                    		<td height="10"><apex:outputText id="calltype" value="{!ivrcallType}" style="width: 200px; height: 20px; border:1px solid Tomato" /></td>
+                    	</tr>
+                    	<tr>
+                    		<td style="color:red">*Caller Type</td>
+                    	</tr>
+                    	<tr>
+                    		<td><apex:inputField id="callertype" value="{!caseobj.CallerType__c}" onkeypress="return executeSearch();" style="width: 200px; height: 20px"/></td>
+                    	</tr>
+                    </table>
+                    
+                </apex:pageBlock>
+ 
+                <apex:pageBlock id="entry" title="Consumer Search">
+                    <apex:pageBlockSection id="entrysection" title="" collapsible="false" columns="3">
+                        <apex:pageBlockSectionItem >First Name </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >Last Name </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >Date of Birth </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="entrysectionitemFN"><apex:inputText id="fn" value="{!firstname}" onkeypress="return executeSearch();" style="width: 300px; height: 15px"/></apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="entrysectionitemLN"><apex:inputText id="ln" value="{!lastname}" onkeypress="return executeSearch();" style="width: 300px; height: 15px"/></apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="entrysectionitemBD"><apex:inputText id="bd" value="{!dob}" onkeypress="return executeSearch();" style="width: 300px; height: 15px"/></apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="ID Last 4"/></apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Expanded ID"/></apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Auth#"/></apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="entrysectionitemlast4"><apex:inputText id="last4" value="{!Last4}" onkeypress="return executeSearch();" style="width: 300px; height: 15px"/></apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="entrysectionitemMemId"> <apex:inputText id="memId" maxlength="30" value="{!memberid}" onkeypress="return executeSearch();" style="width: 300px; height: 15px"/></apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="entrysectionitemAuth"><apex:inputText id="auth" value="{!auth}" onkeypress="return executeSearch();" style="width: 300px; height: 15px"/></apex:pageBlockSectionItem>                       
+                        <apex:outputText id="consumId" value="{!consumerid}" rendered="false" />
+                    </apex:pageBlockSection> 
+                    
+                    <apex:commandButton value="Search" onClick="disableButton(this)" action="{!APIsearchRecords}" id="btnSearch" reRender="searhResultsPanel, err,btnSearch" style="padding-left: 25px; padding-right:25px;background:blue;color:white;" />                          
+                    <apex:outputLabel /><apex:outputLabel />
+                    <apex:commandButton value="Clear" action="{!reset}" reRender="entry, err, newCase" style="padding-left: 25px; padding-right:25px;"/>  
+                    <apex:outputLabel /><apex:outputLabel />
+                    <apex:commandButton value="Attach to Case" onClick="disableButton(this,'AttachT')" action="{!updateCase}" oncomplete="redirectToCase('{!caseNum}','{!caseCreationStatus}','{!clientid}','{!divid}','{!consumerIdCCP}','{!ciscoContactId}','{!channel}','{!asofdateformattedCCP}','{!ccpURL}','{!primaryMemberConsumerId}');" rendered="{!isUSC}" reRender="err,btnGo,btnGo2" id="btnGo" style="padding-left: 25px; padding-right:25px; background:green;color:white;" />
+                    <apex:outputLabel /><apex:outputLabel />
+                    <apex:outputLabel value="Include Dependent"/> <apex:inputCheckbox value="{!include}" selected="true" onkeypress="return executeSearch();" />  
+                    <apex:outputLabel /><apex:outputLabel />
+                    <apex:outputLabel value="Active Member Only"/> <apex:inputCheckbox value="{!activeonly}" onkeypress="return executeSearch();"/>  
+                    <apex:outputLabel /><apex:outputLabel />
+                    <apex:outputLabel value="Remove default DOB"/><apex:inputCheckbox value="{!remdob}" onkeypress="return executeSearch();"/>  
+                    <apex:outputLabel /><apex:outputLabel />
+                                                 
+             		<apex:pageBlock id="advSearchBlock">
+                    	<apex:pageBlockSection title="Advanced Search" id="advanced" collapsible="true" columns="1">
+                        	<script>
+                            	twistSection(document.getElementById('{!$Component.advanced}').getElementsByTagName('img')[0]);
+                        	</script>
+                            <apex:outputPanel >
+                                <table id="tableId2" style="width:75%">
+                                    <tr>
+                                        <td>As of Datee</td>
+                                        <td>State</td>
+                                        <td>City</td>
+                                    </tr>
+                                    <tr>
+                                        <td><apex:inputText id="aod" value="{!asofdate}" onkeypress="return executeSearch();"/></td>
+                                        <td>
+                                            <apex:selectList id="state" value="{!state}" multiselect="false" size="1" onkeypress="return executeSearch();">
+                                                <apex:selectOptions value="{!States}"/>
+                                            </apex:selectList>
+                                        </td>
+                                        <td><apex:inputText id="city" value="{!city}" onkeypress="return executeSearch();"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone</td>
+                                        <td>Email</td>
+                                        <td>Client Name</td>
+                                    </tr>
+                                    <tr>
+                                        <td><apex:inputText id="phone" value="{!phone}" onkeypress="return executeSearch();"/></td>
+                                        <td><apex:inputText id="email" value="{!email}" onkeypress="return executeSearch();"/></td>
+                                        <td><apex:inputText id="clientname" value="{!clientname}" onkeypress="return executeSearch();"/></td>
+                                    </tr>
+                                </table>
+                            </apex:outputPanel>
+                        </apex:pageBlockSection>
+                	</apex:pageBlock>
+                    
+                	<apex:pageMessages id="err" escape="true"/>
+                    
+                    <apex:outputPanel id="searhResultsPanel">
+                        <apex:pageBlockTable value="{!wrapcsrList}" id="thesearchresults" var="res" rendered="{!NOT(ISNULL(wrapcsrList))}"  >
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:inputCheckbox />
+                                </apex:facet>
+                                <apex:inputCheckbox value="{!res.isSelected}" id="InputId"/>
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:commandLink value="Name" action="{!toggleSort}" rerender="thesearchresults,err">
+                                    <apex:param name="sortField" value="Name__c" assignTo="{!sortField}"/>
+                                    </apex:commandLink>
+                                </apex:facet>
+                                <apex:outputField value="{!res.ccsr.Name__c}"/>
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:commandLink value="Relation" action="{!toggleSort}" rerender="thesearchresults,err">
+                                    <apex:param name="sortField" value="Relation_to_Member__c" assignTo="{!sortField}"/>
+                                    </apex:commandLink>
+                                </apex:facet>
+                                <apex:outputField value="{!res.ccsr.Relation_to_Member__c}"/>
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:commandLink value="Member/Client Status" action="{!toggleSort}" rerender="thesearchresults,err">
+                                    <apex:param name="sortField" value="Consumer_Client_Status__c" assignTo="{!sortField}"/>
+                                    </apex:commandLink>
+                                </apex:facet>
+                                <apex:outputField value="{!res.ccsr.Consumer_Client_Status__c}"/>
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:commandLink value="DOB" action="{!toggleSort}" rerender="thesearchresults,err">
+                                    <apex:param name="sortField" value="dobForSort__c" assignTo="{!sortField}"/>
+                                    </apex:commandLink>
+                                    </apex:facet>
+                                <apex:outputField value="{!res.ccsr.dob__c}"/>
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:commandLink value="City" action="{!toggleSort}" rerender="thesearchresults,err">
+                                    <apex:param name="sortField" value="City__c" assignTo="{!sortField}"/>
+                                    </apex:commandLink>
+                                </apex:facet>
+                                <apex:outputField value="{!res.ccsr.City__c}"/>
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:commandLink value="State" action="{!toggleSort}" rerender="thesearchresults,err">
+                                    <apex:param name="sortField" value="State__c" assignTo="{!sortField}"/>
+                                    </apex:commandLink>
+                                </apex:facet>
+                                <apex:outputField value="{!res.ccsr.State__c}"/>
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:commandLink value="Client Name" action="{!toggleSort}" rerender="thesearchresults,err">
+                                    <apex:param name="sortField" value="Client_Name__c" assignTo="{!sortField}"/>
+                                    </apex:commandLink>
+                                </apex:facet>
+                                <apex:outputField value="{!res.ccsr.Client_Name__c}"/>
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:commandLink value="Client ID" action="{!toggleSort}" rerender="thesearchresults,err">
+                                    <apex:param name="sortField" value="ConsClientDivIDs__c" assignTo="{!sortField}"/>
+                                    </apex:commandLink>
+                                </apex:facet>
+                                <apex:outputField value="{!res.ccsr.ConsClientDivIDs__c}"/>
+                            </apex:column>
+                        </apex:pageBlockTable>
+                    </apex:outputPanel>
+                    
+                	<apex:pageBlockButtons location="bottom" id="CrCaseloc">                                        
+                		<apex:pageBlockSection id="CrCase">                                
+							<apex:commandButton value="Attach to Case" onClick="disableButton(this,'AttachB')" action="{!updateCase}" oncomplete="redirectToCase('{!caseNum}','{!caseCreationStatus}','{!clientid}','{!divid}','{!consumerIdCCP}','{!ciscoContactId}','{!channel}','{!asofdateformattedCCP}','{!ccpURL}','{!primaryMemberConsumerId}');" rendered="{!isUSC}" reRender="err,btnGo2,btnGo" id="btnGo2" style="padding-left: 25px; padding-right:25px; background:green;color:white;" />
+                        	<apex:commandButton value="CC Portal" action="{!selectConsumer}" oncomplete="redirectToCase('{!caseNum}','{!caseCreationStatus}','{!clientid}','{!divid}','{!consumerIdCCP}','{!ciscoContactId}','{!channel}','{!asofdateformattedCCP}','{!ccpURL}','{!primaryMemberConsumerId}');" rendered="{!!isUSC}" reRender="err" id="btnCC" style="padding-left: 25px; padding-right:25px; background:green;color:white;" />                                        
+                    	</apex:pageBlockSection>
+                	</apex:pageBlockButtons>
+                    
+            	</apex:pageBlock>    
+        	</apex:form>   
+    	</div>
+	</html>
+</apex:page>

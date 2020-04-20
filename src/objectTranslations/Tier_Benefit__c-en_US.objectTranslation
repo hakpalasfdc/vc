@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tier Benefit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tier Benefits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Benefit --></label>
+        <name>Benefit__c</name>
+        <relationshipLabel><!-- Tier Benefits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Premier Tier --></label>
+        <name>Premier_Tier__c</name>
+        <relationshipLabel><!-- Tier Benefits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Send Outbound Message --></label>
+        <name>Send_Outbound_Message__c</name>
+    </fields>
+    <layouts>
+        <layout>Tier Benefit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

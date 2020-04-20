@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Escalated Queue Name</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Escalated Queue Name</value>
+    </caseValues>
+    <fields>
+        <label><!-- Escalated Q Name --></label>
+        <name>Escalated_Q_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

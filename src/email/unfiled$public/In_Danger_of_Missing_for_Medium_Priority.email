@@ -1,0 +1,6 @@
+A new Case with Medium Priority
+
+Case Number: {!Case.CaseNumber} 
+Case Subject:  {!Case.Subject} 
+
+Case Link -  {!Case.Link}

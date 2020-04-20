@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89316158</developerName>
+        <masterLabel>Role</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER_ROLE</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Optics Brand - Eastern Region</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Brand RM - East</sourceValue>
+            </sourceValues>
+            <value>Brand East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Optics Brand - Western Region</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Brand RM - West</sourceValue>
+            </sourceValues>
+            <value>Brand West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Columbus</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - Fort Lauderdale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - Tampa Bay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD East - Fort Lauderdale / Tampa Bay</sourceValue>
+            </sourceValues>
+            <value>VSPONE East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Dallas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD East - Dallas</sourceValue>
+            </sourceValues>
+            <value>VSPONE Central</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VSPOne - Olympia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - Sacramento</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne - San Diego</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD West - Olympia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VSPOne SD West - Sacramento</sourceValue>
+            </sourceValues>
+            <value>VSPONE West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Optics Lab Operations Leadership - Eastern</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Optics Leadership</sourceValue>
+            </sourceValues>
+            <value>Optics Leadership</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_89316158</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>TASK</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>Activity.Type__c</field>
+    </columns>
+    <columns>
+        <field>Activity.Event_Type__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Activity.Event_Description__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 or 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>vspone,otto,optics,unity,brand,lab</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_89316158</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TASK</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EDS Premier Lead Activity</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ASSIGNED</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

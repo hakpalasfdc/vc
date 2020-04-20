@@ -1,0 +1,110 @@
+<apex:page standardcontroller="Account" extensions="VSPR19_ChangeTaxIDCtrl" id="pg" docType="html-5.0">
+<script>
+function callSubmit(th) {
+  th.disabled = true;
+}
+</script>        
+<apex:form id="frm">
+<apex:sectionHeader title="{!Account.Name}" subtitle="Change Tax Id"/>
+<apex:pageblock id="pb">
+    <apex:pageMessages id="pgmsg" escape="false"></apex:pageMessages>
+    <apex:outputPanel id="opnl">
+    <script>
+    //  if (document.getElementById("pg:frm:pb:btns:btnSub") != null
+      //              && document.getElementById("pg:frm:pb:btns:btnSub") != undefined) {
+       //         document.getElementById("pg:frm:pb:btns:btnSub").disabled = false;
+     // }
+     </script>       
+    </apex:outputPanel>
+    <apex:pageblockbuttons location="bottom" id="btns">
+            <apex:commandButton status="status" value="Save" id="btnSub" action="{!createtaxId}" rerender="pgmsg,opnl" />
+            <apex:commandButton value="Cancel" onclick="this.form.reset();" immediate="true" html-formnovalidate="novalidate" action="{!doCancel}"/>
+            <apex:actionStatus startText="Please wait..." id="status"></apex:actionStatus>
+    </apex:pageblockbuttons>
+
+    <apex:pageBlockSection title="Current Tax ID Info" columns="1"  collapsible="false">
+
+            <apex:outputfield value="{!exisingAccount.Common_Account_Name_Report__c}"/>
+            <apex:outputfield value="{!exisingAccount.IRS_Tax_ID__c}"/>
+            <apex:outputfield value="{!exisingAccount.IRS_Name__c}"/>
+            <apex:pageBlockSectionItem >
+              <apex:outputLabel value="Vision Care Mailing Address" />
+              <apex:outputPanel >
+                <apex:outputText value="{!exisingAccount.BillingStreet}" /><br />
+                <apex:outputText value="{!exisingAccount.BillingPostalCode}" />&nbsp;
+                <apex:outputText value="{!exisingAccount.BillingState}" />&nbsp;
+                <apex:outputText value="{!exisingAccount.BillingCity}" />&nbsp;<br />
+                <apex:outputText value="{!exisingAccount.BillingCountry}" />
+              </apex:outputPanel>
+             </apex:pageBlockSectionItem>
+                <apex:outputfield value="{!exisingAccount.Practice_Business_Type__c}"/>
+                <apex:outputfield value="{!exisingAccount.Vision_Care_Effective_Date__c}"/>
+                <!-- <apex:outputfield value="{!exisingAccount.Vision_Care_End_Date__c}" label="Vision Care End Date (CURRENT)"/> -->
+                <!-- <apex:inputField value="{!exisingAccount.Vision_Care_End_Date__c}" required="true"/> -->
+                <!-- <apex:inputField value="{!accTEMP.Vision_Care_End_Date__c}" required="true" label="Vision Care End Date (PROPOSED)"/> -->
+             <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Vision Care End Date" for="vced"/> 
+                <apex:actionRegion >
+                    <apex:inputField id="vced" value="{!accTEMP.Vision_Care_End_Date__c}" required="true"> 
+                            <apex:actionSupport event="onchange" action="{!validateVCEndDate}" rerender="pgmsg"/>
+                    </apex:inputField>
+                </apex:actionRegion>
+             </apex:pageBlockSectionItem>
+            </apex:pageblocksection>
+
+    <apex:pageBlockSection title="New Tax ID Info" columns="1"  collapsible="false">
+
+
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New Tax ID"/>
+            <apex:inputfield value="{!acc.Tax_ID__c}" required="true"/>
+    </apex:pageBlockSectionItem>
+
+
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New IRS Name"/>
+            <apex:inputfield value="{!acc.IRS_Name__c}" required="true"/>
+    </apex:pageBlockSectionItem>
+      
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New Vision Care Mailing Street" />
+            <apex:inputfield value="{!acc.BillingStreet}" required="true"/>
+    </apex:pageBlockSectionItem>
+  
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New Vision Care Mailing City" />
+            <apex:inputfield value="{!acc.BillingCity}" required="true" />
+    </apex:pageBlockSectionItem>
+   
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New Vision Care Mailing State" />
+            <apex:inputfield value="{!acc.BillingState}" required="true"/>
+    </apex:pageBlockSectionItem>
+    
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New Vision Care Mailing ZIP Code" />
+            <apex:inputfield value="{!acc.BillingPostalCode}" required="true"/>
+    </apex:pageBlockSectionItem>
+
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New Tax Practice Business Type"/>
+            <apex:inputfield value="{!acc.Practice_Business_Type__c}" required="true"/>
+    </apex:pageBlockSectionItem>
+
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New Tax ID Effective Date"/>
+            <apex:inputfield value="{!acc.Vision_Care_Effective_Date__c}" required="true"/>
+    </apex:pageBlockSectionItem>
+    <apex:pageBlockSectionItem >
+            <apex:outputlabel value="New Tax ID End Date"/>
+            <apex:inputField value="{!acc.Vision_Care_End_Date__c}" required="false"/>
+    </apex:pageBlockSectionItem>
+
+
+
+    </apex:pageblocksection>
+
+
+</apex:pageblock>
+</apex:form>
+</apex:page>

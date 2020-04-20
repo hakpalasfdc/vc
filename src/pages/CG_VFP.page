@@ -1,0 +1,120 @@
+<apex:page standardController="Knowledge__kav" extensions="MultiTopic_FeedbackctrlLEX" id="CG" showHeader="true">
+    <style>
+        h1 {font:18px arial,sans-serif,bold;}
+        .hasMotif {margin: 0 0px !important;}
+        thead {background-color: #D8E3F0;}
+        tbody tr th{background-color: #D8E3F0;} 
+    </style>
+    
+    <script type="text/javascript">
+    j$ = jQuery.noConflict();
+    j$(function() {
+        j$('#bookmarkme').click(function() {
+            if (window.sidebar && window.sidebar.addPanel) {
+                window.sidebar.addPanel('{!Knowledge__kav.Title}',window.location.href,'');
+            } else if(window.external && ('AddFavorite' in window.external)) { 
+                window.external.AddFavorite(location.href,'{!Knowledge__kav.Title}'); 
+            } else if(window.opera && window.print) { 
+                this.title='{!Knowledge__kav.Title}';
+                return true;
+            } else { 
+                alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
+            }
+        });
+    });
+    </script>
+
+    <script language="JavaScript" type="text/javascript">
+    <!--script to show/ hide header if page opens within an iframe-->   
+            if (window.location != window.parent.location) {        
+                document.getElementById('AppBodyHeader').style.display = "none";
+                document.getElementById('sidebarCell').style.display = "none";
+            }
+         
+    </script>
+    <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"/>
+    <script>
+        j$ = jQuery.noConflict();
+        j$(document).ready(function() {
+        j$('.bPageFooter').hide();
+        });
+    </script> 
+    <apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/versioning.css" />
+    <apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/extended.css" />
+    <h1><strong><apex:outputfield value="{!cbk.Title}"/></strong></h1><br/>
+        
+        <knowledge:articleRendererToolBar rendered="{!toolbarflag}" id="toolbarid" articleId="{! $CurrentPage.parameters.id}" canVote="true" showChatter="true"/><br/><br/>
+        <a id="bookmarkme" href="#" rel="sidebar" style="float:right" title="bookmark this page">Bookmark This Page</a> <br/>
+        <apex:outputLink value="https://{!sfurll}/apex/CG_PDF?id={!Returnid}" style="float:right" target="_blank">View as PDF</apex:outputLink><br/>
+        <apex:outputLink value="https://{!sfurll}/apex/CG_PDF?id={!Returnid}&pubstatus=d" style="float:right" target="_blank" rendered="{!IF($Setup.Preview_Draft_Article_PDF__c.User__c && checkIfDraft == true,true,false)}" >Preview Draft as PDF</apex:outputLink><br/>
+        
+        <apex:pageMessages /  >
+        <apex:pageBlock mode="maindetail" id="pageblockid"> 
+        <apex:tabPanel selectedTab="InformationTab" id="SingleTopicTabPanel"  tabClass="activeTab" inactiveTabClass="inactiveTab"  switchType="client">
+                    
+        <!-- INFORMATION TAB -->
+            <apex:tab label="Information" name="Information" id="InformationTab" >
+                    <apex:pageBlockSection columns="1">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputField id="information" value="{!cbk.Article_Details__c}"/>
+                    </apex:pageBlockSectionItem>
+                        <apex:outputField id="keyword" value="{!cbk.Keyword__c}"/>
+                  
+                </apex:pageBlockSection> 
+            </apex:tab> 
+            
+            <!-- STEPS TAB -->               
+            <apex:tab label="SQ/QQ Steps" name="Steps" id="StepTab" > 
+                <apex:pageBlockSection columns="1">
+                <apex:outputField id="supportqueuesteps" value="{!cbk.Support_Queue_Steps__c}"/>
+                </apex:pageBlockSection>
+            </apex:tab>
+            
+        <!-- NEWS TAB -->               
+            <apex:tab label="Version Comments" name="News" id="NewsTab" style="background-color:blue;" rendered="{!highlightVersionComments == true}" > 
+                <div style="background-color:white;">
+                    <apex:pageBlockSection columns="1">
+                        <apex:outputField id="versioncomments" value="{!cbk.Version_Comments__c}"/>
+                    </apex:pageBlockSection>
+                </div>
+            </apex:tab>
+            
+            <apex:tab label="Version Comments" name="News" id="NewsTab2" rendered="{!highlightVersionComments == false}"  > 
+                <apex:pageBlockSection columns="1">
+                    <apex:outputField id="versioncomments" value="{!cbk.Version_Comments__c}"/>
+                </apex:pageBlockSection>
+            </apex:tab>
+            
+            <!-- ARTICLE FEEDBACK TAB -->               
+            <apex:tab label="Article Feedback" name="Article Feedback" id="artfeedTab" > 
+            <apex:form >            
+                <apex:pageBlockSection columns="1">
+                    <apex:outputPanel id="hiddenvalues" rendered="{!hiddenvaluesflag}">
+                    <apex:outputText label="Article Id" id="id" value="{!art}"/>
+                    <apex:outputField id="title" value="{!cbk.Title}"/>
+                    <apex:outputField id="arttype" value="{!cbk.Article_Record_Type_Name__c}"/>
+                    <apex:outputField id="artnumb" value="{!cbk.ArticleNumber}"/>
+                    <!--apex:outputField id="urlname" value="{!cbk.UrlName}"/-->
+                    <apex:outputLink id="url" value="https://{!sfUrll}/{!art}">Article Link</apex:outputLink>
+                    <apex:outputField id="createdby" value="{!cbk.CreatedById}"/>
+                    <apex:outputField id="ownerid" value="{!cbk.OwnerId}"/>
+                    <apex:pageBlockTable value="{!Category}" var="cat">
+                        <apex:outputField value="{!cat.DataCategoryName}"/>
+                        <apex:outputField value="{!cat.DataCategoryGroupName}"/>
+                    </apex:pageblocktable>
+                    </apex:outputPanel>
+                    <apex:inputTextarea rows="10" cols="200" label="Comments" id="comments" value="{!Comments}"/>
+                    <apex:selectList label="Reason" value="{!reasons}" multiselect="true">
+                        <apex:selectOptions value="{!items}"/>
+                    </apex:selectList><p/>
+                    <apex:outputText >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;At least one Reason is required</apex:outputText>
+                    <apex:outputText >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Use Ctrl+Click to select more than One Reason</apex:outputText>                  
+                <apex:commandButton action="{!saveclick}" value="Save"/>
+                </apex:pageBlockSection>
+              </apex:form>  
+            </apex:tab>
+            
+        </apex:tabPanel> 
+    <apex:iframe id="detailsframe" width="100%" scrolling="true"/>
+    </apex:pageBlock>    
+</apex:page>

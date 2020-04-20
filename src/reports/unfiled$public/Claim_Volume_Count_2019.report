@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Salesforce_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Parent.Salesforce_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Parent.MDM_Account_Keys__c</field>
+    </columns>
+    <columns>
+        <field>Account$Parent.MDM_Combo_Key__c</field>
+    </columns>
+    <columns>
+        <field>Account$Parent.MDM_Location_Keys__c</field>
+    </columns>
+    <columns>
+        <field>Account$Vision_Care_Claim_Volume_LTM__c</field>
+    </columns>
+    <description>Mauricio&apos;s Claim Report</description>
+    <format>Tabular</format>
+    <name>Claim Volume Count 2019</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_w_Practice_Information__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

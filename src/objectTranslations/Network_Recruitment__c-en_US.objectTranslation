@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Network Recruitment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Network Recruitments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name_Lookup__c</name>
+        <relationshipLabel><!-- Network Recruitments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Office Locations --></label>
+        <name>Additional_Office_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Structure --></label>
+        <name>Business_Structure__c</name>
+        <picklistValues>
+            <masterLabel>General Partnership (LLP)</masterLabel>
+            <translation><!-- General Partnership (LLP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLLC</masterLabel>
+            <translation><!-- PLLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prof. Corp</masterLabel>
+            <translation><!-- Prof. Corp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S-Corp</masterLabel>
+            <translation><!-- S-Corp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Prop</masterLabel>
+            <translation><!-- Sole Prop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Provider Comments --></label>
+        <name>CAQH_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAQH ID --></label>
+        <name>CAQH_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CalOptima Agreement --></label>
+        <name>CalOptima_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Name --></label>
+        <name>Client_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Status --></label>
+        <name>Client_Status__c</name>
+        <picklistValues>
+            <masterLabel>Existing Client</masterLabel>
+            <translation><!-- Existing Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Preference --></label>
+        <name>Contact_Preference__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postal Mail</masterLabel>
+            <translation><!-- Postal Mail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Role --></label>
+        <name>Contact_Role__c</name>
+        <relationshipLabel><!-- Network Recruitments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contact Lenses are dispensed at this office --></help>
+        <label><!-- Contacts Dispensed --></label>
+        <name>Contacts_Dispensed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credentialing Contact Email --></label>
+        <name>Credentialing_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credentialing Contact Fax --></label>
+        <name>Credentialing_Contact_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credentialing Contact Name --></label>
+        <name>Credentialing_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credentialing Contact Phone --></label>
+        <name>Credentialing_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOB --></label>
+        <name>DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Open --></label>
+        <name>Days_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree --></label>
+        <name>Degree__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of the dispensary the provider owns --></help>
+        <label><!-- Dispensary Ownership Percentage --></label>
+        <name>Dispensary_Ownership_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Send NDA/Criteria Forms --></label>
+        <name>Do_Not_Send_NDA_Criteria_Forms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor ID --></label>
+        <name>Doctor_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor Member Type --></label>
+        <name>Doctor_Member_Type__c</name>
+        <picklistValues>
+            <masterLabel>A - Affiliate</masterLabel>
+            <translation><!-- A - Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F - Laser Vision Correction</masterLabel>
+            <translation><!-- F - Laser Vision Correction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M - Member Doctor</masterLabel>
+            <translation><!-- M - Member Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S - School Faculty Doctor</masterLabel>
+            <translation><!-- S - School Faculty Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X - Special (GAP) Doctor</masterLabel>
+            <translation><!-- X - Special (GAP) Doctor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employed at Other Locations --></label>
+        <name>Employed_at_Other_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Committee Date --></label>
+        <name>Estimated_Committee_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographical City --></label>
+        <name>Geographical_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographical County --></label>
+        <name>Geographical_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographical Request --></label>
+        <name>Geographical_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographical State --></label>
+        <name>Geographical_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographical Street Address --></label>
+        <name>Geographical_Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographical ZIP Code --></label>
+        <name>Geographical_ZIP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Worked --></label>
+        <name>Hours_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in Todays Report? --></label>
+        <name>Include_in_Todays_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- LVC Surgeon NDA --></label>
+        <name>LVC_Surgeon_NDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Business Date --></label>
+        <name>Last_Business_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meets Insurance Requirement --></label>
+        <name>Meets_Insurance_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meets Medicare Requirement --></label>
+        <name>Meets_Medicare_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI --></label>
+        <name>NPI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of frames on display in dispensary --></help>
+        <label><!-- Number of Frames Displayed in Dispensary --></label>
+        <name>Number_of_Frames_Displayed_in_Dispensary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations Owned --></label>
+        <name>Number_of_Locations_Owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Members Covered --></label>
+        <name>Number_of_Members_Covered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of working days between 2 dates --></label>
+        <name>Number_of_working_days_between_2_dates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opened Date --></label>
+        <name>Opened_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner/Employee --></label>
+        <name>Owner_Employee__c</name>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner</masterLabel>
+            <translation><!-- Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical County --></label>
+        <name>Physical_County__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of practice the provider owns --></help>
+        <label><!-- Practice Ownership Percentage --></label>
+        <name>Practice_Ownership_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Recruitment Notes --></label>
+        <name>Private_Recruitment_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Name --></label>
+        <name>Provider_Name_Lookup__c</name>
+        <relationshipLabel><!-- Network Recruitments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason for Not Participating --></label>
+        <name>Reason_for_Not_Participating__c</name>
+        <picklistValues>
+            <masterLabel>ABO/TPA</masterLabel>
+            <translation><!-- ABO/TPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn’t Provide Routine Exams</masterLabel>
+            <translation><!-- Doesn’t Provide Routine Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fees</masterLabel>
+            <translation><!-- Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Dispensary</masterLabel>
+            <translation><!-- No Dispensary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-responsive</masterLabel>
+            <translation><!-- Non-responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Managed Care/VSP Friendly</masterLabel>
+            <translation><!-- Not Managed Care/VSP Friendly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recruiting Network --></label>
+        <name>Recruiting_Network__c</name>
+        <picklistValues>
+            <masterLabel>Advantage</masterLabel>
+            <translation><!-- Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choice</masterLabel>
+            <translation><!-- Choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LVC</masterLabel>
+            <translation><!-- LVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCD</masterLabel>
+            <translation><!-- MCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protec</masterLabel>
+            <translation><!-- Protec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select</masterLabel>
+            <translation><!-- Select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSP</masterLabel>
+            <translation><!-- VSP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Episoded/Rostered&quot; Recruitment Status indicates the practice meets VSP requirements and the application is in process. --></help>
+        <label><!-- Recruitment Status --></label>
+        <name>Recruitment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed/Committee</masterLabel>
+            <translation><!-- Completed/Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed/Denied at Committee</masterLabel>
+            <translation><!-- Completed/Denied at Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed/No Committee</masterLabel>
+            <translation><!-- Completed/No Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Episoded/Rostered</masterLabel>
+            <translation><!-- Episoded/Rostered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation><!-- In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Lead</masterLabel>
+            <translation><!-- New Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Contacted</masterLabel>
+            <translation><!-- Office Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recruitment Type --></label>
+        <name>Recruitment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor Initiated</masterLabel>
+            <translation><!-- Doctor Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAP</masterLabel>
+            <translation><!-- GAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pro-Supplemental</masterLabel>
+            <translation><!-- Pro-Supplemental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proactive</masterLabel>
+            <translation><!-- Proactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reactive</masterLabel>
+            <translation><!-- Reactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reactive Supplemental</masterLabel>
+            <translation><!-- Reactive Supplemental --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recruitment in Progress Count --></label>
+        <name>Recruitment_in_Progress_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor Name --></label>
+        <name>Requestor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor Phone Number --></label>
+        <name>Requestor_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Associate Doctor --></label>
+        <name>School_Associate_Doctor__c</name>
+    </fields>
+    <fields>
+        <label><!-- CVO Special Instructions --></label>
+        <name>Special_Instructions_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Change Date --></label>
+        <name>Status_Change_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Street --></label>
+        <name>Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Recruitment Date --></label>
+        <name>Target_Recruitment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Client Name? --></label>
+        <name>Use_Client_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Works at more than 10 VSP Locations --></label>
+        <name>Works_at_10_or_more_VSP_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Zip Code --></label>
+        <name>ZIP__c</name>
+    </fields>
+    <layouts>
+        <layout>Network Recruitment Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Credentialing Contact Information --></label>
+            <section>Credentialing Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Information --></label>
+            <section>Doctor Information</section>
+        </sections>
+        <sections>
+            <label><!-- Geographical Recruitment Information --></label>
+            <section>Geographical Recruitment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recruitment Information --></label>
+            <section>Recruitment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recruitment Notes --></label>
+            <section>Recruitment Notes</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Credentialing Contact Email is required if Contact Preference is &quot;Email&quot;. --></errorMessage>
+        <name>VSPR6_Contact_Preference_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Credentialing Contact Fax is required if Contact Preference is &quot;Fax&quot;. --></errorMessage>
+        <name>VSPR6_Contact_Preference_Fax</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Provider Name, Degree, DOB, CAQH ID, NPI, Account Name, and Account Address fields are required if Recruitment Status is Episoded/Rostered. Please update the information on the Contact and try again. --></errorMessage>
+        <name>VSPR6_Req_Contact_Fields_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Doctor ID, Credentialing Contact Name, Credentialing Contact Phone, Estimated Committee Date, Doctor Member Type, Owner/Employee and Contact Preference are required if Recruitment Status is Episoded/Rostered. --></errorMessage>
+        <name>VSPR6_Req_Recruitment_Fields_Status</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_New_Network_Recruitment --></label>
+        <name>Create_New_Network_Recruitment</name>
+    </webLinks>
+</CustomObjectTranslation>

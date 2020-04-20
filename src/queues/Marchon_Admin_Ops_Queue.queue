@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Marchon Admin/Ops Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Marchon_Admin_Ops_Queue</publicGroup>
+        </publicGroups>
+        <users>
+            <user>eruss@marchon.com</user>
+            <user>lfarino@marchon.com</user>
+            <user>pemmanoyil@marchon.com</user>
+            <user>pdonaldson@marchon.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

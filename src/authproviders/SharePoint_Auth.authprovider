@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://visionserviceplan.sharepoint.com/sites/SalesForce/_layouts/15/OauthAuthorize.aspx</authorizeUrl>
+    <consumerKey>8ac16bb4-e271-45af-aebf-240a091870df</consumerKey>
+    <consumerSecret>FWfcghupus2fqBSROwaiuaQOnbfae+FVfiutET5xqn4hN6EsZXDPQ/h53b+jQjvf</consumerSecret>
+    <friendlyName>SharePoint Auth</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>MicrosoftACS</providerType>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://accounts.accesscontrol.windows.net/visionserviceplan.onmicrosoft.com/tokens/OAuth/2?resource=00000003-0000-0ff1-ce00-000000000000/visionserviceplan.sharepoint.com@visionserviceplan.onmicrosoft.com</tokenUrl>
+</AuthProvider>

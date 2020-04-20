@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_57585832</developerName>
+        <masterLabel>Target Market</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account$ShippingState</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CA</sourceValue>
+            </sourceValues>
+            <value>CA (Sac/USC)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>OR</sourceValue>
+            </sourceValues>
+            <value>OR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>WA</sourceValue>
+            </sourceValues>
+            <value>WA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>WI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MN</sourceValue>
+            </sourceValues>
+            <value>MN-WI</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CO</sourceValue>
+            </sourceValues>
+            <value>CO</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MD</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>WV</sourceValue>
+            </sourceValues>
+            <value>DC-VA-MD-WV</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_99501377</developerName>
+        <masterLabel>Task Subject</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Activities$Subject</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Level Qualify Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Quality Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Qualify Account - Cold Call</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level  Proposal CC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level CC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Cold Call</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Propsal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Prposal CC</sourceValue>
+            </sourceValues>
+            <value>A. RM Reaching Out</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level Proposal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Proposal - Completed at VEE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Proposal CC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Proposal - Cold Call</sourceValue>
+            </sourceValues>
+            <value>B. Meeting Scheduled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level LMS Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Training LMS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level LMS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level LMS Traiining</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level LMS Trainng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level LMS Trianing</sourceValue>
+            </sourceValues>
+            <value>C. Practice Training Scheduled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level MPI Notification</sourceValue>
+            </sourceValues>
+            <value>D. Path to Premier Link Scheduled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level Verify Receipt of Merch</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level Merch</sourceValue>
+            </sourceValues>
+            <value>E. Display Kit Shipped</value>
+        </values>
+        <values>
+            <value>F. Merch Setup Scheduled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level follow up</sourceValue>
+            </sourceValues>
+            <value>G. Follow Up Scheduled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level OSI Code</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level OSI Update</sourceValue>
+            </sourceValues>
+            <value>H. OSI Code Scheduled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level Featured Frame Brand</sourceValue>
+            </sourceValues>
+            <value>I. Featured Frame Brand Scheduled</value>
+        </values>
+        <values>
+            <value>J. Dr. Feedback Scheduled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level LMS FollowUp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Level LMS FollowUp followup</sourceValue>
+            </sourceValues>
+            <value>K. Training Follow Up</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Level LMS FollowUp 2</sourceValue>
+            </sourceValues>
+            <value>L. Training Follow Up 2</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Status</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Description</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Event_Date_Finished__c</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Event_Description__c</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingStreet</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingCity</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingState</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingPostalCode</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Activities$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>level qualify account,level proposal,level lms,level mpi notification,level verify receipt of merch,level merchandising setup,level follow up,level osi code,level featured frame brand,level feedback,level followup</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Completed,Pending New Contact,Deferred</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Event_Date_Finished__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_99501377</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_57585832</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Level Open Tasks Dashboard Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Tasks_and_Events__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Activities$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

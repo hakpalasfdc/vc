@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto response for open enrollment</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Membership Auto Response OE</name>
+    <style>none</style>
+    <subject>We have received your Membership Request</subject>
+    <textOnly>Thank you for contacting the VSP EDI Enrollment Integration Team; your inquiry is very important to us. Your request has been received and will be processed within 5 business days.
+
+*IMPORTANT* Please read the below email in its entirety as it may address your inquiry.
+
+
+If you are inquiring about our Open Enrollment process, please see guidelines at the bottom of this email.
+If you are inquiring about the file receipt and/or load, please allow 24 hours for the Electronic Verification Report (EVR) to be generated, which will serve as confirmation of the file load.  NO OTHER CONFIRMATIONS WILL BE SENT.  If you are not an EVR recipient, please confirm with the contact who is, or you may reach us directly at 877-396-8940 to confirm.
+For urgent file related inquiries, you may reach us directly at 877-396-8940.  Please reference case number {!Case.CaseNumber} to expedite your call.
+The email address eei@vsp.com is not intended for manual membership updates.  If you need assistance with managing your membership on www.vsp.com please call 800-216-6248 option 2.
+If this is a billing inquiry, please call 800-216-6248 option 3.
+
+
+Open Enrollment Guidelines
+
+We have two options for OE.  Please let us know which one of these options you will use and provide dates if necessary.
+
+Option 1:
+
+Client/TPA may continue to send us the prior plan year data until the 23rd, prior to OE effective date.
+Send a separate OE file any time prior to the 23rd.
+Once OE file is received, we will automatically run a test against our database and the OE test results will be sent to the client/TPA for review.
+We will hold the OE file until the 26th and the file will process between 26th and 31st depending on the OE month.
+
+
+Option 2: This is based on when the client/TPA plans to send their last production file for the current plan year.
+
+Client/TPA must provide:
+
+Date of the last production file for the current plan year:________
+Date of the OE file:_________
+
+Note: If the client/TPA plans to send the OE file after the last production file, they must include a 3 day lag between the file transmission dates
+Continue to send the current plan year data until the last production file date occurs.
+If OE file is received prior to the last production file, we will run a test against our database and the OE test results will be sent to the client/TPA for review.
+We will hold the OE file until the last production file date occurs and it will be loaded the next day.
+
+
+The following applies to all OE files:
+
+The OE file must be a full file and contain all of the new plan year elections.
+OE file should be sent utilizing the client&apos;s normal transmission method; however, the OE file name should be: oe1234567 (1234567=the client&apos;s assigned File ID)
+The term by omission date will be the last day of the month prior to OE effective date.  (For example: For January OE effective date, term by omission will be 12/31/19; coverage levels will be effective 01/01/20)
+Enrollment Verification Report (EVR) is sent after the Open/Annual file has loaded; this is used as confirmation that the file has loaded successfully; no other confirmations are sent.
+VSP does not issue ID cards or send enrollment communications out to the members.  Members can print out an ID card for a reference from VSP Resource Center online.
+For any urgent manual updates, client/TPA can utilize the Client Portal at www.vsp.com
+Regular production files should resume after OE effective date and the file name must be changed back to a1234567 or g1234567 (1234567=the client&apos;s assigned file id) depending on the file layout.
+
+
+Please Note: If there ARE going to be any changes to structure a dedicated Membership Coordinator will reach out directly.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

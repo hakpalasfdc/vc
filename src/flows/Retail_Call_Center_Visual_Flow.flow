@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>CostcoCignaVisionMemberChoice</name>
+        <choiceText>Costco for CIGNA Vision Member</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>CostcoCVSAffiliateServicesChoice</name>
+        <choiceText>Costco, CVS or Affiliate (AFPR, AFPRQ) or Out-of-Network</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>MemberReceivingServicesChoice</name>
+        <choiceText>Member/Patient (not a Cigna Vision member) receiving services at Costco, CVS or Affiliate (AFPR, AFPRQ) or Out-of-Network</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>WalmartSamsVisionWorksServicesChoice</name>
+        <choiceText>Walmart/Sam&apos;s Club Optical or Vision Works</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <constants>
+        <description>Flow Name</description>
+        <name>FlowName</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Retail Call Center Visual Flow</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Who_is_your_caller_decision</name>
+        <label>Who is your caller decision?</label>
+        <locationX>344</locationX>
+        <locationY>50</locationY>
+        <defaultConnector>
+            <targetReference>User_Flow_Tracking_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>CostcoCVSAffiliateOONDecision</defaultConnectorLabel>
+        <rules>
+            <name>MemberPatientDecision</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>MemberReceivingServicesChoice</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>User_Flow_Tracking_Record_3</targetReference>
+            </connector>
+            <label>MemberPatientDecision</label>
+        </rules>
+        <rules>
+            <name>WalmartVWDecision</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>WalmartSamsVisionWorksServicesChoice</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>User_Flow_Tracking_Record_2</targetReference>
+            </connector>
+            <label>WalmartVWDecision</label>
+        </rules>
+    </decisions>
+    <description>Visual flow to guide users through a call so that they can best serve a customer</description>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <name>UserId</name>
+        <dataType>String</dataType>
+        <expression>{!$User.Id}</expression>
+    </formulas>
+    <interviewLabel>Retail Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Retail Call Center Visual Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>User_Flow_Tracking_Record</name>
+        <label>User Flow Tracking Record</label>
+        <locationX>678</locationX>
+        <locationY>162</locationY>
+        <connector>
+            <targetReference>Costco_CVS_Affiliate_OON_Sub_Flow</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <elementReference>FlowName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Path__c</field>
+            <value>
+                <stringValue>CostcoCVSAffiliateOONDecision</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>UserId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User_Flow_Tracking__c</object>
+    </recordCreates>
+    <recordCreates>
+        <name>User_Flow_Tracking_Record_2</name>
+        <label>User Flow Tracking Record 2</label>
+        <locationX>352</locationX>
+        <locationY>264</locationY>
+        <connector>
+            <targetReference>Sub_Flow_to_Walmart_VW</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <elementReference>FlowName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Path__c</field>
+            <value>
+                <stringValue>WalmartVWDecision</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>UserId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User_Flow_Tracking__c</object>
+    </recordCreates>
+    <recordCreates>
+        <name>User_Flow_Tracking_Record_3</name>
+        <label>User Flow Tracking Record 3</label>
+        <locationX>678</locationX>
+        <locationY>40</locationY>
+        <connector>
+            <targetReference>Member_Sub_Flow</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <elementReference>FlowName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Path__c</field>
+            <value>
+                <stringValue>MemberPatientDecision</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>UserId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User_Flow_Tracking__c</object>
+    </recordCreates>
+    <screens>
+        <description>Who is your caller?</description>
+        <name>Who_is_your_caller_header</name>
+        <label>Who is your caller?</label>
+        <locationX>220</locationX>
+        <locationY>48</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Who_is_your_caller_decision</targetReference>
+        </connector>
+        <fields>
+            <name>WhoIsYourCallerDisplay</name>
+            <fieldText>&lt;p&gt;Who is your caller?&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Who_is_your_caller_radio</name>
+            <choiceReferences>MemberReceivingServicesChoice</choiceReferences>
+            <choiceReferences>WalmartSamsVisionWorksServicesChoice</choiceReferences>
+            <choiceReferences>CostcoCVSAffiliateServicesChoice</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Selection:</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Who_is_your_caller_header</startElementReference>
+    <status>Obsolete</status>
+    <subflows>
+        <description>Go to the sub flow Retail Call Center Visual Flow - Costco Affiliate OON</description>
+        <name>Costco_CVS_Affiliate_OON_Sub_Flow</name>
+        <label>Costco CVS Affiliate OON Sub Flow</label>
+        <locationX>822</locationX>
+        <locationY>161</locationY>
+        <flowName>Retail_Call_Center_Visual_Flow_Costco_Affiliate_OON</flowName>
+    </subflows>
+    <subflows>
+        <description>Go to the sub flow Retail Call Center Visual Flow - Member</description>
+        <name>Member_Sub_Flow</name>
+        <label>Member Sub Flow</label>
+        <locationX>840</locationX>
+        <locationY>40</locationY>
+        <flowName>Retail_Call_Center_Visual_Flow_Member</flowName>
+    </subflows>
+    <subflows>
+        <description>Goes to the Subflow Retail Call Center Visual Flow - Walmart VW</description>
+        <name>Sub_Flow_to_Walmart_VW</name>
+        <label>Sub Flow to Walmart VW</label>
+        <locationX>352</locationX>
+        <locationY>429</locationY>
+        <flowName>Retail_Call_Center_Visual_Flow_Walmart_VW</flowName>
+    </subflows>
+</Flow>

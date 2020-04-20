@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Article Permission</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Article Permission</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article Type --></label>
+        <name>Article_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the email needs to go to a Group and not a user --></help>
+        <label><!-- Group Email --></label>
+        <name>Group_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- OwnerName --></label>
+        <name>OwnerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserEmail --></label>
+        <name>UserEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Article Permission --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Article Owners</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Article Permission Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- The user/group email that will receive emails when unauthorized people Edit/Delete Articles --></description>
+        <label><!-- Article Owners --></label>
+        <name>Article_Owners</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- The users who can Edit/Delete Articles without generating an email  - based on Article Type --></description>
+        <label><!-- Editors --></label>
+        <name>Editors</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

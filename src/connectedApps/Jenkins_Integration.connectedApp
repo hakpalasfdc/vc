@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sfdash@vsp.com</contactEmail>
+    <label>SFDX JWT (Jenkins)</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIDoDCCAogCCQCA6WKjQcJmoDANBgkqhkiG9w0BAQsFADCBkTELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExEzARBgNVBAcTClNhY3JhbWVudG8xDDAKBgNVBAoTA1ZTUDEMMAoGA1UECxMDR1RTMRYwFAYDVQQDEw1NaWNoZWwgV2F0c29uMSQwIgYJKoZIhvcNAQkBFhVtaWNoZWwud2F0c29uQHZzcC5jb20wHhcNMTkxMTE3MDYwMDI5WhcNMjAxMTE2MDYwMDI5WjCBkTELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExEzARBgNVBAcTClNhY3JhbWVudG8xDDAKBgNVBAoTA1ZTUDEMMAoGA1UECxMDR1RTMRYwFAYDVQQDEw1NaWNoZWwgV2F0c29uMSQwIgYJKoZIhvcNAQkBFhVtaWNoZWwud2F0c29uQHZzcC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDXG7tYS/0muaZ9sR8HBSmpr/nl0ideGawY4MUHE16HbANYRJUrj00BKynMUSP0nXkskj7ic+Aj7GbCiLfg3YsGEGizso8YozwSZ4HLjM+0uFxWkrcYCnG4aQ3E6Cl2IC1e1flOWFP3eVG9/86+mJ4ljPmjvsQ+InezopUEF4gCp+Mz7Wv4g+Cv6ixHe6f9Lqfv4X8nH1xlZcI8ubrAKMY/2snM5ny5s0Wfk4pnQC5DTa4G4hrtJ4siBdCIpXA9AJjK95TdLXHzJrQdeXt6auL6PSAyQ+oEbsgJwoA79uzmM9uk64DPf+B4x4Fu6jOO593yxIMv82N7f8/UuDKTBcvzAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAMDnyn2rRwPvkdrgj2afm7lw51ExQ/FRN7ytoKdM3iOtaOiR3VtBK1NrqaicvrigfESgGS61CVU8Mv2aNnDtU3ur3JmzWwv9UaPTdFC2Hw6PJtU1uAITsV0sZfylD11v2ig9JkZPpRZ+0WkgIomRh8Gxsb5jFXNIZw9JHSGnuK9Za7IKJSbDFEoWOc3LMoBtbkSJK2fEYiRsvdbzl0To+wbi6U6Vzo4zmEyaQb5StDE1lWE0FC5XwLcstgqTKjhrSPbwzTmbXeOHi6te9ZD/Nb/j3HD6pSa154ypT+EINhNIUhXyAdb2AeWpxRCLz5I8uXfyHmZzbtvux8A10hr+0YE=</certificate>
+        <consumerKey>3MVG98EE59.VIHmwphpbDAEk38L.U_DScPiz7vsEiaa1k1YmSQn1abfLqLny8ZfD8XyhzS3Yev7pq_0OP1.P_</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <permissionSetName>Salesforce DX User</permissionSetName>
+</ConnectedApp>

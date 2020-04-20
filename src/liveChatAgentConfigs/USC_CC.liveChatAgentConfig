@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Admin</profile>
+            <profile>VSP Global Customer Care %2B Lab User</profile>
+            <profile>VSP LOB Admin User</profile>
+            <profile>VSP USC Omni User</profile>
+        </profiles>
+    </assignments>
+    <autoGreeting>Hello, my name is {!User_First_Name_Last_Initial}. How may I help you today?</autoGreeting>
+    <capacity>1</capacity>
+    <criticalWaitTime>180</criticalWaitTime>
+    <enableAgentFileTransfer>false</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>true</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>false</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>true</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>false</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>false</enableLogoutSound>
+    <enableNotifications>false</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>true</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>USC CC</label>
+    <supervisorSkills>
+        <skill>Eyeconic_CC</skill>
+        <skill>Level_CC</skill>
+        <skill>MetLife_CC</skill>
+        <skill>Vision_Benefits_CC</skill>
+    </supervisorSkills>
+    <transferableButtons>
+        <button>Eyeconic_CC</button>
+        <button>Level_CC</button>
+        <button>MetLife_CC</button>
+        <button>Vision_Benefits_CC</button>
+    </transferableButtons>
+    <transferableSkills>
+        <skill>Eyeconic_CC</skill>
+        <skill>Level_CC</skill>
+        <skill>MetLife_CC</skill>
+        <skill>Vision_Benefits_CC</skill>
+    </transferableSkills>
+</LiveChatAgentConfig>

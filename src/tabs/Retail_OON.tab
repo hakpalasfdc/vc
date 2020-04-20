@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Visual Force Tab for VSPR32_RetailCallCenterVFP that invokes the Retail Call Center Visual Flow</description>
+    <label>Retail/OON</label>
+    <motif>Custom24: Building</motif>
+    <page>VSPR32_RetailCallCenterVFP</page>
+</CustomTab>

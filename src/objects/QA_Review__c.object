@@ -1,0 +1,1668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Quality Assurance Reviews of Providers</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Audit_Email__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Audit Email</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Audit_Phone_Number__c</fullName>
+        <description>Provider Business Account Vision Care Location Phone Number</description>
+        <externalId>false</externalId>
+        <formula>Contact_Role__r.Account__r.Vision_Care_Location_Phone_Number__c</formula>
+        <label>Audit Phone Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Audit_Physical_Address_Street__c</fullName>
+        <description>Account Record - Shipping Street</description>
+        <externalId>false</externalId>
+        <formula>Contact_Role__r.Account__r.ShippingStreet</formula>
+        <label>Audit Physical Address Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Audit_Physical_City_State_ZIP__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Role__r.Account__r.ShippingCity + &apos;, &apos; + Contact_Role__r.Account__r.ShippingState + &apos;  &apos; +  Contact_Role__r.Account__r.ShippingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Audit Physical City, State, ZIP</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clinical_Auditor_Assign_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Clinical Auditor Assign Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Clinical_Auditor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Default blank. Doctor assigned to complete the review</description>
+        <externalId>false</externalId>
+        <label>Clinical Auditor</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>QA_Reviews1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact_Role__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact Role</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>Contact_Role__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Doctor-Employee, Doctor-Owner</value>
+            </filterItems>
+            <filterItems>
+                <field>Contact_Role__c.Active_or_Future_Vision_Care_Relationshi__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>You must select a Doctor-Owner or Doctor-Employee that is an Active Vision Care Provider.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact_Role__c</referenceTo>
+        <relationshipLabel>QA Reviews</relationshipLabel>
+        <relationshipName>QA_Reviews</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Degree__c</fullName>
+        <description>Populated from Contact record.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Provider_Name__r.Degree__c)</formula>
+        <label>Degree</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Doctor_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Role__r.Contact__r.Doctor_ID__c</formula>
+        <label>Doctor ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DocuSign_Completion_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DocuSign Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Restitution_Amount_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Exam Restitution Amt Received/Paid/Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Restitution_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Exam Restitution Amount</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>$50</fullName>
+                    <default>false</default>
+                    <label>$50</label>
+                </value>
+                <value>
+                    <fullName>$60</fullName>
+                    <default>false</default>
+                    <label>$60</label>
+                </value>
+                <value>
+                    <fullName>$70</fullName>
+                    <default>false</default>
+                    <label>$70</label>
+                </value>
+                <value>
+                    <fullName>$80</fullName>
+                    <default>false</default>
+                    <label>$80</label>
+                </value>
+                <value>
+                    <fullName>$90</fullName>
+                    <default>false</default>
+                    <label>$90</label>
+                </value>
+                <value>
+                    <fullName>$100</fullName>
+                    <default>false</default>
+                    <label>$100</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Focused_Review_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Focused Review Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested by Committee</fullName>
+                    <default>false</default>
+                    <label>Requested by Committee</label>
+                </value>
+                <value>
+                    <fullName>Requested by Another Department</fullName>
+                    <default>false</default>
+                    <label>Requested by Another Department</label>
+                </value>
+                <value>
+                    <fullName>Diabetic</fullName>
+                    <default>false</default>
+                    <label>Diabetic</label>
+                </value>
+                <value>
+                    <fullName>Complaint &amp; Grievance History</fullName>
+                    <default>false</default>
+                    <label>Complaint &amp; Grievance History</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Poor QA History</fullName>
+                    <default>false</default>
+                    <label>Poor QA History</label>
+                </value>
+                <value>
+                    <fullName>Unusual Utilization Patterns</fullName>
+                    <default>false</default>
+                    <label>Unusual Utilization Patterns</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Grade_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Grade Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Medical_Points_Earned__c</fullName>
+        <externalId>false</externalId>
+        <label>Medical Points Earned</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Medical_Points_Possible__c</fullName>
+        <externalId>false</externalId>
+        <label>Medical Points Possible</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NPI__c</fullName>
+        <description>Populated from Contact record.</description>
+        <externalId>false</externalId>
+        <formula>Provider_Name__r.NPI__c</formula>
+        <label>NPI</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_DocuSign_Sent_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Original DocuSign Sent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Overall_Compliance_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Overall Compliance Percentage</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Provider_Formal_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Provider Formal Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provider_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Provider Name</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Eye Care Professional</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>QA Reviews</relationshipLabel>
+        <relationshipName>QA_Reviews</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>QA_Administrator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>QA Administrator</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>QA_Reviews</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_10__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 10</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_1__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 1</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_2__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 2</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_3__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 3</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_4__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 4</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_5__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 5</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_6__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 6</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_7__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 7</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_8__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 8</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Age_9__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Patient Age 9</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_10__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 10</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_1__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 1</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_2__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 2</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_3__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 3</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_4__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 4</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_5__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 5</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_6__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 6</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_7__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 7</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_8__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 8</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Claim_Number_9__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Authorization Number 9</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_10__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 10</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_1__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_2__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_3__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_4__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 4</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_5__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 5</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_6__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 6</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_7__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 7</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_8__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 8</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Date_of_Service_9__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Date of Service 9</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_10__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 10</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_1__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_2__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_3__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_4__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_5__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_6__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 6</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_7__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 7</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_8__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 8</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Patient_Name_9__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>QA Patient Name 9</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Review_DTP__c</fullName>
+        <description>Identifies how many days it took to process the QA Review record.</description>
+        <externalId>false</externalId>
+        <formula>Result_Letter_Date__c  -  Review_Received_Date__c</formula>
+        <label>QA Review DTP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QA_Review_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Review Status</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress QA Admin</fullName>
+                    <default>false</default>
+                    <label>In Progress QA Admin</label>
+                </value>
+                <value>
+                    <fullName>Submit for Claims</fullName>
+                    <default>false</default>
+                    <label>Submit for Claims</label>
+                </value>
+                <value>
+                    <fullName>Re-Submit for Claims</fullName>
+                    <default>false</default>
+                    <label>Re-Submit for Claims</label>
+                </value>
+                <value>
+                    <fullName>Assigned to Clinical Auditor</fullName>
+                    <default>false</default>
+                    <label>Assigned to Clinical Auditor</label>
+                </value>
+                <value>
+                    <fullName>In Progress Clinical Auditor</fullName>
+                    <default>false</default>
+                    <label>In Progress Clinical Auditor</label>
+                </value>
+                <value>
+                    <fullName>Clinical Auditor Complete</fullName>
+                    <default>false</default>
+                    <label>Clinical Auditor Complete</label>
+                </value>
+                <value>
+                    <fullName>Completed Audit Pass</fullName>
+                    <default>false</default>
+                    <label>Completed Audit Pass</label>
+                </value>
+                <value>
+                    <fullName>Completed Audit Failed</fullName>
+                    <default>false</default>
+                    <label>Completed Audit Failed</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Closed - Non-responder</fullName>
+                    <default>false</default>
+                    <label>Closed - Non-responder</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pass</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Re_Audit_Amount_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Re-Audit Amt Received/Paid/Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Re_Audit_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Re-Audit Amount</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>$250</fullName>
+                    <default>false</default>
+                    <label>$250</label>
+                </value>
+                <value>
+                    <fullName>$500</fullName>
+                    <default>false</default>
+                    <label>$500</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Result_Letter_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Result Letter Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Review_Date_Scheduled__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Review Date Scheduled</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Review_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Review Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initial / Educational</fullName>
+                    <default>true</default>
+                    <label>Initial / Educational</label>
+                </value>
+                <value>
+                    <fullName>First Formal</fullName>
+                    <default>false</default>
+                    <label>First Formal</label>
+                </value>
+                <value>
+                    <fullName>Second Formal</fullName>
+                    <default>false</default>
+                    <label>Second Formal</label>
+                </value>
+                <value>
+                    <fullName>Third Formal</fullName>
+                    <default>false</default>
+                    <label>Third Formal</label>
+                </value>
+                <value>
+                    <fullName>Interrater</fullName>
+                    <default>false</default>
+                    <label>Interrater</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Review_Received_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Review/Received Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Review_Results__c</fullName>
+        <externalId>false</externalId>
+        <label>Review Results</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Review_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Review Type</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>true</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Focus</fullName>
+                    <default>false</default>
+                    <label>Focus</label>
+                </value>
+                <value>
+                    <fullName>Field</fullName>
+                    <default>false</default>
+                    <label>Field</label>
+                </value>
+                <value>
+                    <fullName>Mail-In</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Mail-In</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Special_Handling_Comments__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Special Handling Comments</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Special_Handling__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Handling</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CPG</fullName>
+                    <default>false</default>
+                    <label>CPG</label>
+                </value>
+                <value>
+                    <fullName>Incomplete</fullName>
+                    <default>false</default>
+                    <label>Incomplete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Today_s_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(TODAY()),
+					1, &quot;January&quot;, 
+					2, &quot;February&quot;,
+					3, &quot;March&quot;, 
+					4, &quot;April&quot;, 
+					5, &quot;May&quot;, 
+					6, &quot;June&quot;,
+					7, &quot;July&quot;,
+					8, &quot;August&quot;,
+					9, &quot;September&quot;, 
+					10, &quot;October&quot;, 
+					11, &quot;November&quot;, 
+					12, &quot;December&quot;, &quot;None&quot;) 
+					
+					&amp; &quot; &quot; 
+					&amp; TEXT(DAY(TODAY()))
+					&amp; &quot;, &quot;
+					&amp;	TEXT(YEAR(TODAY()))</formula>
+        <label>Today&apos;s Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vision_Care_Location_Key__c</fullName>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Vision Care Location Key</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>QA Review</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <columns>Review_Type__c</columns>
+        <columns>Review_Level__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Original_DocuSign_Sent_Date__c</columns>
+        <columns>DocuSign_Completion_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Assigned_to_Clinical_Auditor</fullName>
+        <columns>NAME</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Clinical Auditor</value>
+        </filters>
+        <label>Assigned to Clinical Auditor</label>
+    </listViews>
+    <listViews>
+        <fullName>Ed_s_Open_Assigned_Reviews</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>Review_Received_Date__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Clinical_Auditor__c</field>
+            <operation>equals</operation>
+            <value>Ed Andersen</value>
+        </filters>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Clinical Auditor,In Progress Clinical Auditor</value>
+        </filters>
+        <label>Ed&apos;s Open Assigned Reviews</label>
+    </listViews>
+    <listViews>
+        <fullName>Lee_Favede_Open_Assigned_Reviews</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>Review_Received_Date__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Clinical_Auditor__c</field>
+            <operation>equals</operation>
+            <value>Lee Favede</value>
+        </filters>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Clinical Auditor,In Progress Clinical Auditor</value>
+        </filters>
+        <label>Lee&apos;s Open Assigned Reviews</label>
+    </listViews>
+    <listViews>
+        <fullName>Marvin_s_Open_Assigned_QA_Reviews</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Clinical_Auditor__c</field>
+            <operation>equals</operation>
+            <value>Marvin Nakamoto</value>
+        </filters>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Clinical Auditor,In Progress Clinical Auditor</value>
+        </filters>
+        <label>Marvin&apos;s Open Assigned QA Reviews</label>
+    </listViews>
+    <listViews>
+        <fullName>New_First_and_Second_Formal_Reviews</fullName>
+        <columns>NAME</columns>
+        <columns>Review_Level__c</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <columns>Review_Date_Scheduled__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>Review_Level__c</field>
+            <operation>equals</operation>
+            <value>First Formal,Second Formal</value>
+        </filters>
+        <label>New First and Second Formal Reviews</label>
+    </listViews>
+    <listViews>
+        <fullName>New_QA_Reviews_Not_Assigned</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Review_Type__c</columns>
+        <columns>Review_Level__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <columns>Review_Date_Scheduled__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>QA_Administrator__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>New QA Reviews - Not Assigned</label>
+    </listViews>
+    <listViews>
+        <fullName>Open_QA_Reviews</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Review_Level__c</columns>
+        <columns>Review_Type__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>Review_Received_Date__c</columns>
+        <columns>Review_Date_Scheduled__c</columns>
+        <columns>DocuSign_Completion_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed Audit Pass,Completed Audit Failed,Closed,Closed - Non-responder</value>
+        </filters>
+        <label>Open QA Reviews</label>
+    </listViews>
+    <listViews>
+        <fullName>Susan_s_Open_Assigned_Reviews</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Clinical_Auditor__c</field>
+            <operation>equals</operation>
+            <value>Susan Wright</value>
+        </filters>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Clinical Auditor,In Progress Clinical Auditor</value>
+        </filters>
+        <label>Susan&apos;s Open Assigned Reviews</label>
+    </listViews>
+    <listViews>
+        <fullName>Tanya_s_Open_Assigned_Reviews</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Clinical_Auditor__c</field>
+            <operation>equals</operation>
+            <value>Tanya Markis-Meyer</value>
+        </filters>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Clinical Auditor,In Progress Clinical Auditor</value>
+        </filters>
+        <label>Tanya&apos;s Open Assigned Reviews</label>
+    </listViews>
+    <listViews>
+        <fullName>Thomas_Wing_Open_Assigned_Review</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Clinical_Auditor__c</field>
+            <operation>equals</operation>
+            <value>Thomas Wing</value>
+        </filters>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Clinical Auditor,In Progress Clinical Auditor</value>
+        </filters>
+        <label>Thomas&apos;s Open Assigned Reviews</label>
+    </listViews>
+    <listViews>
+        <fullName>Wes_s_Open_Assigned_Reviews</fullName>
+        <columns>NAME</columns>
+        <columns>Provider_Name__c</columns>
+        <columns>Clinical_Auditor__c</columns>
+        <columns>QA_Review_Status__c</columns>
+        <columns>QA_Administrator__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Clinical_Auditor__c</field>
+            <operation>equals</operation>
+            <value>Wes Umeda</value>
+        </filters>
+        <filters>
+            <field>QA_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Clinical Auditor,In Progress Clinical Auditor</value>
+        </filters>
+        <label>Wes&apos;s Open Assigned Reviews</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000000000}</displayFormat>
+        <label>QA Review Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>QA Reviews</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Provider_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Review_Level__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Review_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Result_Letter_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QA_Administrator__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <searchResultsAdditionalFields>Provider_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Review_Level__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Review_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Result_Letter_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QA_Administrator__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>NPI__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Calculate_Final_Score</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Calculate Final Score</masterLabel>
+        <openType>sidebar</openType>
+        <page>VSPR28_Calculate_Final_Score</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>sidebar</openType>
+        <page>VSPR28_QA_Review_Send_Documents_VFP</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

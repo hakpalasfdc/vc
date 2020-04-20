@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Description</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Event_Description__c</field>
+    </columns>
+    <description>Tasks created within the current year.</description>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11) AND 12</booleanFilter>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>adrian tatarakis</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>bridgett zelasko</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>doug crickey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>chris cornell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>dan stegall</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>randy ramdass</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>eric irons</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>joy denny</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>patrick donovan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>robin cooper</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>michelle titzkowski</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Accounts_I_Manage__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>true</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Activities$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Activities$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>GBDM Tasks</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Activities$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

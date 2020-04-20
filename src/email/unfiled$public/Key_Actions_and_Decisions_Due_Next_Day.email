@@ -1,0 +1,3 @@
+Hi {!Key_Action_Decision__c.OwnerFirstName}, 
+
+The following Key Action/ Decision(s) assigned to you is due tomorrow: {!Key_Action_Decision__c.Link}

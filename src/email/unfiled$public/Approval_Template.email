@@ -1,0 +1,13 @@
+{!User.Name} has requested your approval for the following deliverable.
+
+{!Milestone_Deliverables__c.Deliverable_Name__c}
+
+{!Milestone_Deliverables__c.Description__c}
+
+Please click the following link to Approve or Reject the deliverable.
+
+{!ApprovalRequest.Internal_URL}
+
+Thanks you,
+
+VSP Global CRM  Program Team

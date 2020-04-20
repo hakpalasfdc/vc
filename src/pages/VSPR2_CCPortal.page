@@ -1,0 +1,6 @@
+<apex:page controller="VSPR2_CCPortal_Controller" showHeader="false" sidebar="false" id="ccport" action="{!VSPR2_CCPortal_Controller}">
+    <script type="text/javascript"> 
+    	window.name = 'CCPortalWindow';
+	</script>
+    <apex:iframe id="showPortal" src="{!ccpURL}" scrolling="true" height="700px"></apex:iframe>
+</apex:page>

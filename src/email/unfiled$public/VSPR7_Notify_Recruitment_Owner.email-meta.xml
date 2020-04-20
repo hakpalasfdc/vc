@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Network Recruitment Owner when status is Episoded/Rostered &gt; 60 Days</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>VSPR7_Notify Recruitment Owner</name>
+    <style>none</style>
+    <subject>A Network Recruitment record you own has been in Episoded/Rostered status for &gt; 60 days</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

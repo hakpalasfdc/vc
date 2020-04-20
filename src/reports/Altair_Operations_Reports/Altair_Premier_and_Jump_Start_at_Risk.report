@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89956836</developerName>
+        <masterLabel>Premier Exception buckets</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account$Premier_Exception_Reason__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Back Ordered Frames</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Centralized Frame Buying</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not Eligible to Participate</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pearle Vision</sourceValue>
+            </sourceValues>
+            <value>disregard</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jump Start 07/16 to 01/17</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jump Start 01/17 to 07/17</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jump Start 01/16 to 07/16</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jump Start 01/15 to 07/15</sourceValue>
+            </sourceValues>
+            <value>old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EHM or RI Exception</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eyefinity EHR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Frame Target Exception</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UNITY Lens Target Exception</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3 Location Practice Set to 2 L</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2 Location Practice Set to 1 L</sourceValue>
+            </sourceValues>
+            <value>1 premier w/ exception</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Premier Blitz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Action Plan-Blitz</sourceValue>
+            </sourceValues>
+            <value>Blitz</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jump Start 1/19 to 7/19</sourceValue>
+            </sourceValues>
+            <value>2 Jump Start 1/19 to 7/19</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account$ShippingState</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account$Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_89956836</field>
+    </columns>
+    <columns>
+        <field>Account$Altair_SAP_Consignment_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingCity</field>
+    </columns>
+    <columns>
+        <field>Account$Eyewear_Sales_Needed__c</field>
+    </columns>
+    <columns>
+        <field>Account$Total_Net_Altair_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account$Marchon_and_Altair_Net_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account$Vision_Care_Retinal_Imaging_Indicator__c</field>
+    </columns>
+    <columns>
+        <field>Account$Vision_Care_EHM_Rate__c</field>
+    </columns>
+    <columns>
+        <field>Account$UNITY_Pairs_Needed__c</field>
+    </columns>
+    <columns>
+        <field>Account$UNITY_Pair_Target__c</field>
+    </columns>
+    <columns>
+        <field>Account$Consignment_Location__c</field>
+    </columns>
+    <columns>
+        <field>Account$Premier_Tax_ID_Roll_Up_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account$Altair_Last_Activity__c</field>
+    </columns>
+    <columns>
+        <field>Account$Altair_Frame_of_Vision_Care_Claims__c</field>
+    </columns>
+    <description>All accounts I manage that still need sales to get to Premier before Check in, includes Altair Fields. Report Type: Accounts with/without Global Rewards Relationships  created 6/4/19</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND ((6 AND 7) or 8)</booleanFilter>
+        <criteriaItems>
+            <column>Account$Premier_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Business_Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>A</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_89956836</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>disregard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Accounts_I_Manage__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>true</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$UNITY_Sales_Needed_Display__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Next</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Eyewear_Sales_Needed_Display__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Next</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Eyewear_Sales_Needed_Display__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Next</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$ShippingState</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Altair Premier and Jump Start at Risk</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_without_Global_Rewards_Relationships__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$Tax_ID__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,7 @@
+URL: {!Question_Log__c.Link}
+Question Log ID: {!Question_Log__c.Name}
+Assigned On: {!Question_Log__c.Requested_Date__c}
+Assigned By: {!Question_Log__c.Submitter__c}
+Expected Close Date: {!Question_Log__c.Expected_Close_Date__c}
+
+Question: {!Question_Log__c.Question__c}

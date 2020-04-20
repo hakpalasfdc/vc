@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>AllAdditionalErrorChoice</name>
+        <choiceText>All additional error messages</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>MemberMultiCoverageUnderSameIdChoice</name>
+        <choiceText>Member has multiple active coverage under the same ID number</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>MemberNotFound2020SourceChoice</name>
+        <choiceText>Member not found in 2020Source</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>OutstandingAuthorizationBlockingEligibilityChoice</name>
+        <choiceText>Outstanding authorization blocking eligibility</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <decisions>
+        <name>What_is_the_2020Source</name>
+        <label>What is the 2020Source?</label>
+        <locationX>507</locationX>
+        <locationY>58</locationY>
+        <defaultConnector>
+            <targetReference>MemberNotFound2020SourceScreen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>MemberFoundORHasMultipleCoverageAllAdditionalDecision</defaultConnectorLabel>
+        <rules>
+            <name>OustandingAuthorizationDecision</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OutstandingAuthorizationBlockingEligibilityChoice</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>OutstandingAuthorizationScreen</targetReference>
+            </connector>
+            <label>OustandingAuthorizationDecision</label>
+        </rules>
+    </decisions>
+    <description>Sub Flow 2020Source called from Retail Call Center Visual Flow - OON</description>
+    <interviewLabel>Retail Call Center Visual Flow - 2020Source {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Retail Call Center Visual Flow - 2020Source</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <description>Message for Member not found in 2020Source, Member has multiple active coverage under the same ID number, an All additional Error Messages</description>
+        <name>MemberNotFound2020SourceScreen</name>
+        <label>MemberNotFound2020SourceScreen</label>
+        <locationX>800</locationX>
+        <locationY>183</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MemberNotFound2020SourceDisplay</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: sans-serif; color: rgb(51, 0, 102); background-color: rgb(255, 255, 255);&quot;&gt;&lt;i&gt;&quot;The out-of-network provider is unable to access your benefit plan in their system. If you choose to receive services out-of-network, you may need to pay up front, sub&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;mit a claim yourself and provide and itemized receipt for partial reimbursement.&quot;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: sans-serif; color: rgb(51, 0, 102); background-color: rgb(255, 255, 255);&quot;&gt;&lt;i&gt;&quot;I am happy to review your in-network benefits with you and find a VSP Provider near you. VSP Providers take care of all the billing for you.&quot;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: sans-serif; color: rgb(51, 0, 102); background-color: rgb(255, 255, 255);&quot;&gt;&lt;i&gt;&quot;If you choose to proceed with services at the out-of-network location, please ensure your ID number is on the claim form.&quot;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>OutstandingAuthorizationScreen</name>
+        <label>OutstandingAuthorizationScreen</label>
+        <locationX>793</locationX>
+        <locationY>48</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>OutstandingAuthorizationDisplay</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;background-color: rgb(255, 255, 255); font-size: 16px; font-family: sans-serif; color: rgb(51, 0, 102);&quot;&gt;&lt;i&gt;&quot;I see an outstanding authorization on your account, have you received services from the provider?&quot;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Yes: Explain benefits have already been used.&lt;/li&gt;&lt;li&gt;No: Delete outstanding authorization and explain how to submit for out-of-network reimbursement.&lt;/li&gt;&lt;/ul&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Source2020Screen</name>
+        <label>Source2020Screen</label>
+        <locationX>243</locationX>
+        <locationY>50</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>What_is_the_2020Source</targetReference>
+        </connector>
+        <fields>
+            <name>Source2020Radio</name>
+            <choiceReferences>MemberNotFound2020SourceChoice</choiceReferences>
+            <choiceReferences>MemberMultiCoverageUnderSameIdChoice</choiceReferences>
+            <choiceReferences>OutstandingAuthorizationBlockingEligibilityChoice</choiceReferences>
+            <choiceReferences>AllAdditionalErrorChoice</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Selection:</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Source2020Screen</startElementReference>
+    <status>Obsolete</status>
+</Flow>

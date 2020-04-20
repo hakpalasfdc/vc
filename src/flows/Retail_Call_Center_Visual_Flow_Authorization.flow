@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>AuthorizationNoChoice</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>AuthorizationYesChoice</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <decisions>
+        <name>Provider_had_trouble_finding_patient</name>
+        <label>Provider had trouble finding patient?</label>
+        <locationX>477</locationX>
+        <locationY>63</locationY>
+        <defaultConnector>
+            <targetReference>AuthorizationNoScreen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>AuthorizationNoDecision</defaultConnectorLabel>
+        <rules>
+            <name>AuthorizationYesDecision</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AuthorizationYesChoice</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sub_Flow_to_Cannot_Locate</targetReference>
+            </connector>
+            <label>AuthorizationYesDecision</label>
+        </rules>
+    </decisions>
+    <description>Sub Flow Authroization called from Retail Call Center Visual Flow - Member</description>
+    <interviewLabel>Retail Call Center Visual Flow - Authorization {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Retail Call Center Visual Flow - Authorization</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>AuthorizationNoScreen</name>
+        <label>AuthorizationNoScreen</label>
+        <locationX>689</locationX>
+        <locationY>66</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>AuthorizationNoDisplay</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;color: rgb(51, 0, 102); font-family: sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;i&gt;&quot;The retail provider should be able to pull an authorization. Provide them with your name, date of birth, last four of social or unique ID number.&quot;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>AuthorizationScreen</name>
+        <label>AuthorizationScreen</label>
+        <locationX>262</locationX>
+        <locationY>54</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Provider_had_trouble_finding_patient</targetReference>
+        </connector>
+        <fields>
+            <name>AuthorizationDisplay</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;background-color: rgb(255, 255, 255); font-size: 16px; font-family: sans-serif; color: rgb(51, 0, 102);&quot;&gt;&lt;i&gt;&quot;The retail provider should be able to pull an authorization number for you. Did (Location Name) indicate they had trouble finding you?&quot;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>AuthorizationRadio</name>
+            <choiceReferences>AuthorizationYesChoice</choiceReferences>
+            <choiceReferences>AuthorizationNoChoice</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Selection:</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>AuthorizationScreen</startElementReference>
+    <status>Obsolete</status>
+    <subflows>
+        <description>Goes to the Subflow Retail Call Center Visual Flow - Cannot Locate</description>
+        <name>Sub_Flow_to_Cannot_Locate</name>
+        <label>Sub Flow to Cannot Locate</label>
+        <locationX>480</locationX>
+        <locationY>264</locationY>
+        <flowName>Retail_Call_Center_Visual_Flow_Cannot_Locate</flowName>
+    </subflows>
+</Flow>

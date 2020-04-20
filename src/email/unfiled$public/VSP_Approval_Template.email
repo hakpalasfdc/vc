@@ -1,0 +1,10 @@
+{!User.Name} has requested your approval for the following deliverable.
+
+Account Name: {!Account.Name}
+Account Owner : {!Account.OwnerFullName}
+
+
+
+Please click the following link to Approve or Reject the Account record.
+
+{!ApprovalRequest.Internal_URL}

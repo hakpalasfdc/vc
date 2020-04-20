@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Parent object in a relationship that groups multiple Business/Practice Accounts under one Global Rewards Program (child object is Global Rewards Group Relationship)</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Applied_Tier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Applied Tier</label>
+        <referenceTo>Premier_Tier__c</referenceTo>
+        <relationshipLabel>Global Rewards Groups</relationshipLabel>
+        <relationshipName>Global_Rewards_Groups</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Average_Tiering_Eyewear_Spend_LTM__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Practice&apos;s spend on Eyewear divided by total number of locations</inlineHelpText>
+        <label>Average Tiering Eyewear Spend LTM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Average_Tiering_Optics_Spend_LTM__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Practice&apos;s spend on Optics divided by total number of locations.</inlineHelpText>
+        <label>Average Tiering Optics Spend LTM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Average_Tiering_Total_Spend_LTM__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Practice&apos;s spend on Eyewear and Optics divided by total number of locations</inlineHelpText>
+        <label>Average Tiering Total Spend LTM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Calculated_Tier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Calculated Tier</label>
+        <referenceTo>Premier_Tier__c</referenceTo>
+        <relationshipLabel>Global Rewards Groups (Calculated Tier)</relationshipLabel>
+        <relationshipName>Global_Rewards_Groups1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Affiliate</fullName>
+                    <default>false</default>
+                    <label>Affiliate</label>
+                </value>
+                <value>
+                    <fullName>AOP</fullName>
+                    <default>false</default>
+                    <label>AOP</label>
+                </value>
+                <value>
+                    <fullName>CAT2</fullName>
+                    <default>false</default>
+                    <label>CAT2</label>
+                </value>
+                <value>
+                    <fullName>Conflict</fullName>
+                    <default>false</default>
+                    <label>Conflict</label>
+                </value>
+                <value>
+                    <fullName>GAP</fullName>
+                    <default>false</default>
+                    <label>GAP</label>
+                </value>
+                <value>
+                    <fullName>Independent</fullName>
+                    <default>false</default>
+                    <label>Independent</label>
+                </value>
+                <value>
+                    <fullName>LVC</fullName>
+                    <default>false</default>
+                    <label>LVC</label>
+                </value>
+                <value>
+                    <fullName>Near Site</fullName>
+                    <default>false</default>
+                    <label>Near Site</label>
+                </value>
+                <value>
+                    <fullName>Net Dev Excluded</fullName>
+                    <default>false</default>
+                    <label>Net Dev Excluded</label>
+                </value>
+                <value>
+                    <fullName>Net Dev Purchasing Requirement</fullName>
+                    <default>false</default>
+                    <label>Net Dev Purchasing Requirement</label>
+                </value>
+                <value>
+                    <fullName>Not Supported</fullName>
+                    <default>false</default>
+                    <label>Not Supported</label>
+                </value>
+                <value>
+                    <fullName>Onsite</fullName>
+                    <default>false</default>
+                    <label>Onsite</label>
+                </value>
+                <value>
+                    <fullName>Pearle Vision CO</fullName>
+                    <default>false</default>
+                    <label>Pearle Vision CO</label>
+                </value>
+                <value>
+                    <fullName>Pearle Vision LO</fullName>
+                    <default>false</default>
+                    <label>Pearle Vision LO</label>
+                </value>
+                <value>
+                    <fullName>Pop Up</fullName>
+                    <default>false</default>
+                    <label>Pop Up</label>
+                </value>
+                <value>
+                    <fullName>Rollup</fullName>
+                    <default>false</default>
+                    <label>Rollup</label>
+                </value>
+                <value>
+                    <fullName>School</fullName>
+                    <default>false</default>
+                    <label>School</label>
+                </value>
+                <value>
+                    <fullName>Visionworks</fullName>
+                    <default>false</default>
+                    <label>Visionworks</label>
+                </value>
+                <value>
+                    <fullName>VSP Retail</fullName>
+                    <default>false</default>
+                    <label>VSP Retail</label>
+                </value>
+                <value>
+                    <fullName>VSP Ventures</fullName>
+                    <default>false</default>
+                    <label>VSP Ventures</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EHM_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>EHM Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exclusive_VSP_Patient_Offers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Exclusive VSP Patient Offers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eyewear_Sales_Needed_Display__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Marchon_Sales_Target__c !=0&amp;&amp;(Eyewear_Sales_Needed__c&gt;0), 
+(&quot;$&quot; &amp; TEXT(Eyewear_Sales_Needed__c)  &amp; &quot; in next &quot; &amp; TEXT(Months_to_Check_In__c) &amp; &quot; months&quot;), 
+&quot;$0&quot;)</formula>
+        <label>Eyewear Sales Needed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Eyewear_Sales_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Eyewear Sales Needed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Eyewear_Sales_Rolling_Off__c</fullName>
+        <externalId>false</externalId>
+        <label>Eyewear Sales Rolling Off</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Frame_Group__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Frame Tier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Free_Fitting_and_Adjustments__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Free Fitting and Adjustments</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marchon_Sales_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Eyewear Sales Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marchon_and_Altair_Net_Sales_LTM__c</fullName>
+        <externalId>false</externalId>
+        <label>Marchon and Altair Net Sales LTM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Meets_Eyewear_Target__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Marchon_and_Altair_Net_Sales_LTM__c &gt;= Marchon_Sales_Target__c &amp;&amp; Marchon_Sales_Target__c != 0, True, False)</formula>
+        <label>Meets Eyewear Target</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Meets_UNITY_Target__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Optics_UNITY_Order_Count_LTM__c &gt;= UNITY_Pair_Target__c &amp;&amp; UNITY_Pair_Target__c != 0, True, False)</formula>
+        <label>Meets UNITY Target</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Months_to_Check_In__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Premier_Reporting_Month__c , 
+&apos;January&apos;, 5, 
+&apos;February&apos;, 4, 
+&apos;March&apos;, 3, 
+&apos;April&apos;, 2, 
+&apos;May&apos;, 1, 
+&apos;June&apos;, 6, 
+&apos;July&apos;, 5, 
+&apos;August&apos;, 4, 
+&apos;September&apos;, 3, 
+&apos;October&apos;, 2, 
+&apos;November&apos;, 1, 
+&apos;December&apos;, 6, 
+null)</formula>
+        <label>Months to Check-In</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Optics_UNITY_Order_Count_LTM__c</fullName>
+        <externalId>false</externalId>
+        <label>Premier UNITY Pair Count LTM</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Override_Effective_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Override Effective Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Override_End_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Override End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Override_Tier_Reason__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Override Tier Reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_Tax_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent_Account__r.Tax_ID__c</formula>
+        <label>Parent Account Tax ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Global Rewards Groups</relationshipLabel>
+        <relationshipName>Global_Rewards_Groups</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Premier_Exception_Reason__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Premier Exception Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Premier_Location_Count_Future__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of eligible locations</inlineHelpText>
+        <label>Premier Location Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Premier_Location_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Premier Location Count</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Premier_Reporting_Month__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Premier Reporting Month</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Premier_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Premier Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Program_Description__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Program Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Retinal_Imaging_Indicator_Future__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Retinal Imaging Indicator</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Retinal_Imaging_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Retinal Imaging Indicator</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( OR( Start_Date__c = TODAY() , AND( Start_Date__c &lt; TODAY() , OR( End_Date__c &gt;= TODAY() , ISBLANK( End_Date__c ) ) ) ) , &quot;Active&quot;, &apos;Inactive&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_Agreement_Type__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>The Agreement Type used to calculate the Premier Tier</inlineHelpText>
+        <label>Tier Agreement Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Net_Altair_Sales_LTM__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Net Altair Sales LTM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Net_Marchon_Sales_LTM__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Net Marchon Sales LTM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>UNITY_Count_Rolling_Off__c</fullName>
+        <externalId>false</externalId>
+        <label>UNITY Count Rolling Off</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UNITY_Pair_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>UNITY Pair Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UNITY_Pairs_Needed_Display__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( UNITY_Pair_Target__c != 0 &amp;&amp; ( UNITY_Pairs_Needed__c &gt;0),
+(TEXT(UNITY_Pairs_Needed__c)  &amp; &quot; in next &quot;  &amp; TEXT(Months_to_Check_In__c)  &amp; &quot; months&quot;),
+&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UNITY Pairs Needed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UNITY_Pairs_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>UNITY Pairs Needed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vision_Care_Good_Standing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Vision Care Good Standing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Global Rewards Group</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Global Rewards Group Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Global Rewards Groups</pluralLabel>
+    <recordTypes>
+        <fullName>Contract_Type</fullName>
+        <active>true</active>
+        <label>Contract Type</label>
+        <picklistValues>
+            <picklist>Contract_Type__c</picklist>
+            <values>
+                <fullName>AOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAT2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conflict</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Near Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Net Dev Excluded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Net Dev Purchasing Requirement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pearle Vision CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pearle Vision LO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pop Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rollup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Ventures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visionworks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Tax_ID_Rollup</fullName>
+        <active>true</active>
+        <label>Tax ID Rollup</label>
+        <picklistValues>
+            <picklist>Contract_Type__c</picklist>
+            <values>
+                <fullName>AOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAT2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conflict</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Near Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Net Dev Excluded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Net Dev Purchasing Requirement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pearle Vision CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pearle Vision LO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pop Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rollup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Ventures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visionworks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Tax_ID_Rollup_Contract_Type</fullName>
+        <active>true</active>
+        <label>Tax ID Rollup &amp; Contract Type</label>
+        <picklistValues>
+            <picklist>Contract_Type__c</picklist>
+            <values>
+                <fullName>AOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAT2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conflict</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Near Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Net Dev Excluded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Net Dev Purchasing Requirement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pearle Vision CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pearle Vision LO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pop Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rollup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSP Ventures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visionworks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Parent_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Parent_Account_Tax_ID__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Parent_Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Parent_Account_Tax_ID__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Parent_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Parent_Account_Tax_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VSPR32_GRG_Applied_Tier_Validation</fullName>
+        <active>true</active>
+        <description>Applied Tier cannot be edited when Global Rewards Group Contract Type = Conflict, Rollup, or Blank</description>
+        <errorConditionFormula>ISCHANGED(Applied_Tier__c) 
+&amp;&amp;
+
+(ISPICKVAL(Contract_Type__c, &apos;Conflict&apos;) || 
+ISPICKVAL(Contract_Type__c, &apos;Rollup&apos;) ||
+ISBLANK(TEXT(Contract_Type__c)))
+
+&amp;&amp;
+NOT(OR( $Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;))</errorConditionFormula>
+        <errorDisplayField>Applied_Tier__c</errorDisplayField>
+        <errorMessage>Premier Tier was not calculated at this Global Rewards Group level. You must override the tier on the associated Global Rewards Group</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR32_Override_Effective_Date</fullName>
+        <active>true</active>
+        <description>Required when Applied Tier is manually edited. Effective date can only be a future date.</description>
+        <errorConditionFormula>(ISCHANGED(Applied_Tier__c) 
+||
+ISCHANGED(Override_Effective_Date__c))	
+&amp;&amp; 
+(ISBLANK(Override_Effective_Date__c)
+||
+Override_Effective_Date__c &lt;= Today())
+&amp;&amp; 
+NOT(OR( $Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;
+))</errorConditionFormula>
+        <errorDisplayField>Override_Effective_Date__c</errorDisplayField>
+        <errorMessage>Override Tier Effective Date must be a future date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR32_Override_End_Date</fullName>
+        <active>true</active>
+        <description>Required when Applied Tier is manually edited. End date can only be a future date.</description>
+        <errorConditionFormula>(ISCHANGED(Applied_Tier__c)||
+ISCHANGED(Override_End_Date__c))
+&amp;&amp; 
+(ISBLANK(Override_End_Date__c) ||
+Override_End_Date__c &lt;= Override_Effective_Date__c || Override_End_Date__c &lt;=  TODAY() )
+&amp;&amp; 
+NOT(OR( $Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;))</errorConditionFormula>
+        <errorDisplayField>Override_End_Date__c</errorDisplayField>
+        <errorMessage>Override Tier End Date must be a future date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR32_Override_Reason</fullName>
+        <active>true</active>
+        <description>Required when Applied Tier is manually edited.</description>
+        <errorConditionFormula>(ISCHANGED(Applied_Tier__c) ||
+ISCHANGED(Override_Tier_Reason__c))
+&amp;&amp;
+ISBLANK(Override_Tier_Reason__c)
+&amp;&amp; 
+NOT(OR( $Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;VSP Technical User&quot;
+))</errorConditionFormula>
+        <errorDisplayField>Override_Tier_Reason__c</errorDisplayField>
+        <errorMessage>Required when Applied Tier is editied</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

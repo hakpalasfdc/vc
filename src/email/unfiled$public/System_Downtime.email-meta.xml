@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>System Downtime</name>
+    <style>none</style>
+    <subject>Reminder of Salesforce.com Downtime - TONIGHT (12/10)</subject>
+    <textOnly>To meet our growing demand and ensue peak performance, the CRM Project Team has scheduled upgrades to the Salesforce.com application. In order to apply these changes, Salesforce.com will be unavailable Thursday, December 10 starting at 8:00 PM (PST).
+
+Who is affected: All VSP Salesforce.com Users
+
+When: Thursday, December 10 8:00 PM – Friday, December 11 12:00 AM (PST)
+
+Services Affected: Salesforce.com, Chatter, Salesforce1, LinkPoint 360,  Quest, The Vault
+
+
+During this time frame, please don’t attempt to log in to your Salesforce.com account. We’ll send a follow-up email notification once the system is available for use.
+
+
+Thanks for your cooperation!
+
+The Salesforce COE Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

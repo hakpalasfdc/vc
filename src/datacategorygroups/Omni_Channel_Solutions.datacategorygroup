@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>GBDM Sales Tools</label>
+                    <name>GBDM_Sales_Tools</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>GBDM Training</label>
+                    <name>GBDM_Training</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>GBDM Events</label>
+                    <name>GBDM_Events</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>GBDM Communications</label>
+                    <name>GBDM_Communications</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>GBDM Interactive Resources</label>
+                    <name>GBDM_Interactive_Resources</name>
+                </dataCategory>
+                <label>GBDM CONTENT</label>
+                <name>GBDM_CONTENT</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Mgr Sales Tools</label>
+                        <name>Eyewear_GBD_Mgr_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Mgr Training</label>
+                        <name>Eyewear_GBD_Mgr_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Mgr Events</label>
+                        <name>Eyewear_GBD_Mgr_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Mgr Communications</label>
+                        <name>Eyewear_GBD_Mgr_Communications</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Mgr Interactive Resources</label>
+                        <name>Eyewear_GBD_Mgr_Interactive_Resources</name>
+                    </dataCategory>
+                    <label>Eyewear GBD Mgr</label>
+                    <name>Eyewear_GBD_Mgr</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Sales Rep Sales Tools</label>
+                        <name>Eyewear_GBD_Sales_Rep_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Sales Rep Training</label>
+                        <name>Eyewear_GBD_Sales_Rep_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Sales Rep Events</label>
+                        <name>Eyewear_GBD_Sales_Rep_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Sales Rep Communications</label>
+                        <name>Eyewear_GBD_Sales_Rep_Communications</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyewear GBD Sales Rep Interactive Res.</label>
+                        <name>Eyewear_GBD_Sales_Rep_Interactive_Res</name>
+                    </dataCategory>
+                    <label>Eyewear GBD Sales Rep</label>
+                    <name>Eyewear_GBD_Sales_Rep</name>
+                </dataCategory>
+                <label>Eyewear GBD CONTENT</label>
+                <name>Eyewear_GBD_CONTENT</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Mgr Sales Tools</label>
+                        <name>Eyefinity_GBD_Sales_Mgr_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Mgr Training</label>
+                        <name>Eyefinity_GBD_Sales_Mgr_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Mgr Events</label>
+                        <name>Eyefinity_GBD_Sales_Mgr_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Mgr Communications</label>
+                        <name>Eyefinity_GBD_Sales_Mgr_Communications</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Mgr Interactive Res.</label>
+                        <name>Eyefinity_GBD_Sales_Mgr_Interactive_Res</name>
+                    </dataCategory>
+                    <label>Eyefinity GBD Sales Mgr</label>
+                    <name>Eyefinity_GBD_Sales_Mgr</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Rep Sales Tools</label>
+                        <name>Eyefinity_GBD_Sales_Rep_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Rep Training</label>
+                        <name>Eyefinity_GBD_Sales_Rep_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Rep Events</label>
+                        <name>Eyefinity_GBD_Sales_Rep_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Rep Communications</label>
+                        <name>Eyefinity_GBD_Sales_Rep_Communications</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Eyefinity GBD Sales Rep Interactive Res.</label>
+                        <name>Eyefinity_GBD_Sales_Rep_Interactive_Res</name>
+                    </dataCategory>
+                    <label>Eyefinity GBD Sales Rep</label>
+                    <name>Eyefinity_GBD_Sales_Rep</name>
+                </dataCategory>
+                <label>Eyefinity GBD CONTENT</label>
+                <name>Eyefinity_GBD_CONTENT</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel GBD Sales Mgr Sales Tools</label>
+                        <name>Omni_Channel_GBD_Sales_Mgr_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel GBD Sales Mgr Training</label>
+                        <name>Omni_Channel_GBD_Sales_Mgr_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel GBD Sales Mgr Events</label>
+                        <name>Omni_Channel_GBD_Sales_Mgr_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel GBD Sales Mgr Communication</label>
+                        <name>Omni_Channel_GBD_Sales_Mgr_Communication</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel GBD Sales Mgr Interactive R</label>
+                        <name>Omni_Channel_GBD_Sales_Mgr_Interactive_R</name>
+                    </dataCategory>
+                    <label>Omni-Channel GBD Sales Mgr</label>
+                    <name>Omni_Channel_GBD_Sales_Mgr</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel Sales Rep Sales Tools</label>
+                        <name>Omni_Channel_Sales_Rep_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel Sales Rep Training</label>
+                        <name>Omni_Channel_Sales_Rep_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel Sales Rep Events</label>
+                        <name>Omni_Channel_Sales_Rep_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel Sales Rep Communications</label>
+                        <name>Omni_Channel_Sales_Rep_Communications</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Omni-Channel Sales Rep Interactive Res.</label>
+                        <name>Omni_Channel_Sales_Rep_Interactive_Res</name>
+                    </dataCategory>
+                    <label>Omni-Channel GBD Sales Rep</label>
+                    <name>Omni_Channel_GBD_Sales_Rep</name>
+                </dataCategory>
+                <label>Omni-Channel GBD CONTENT</label>
+                <name>Omni_Channel_GBD_CONTENT</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Mgr Sales Tools</label>
+                        <name>Optics_Group_GBD_Sales_Mgr_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Mgr Training</label>
+                        <name>Optics_Group_GBD_Sales_Mgr_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Mgr Events</label>
+                        <name>Optics_Group_GBD_Sales_Mgr_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Mgr Communication</label>
+                        <name>Optics_Group_GBD_Sales_Mgr_Communication</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Mgr Interactive R</label>
+                        <name>Optics_Group_GBD_Sales_Mgr_Interactive_R</name>
+                    </dataCategory>
+                    <label>Optics Group GBD Sales Mgr</label>
+                    <name>Optics_Group_GBD_Sales_Mgr</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Rep Sales Tools</label>
+                        <name>Optics_Group_GBD_Sales_Rep_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Rep Training</label>
+                        <name>Optics_Group_GBD_Sales_Rep_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Rep Events</label>
+                        <name>Optics_Group_GBD_Sales_Rep_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Rep Communication</label>
+                        <name>Optics_Group_GBD_Sales_Rep_Communication</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Optics Group GBD Sales Rep Interactive R</label>
+                        <name>Optics_Group_GBD_Sales_Rep_Interactive_R</name>
+                    </dataCategory>
+                    <label>Optics Group GBD Sales Rep</label>
+                    <name>Optics_Group_GBD_Sales_Rep</name>
+                </dataCategory>
+                <label>Optics Group GBD CONTENT</label>
+                <name>Optics_Group_GBD_CONTENT</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Mgr Sales Tools</label>
+                        <name>Vision_Care_GBD_Sales_Mgr_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Mgr Training</label>
+                        <name>Vision_Care_GBD_Sales_Mgr_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Mgr Events</label>
+                        <name>Vision_Care_GBD_Sales_Mgr_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Mgr Communication</label>
+                        <name>Vision_Care_GBD_Sales_Mgr_Communication</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Mgr Interactive R</label>
+                        <name>Vision_Care_GBD_Sales_Mgr_Interactive_R</name>
+                    </dataCategory>
+                    <label>Vision Care GBD Manager</label>
+                    <name>Vision_Care_GBD_Manager</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Rep Sales Tools</label>
+                        <name>Vision_Care_GBD_Sales_Rep_Sales_Tools</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Rep Training</label>
+                        <name>Vision_Care_GBD_Sales_Rep_Training</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Rep Events</label>
+                        <name>Vision_Care_GBD_Sales_Rep_Events</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Rep Communications</label>
+                        <name>Vision_Care_GBD_Sales_Rep_Communications</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Vision Care GBD Sales Rep Interactive R</label>
+                        <name>Vision_Care_GBD_Sales_Rep_Interactive_R</name>
+                    </dataCategory>
+                    <label>Vision Care GBD Sales Rep</label>
+                    <name>Vision_Care_GBD_Sales_Rep</name>
+                </dataCategory>
+                <label>Vision Care GBD CONTENT</label>
+                <name>Vision_Care_GBD_CONTENT</name>
+            </dataCategory>
+            <label>Shared GBD CONTENT</label>
+            <name>Shared_GBD_CONTENT</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Mapping</label>
+                    <name>Mapping</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Clean-Up</label>
+                    <name>Clean_Up</name>
+                </dataCategory>
+                <label>ALE</label>
+                <name>ALE</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Back Order</label>
+                    <name>Back_Order</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Bazaar Voice-Opinion Lab</label>
+                    <name>Bazaar_Voice_Opinion_Lab</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Bill Decline</label>
+                    <name>Bill_Decline</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Cigna/MetLife Vision</label>
+                    <name>Cigna_MetLife_Vision</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Customer Contact Templates</label>
+                    <name>Customer_Contact_Templates</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>CyberSource</label>
+                    <name>CyberSource</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Doctor Payment/ Ship Procedure</label>
+                    <name>Doctor_Payment_Ship_Procedure</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Dragon Procedures and Templates</label>
+                    <name>Dragon_Procedures_and_Templates</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Eyeconic Reference Documents</label>
+                    <name>Eyeconic_Reference_Documents</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Failed Orders</label>
+                    <name>Failed_Orders</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Fraud</label>
+                    <name>Fraud</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Order Processing</label>
+                    <name>Order_Processing</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Passive</label>
+                    <name>Passive</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Price Match</label>
+                    <name>Price_Match</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Process Standardization</label>
+                    <name>Process_Standardization</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Promo Codes</label>
+                    <name>Promo_Codes</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Quick Links</label>
+                    <name>Quick_Links</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Returns</label>
+                    <name>Returns</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Salesforce Case Procedures</label>
+                    <name>Salesforce_Case_Procedures</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>SOA</label>
+                    <name>SOA</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>UPS Processes</label>
+                    <name>UPS_Processes</name>
+                </dataCategory>
+                <label>CSR Procedures/ Templates</label>
+                <name>CSR_Procedures_Templates</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Perm Employee Training</label>
+                    <name>Perm_Employee_Training</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Temp Training</label>
+                    <name>Temp_Training</name>
+                </dataCategory>
+                <label>CSR Training</label>
+                <name>CSR_Training</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Plano Optical</label>
+                    <name>Plano_Optical</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>CSR Team Best Practices</label>
+                    <name>CSR_Team_Best_Practices</name>
+                </dataCategory>
+                <label>FAQs</label>
+                <name>FAQs</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Eyeconic Roles &amp; Responsibilities</label>
+                    <name>Eyeconic_Roles_Responsibilities</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Who to Contact</label>
+                    <name>Who_to_Contact</name>
+                </dataCategory>
+                <label>Key Contacts</label>
+                <name>Key_Contacts</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>DVI Procedures and Reporting</label>
+                    <name>DVI_Procedures_and_Reporting</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Backorder Frame RX and Plano</label>
+                    <name>Backorder_Frame_RX_and_Plano</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Brand Name Case Procedure</label>
+                    <name>Brand_Name_Case_Procedure</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Broken/Defective Frame Reordering Proces</label>
+                    <name>Broken_Defective_Frame_Reordering_Proces</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Dragon Alliance Shipping Procedures</label>
+                    <name>Dragon_Alliance_Shipping_Procedures</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Eyeconic Redo Invoice</label>
+                    <name>Eyeconic_Redo_Invoice</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Eyeconic Shipping Procedures</label>
+                    <name>Eyeconic_Shipping_Procedures</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Issue Emails between NY and Eyeconic Ops</label>
+                    <name>Issue_Emails_between_NY_and_Eyeconic_Ops</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>NY Product Returns Procedure</label>
+                    <name>NY_Product_Returns_Procedure</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Progressive RX Eyewear/Sunwear</label>
+                        <name>Progressive_RX_Eyewear_Sunwear</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Single Vision RX Eyewear/Sunwear</label>
+                        <name>Single_Vision_RX_Eyewear_Sunwear</name>
+                    </dataCategory>
+                    <label>Quality Checklist</label>
+                    <name>Quality_Checklist</name>
+                </dataCategory>
+                <label>Melville Procedures</label>
+                <name>Melville_Procedures</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Stylist Materials</label>
+                <name>Stylist_Materials</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>SOB</label>
+                    <name>SOB</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Price Match Template</label>
+                    <name>Price_Match_Template</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>UPS Lost Package Guidelines</label>
+                    <name>UPS_Lost_Package_Guidelines</name>
+                </dataCategory>
+                <label>USC</label>
+                <name>USC</name>
+            </dataCategory>
+            <label>Eyeconic</label>
+            <name>Eyeconic</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Omni-Channel Solutions</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

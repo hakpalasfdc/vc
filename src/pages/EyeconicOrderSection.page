@@ -1,0 +1,32 @@
+<apex:page extensions="EyeconicOrderSection" standardController="Contact">
+  <apex:form >
+    <apex:pageBlock >
+      <apex:outputPanel rendered="{!!recordsFound}">No records to display</apex:outputPanel>
+      <apex:pageBlockTable value="{!lstWrapOrderDetail}" var="ord" rendered="{!recordsFound}">
+        <apex:column headerValue="Order Number" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}">
+          <apex:outputLink target="_blank" value="{!orderCenter.Order_Center_Link__c}/csr/site/orders/order_load.aspx?order_id={!ord.orderNumber}&view_type=OCView">{!ord.orderNumber}</apex:outputLink>
+        </apex:column>
+        
+        <apex:column value="{!ord.channelType}" headerValue="Channel-Type" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}"/>
+
+        <apex:column value="{!ord.orderStatus}" headerValue="Order Status" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}"/>
+        <apex:column headerValue="Order Date" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}">
+        <apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!ord.orderDateNoTime}" /> </apex:outputText>
+        </apex:column>
+        
+        <apex:column headerValue="Lab Order Status" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}">
+          <apex:outputLink target="_blank" value="/apex/DVI_OrderSummary?rxNum={!ord.labOrderStatus}">{!ord.labOrderStatus}</apex:outputLink>
+        </apex:column>
+        <apex:column value="{!ord.itemDescription}" headerValue="Item Description" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}"/>
+        <apex:column value="{!ord.itemType}" headerValue="Item Type" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}"/>
+        <apex:column value="{!ord.itemStatus}" headerValue="Item Status" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}"/>
+        <apex:column headerValue="CSR View" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}">
+          <apex:outputLink target="_blank" value="{!orderCenter.Order_Center_Link__c}/csr/site/orders/order_load.aspx?order_id={!ord.orderNumber}&view_type=CSRView">{!ord.csrview}</apex:outputLink>
+        </apex:column>
+        <apex:column headerValue="UPS Tracking Number" style="background-color:{!if(ord.isOrder,'#f1f1f1','')}">
+          <apex:outputLink target="_blank" value="https://wwwapps.ups.com/tracking/tracking.cgi?tracknum={!ord.upsTrackingNumber}">{!ord.upsTrackingNumber}</apex:outputLink>
+        </apex:column>
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Birthdate__c</field>
+    </columns>
+    <columns>
+        <field>Contact.NPI__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS2_STATE</field>
+    </columns>
+    <description>Active doctors, all types</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Vision_Care_Effective_Date__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Degree__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OD,MD,DO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Vision_Care_End_Date__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>OFAC Doctor List</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

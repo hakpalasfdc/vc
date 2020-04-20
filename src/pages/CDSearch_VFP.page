@@ -1,0 +1,97 @@
+<apex:page title="Account Services Search" controller="CDSearchController"  showHeader="True" sidebar="false" id="pageid">
+    <style>
+        td{
+        vertical-align : top;
+        text-align: left;
+    }
+    </style>
+    
+    
+    <script type="text/javascript">
+        function focu()
+        {
+            document.getElementById('{!$Component.pageid:frm:pb:theSearchstring}').focus();
+        }
+        var pageLoad = window.onload;
+        window.onload = focu;
+        
+        function enterPressed(){
+        
+            if(window.event && window.event.keyCode == 13){
+                var ele = document.getElementById('{!$Component.pageid:frm:pb:submitButton}');
+                ele.click();
+                return false;
+            }else{
+                return true;
+            }
+        }
+        
+    </script>
+    
+    
+    
+<apex:form id="frm">
+<apex:panelGrid columns="2" id="pgrid">
+        <apex:panelGroup >
+            <apex:pageBlock >
+                <apex:outputText value="Filter Your Results" />
+                    <apex:pageBlockSection columns="1">
+                        <apex:dataTable value="{!dataCategoryGroupInfo}" var="dataCategory" id="dataCategory">
+                            <apex:column width="20%">
+                                <apex:outputLabel for="categoryType_{!dataCategory.name}">Account Services</apex:outputLabel>
+                                <br />
+                                <select id="categoryType_{!dataCategory.name}" name="categoryType_{!dataCategory.name}" onchange = "refreshSearchResult()" >
+                                    <option value="Account_Services">All</option> -->
+                                       <knowledge:categoryList categoryVar="category" categoryGroup="{!dataCategory.name}" rootCategory="Account_Services" level="-1">
+                                        <option value="{!category.name}">
+                                            <apex:outputText escape="false" value="{!LPAD(' ',6*category.depth,'&nbsp;')}" />
+                                            {!category.label}
+                                        </option>
+                                    </knowledge:categoryList>
+                                </select>
+                            </apex:column>
+                        </apex:dataTable>
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+            </apex:panelGroup>
+        <apex:panelGroup id="pg">
+            <apex:pageBlock title="Search" id="pb">
+                <apex:inputText value="{!searchstring}" id="theSearchstring" maxlength="100" size="110" onkeypress="return enterPressed();"/> &nbsp;
+                <apex:commandButton value="Go" id="submitButton" style="width:30" reRender="theSearchResults" oncomplete="refreshSearchResult()"/>
+            </apex:pageBlock>
+            <apex:messages />
+            <apex:panelGroup id="theSearchResults" >
+                <apex:pageBlock title="Search Results" >
+                    <apex:panelGrid width="100%">
+                        <table width="99%">
+                            <tr>
+                                <th width="33%">Title</th>
+                                
+                                <th width="33%">Summary</th>
+                                <th width="33%">Last PublishedDate</th>
+                            </tr>
+                        </table>
+                        <knowledge:articleList articleVar="article" categories="{!categoryKeyword}" Keyword="{!searchstring}" pageNumber="{!currentPageNumber}" hasMoreVar="false" pageSize="10">
+                            <table width="99%">
+                                <tr>
+                                    <td width="33%">
+                                        <apex:outputLink target="_blank" value="{!URLFOR($Action.KnowledgeArticle.View,article.id,['popup' = 'true'])}">{!article.title}</apex:outputLink>
+                                    </td>
+                                    
+                                    <td width="33%"><apex:outputText >{!article.abstract}</apex:outputText></td>
+                                    <td width="33%"><apex:outputText >{!article.LastPublishedDate}</apex:outputText></td>
+                                </tr>
+                            </table>
+                        </knowledge:articleList>
+                    </apex:panelGrid>
+                </apex:pageBlock>
+                <apex:panelGrid columns="2">
+                    <apex:commandLink action="{!previous}" value="Previous" style="{!IF(prevRequired =true,'display:block','display:none')}" reRender="theSearchResults"/>
+                    <apex:commandLink action="{!next}" value="Next" style="{!IF(nextRequired =true,'display:block','display:none')}" reRender="theSearchResults"/>
+                </apex:panelGrid>
+            </apex:panelGroup>
+        </apex:panelGroup>
+    </apex:panelGrid>
+    <apex:actionFunction action="{!refreshSearchResult}" name="refreshSearchResult" rerender="theSearchResults" ></apex:actionFunction> 
+     </apex:form>      
+</apex:page>

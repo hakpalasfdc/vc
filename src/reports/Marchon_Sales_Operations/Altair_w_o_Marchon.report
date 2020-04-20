@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Marchon_SAP_Account_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account$Altair_SAP_Consignment_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingAddress</field>
+    </columns>
+    <columns>
+        <field>Account$Total_Net_Marchon_Sales_LTM__c</field>
+    </columns>
+    <columns>
+        <field>Account$Total_Net_Altair_Sales_LTM__c</field>
+    </columns>
+    <description>Altair LTM Sales &gt; 1000, Marchon LTM &lt;250 MD</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Total_Net_Altair_Sales_LTM__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Total_Net_Marchon_Sales_LTM__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>250</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Tax_ID__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Altair w/o Marchon</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_w_Practice_Information__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

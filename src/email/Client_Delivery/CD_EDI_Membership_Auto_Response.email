@@ -1,0 +1,25 @@
+Thank you for contacting the VSP EDI Enrollment Integration Team Representative; your inquiry is very important to us. Your request has been received and will be processed within 3 business days.
+
+If you are inquiring about the file receipt and/or load, please allow 24 hours for the Electronic Verification Report (EVR) to be generated, which will serve as confirmation of the file load.
+
+For urgent file related inquiries, you may reach us directly at 877-396-8940. Please reference case number {!Case.CaseNumber} to expedite your call.
+
+If you need assistance with managing your membership on www.vsp.com please call 800-216-6248 option 2.
+
+If this is a billing inquiry, please call 800-216-6248 option 3.
+
+The email address eei@vsp.com, is not intended for manual membership updates; it is use for electronic client implementations and maintenance. Please use our Eligibility Management Self Service tool at www.vsp.com. It will allow you to make your updates in real-time so they will be effective immediately. If you do not already have an account you may register at www.vsp.com. Urgent updates may be phoned in to Customer Service at 800-877-7195.
+
+Thank you in advance for your patience.
+
+
+
+____________________________________________________
+
+From: {!Case.SuppliedEmail}
+Sent: {!Case.CreatedDate}
+Subject: {!Case.Subject}
+
+{!Case.Description}
+
+ref: {!Case.Thread_Id}

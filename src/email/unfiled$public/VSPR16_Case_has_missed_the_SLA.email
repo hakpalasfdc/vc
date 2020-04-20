@@ -1,0 +1,6 @@
+This case has missed the SLA:
+
+Case Number: {!Case.CaseNumber} 
+Case Subject:  {!Case.Subject} 
+
+Case Link -  {!Case.Link}

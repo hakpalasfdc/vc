@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_29352846</developerName>
+        <masterLabel>Utilize Messaging</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contact.Months_Since_Last_Exam__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>17</to>
+            </sourceValues>
+            <value>one year</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>17</from>
+                <to>27</to>
+            </sourceValues>
+            <value>two years</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>27</from>
+            </sourceValues>
+            <value>many years</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>Campaign.Salesforce_ID__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_ID</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_STATUS</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_TYPE</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_PARENT_ID</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_PARENT_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Campaign.D2C_Campaign</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Campaigns D2C Bridge</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

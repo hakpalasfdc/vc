@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>System Available</name>
+    <style>none</style>
+    <subject>Salesforce.com Maintenance Complete - System Available!</subject>
+    <textOnly>The upgrades to our Salesforce.com application were completed successfully!
+The system is now available to all users. You can access the system as you normally would, with your Salesforce User ID and Password, or through Single Sign On utilizing the following URL:
+https://vsp.my.salesforce.com
+
+Thanks for your patience and cooperation!
+The Salesforce COE Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

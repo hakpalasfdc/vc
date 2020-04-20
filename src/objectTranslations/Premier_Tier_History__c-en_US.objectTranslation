@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Premier Tier History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Premier Tier History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Premier Tier History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applied Tier --></label>
+        <name>Applied_Tier__c</name>
+        <relationshipLabel><!-- Premier Tier History (Applied Tier) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Calculated Tier --></label>
+        <name>Calculated_Tier__c</name>
+        <relationshipLabel><!-- Premier Tier History (Calculated Tier) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Premier Tier History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

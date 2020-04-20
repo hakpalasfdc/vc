@@ -1,0 +1,350 @@
+<apex:page title="Order History" sidebar="false" controller="DVI_OrderDetailsController" action="{!getOrderHistory}">
+
+    <apex:includeScript value="/support/console/22.0/integration.js"/>
+    <script type="text/javascript">              
+        window.onload = function() {
+            //Set the tab title as Order History when opened in Customer Console
+            sforce.console.setTabTitle('Order History');
+        }   
+        
+        <!-- function reload(){
+            window.location.reload(true);
+        } -->
+         
+    </script>
+    
+    <style type="text/css">
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 500px;
+            margin-left: -250px;
+            top:100px;
+        }
+        
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+    </style>
+
+    <apex:form >
+        <h1><font size="3">VSPOne Order Details</font></h1>
+         
+        <apex:pageBlock >
+    
+            <apex:pageBlockTable value="{!lstOrderDetailInformation}" var="obj">
+            
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="RX #"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.rxNumber}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Patient Name"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.patientName}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Invoice #"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.invoiceNumber}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Account Name"/>
+                    </apex:facet>
+                    <!-- <apex:commandLink onclick="window.open('/{!accountId}');" value="{!obj.accountName}"/> -->
+                    
+                    <apex:commandLink onclick="window.open('/{!accountId}');" value="{!obj.accountName}" rendered="{!IF(accountId!=null && accountId!='',true,false)}"/>
+                    <apex:outputlabel value="{!obj.accountName}" rendered="{!IF(accountId==null || accountId=='',true,false)}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Account Number"/>
+                    </apex:facet>
+                    <!-- <apex:commandLink onclick="window.open('/{!accountId}');" value="{!accountNumber}"/> -->
+                    
+                    <apex:commandLink onclick="window.open('/{!accountId}');" value="{!accountNumber}" rendered="{!IF(accountId!=null && accountId!='',true,false)}"/>
+                    <apex:outputlabel value="{!accountNumber}" rendered="{!IF(accountId==null || accountId=='',true,false)}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="IDC Reporter"/>
+                    </apex:facet>
+                         <apex:outputLink value="https://doctor.vsp.com/reports/html/idcreporter.htm" target="_blank">IDC Reporter</apex:outputLink>
+                </apex:column>
+                   
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+                
+        <apex:pageBlock >
+        
+                    <apex:pageBlockTable value="{!lstOrderDetailInformation}" var="obj">
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Estimated Ship Date"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.estimatedShipDate}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Shipped"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.actualShipDate}" />
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Shipped Tracking Number"/>
+                    </apex:facet>
+                    
+                    <apex:commandLink onclick="window.open('{!obj.trackURL}');" value="{!obj.trackNumber}" rendered="{!IF(obj.trackURL!=null && obj.trackURL!='',true,false)}"/>
+                    <apex:outputlabel value="{!obj.trackNumber}" rendered="{!IF(obj.trackURL==null && obj.trackURL=='',true,false)}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Breakage"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.breakage}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Surface"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.surfaceIndicator}"/>
+                </apex:column>
+    
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Coat"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.coatingIndicator}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Finish"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.finishIndicator}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Digital Lens"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.digitalLensIndicator}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="SubCon"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.subContractType}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Entered Date"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.dateEntered}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Frame"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.frameName}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Frame Mfr"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.frameManufacturer}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Safety Frame"/>
+                    </apex:facet>
+                    <apex:outputlabel value="{!obj.safetyFrameIndicator}"/>
+                </apex:column>
+    
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <script>
+            function submitRedo(){
+                if(confirm('hello','ok1','ok2')){                
+                }
+            }
+        </script>
+        
+        <apex:pageBlock title="Order History" >
+            <table width="100%" border="0">
+                <tr>
+                    <td width="50%">
+                        <apex:pageBlocktable value="{!stationList}" var="obj" style="width:100%;">
+                        
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:outputLabel value="Lab"/>
+                                </apex:facet>
+                                <apex:outputlabel value="{!obj.labName}"/>
+                            </apex:column>
+
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:outputLabel value="Location"/>
+                                </apex:facet>
+                                <apex:outputlabel value="{!obj.status}"/>
+                            </apex:column>
+    
+                            <apex:column >
+                                <apex:facet name="header">
+                                    <apex:outputLabel value="Location at Date"/>
+                                </apex:facet>
+                                <apex:outputlabel value="{!obj.statusDate}"/>
+                            </apex:column>
+                        </apex:pageBlocktable>
+                    </td>
+                    <td width="50%">
+                        <apex:pageBlock title="Redo" id="redo">
+                            <apex:pageMessages />
+                            <table>
+                                <tr>
+                                    <td>
+                                        <apex:outputLabel value="Edge / Frame Status"/>&nbsp;:
+                                            &nbsp;<apex:selectList value="{!strFrameStatus}" size="1" >
+                                                        <apex:selectOptions value="{!frameStatusValues}"/>
+                                            </apex:selectList>
+                                                
+                                            &nbsp;<apex:outputLabel value="Lenses"/>&nbsp;:
+                                            &nbsp;<apex:selectList value="{!strLensSelected}" size="1" >
+                                                <apex:selectOptions value="{!lensValues}"/>
+                                            </apex:selectList>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <apex:outputLabel value="Description: " style="vertical-align:top;"/>&nbsp;
+                                        &nbsp;<apex:inputTextArea cols="" value="{!strRedoDescription}" style="width:400px;" rows="3"/>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <apex:outputLabel value="Redo Submission Date: "/>
+                                        <apex:outputlabel value="{!strRedoSubmitTime}"/>
+                                    </td>
+                                </tr>
+                                
+                                
+                                
+                                <tr>
+                                    <td>
+                                        <apex:commandButton value="Submit Redo" rendered="{!IF($Profile.Name =='System Administrator'||$Profile.Name =='VSP Customer Support + Lab User'||$Profile.Name =='VSP Global Customer Care + Lab User', true , false)}" action="{!showPopup}" rerender="tstpopup,redo" disabled="{!disableSubmitRedo}" status="waitStatus"/>
+                                        <br></br>
+                                        <br></br>
+                                        <apex:outputLabel value="Redo Submission: " rendered="{!redoSubmission}" style=" font-size:12px;font-weight:bold;color:blue; "/><apex:outputLabel value="{!redoStatus}"/>
+                                        <br></br>
+                                        <br></br>
+                                        
+                                        <apex:outputLabel value="Redo Submission Description: " rendered="{!redoSubmission}" style=" font-size:12px;font-weight:bold;color:blue; "/><apex:outputLabel value="{!redodescription}"/>
+
+                                        <br></br><br></br><apex:outputLabel value="Edge/Frame Status: " rendered="{!redoSubmission}" style=" font-size:12px;font-weight:bold;color:blue; "/><apex:outputLabel value="{!strEdgeFrameStatusInfo}"/>
+                                        <br></br><br></br><apex:outputLabel value="Lenses: " rendered="{!redoSubmission}" style=" font-size:12px;font-weight:bold;color:blue; "/><apex:outputLabel value="{!strLenses}"/>
+                                        <!-- <br></br><br></br><apex:outputLabel value="Eyes: " rendered="{!redoSubmission}" style=" font-size:12px;font-weight:bold;color:blue; "/><apex:outputLabel value="{!redoEyes}"/> -->
+                                        
+
+                                        &nbsp;<apex:actionStatus id="waitStatus" style="align:center;">      
+                                            <apex:facet name="start">
+                                                <apex:image value="/img/loading.gif" title="Processing..."/>
+                                            </apex:facet>
+                                        </apex:actionStatus>
+                                        <apex:outputPanel id="tstpopup">
+                                            <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+                                            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                                                <center>
+                                                    <br/><br/>
+                                                        Are you sure you want to process this redo?<br/><br/><br/>
+                                                        <apex:commandButton value="Cancel Redo" action="{!closepopup}" rerender="tstpopup"/>
+                                                            <!-- &nbsp;&nbsp;&nbsp;<apex:commandButton value="Process Redo" action="{!submitRedoDetails}" oncomplete="reload();" rerender="tstpopup,redo"/> -->
+                                                            &nbsp;&nbsp;&nbsp;<apex:commandButton value="Process Redo" action="{!submitRedoDetails}" rerender="tstpopup,redo"/>
+                                                            
+                                                </center>
+                                            </apex:outputPanel>
+                                        </apex:outputPanel>
+                                    </td>
+                                </tr>   
+                        </table>
+                    </apex:pageBlock>
+                </td>
+            </tr>
+        </table>
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="Notes" >
+        <apex:pageBlocktable value="{!vsponeLensOrderNotesList}" var="obj">
+
+            <apex:column >
+                <apex:facet name="header">
+                    <apex:outputLabel value="Lab Name"/>
+                </apex:facet>
+                <apex:outputlabel value="{!obj.labName}"/>
+            </apex:column>
+                
+            <apex:column >
+                <apex:facet name="header">
+                    <apex:outputLabel value="Job Note"/>
+                </apex:facet>
+                <apex:outputlabel value="{!obj.jobNote}"/>
+            </apex:column>
+                
+            <apex:column >
+                <apex:facet name="header">
+                    <apex:outputLabel value="Created By"/>
+                </apex:facet>
+                <apex:outputlabel value="{!obj.createdBy}"/>
+            </apex:column>
+                
+            <apex:column >
+                <apex:facet name="header">
+                    <apex:outputLabel value="Date Time"/>
+                </apex:facet>
+                <apex:outputlabel value="{!obj.jobNoteTS}"/>
+            </apex:column>
+        </apex:pageBlocktable>
+    </apex:pageBlock>
+        
+    </apex:form>    
+</apex:page>

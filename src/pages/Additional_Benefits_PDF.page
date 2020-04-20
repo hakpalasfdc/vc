@@ -1,0 +1,22 @@
+<apex:page standardController="Knowledge__kav" sidebar="false" showHeader="true" renderAs="pdf">
+    <apex:pageBlock mode="detail">
+        <apex:pageBlockSection columns="1">
+            <apex:outputfield label="Title" value="{!Knowledge__kav.Title}"/><br/>
+            <apex:outputfield label="Article Number" value="{!Knowledge__kav.ArticleNumber}"/><br/>
+            <apex:outputfield label="Version Number" value="{!Knowledge__kav.VersionNumber}"/><br/>
+            <apex:outputfield label="Last Published Date" value="{!Knowledge__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield label="Version Comments" value="{!Knowledge__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="===================================================================="/><br/><br/>
+                      
+            <apex:outputField label="Exam" value="{!Knowledge__kav.Exam__c}"/>
+            <apex:outputField label="Lens" value="{!Knowledge__kav.Lens__c}"/>
+            <apex:outputField label="Lens Enhancement" value="{!Knowledge__kav.Lens_Enhancements__c}"/>
+            <apex:outputField label="Frame" value="{!Knowledge__kav.Frame__c}"/>
+            <apex:outputField label="Contacts" value="{!Knowledge__kav.Contacts__c}"/>
+            <apex:outputField label="Doctor Network" value="{!Knowledge__kav.Doctor_Network__c}"/>
+            <apex:outputField label="Lab" value="{!Knowledge__kav.Lab__c}"/>
+            <apex:outputField label="Keyword" value="{!Knowledge__kav.Keyword__c}"/>
+            <apex:outputField label="SQ/QQ Steps" value="{!Knowledge__kav.Support_Queue_Steps__c}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>   
+</apex:page>

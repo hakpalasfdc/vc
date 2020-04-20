@@ -1,0 +1,13 @@
+The following Defect has been updated in the toolkit by {!Defect__c.LastModifiedBy}:
+
+Defect: {!Defect__c.Name}
+
+Subject: {!Defect__c.Subject__c}
+
+Defect Description: {!Defect__c.Detailed_Description__c}
+
+Defect Status: {!Defect__c.Status__c}
+
+Developer Comments: {!Defect__c.Developer_Comments__c}
+
+Defect Link: {!Defect__c.Link}

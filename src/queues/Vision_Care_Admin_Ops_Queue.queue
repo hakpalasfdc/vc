@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Vision Care Admin/Ops Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Vision_Care_Admin_Ops_Queue</publicGroup>
+        </publicGroups>
+        <users>
+            <user>amber.jones@vsp.com</user>
+            <user>annawi@vsp.com_1</user>
+            <user>jenna.yowell@vsp.com</user>
+            <user>jennifer.benson@vsp.com</user>
+            <user>kim.broaddus@vsp.com</user>
+            <user>nitaha@vsp.com</user>
+            <user>pattba@vsp.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

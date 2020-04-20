@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Question 10 --></label>
+        <name>Question_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 11 --></label>
+        <name>Question_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 12 --></label>
+        <name>Question_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 13 --></label>
+        <name>Question_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 14 --></label>
+        <name>Question_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 15 --></label>
+        <name>Question_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 16 --></label>
+        <name>Question_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 17 --></label>
+        <name>Question_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 18 --></label>
+        <name>Question_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 19 --></label>
+        <name>Question_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1 --></label>
+        <name>Question_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 20 --></label>
+        <name>Question_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2 --></label>
+        <name>Question_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 3 --></label>
+        <name>Question_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 4 --></label>
+        <name>Question_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 5 --></label>
+        <name>Question_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 6 --></label>
+        <name>Question_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 7 --></label>
+        <name>Question_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 8 --></label>
+        <name>Question_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 9 --></label>
+        <name>Question_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 10 --></label>
+        <name>Response_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 11 --></label>
+        <name>Response_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 12 --></label>
+        <name>Response_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 13 --></label>
+        <name>Response_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 14 --></label>
+        <name>Response_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 15 --></label>
+        <name>Response_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 16 --></label>
+        <name>Response_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 17 --></label>
+        <name>Response_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 18 --></label>
+        <name>Response_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 19 --></label>
+        <name>Response_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1 --></label>
+        <name>Response_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 20 --></label>
+        <name>Response_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2 --></label>
+        <name>Response_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 3 --></label>
+        <name>Response_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 4 --></label>
+        <name>Response_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 5 --></label>
+        <name>Response_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 6 --></label>
+        <name>Response_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 7 --></label>
+        <name>Response_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 8 --></label>
+        <name>Response_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 9 --></label>
+        <name>Response_9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Result of our follow-up call. --></help>
+        <label><!-- Response Action --></label>
+        <name>Response_Action__c</name>
+    </fields>
+</CustomObjectTranslation>

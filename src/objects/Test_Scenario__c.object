@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>TOOLKIT - An object that represents a test situation that verifies the fulfillment of a request.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Capability__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to capability object</description>
+        <externalId>false</externalId>
+        <label>Capability</label>
+        <referenceTo>Capability__c</referenceTo>
+        <relationshipLabel>Test Scenarios</relationshipLabel>
+        <relationshipName>Test_Scenarios</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Functional_Area__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Functional Area</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>List_of_Users__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>List of Users</label>
+        <length>3000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Release__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Release</label>
+        <referenceTo>Release__c</referenceTo>
+        <relationshipLabel>Test Scenarios</relationshipLabel>
+        <relationshipName>Test_Scenarios</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Release: Build</fullName>
+                    <default>false</default>
+                    <label>Release: Build</label>
+                </value>
+                <value>
+                    <fullName>SIT: In Process</fullName>
+                    <default>false</default>
+                    <label>SIT: In Process</label>
+                </value>
+                <value>
+                    <fullName>SIT: Pass</fullName>
+                    <default>false</default>
+                    <label>SIT: Pass</label>
+                </value>
+                <value>
+                    <fullName>SIT: Fail</fullName>
+                    <default>false</default>
+                    <label>SIT: Fail</label>
+                </value>
+                <value>
+                    <fullName>UAT: In Process</fullName>
+                    <default>false</default>
+                    <label>UAT: In Process</label>
+                </value>
+                <value>
+                    <fullName>UAT: Pass</fullName>
+                    <default>false</default>
+                    <label>UAT: Pass</label>
+                </value>
+                <value>
+                    <fullName>UAT: Fail</fullName>
+                    <default>false</default>
+                    <label>UAT: Fail</label>
+                </value>
+                <value>
+                    <fullName>Additional Clarification Requested</fullName>
+                    <default>false</default>
+                    <label>Additional Clarification Requested</label>
+                </value>
+                <value>
+                    <fullName>Clarification Provided</fullName>
+                    <default>false</default>
+                    <label>Clarification Provided</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Test_Scenario_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Test Scenario Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Test Scenario</label>
+    <listViews>
+        <fullName>Maintenance1</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Capability__c</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>Comments__c</columns>
+        <columns>List_of_Users__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>Maintenance 1</value>
+        </filters>
+        <label>Maintenance 1</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_3_Account_Test_Scenarios</fullName>
+        <columns>NAME</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>Comments__c</columns>
+        <columns>List_of_Users__c</columns>
+        <columns>Capability__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>release 3</value>
+        </filters>
+        <filters>
+            <field>Capability__c</field>
+            <operation>equals</operation>
+            <value>Account Management</value>
+        </filters>
+        <label>Release 3 Account Management Scenarios</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_3_All_Test_Scenarios</fullName>
+        <columns>NAME</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>Comments__c</columns>
+        <columns>List_of_Users__c</columns>
+        <columns>Capability__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>release 3</value>
+        </filters>
+        <label>Release 3 All Test Scenarios</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_3_Case_Management</fullName>
+        <columns>NAME</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>Comments__c</columns>
+        <columns>Status__c</columns>
+        <columns>Capability__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>release 3</value>
+        </filters>
+        <filters>
+            <field>Capability__c</field>
+            <operation>equals</operation>
+            <value>Case Management</value>
+        </filters>
+        <label>Release 3 Case Management Scenarios</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_3_LeadTest_Scenarios</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>Comments__c</columns>
+        <columns>Status__c</columns>
+        <columns>Capability__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>release 3</value>
+        </filters>
+        <filters>
+            <field>Capability__c</field>
+            <operation>equals</operation>
+            <value>Lead Management</value>
+        </filters>
+        <filters>
+            <field>Capability__c</field>
+            <operation>contains</operation>
+            <value>Admin</value>
+        </filters>
+        <label>Release 3 Lead Management Scenarios</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_3_Recruitment_Management</fullName>
+        <columns>NAME</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>Comments__c</columns>
+        <columns>Capability__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>release 3</value>
+        </filters>
+        <filters>
+            <field>Capability__c</field>
+            <operation>contains</operation>
+            <value>recruiting</value>
+        </filters>
+        <label>Release 3 Recruiting Management Scenario</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_4_Test_Scenarios</fullName>
+        <columns>NAME</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Capability__c</columns>
+        <columns>Description__c</columns>
+        <columns>Status__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Release__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>Release 4</value>
+        </filters>
+        <label>Release 4 Test Scenarios</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_5</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Comments__c</columns>
+        <columns>Capability__c</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>List_of_Users__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>Release 5</value>
+        </filters>
+        <label>Release 5</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_6</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Comments__c</columns>
+        <columns>Capability__c</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>List_of_Users__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>Release 6</value>
+        </filters>
+        <label>Release 6</label>
+    </listViews>
+    <listViews>
+        <fullName>Release_7</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Comments__c</columns>
+        <columns>Capability__c</columns>
+        <columns>Test_Scenario_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>List_of_Users__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Release__c</field>
+            <operation>equals</operation>
+            <value>Release 7</value>
+        </filters>
+        <label>Release 7</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TestScenario-{00000000}</displayFormat>
+        <label>Test Scenario ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Test Scenarios</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Capability__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Release__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Capability__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Release__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>Capability__c</searchFilterFields>
+        <searchFilterFields>Release__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Capability__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Release__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

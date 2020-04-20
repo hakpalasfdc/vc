@@ -1,0 +1,33 @@
+<apex:page controller="vsphighlights" showHeader="false" standardStylesheets="true" sidebar="false" docType="html-5.0" applyBodyTag="false" applyHtmlTag="false">
+<div style="overflow:hidden;">
+ 
+<style type="text/css">
+.title {color: black;}
+h2 {font-family: Helvetica;
+    font-size: .875rem;
+    font-weight:700;
+    letter-spacing: .0625em;}
+.knowlinks {;
+                                border-style: solid;
+                                border-width: 1px;
+                                border-radius: 5%;
+                                border-color: #00B9F2;
+                                padding: 5px;}
+</style>
+   
+                <div class="title">
+    <h2>WHAT TO KNOW</h2>
+    </div>
+<div class="knowlinks">
+       <apex:repeat value="{!vspheadln}" var="c">
+        <apex:repeat value="{!vspportal}" var="o">
+            <apex:tabPanel >
+            <apex:outputLink style="text-decoration:none; color:#00B9F2;font-family: Helvetica; font-size: .75rem; font-weight:bold"
+                             value="{!o.portal_url__c}{!c.URL__c}">{!c.displaytext__c}</apex:outputLink>
+                </apex:tabPanel>
+                <br/>
+        </apex:repeat>
+    </apex:repeat>
+</div>
+</div>
+</apex:page>

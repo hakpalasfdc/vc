@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>VSPOne - New York</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VSPOne_SD_East_Baltimore_New_York</parentRole>
+</Role>

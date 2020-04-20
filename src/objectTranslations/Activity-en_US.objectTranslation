@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Outcome</value>
+        </caseValues>
+        <name>description_activity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Activities I Manage --></label>
+        <name>Activities_I_Manage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Owner Role --></label>
+        <name>Activity_Owner_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClearSlide Activity Type --></label>
+        <name>CLS4SF__ClearSlide_Activity_Type__c</name>
+        <picklistValues>
+            <masterLabel>ClearSlide Email</masterLabel>
+            <translation><!-- ClearSlide Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ClearSlide Meeting</masterLabel>
+            <translation><!-- ClearSlide Meeting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ClearSlide Content Link Clicked --></label>
+        <name>CLS4SF__ClearSlide_Content_Link_Clicked__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClearSlide Created --></label>
+        <name>CLS4SF__ClearSlide_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClearSlide Email Opened --></label>
+        <name>CLS4SF__ClearSlide_Email_Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClearSlide Engagement Time (Minutes) --></label>
+        <name>CLS4SF__ClearSlide_Engagement_Time_in_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClearSlide Engagement Time in Seconds --></label>
+        <name>CLS4SF__ClearSlide_Engagement_Time_in_Seconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClearSlide Forecast Category --></label>
+        <name>CLS4SF__ClearSlide_Forecast_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClearSlide Opportunity Stage --></label>
+        <name>CLS4SF__ClearSlide_Opportunity_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classification Note --></label>
+        <name>Classification_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classification --></label>
+        <name>Classification__c</name>
+        <picklistValues>
+            <masterLabel>Community Outreach</masterLabel>
+            <translation><!-- Community Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Support</masterLabel>
+            <translation><!-- Customer Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Work</masterLabel>
+            <translation><!-- Office Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Outreach</masterLabel>
+            <translation><!-- University Outreach --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date/Time --></label>
+        <name>Created_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSRecordingURL --></label>
+        <name>DSRecordingURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Campaign --></label>
+        <name>DialSource__Call_Campaign_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Disposition --></label>
+        <name>DialSource__Call_Disposition_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Ended --></label>
+        <name>DialSource__Call_Ended_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call ID --></label>
+        <name>DialSource__Call_ID_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Placed --></label>
+        <name>DialSource__Call_Placed_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Started --></label>
+        <name>DialSource__Call_Started_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caller ID --></label>
+        <name>DialSource__Caller_ID_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- DS Get Recording --></label>
+        <name>DialSource__DS_Get_Recording__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inbound Agent Wait Time (secs) --></label>
+        <name>DialSource__Inbound_Agent_Wait_Time_secs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inbound DNIS Name --></label>
+        <name>DialSource__Inbound_DNIS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inbound DNIS --></label>
+        <name>DialSource__Inbound_DNIS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inbound Prospect Wait Time (secs) --></label>
+        <name>DialSource__Inbound_Prospect_Wait_Time_secs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inbound Queue --></label>
+        <name>DialSource__Inbound_Queue__c</name>
+    </fields>
+    <fields>
+        <label><!-- RTPQ Group ID --></label>
+        <name>DialSource__RTPQ_Group_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- RTPQ Wait Time --></label>
+        <name>DialSource__RTPQ_Wait_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recording ID --></label>
+        <name>DialSource__Recording_ID_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recycled Until --></label>
+        <name>DialSource__Recycled_Until_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session ID --></label>
+        <name>DialSource__Session_ID_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voicemail --></label>
+        <name>DialSource__Voicemail_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Date Finished --></label>
+        <name>Event_Date_Finished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Description --></label>
+        <name>Event_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>In Person</masterLabel>
+            <translation><!-- In Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled Phone Call</masterLabel>
+            <translation><!-- Scheduled Phone Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Conference</masterLabel>
+            <translation><!-- Video Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date/Time --></label>
+        <name>Last_Modified_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Task ID --></label>
+        <name>MPM4_BASE__Project_Task_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modified By Role --></label>
+        <name>Modified_By_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Created By Role --></label>
+        <name>Task_Created_By_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>CLOB Referral</masterLabel>
+            <translation><!-- CLOB Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign Follow Up</masterLabel>
+            <translation><!-- Campaign Follow Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Call</masterLabel>
+            <translation><!-- Inbound Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound Call</masterLabel>
+            <translation><!-- Outbound Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postal Mail</masterLabel>
+            <translation><!-- Postal Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unscheduled Visit</masterLabel>
+            <translation><!-- Unscheduled Visit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CTI Info --></label>
+        <name>cnx__CTIInfo__c</name>
+    </fields>
+    <fields>
+        <label><!-- UniqueId --></label>
+        <name>cnx__UniqueId__c</name>
+    </fields>
+</CustomObjectTranslation>

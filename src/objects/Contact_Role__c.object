@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account_Detail__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( Account__r.Id , Account__r.Name + &quot; - &quot; + Account__r.ShippingStreet + &quot; &quot; + Account__r.ShippingCity + &quot;, &quot; + Account__r.ShippingState , &quot;_top&quot; )</formula>
+        <label>Account Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_ID_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Salesforce_ID__c</formula>
+        <label>Account ID Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Record_Type__c</fullName>
+        <description>Record Type of Account</description>
+        <externalId>false</externalId>
+        <formula>Account__r.RecordType.Name</formula>
+        <label>Account Record Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Vision_Care_Effective_Date_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Account__r.Vision_Care_Effective_Date__c),
+&apos;99999999&apos;,
+LPAD(TEXT(YEAR(Account__r.Vision_Care_Effective_Date__c)),4,&apos;9&apos;) &amp; 
+LPAD(TEXT(MONTH(Account__r.Vision_Care_Effective_Date__c)),2,&apos;0&apos;)  &amp;
+LPAD(TEXT(DAY(Account__r.Vision_Care_Effective_Date__c)),2,&apos;0&apos;)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Vision Care Effective Date Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Vision_Care_End_Date_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Account__r.Vision_Care_End_Date__c),
+&apos;99999999&apos;,
+LPAD(TEXT(YEAR(Account__r.Vision_Care_End_Date__c)),4,&apos;9&apos;) &amp;
+LPAD(TEXT(MONTH(Account__r.Vision_Care_End_Date__c)),2,&apos;0&apos;) &amp;
+LPAD(TEXT(DAY(Account__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
+)</formula>
+        <label>Account Vision Care End Date Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contact Roles</relationshipLabel>
+        <relationshipName>Contact_Roles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Active_or_Future_Vision_Care_Relationshi__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active or Future VC Relationship</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Altair_Campaigns__c</fullName>
+        <externalId>false</externalId>
+        <label>Altair Campaigns</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Altair_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to identify Altair Contacts on reports and call lists for DialSource.</description>
+        <externalId>false</externalId>
+        <label>Altair Contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Altair_Prospect_Rep__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Altair_Standard__c</formula>
+        <label>Altair Prospect Rep</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Altair_Rep__c</fullName>
+        <description>Altair Sales Reps assigned to Account</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Altair_Reps__c</formula>
+        <label>Altair Rep</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CAQH_ID_of_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.CAQH_ID__c</formula>
+        <label>CAQH ID of Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Combo_Match__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Id_Text__c &amp; &quot;_&quot; &amp;  Account_ID_Text__c</formula>
+        <label>Combo Match</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Id_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Salesforce_ID__c</formula>
+        <label>Contact Id Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Contact Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Primary_Email__c</fullName>
+        <description>Displays the Primary Email Address of the associated Contact.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;mailto:&quot;&amp; Contact__r.Email , Contact__r.Email , &quot;_self&quot;)</formula>
+        <label>Contact Primary Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Role_Id_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( Id )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Role Id Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Role_Phone__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Role Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Role_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;javascript:if(typeof(srcUp)!=&apos;function&apos;) {(window.parent.location.href=&apos;/&quot; &amp; Id &amp; &quot;&apos;);}&quot;+ &quot; else {srcUp(&apos;/&quot; &amp; Id &amp; &quot;?isdtp=vw&apos;)}&quot;, TEXT(Type__c), &quot;_parent&quot; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Role Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Vision_Care_Effective_Date_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Contact__r.Vision_Care_Effective_Date__c ),
+&apos;99999999&apos;,
+LPAD(TEXT(YEAR(Contact__r.Vision_Care_Effective_Date__c )),4,&apos;9&apos;) &amp;
+LPAD(TEXT(MONTH(Contact__r.Vision_Care_Effective_Date__c )),2,&apos;0&apos;) &amp;
+LPAD(TEXT(DAY(Contact__r.Vision_Care_Effective_Date__c )),2,&apos;0&apos;)
+)</formula>
+        <label>Contact Vision Care Effective Date Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Vision_Care_End_Date_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Contact__r.Vision_Care_End_Date__c),
+&apos;99999999&apos;,
+LPAD(TEXT(YEAR(Contact__r.Vision_Care_End_Date__c)),4,&apos;9&apos;) &amp;
+LPAD(TEXT(MONTH(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;) &amp;
+LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
+)</formula>
+        <label>Contact Vision Care End Date Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Eye Care Professional</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contact Roles</relationshipLabel>
+        <relationshipName>Contact_Roles</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>DS_Altair_Rep_ID__c</fullName>
+        <description>Contains all the Altair Rep User IDs</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DS Altair Rep IDs</label>
+        <length>90</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DS_Conversation_Count__c</fullName>
+        <description>Tracks the number of conversations conducted through DialSource.</description>
+        <externalId>false</externalId>
+        <label>DS Conversation Count Last 30 Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DS_Date_of_Last_Dispo__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DS Date of Last Dispo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DS_Datetime_of_Last_Disposition__c</fullName>
+        <description>DialSource V3 &quot;Datetime of Last Disposition&quot; field for the Contact Role custom object</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DS Datetime of Last Disposition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DS_Last_Call_List_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DS Last Call List Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DS_Last_Disposition__c</fullName>
+        <description>DialSource V3 &quot;Last Disposition&quot; field for the Contact Role custom object</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DS Last Disposition</label>
+        <length>140</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DS_Pending_Event_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DS Pending Event Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DS_Pending_Task_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>DS Pending Task Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DS_Total_Call_Count__c</fullName>
+        <description>DialSource V3 field &quot;Total Call Count&quot; for the Contact Role custom object</description>
+        <externalId>false</externalId>
+        <label>DS Total Call Count</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DS_VM_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Tracks the number of voicemails left through DialSource in the last 30 Days</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tracks the number of voicemails left through DialSource in the last 30 Days</inlineHelpText>
+        <label>DS VM Count Last 30 Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Degree_on_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Contact__r.Degree__c)</formula>
+        <label>Degree on Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Doctor_ID_of_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Doctor_ID__c</formula>
+        <label>Doctor ID of Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Key__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Salesforce_ID__c + &quot;_&quot; +  Contact__r.Salesforce_ID__c + &quot;_&quot; +  TEXT(Type__c)</formula>
+        <label>Duplicate Key</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_of_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Email__c</formula>
+        <label>Email of Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fax_of_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Fax</formula>
+        <label>Fax of Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fee_Calculation_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(TEXT( Account__r.Parent.Fee_Calculation_Code__c ), 1)</formula>
+        <label>Fee Calculation Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fee_Code__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Fee Code</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Geo_Code_of_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.VSP_GeoCode__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Geo Code of Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Active_Role__c</fullName>
+        <description>Result is 1 if Contact Role is Active and 0 if Inactive.</description>
+        <externalId>false</externalId>
+        <label>Is Active Role?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Name</formula>
+        <label>Name of Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.FirstName &amp; &quot; &quot; &amp; Contact__r.LastName</formula>
+        <label>Name of Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Physical_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.ShippingCity</formula>
+        <label>Name of Physical City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Physical_County__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Physical_County__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Name of Physical County</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Physical_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.ShippingState</formula>
+        <label>Name of Physical State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Physical_Street__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.ShippingStreet</formula>
+        <label>Name of Physical Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Physical_Zip__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.ShippingPostalCode</formula>
+        <label>Name of Physical Zip</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_Case__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/500/e?CF00NU0000003Kmw5=&quot; &amp; Name, &quot;New Case&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Case</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_Event__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &quot;/00U/e?who_id=&quot; + Contact__c + &quot;&amp;what_id=&quot; + Id , &quot;New Event&quot; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Event</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_Task__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &quot;/00T/e?who_id=&quot; + Contact__c + &quot;&amp;what_id=&quot; +  Id  , &quot;New Task&quot; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Task</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_of_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Phone</formula>
+        <label>Phone of Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provider_Fee_Portal_URL_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( $Organization.Id =  $CustomMetadata.Salesforce_ID__mdt.Prod_Org_Id.ID__c  , &apos;provider-and-fee-portal.vsp.com&apos;, &apos;provider-and-fee-portal-acpt.vsp.com&apos;)</formula>
+        <label>Provider Fee Portal URL Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provider_NPI__c</fullName>
+        <description>NPI of associated Contact record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Provider NPI</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Combo_Key__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Used by integration to uniquely identify a Contact role object since DataStage is having issues using 2 fields as unique key.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>SFDC Combo Key</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Status_Formula__c + &quot; - &quot; +  Contact__r.FirstName + &quot; &quot; + Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status - Contact Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( End_Date__c &lt; Today(),&quot;Inactive&quot;,&quot;Active&quot;)</formula>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Task__c</fullName>
+        <defaultValue>$Organization.Id</defaultValue>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Task</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Total_Doctor_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Doctor Hours</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accounting</fullName>
+                    <default>false</default>
+                    <label>Accounting</label>
+                </value>
+                <value>
+                    <fullName>Board Member/ Officer</fullName>
+                    <default>false</default>
+                    <label>Board Member/ Officer</label>
+                </value>
+                <value>
+                    <fullName>Dean</fullName>
+                    <default>false</default>
+                    <label>Dean</label>
+                </value>
+                <value>
+                    <fullName>Doctor-Employee</fullName>
+                    <default>false</default>
+                    <label>Doctor-Employee</label>
+                </value>
+                <value>
+                    <fullName>Doctor-Owner</fullName>
+                    <default>false</default>
+                    <label>Doctor-Owner</label>
+                </value>
+                <value>
+                    <fullName>Doctor-Unspecified</fullName>
+                    <default>false</default>
+                    <label>Doctor-Unspecified</label>
+                </value>
+                <value>
+                    <fullName>Group Administrator</fullName>
+                    <default>false</default>
+                    <label>Group Administrator</label>
+                </value>
+                <value>
+                    <fullName>Lab Technician</fullName>
+                    <default>false</default>
+                    <label>Lab Technician</label>
+                </value>
+                <value>
+                    <fullName>Member</fullName>
+                    <default>false</default>
+                    <label>Member</label>
+                </value>
+                <value>
+                    <fullName>Office Administration</fullName>
+                    <default>false</default>
+                    <label>Office Administration</label>
+                </value>
+                <value>
+                    <fullName>Office Manager</fullName>
+                    <default>false</default>
+                    <label>Office Manager</label>
+                </value>
+                <value>
+                    <fullName>Optical Buyer</fullName>
+                    <default>false</default>
+                    <label>Optical Buyer</label>
+                </value>
+                <value>
+                    <fullName>Optical Manager</fullName>
+                    <default>false</default>
+                    <label>Optical Manager</label>
+                </value>
+                <value>
+                    <fullName>Optician</fullName>
+                    <default>false</default>
+                    <label>Optician</label>
+                </value>
+                <value>
+                    <fullName>Optician-Owner</fullName>
+                    <default>false</default>
+                    <label>Optician-Owner</label>
+                </value>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                    <label>Student</label>
+                </value>
+                <value>
+                    <fullName>Unspecified</fullName>
+                    <default>false</default>
+                    <label>Unspecified</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User_Profile_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>$Profile.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Profile Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VSP_Geo_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.VSP_GeoCode__c</formula>
+        <label>VSP Geo Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VSP_Network_Provider__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VSP Network Provider</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Vision_Care_Contact_Role_Exception__c</fullName>
+        <externalId>false</externalId>
+        <label>Vision Care Contact Role Exception</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DOWN - Does not Own Dispensary</fullName>
+                    <default>false</default>
+                    <label>DOWN - Does not Own Dispensary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vision_Care_Key__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Vision_Care_Location_Key__c</formula>
+        <label>Vision Care Key</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Contact Role</label>
+    <listViews>
+        <fullName>Dr_Contact_Roles_w_start_end_dates</fullName>
+        <columns>NAME</columns>
+        <columns>Contact_Role_Type__c</columns>
+        <columns>Email_of_Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Name_of_Account__c</columns>
+        <columns>Status_Formula__c</columns>
+        <columns>Status__c</columns>
+        <columns>VSP_Network_Provider__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Is_Active_Role__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>End_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Dr Contact Roles w start &amp; end dates</label>
+        <sharedTo>
+            <group>LOB_Admin_Group</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000}</displayFormat>
+        <label>Contact Role Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Contact Roles</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Role_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <listViewButtons>DS_InstaQueue_List</listViewButtons>
+        <lookupDialogsAdditionalFields>Name_of_Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Detail__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status_Formula__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>Contact_Name__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact_Role_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Type__c</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchFilterFields>Contact__c</searchFilterFields>
+        <searchResultsAdditionalFields>Name_of_Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Role_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Restrict_Edit_On_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED( Type__c ) 
+
+&amp;&amp;
+
+
+(ISPICKVAL(PRIORVALUE( Type__c ), &quot;Doctor-Owner&quot;)
+
+||
+
+ISPICKVAL(PRIORVALUE( Type__c ), &quot;Doctor-Employee&quot;))
+
+&amp;&amp;
+
+NOT( $Permission.Credentialing_Data_Manager )
+
+&amp;&amp;
+
+VSP_Network_Provider__c = true</errorConditionFormula>
+        <errorMessage>You cannot change the Contact Role Type for a Vision Care Provider. Please contact a Vision Care Network Administrator to make a change.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>StartDate_should_be_greater_than_EndDate</fullName>
+        <active>true</active>
+        <errorConditionFormula>End_Date__c &lt;  Start_Date__c</errorConditionFormula>
+        <errorMessage>Setting the “Contact Role End date” that precedes the “Contact Role Start Date” is not allowed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VSPR16_Restrict_Edit_on_Altair_Contact</fullName>
+        <active>true</active>
+        <description>Prevents users from editing &quot;Altair Contact&quot; custom field unless their Company name contains Altair.</description>
+        <errorConditionFormula>(ISCHANGED( Altair_Contact__c )
+
+&amp;&amp; 
+
+NOT( $Profile.Name = &quot;System Administrator&quot; )) 
+
+&amp;&amp;
+
+NOT( CONTAINS( $User.CompanyName, &quot;Altair&quot;))</errorConditionFormula>
+        <errorDisplayField>Altair_Contact__c</errorDisplayField>
+        <errorMessage>You do not have permission to edit the &quot;Altair Contact&quot; field.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>DS_Add_to_Queue</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS Add to Queue</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)}
+var uid = &quot;{!$User.Id}&quot;;
+var oid = &quot;{!Contact_Role__c.Id}&quot;;
+var phn = &quot;{!Contact_Role__c.Contact_Role_Phone__c}&quot;;
+if (phn == null || phn == &quot;&quot;)
+{ 
+alert(&quot;Phone number not found&quot;); 
+}
+else
+{
+var result = sforce.apex.execute(&quot;DSPriorityQueue&quot;,&quot;ButtonSubmitCallBack&quot;,
+{sfdcUserId:uid, sfdcObjectId:oid, callBackNumber:phn, isGlobal:false});
+window.alert(&quot;Contact Role was Queued for DS Call.&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DS_InstaQueue</fullName>
+        <availability>online</availability>
+        <description>InstaQueue button for VSP&apos;s custom Contact Role object</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS InstaQueue</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)} 
+var sid = &quot;{!$Api.Session_ID}&quot;; 
+var loc = &quot;{!$Api.Partner_Server_URL_80}&quot;; 
+var aid = &quot;{!$Organization.Id}&quot;; 
+var uid = &quot;{!User.Id}&quot;; 
+var phone = &quot;{!Contact_Role__c.Contact_Role_Phone__c}&quot;; 
+var name = &quot;{!Contact_Role__c.Account__c}&quot; + &quot; : &quot; + &quot;{!Contact_Role__c.Contact__c}&quot;; 
+var oid = &quot;{!Contact_Role__c.Id}&quot;; 
+
+if({!User.DialSource__DialSource_Development_Mode__c} == true) { 
+var url = &apos;https://websocket-dev-andrew.dialsource.com:8000/addToQueue?aid=&apos;+aid+&apos;&amp;uid=&apos;+uid+&apos;&amp;object_id=&apos;+oid; 
+
+} 
+else { 
+
+var url = &apos;https://ws.dialsource.com:8000/addToQueue?aid=&apos;+aid+&apos;&amp;uid=&apos;+uid+&apos;&amp;object_id=&apos;+oid; 
+} 
+console.log(url); 
+
+var result = sforce.apex.execute(&quot;DialSource.addToQueue&quot;,&quot;httpPOSTrecord&quot;, 
+{urlParams : url, phone : phone, name: name});</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DS_InstaQueue_List</fullName>
+        <availability>online</availability>
+        <description>DialSource InstaQueue list button for the Contact Role custom object.</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS InstaQueue List</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/resource/DialSource__DSConnection&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)} 
+
+var records = {!GETRECORDIDS($ObjectType.Contact_Role__c)};
+var aid = &quot;{!$Organization.Id}&quot;; 
+var uid = &quot;{!User.Id}&quot;;
+var phoneField = &quot;DS_Role_Phone__c&quot;;
+var list = records.join();
+var type = &quot;Contact_Role__c&quot;;
+var nameField = &quot;Account__c, Contact__c&quot;;
+
+if (records[0] == null) {
+alert(&quot;Please select at least one Contact Role to submit.&quot;);
+} 
+else{
+
+var result = sforce.apex.execute(&quot;DSAddToQueueVSP&quot;,&quot;httpPOSTlist&quot;, 
+{phoneField : phoneField, nameField : nameField, recordIDs : list, objectType : type, uid : uid, aid : aid}); 
+//window.alert(&apos;Records successfully queued&apos;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Edit_Fees</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View/Edit Fees</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://{!Contact_Role__c.Provider_Fee_Portal_URL_Formula__c}/#/salesforce/{!Contact_Role__c.Contact_Role_Id_Text__c}/{!Contact_Role__c.Account_ID_Text__c}/{!Contact_Role__c.Account_Vision_Care_Effective_Date_Text__c}/{!Contact_Role__c.Account_Vision_Care_End_Date_Text__c}/{!Contact_Role__c.Contact_Id_Text__c}/{!Contact_Role__c.Contact_Vision_Care_Effective_Date_Text__c}/{!Contact_Role__c.Contact_Vision_Care_End_Date_Text__c}</url>
+    </webLinks>
+</CustomObject>

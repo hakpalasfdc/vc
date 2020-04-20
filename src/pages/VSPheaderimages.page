@@ -1,0 +1,33 @@
+<apex:page showHeader="false" standardStylesheets="true" sidebar="false" docType="html-5.0" applyBodyTag="false" applyHtmlTag="false">
+
+    <div style="overflow:hidden; width:720px; height:220px:">
+
+        <apex:form styleClass="myFormBody">
+
+            <apex:panelGrid columns="3">
+
+                <apex:outputLabel >
+
+                    <apex:image url="{!$Resource.vsp_adpage}" width="420"/>           
+
+                </apex:outputLabel>
+
+                <apex:outputLabel >
+
+                    <apex:image url="{!$Resource.vsp_growth}" width="150"/>           
+
+                </apex:outputLabel>
+
+                <apex:outputLabel >
+
+                    <apex:image url="{!$Resource.vsp_retention}" width="150"/>           
+
+                </apex:outputLabel>
+
+            </apex:panelGrid>
+
+        </apex:form>
+
+    </div>
+
+</apex:page>

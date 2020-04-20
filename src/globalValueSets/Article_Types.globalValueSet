@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Additional_Benefits</fullName>
+        <default>false</default>
+        <label>Additional Benefits</label>
+    </customValue>
+    <customValue>
+        <fullName>C_G_Article</fullName>
+        <default>false</default>
+        <label>C G Article</label>
+    </customValue>
+    <customValue>
+        <fullName>Core_Benefit</fullName>
+        <default>false</default>
+        <label>Core Benefit</label>
+    </customValue>
+    <customValue>
+        <fullName>External_Publication</fullName>
+        <default>false</default>
+        <label>External Publication</label>
+    </customValue>
+    <customValue>
+        <fullName>General_Article_Template</fullName>
+        <default>false</default>
+        <label>General Article Template</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi_Topic</fullName>
+        <default>false</default>
+        <label>Multi Topic</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi_Topic_Details</fullName>
+        <default>false</default>
+        <label>Multi Topic Details</label>
+    </customValue>
+    <customValue>
+        <fullName>Open_Enrollment</fullName>
+        <default>false</default>
+        <label>Open Enrollment</label>
+    </customValue>
+    <customValue>
+        <fullName>Procedure</fullName>
+        <default>false</default>
+        <label>Procedure</label>
+    </customValue>
+    <customValue>
+        <fullName>Provider_Solutions_Community</fullName>
+        <default>false</default>
+        <label>Provider Solutions Community</label>
+    </customValue>
+    <customValue>
+        <fullName>Single_Topic</fullName>
+        <default>false</default>
+        <label>Single Topic</label>
+    </customValue>
+    <customValue>
+        <fullName>Support_Queue</fullName>
+        <default>false</default>
+        <label>Support Queue</label>
+    </customValue>
+    <customValue>
+        <fullName>Universal_Service</fullName>
+        <default>false</default>
+        <label>Universal Service</label>
+    </customValue>
+    <description>DO NOT EDIT these names - they are he Record Type Names stored.  If you change they will not match.</description>
+    <masterLabel>Article Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

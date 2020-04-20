@@ -1,0 +1,11 @@
+Thank you for contacting the VSP Cash Receipts Team, your inquiry is very important to us. Your request has been received, and your assigned Case Number is {!Case.CaseNumber}. Your request will be processed within 3-5 business days.
+
+____________________________________________________
+
+From: {!Case.SuppliedEmail}
+Sent: {!Case.CreatedDate}
+Subject: {!Case.Subject}
+
+{!Case.Description}
+
+ref: {!Case.Thread_Id}

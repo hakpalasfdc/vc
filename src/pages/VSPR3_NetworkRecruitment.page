@@ -1,0 +1,2 @@
+<apex:page showHeader="false" standardController="Network_Recruitment__c" extensions="VSPR3_NetworkRecruitmentController" action="{!getRawDetails}">
+</apex:page>

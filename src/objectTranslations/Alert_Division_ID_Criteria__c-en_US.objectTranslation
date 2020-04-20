@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alert Division ID Criteria</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alert Division ID Criteria</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alerts and Notifications --></label>
+        <name>Alerts_and_Notifications__c</name>
+        <relationshipLabel><!-- Alert Division ID Criteria --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DivisionID --></label>
+        <name>Member_Plan__c</name>
+        <relationshipLabel><!-- Alert Division ID Criteria --></relationshipLabel>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

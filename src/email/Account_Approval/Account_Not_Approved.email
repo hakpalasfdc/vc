@@ -1,0 +1,12 @@
+The following Account has not been approved.  Please review the comments below if applicable, and resubmit the record for approval.
+
+Account Name: {!Account.Name}
+Account Status: {!Account.Status__c}
+
+Approval Notes:
+{!Account.Approval_Notes__c}
+
+
+
+Click link below to view this account record.
+{!Account.Link}

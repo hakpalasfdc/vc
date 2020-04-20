@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>123@123abc.com</email>
+    <name>Onsite Clinics Main Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Onsite_Clinics_Main_Queue</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

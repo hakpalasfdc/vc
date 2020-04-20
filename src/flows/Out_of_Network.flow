@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>All_Other_OON_Providers</name>
+        <choiceText>All Other OON Providers</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>All Other OON Providers</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_In_Network</name>
+        <choiceText>In-Network</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>In Network</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_JC_Penny_s_or_JC_Penney_s_Employee</name>
+        <choiceText>JC Penney&apos;s or JC Penney&apos;s Employee</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>JCPenney</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_Member</name>
+        <choiceText>Member</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Member</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_North_Dakota_OON_Provider_on_BCBS_ND_Member</name>
+        <choiceText>North Dakota OON Provider</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>NDBCBS</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_OON_Provider</name>
+        <choiceText>OON Provider</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Provider</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_Out_of_Network</name>
+        <choiceText>Out-of-Network</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Out-of-Network</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_Walmart_or_Sam_s_Club</name>
+        <choiceText>Walmart or Sam&apos;s Club</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Walmart</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_WALMInNetwork</name>
+        <choiceText>WALM matches</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>WALM matches</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_WALMOutOfNetwork</name>
+        <choiceText>Does not match</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Does not match</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cho_Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>CallerDecision</name>
+        <label>CallerDecision</label>
+        <locationX>167</locationX>
+        <locationY>129</locationY>
+        <defaultConnector>
+            <targetReference>User_Tracking_Record_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>OON Provider</defaultConnectorLabel>
+        <rules>
+            <name>OON_Member</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Whoisyourcaller</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>cho_Member</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>User_Tracking_Record</targetReference>
+            </connector>
+            <label>OON Member</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>In_or_Out_of_Network</name>
+        <label>Mentions going Out-Of-Network</label>
+        <locationX>172</locationX>
+        <locationY>385</locationY>
+        <defaultConnector>
+            <targetReference>Going_In_Network</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>YesOON</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Mentions_going_Out_of_Network</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Going_Out_of_Network</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>JC_Penney_s_Employeedecision</name>
+        <label>JC Penney&apos;s Employee?</label>
+        <locationX>944</locationX>
+        <locationY>187</locationY>
+        <defaultConnector>
+            <targetReference>All_Other</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>JC_Penney_s_Employee_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>JC_Penney_s_Employee</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>JC_Penny_s_EmployeeScreen</targetReference>
+            </connector>
+            <label>JC Penney&apos;s Employee Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>member</name>
+        <label>member</label>
+        <locationX>971</locationX>
+        <locationY>635</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>memberonphone</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Put_member_on_phone</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Going_Out_of_Network</targetReference>
+            </connector>
+            <label>memberonphone</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ND_BCBS</name>
+        <label>ND BCBS</label>
+        <locationX>989</locationX>
+        <locationY>327</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>ND_BCBS_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>BCBS_ND_Member</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>BCBS_ND_Member_Yes</targetReference>
+            </connector>
+            <label>ND BCBS Yes</label>
+        </rules>
+        <rules>
+            <name>ND_BCBS_No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>BCBS_ND_Member</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>All_Other</targetReference>
+            </connector>
+            <label>ND BCBS No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>OONProvider</name>
+        <label>OONProvider</label>
+        <locationX>550</locationX>
+        <locationY>169</locationY>
+        <defaultConnector>
+            <targetReference>All_Other</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>WalmartSamsClub</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Provider_Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>cho_Walmart_or_Sam_s_Club</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>WalmartSamsClubTitle</targetReference>
+            </connector>
+            <label>Walmart/Sam&apos;s Club</label>
+        </rules>
+        <rules>
+            <name>JC_Penney</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Provider_Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>cho_JC_Penny_s_or_JC_Penney_s_Employee</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>JC_Penney_s</targetReference>
+            </connector>
+            <label>JC Penney</label>
+        </rules>
+        <rules>
+            <name>ND_OON</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Provider_Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>cho_North_Dakota_OON_Provider_on_BCBS_ND_Member</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NorthDakota</targetReference>
+            </connector>
+            <label>ND OON</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>WALMOutOutcomedecision</name>
+        <label>WALMDoesnotmatch</label>
+        <locationX>878</locationX>
+        <locationY>63</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>WALMIn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DoesitMatch</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>WALM matches</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>MemberInNetworkScreen</targetReference>
+            </connector>
+            <label>WALMMatches</label>
+        </rules>
+        <rules>
+            <name>WALMOutOutcomeChoice</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DoesitMatch</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Does not match</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>MemberOutOfNetworkScreen</targetReference>
+            </connector>
+            <label>WALMOut</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>UserId</name>
+        <dataType>String</dataType>
+        <expression>{!$User.Id}</expression>
+    </formulas>
+    <interviewLabel>Out of Network {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Benefits Description - Final Changes</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>User_Tracking_Record</name>
+        <label>User Tracking Record Member Path</label>
+        <locationX>170</locationX>
+        <locationY>214</locationY>
+        <connector>
+            <targetReference>MemberOONScreen</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <stringValue>Benefits Description</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Path__c</field>
+            <value>
+                <stringValue>Member</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>UserId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User_Flow_Tracking__c</object>
+    </recordCreates>
+    <recordCreates>
+        <name>User_Tracking_Record_0</name>
+        <label>User Tracking Record Provider Path</label>
+        <locationX>297</locationX>
+        <locationY>162</locationY>
+        <connector>
+            <targetReference>Provider</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <stringValue>Benefits Description</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Path__c</field>
+            <value>
+                <stringValue>OON Provider</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>UserId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User_Flow_Tracking__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Find_Finish_Tab_Id</name>
+        <label>Find Finish Tab Id</label>
+        <locationX>341</locationX>
+        <locationY>57</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CallerDecision</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Quest</stringValue>
+            </value>
+        </filters>
+        <object>TabDefinition</object>
+        <outputAssignments>
+            <assignToReference>varFinishTabId</assignToReference>
+            <field>Url</field>
+        </outputAssignments>
+    </recordLookups>
+    <screens>
+        <name>All_Other</name>
+        <label>All Other</label>
+        <locationX>785</locationX>
+        <locationY>638</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>member</targetReference>
+        </connector>
+        <fields>
+            <name>Request</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;What is the caller requesting?&lt;/B&gt;&lt;FONT STYLE=&quot;font-size:16px&quot;&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Bullets11</name>
+            <fieldText>&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Benefits or eligibility:&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#330066&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;&lt;I&gt;     “Please have the member call VSP.”&lt;/I&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>transfer</name>
+            <fieldText>&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Claim status or adjustment: &lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;         Cold transfer the call to &lt;B&gt;1119044&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Put_member_on_phone</name>
+            <choiceReferences>cho_Yes</choiceReferences>
+            <choiceReferences>cho_No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Provider puts member on phone?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Authenticate</name>
+        <label>Authenticate</label>
+        <locationX>169</locationX>
+        <locationY>47</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Find_Finish_Tab_Id</targetReference>
+        </connector>
+        <fields>
+            <name>AuthenticateYourCaller</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Authenticate your caller:&lt;FONT STYLE=&quot;font-size:16px&quot;&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>AuthenticateCaller</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;1. Verify relation of caller to member&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;2. Verify &lt;FONT COLOR=&quot;#FF0000&quot;&gt;two&lt;/FONT&gt; of the following:&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>TestB</name>
+            <fieldText>&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Patient Name&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Patient Date of Birth&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Member Address&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Authorization or Claim Number&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Client Name&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Past Service Info (DOS, Dr. name, services received, etc.)&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Whoisyourcaller</name>
+            <choiceReferences>cho_Member</choiceReferences>
+            <choiceReferences>cho_OON_Provider</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Who is your caller?&lt;FONT STYLE=&quot;font-size:18px&quot;&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>BCBS_ND_Member_Yes</name>
+        <label>BCBS ND Member Yes</label>
+        <locationX>1172</locationX>
+        <locationY>415</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>BCBSNDYes</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Provide Out-of-Network eligibility, benefits and authorization if requested.&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>info</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;For more information about Blue Cross Blue Shield North Dakota members, go to &lt;A HREF=&quot;https://vsp--c.na48.visual.force.com/apex/SingleTopic_VFP?popup=true&amp;retURL=https%3A%2F%2Fvsp--c.na48.visual.force.com%2Fapex%2FQSearch_VFP&amp;id=kA70B0000004Dux&amp;pubstatus=o#&quot; TARGET=&quot;_blank&quot;&gt;Quest&lt;/A&gt;.&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Finish1</name>
+        <label>Finish</label>
+        <locationX>183</locationX>
+        <locationY>628</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Finished1</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Finished!&lt;/B&gt;&lt;FONT STYLE=&quot;font-size:18px&quot;&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <pausedText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:18px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Finished!&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</pausedText>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Going_In_Network</name>
+        <label>Going In Network</label>
+        <locationX>34</locationX>
+        <locationY>505</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>GoingInNetwork</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#330066&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;&lt;I&gt;“Just let the VSP Network Doctor know you have VSP and the doctor will take care of the rest. Anything else we can help you with?”&lt;/I&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Going_Out_of_Network</name>
+        <label>Going Out of Network</label>
+        <locationX>398</locationX>
+        <locationY>513</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>share</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Share these reasons In-Network is beneficial such as:&lt;/FONT&gt;&lt;/DIV&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;You get more money towards your frame and exam at an In-Network doctor&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;In-Network doctors handle the claim submission for you&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Share promotions and current offers&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>still</name>
+            <fieldText>If still going Out-of-Network, provide all the appropriate Out-of-Network allowances and claim submission procedures.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>AnythingElse</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#330066&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;&lt;I&gt;“Anything else we can help you with?”&lt;/I&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>JC_Penney_s</name>
+        <label>JC Penney&apos;s</label>
+        <locationX>787</locationX>
+        <locationY>175</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>JC_Penney_s_Employeedecision</targetReference>
+        </connector>
+        <fields>
+            <name>VerifyJCP</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Are they calling about a member who is a JC Penney&amp;apos;s Employee?&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>JC_Penney_s_Employee</name>
+            <choiceReferences>cho_Yes</choiceReferences>
+            <choiceReferences>cho_No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>JC Penney&apos;s Employee?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>JC_Penny_s_EmployeeScreen</name>
+        <label>JC Penney&apos;s Employee</label>
+        <locationX>1123</locationX>
+        <locationY>253</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>JCPennysEmployeeYes</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Provide benefit information from &lt;/B&gt;&lt;A HREF=&quot;https://vsp--c.na48.visual.force.com/apex/SingleTopic_VFP?popup=true&amp;retURL=https%3A%2F%2Fvsp--c.na48.visual.force.com%2Fapex%2FQSearch_VFP&amp;id=kA70B000000TNK0&amp;pubstatus=o#&quot; TARGET=&quot;_blank&quot;&gt;&lt;B&gt;Quest&amp;apos;s&lt;/B&gt;&lt;/A&gt;&lt;B&gt; Client Exception page.&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>MemberInNetworkScreen</name>
+        <label>MemberInNetworkScreen</label>
+        <locationX>1142</locationX>
+        <locationY>12</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>InNetworkScreen</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Provide WALM network benefit information from the product tab.&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>MemberOONScreen</name>
+        <label>Member</label>
+        <locationX>170</locationX>
+        <locationY>302</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>In_or_Out_of_Network</targetReference>
+        </connector>
+        <fields>
+            <name>MemberOON</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Offer to send doctor list or verify if their doctor is In-Network.&lt;/B&gt;&lt;FONT STYLE=&quot;font-size:14px&quot;&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Bullets1</name>
+            <fieldText>&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Offer to send In-Network benefit summary by following these &lt;A HREF=&quot;https://vsp--cchub--c.cs77.visual.force.com/apex/Multi_Topic_VFP?popup=true&amp;retURL=https%3A%2F%2Fvsp--cchub--c.cs77.visual.force.com%2Fapex%2FQSearch_VFP&amp;id=kA5U0000000CbY4&amp;pubstatus=o#&quot; TARGET=&quot;_blank&quot;&gt;procedures&lt;/A&gt;.&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Only&lt;/B&gt; provide specific benefit information if requested by caller.&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Mentions_going_Out_of_Network</name>
+            <choiceReferences>cho_Yes</choiceReferences>
+            <choiceReferences>cho_No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Mentions going Out-of-Network?&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>MemberOutOfNetworkScreen</name>
+        <label>MemberOONScreen</label>
+        <locationX>1281</locationX>
+        <locationY>193</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>OONMemberFinishScreen</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Provide Out-of-Network eligibility, benefits and authorization if requested.&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;For more information about Walmart and Sam&amp;apos;s Club OON, go to &lt;A HREF=&quot;https://vsp--c.na48.visual.force.com/apex/SingleTopic_VFP?pubstatus=o&amp;id=kA70B0000004Dsm#&quot; TARGET=&quot;_blank&quot;&gt;Quest&lt;/A&gt;.&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>NorthDakota</name>
+        <label>North Dakota</label>
+        <locationX>734</locationX>
+        <locationY>293</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>ND_BCBS</targetReference>
+        </connector>
+        <fields>
+            <name>VerifyND</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Verify if calling about a Blue Cross Blue Shield North Dakota member.&lt;/B&gt;&lt;FONT STYLE=&quot;font-size:16px&quot;&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>BCBS_ND_Member</name>
+            <choiceReferences>cho_Yes</choiceReferences>
+            <choiceReferences>cho_No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>BCBS ND Member?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Provider</name>
+        <label>Provider</label>
+        <locationX>425</locationX>
+        <locationY>169</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>OONProvider</targetReference>
+        </connector>
+        <fields>
+            <name>VerifyOONProvider</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Verify the Out-of-Network provider.&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Provider_Type</name>
+            <choiceReferences>cho_Walmart_or_Sam_s_Club</choiceReferences>
+            <choiceReferences>cho_JC_Penny_s_or_JC_Penney_s_Employee</choiceReferences>
+            <choiceReferences>cho_North_Dakota_OON_Provider_on_BCBS_ND_Member</choiceReferences>
+            <choiceReferences>All_Other_OON_Providers</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Provider Type&lt;FONT STYLE=&quot;font-size:18px&quot;&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>WalmartSamsClubTitle</name>
+        <label>Walmart/Sam&apos;s Club</label>
+        <locationX>715</locationX>
+        <locationY>64</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>WALMOutOutcomedecision</targetReference>
+        </connector>
+        <fields>
+            <name>Lookatmembersplan</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;Compare the network on the product tab to the doctor&amp;apos;s network.&lt;/B&gt;&lt;FONT STYLE=&quot;font-size:16px&quot;&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>DoesitMatch</name>
+            <choiceReferences>cho_WALMInNetwork</choiceReferences>
+            <choiceReferences>cho_WALMOutOfNetwork</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Does it Match?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Authenticate</startElementReference>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>Test</name>
+        <text>&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Test Bullets&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;LI&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Test Bullets&lt;/FONT&gt;&lt;/LI&gt;&lt;/TEXTFORMAT&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>varFinishTabId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>01rU0000000UYRk</stringValue>
+        </value>
+    </variables>
+</Flow>

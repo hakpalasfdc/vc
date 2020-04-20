@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Activity.CallDurationInSeconds:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>minutes the rep was on the call</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Call duration -minutes</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>CDF1:SUM * 0.025</calculatedFormula>
+        <datatype>number</datatype>
+        <description>based on .025 Cents per minute</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Cost of time in Wrap up</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Activity.CallDurationInSeconds:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Duration (Minutes)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.Contact_Roles__r.Activities$Owner</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$DialSource__Call_Placed_DS__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Contact_Roles__r.Activities$CallDurationInSeconds</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$DialSource__Call_Ended_DS__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r$DS_Datetime_of_Last_Disposition__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r.Activities$DialSource__Call_Disposition_DS__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r$Altair_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Roles__r$Contact__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>(Contact_Role__c.DS_Datetime_of_Last_Disposition__c-Activity.DialSource__Call_Ended_DS__c)*24*60</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Time rep spent after the call before saving the disposition</description>
+        <developerName>CDF1</developerName>
+        <label>Wrap-up Minutes</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Created 11/12/19</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contact_Roles__r.Activities$Owner.UserRole</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Region</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Contact_Roles__r.Activities$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DIDN&apos;T WORK Wrap up report for yesterday</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>DS_Acct_with_Activities_and_VSP_contact_role__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Contact_Roles__r.Activities$DialSource__Call_Placed_DS__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Contact_Roles__r.Activities$DialSource__Call_Ended_DS__c</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

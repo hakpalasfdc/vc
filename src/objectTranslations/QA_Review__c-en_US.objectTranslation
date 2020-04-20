@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>QA Review</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>QA Reviews</value>
+    </caseValues>
+    <fields>
+        <label><!-- Audit Email --></label>
+        <name>Audit_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Phone Number --></label>
+        <name>Audit_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Physical Address Street --></label>
+        <name>Audit_Physical_Address_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Physical City, State, ZIP --></label>
+        <name>Audit_Physical_City_State_ZIP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clinical Auditor Assign Date --></label>
+        <name>Clinical_Auditor_Assign_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clinical Auditor --></label>
+        <name>Clinical_Auditor__c</name>
+        <relationshipLabel><!-- QA Reviews (Clinical Auditor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role --></label>
+        <name>Contact_Role__c</name>
+        <relationshipLabel><!-- QA Reviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Degree --></label>
+        <name>Degree__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor ID --></label>
+        <name>Doctor_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Completion Date --></label>
+        <name>DocuSign_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exam Restitution Amt Received/Paid/Sent --></label>
+        <name>Exam_Restitution_Amount_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exam Restitution Amount --></label>
+        <name>Exam_Restitution_Amount__c</name>
+        <picklistValues>
+            <masterLabel>$100</masterLabel>
+            <translation><!-- $100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50</masterLabel>
+            <translation><!-- $50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$60</masterLabel>
+            <translation><!-- $60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$70</masterLabel>
+            <translation><!-- $70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$80</masterLabel>
+            <translation><!-- $80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$90</masterLabel>
+            <translation><!-- $90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Focused Review Type --></label>
+        <name>Focused_Review_Type__c</name>
+        <picklistValues>
+            <masterLabel>Complaint &amp; Grievance History</masterLabel>
+            <translation><!-- Complaint &amp; Grievance History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diabetic</masterLabel>
+            <translation><!-- Diabetic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor QA History</masterLabel>
+            <translation><!-- Poor QA History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested by Another Department</masterLabel>
+            <translation><!-- Requested by Another Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested by Committee</masterLabel>
+            <translation><!-- Requested by Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unusual Utilization Patterns</masterLabel>
+            <translation><!-- Unusual Utilization Patterns --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Grade Date --></label>
+        <name>Grade_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Points Earned --></label>
+        <name>Medical_Points_Earned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Points Possible --></label>
+        <name>Medical_Points_Possible__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI --></label>
+        <name>NPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original DocuSign Sent Date --></label>
+        <name>Original_DocuSign_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Compliance Percentage --></label>
+        <name>Overall_Compliance_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Formal Name --></label>
+        <name>Provider_Formal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Name --></label>
+        <name>Provider_Name__c</name>
+        <relationshipLabel><!-- QA Reviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- QA Administrator --></label>
+        <name>QA_Administrator__c</name>
+        <relationshipLabel><!-- QA Reviews (QA Administrator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 10 --></label>
+        <name>QA_Patient_Age_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 1 --></label>
+        <name>QA_Patient_Age_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 2 --></label>
+        <name>QA_Patient_Age_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 3 --></label>
+        <name>QA_Patient_Age_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 4 --></label>
+        <name>QA_Patient_Age_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 5 --></label>
+        <name>QA_Patient_Age_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 6 --></label>
+        <name>QA_Patient_Age_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 7 --></label>
+        <name>QA_Patient_Age_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 8 --></label>
+        <name>QA_Patient_Age_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Age 9 --></label>
+        <name>QA_Patient_Age_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 10 --></label>
+        <name>QA_Patient_Claim_Number_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 1 --></label>
+        <name>QA_Patient_Claim_Number_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 2 --></label>
+        <name>QA_Patient_Claim_Number_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 3 --></label>
+        <name>QA_Patient_Claim_Number_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 4 --></label>
+        <name>QA_Patient_Claim_Number_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 5 --></label>
+        <name>QA_Patient_Claim_Number_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 6 --></label>
+        <name>QA_Patient_Claim_Number_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 7 --></label>
+        <name>QA_Patient_Claim_Number_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 8 --></label>
+        <name>QA_Patient_Claim_Number_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Authorization Number 9 --></label>
+        <name>QA_Patient_Claim_Number_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 10 --></label>
+        <name>QA_Patient_Date_of_Service_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 1 --></label>
+        <name>QA_Patient_Date_of_Service_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 2 --></label>
+        <name>QA_Patient_Date_of_Service_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 3 --></label>
+        <name>QA_Patient_Date_of_Service_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 4 --></label>
+        <name>QA_Patient_Date_of_Service_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 5 --></label>
+        <name>QA_Patient_Date_of_Service_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 6 --></label>
+        <name>QA_Patient_Date_of_Service_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 7 --></label>
+        <name>QA_Patient_Date_of_Service_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 8 --></label>
+        <name>QA_Patient_Date_of_Service_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Date of Service 9 --></label>
+        <name>QA_Patient_Date_of_Service_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 10 --></label>
+        <name>QA_Patient_Name_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 1 --></label>
+        <name>QA_Patient_Name_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 2 --></label>
+        <name>QA_Patient_Name_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 3 --></label>
+        <name>QA_Patient_Name_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 4 --></label>
+        <name>QA_Patient_Name_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 5 --></label>
+        <name>QA_Patient_Name_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 6 --></label>
+        <name>QA_Patient_Name_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 7 --></label>
+        <name>QA_Patient_Name_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 8 --></label>
+        <name>QA_Patient_Name_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Patient Name 9 --></label>
+        <name>QA_Patient_Name_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Review DTP --></label>
+        <name>QA_Review_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Review Status --></label>
+        <name>QA_Review_Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned to Clinical Auditor</masterLabel>
+            <translation><!-- Assigned to Clinical Auditor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Auditor Complete</masterLabel>
+            <translation><!-- Clinical Auditor Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Non-responder</masterLabel>
+            <translation><!-- Closed - Non-responder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Audit Failed</masterLabel>
+            <translation><!-- Completed Audit Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Audit Pass</masterLabel>
+            <translation><!-- Completed Audit Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress Clinical Auditor</masterLabel>
+            <translation><!-- In Progress Clinical Auditor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress QA Admin</masterLabel>
+            <translation><!-- In Progress QA Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Submit for Claims</masterLabel>
+            <translation><!-- Re-Submit for Claims --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit for Claims</masterLabel>
+            <translation><!-- Submit for Claims --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Re-Audit Amt Received/Paid/Sent --></label>
+        <name>Re_Audit_Amount_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Re-Audit Amount --></label>
+        <name>Re_Audit_Amount__c</name>
+        <picklistValues>
+            <masterLabel>$250</masterLabel>
+            <translation><!-- $250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$500</masterLabel>
+            <translation><!-- $500 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result Letter Date --></label>
+        <name>Result_Letter_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Date Scheduled --></label>
+        <name>Review_Date_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Level --></label>
+        <name>Review_Level__c</name>
+        <picklistValues>
+            <masterLabel>First Formal</masterLabel>
+            <translation><!-- First Formal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial / Educational</masterLabel>
+            <translation><!-- Initial / Educational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interrater</masterLabel>
+            <translation><!-- Interrater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Formal</masterLabel>
+            <translation><!-- Second Formal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Formal</masterLabel>
+            <translation><!-- Third Formal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review/Received Date --></label>
+        <name>Review_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Results --></label>
+        <name>Review_Results__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Type --></label>
+        <name>Review_Type__c</name>
+        <picklistValues>
+            <masterLabel>Field</masterLabel>
+            <translation><!-- Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus</masterLabel>
+            <translation><!-- Focus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special Handling Comments --></label>
+        <name>Special_Handling_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Handling --></label>
+        <name>Special_Handling__c</name>
+        <picklistValues>
+            <masterLabel>CPG</masterLabel>
+            <translation><!-- CPG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Today&apos;s Date --></label>
+        <name>Today_s_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vision Care Location Key --></label>
+        <name>Vision_Care_Location_Key__c</name>
+    </fields>
+    <layouts>
+        <layout>QA Review Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Provider and Office Information --></label>
+            <section>Provider and Office Information</section>
+        </sections>
+        <sections>
+            <label><!-- Review Follow-Up --></label>
+            <section>Review Follow-Up</section>
+        </sections>
+        <sections>
+            <label><!-- Review Information --></label>
+            <section>Review Information</section>
+        </sections>
+        <sections>
+            <label><!-- Review Results --></label>
+            <section>Review Results</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Calculate_Final_Score --></label>
+        <name>Calculate_Final_Score</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agriculture </fullName>
+        <default>false</default>
+        <label>Agriculture </label>
+    </customValue>
+    <customValue>
+        <fullName>Mining </fullName>
+        <default>false</default>
+        <label>Mining </label>
+    </customValue>
+    <customValue>
+        <fullName>Construction </fullName>
+        <default>false</default>
+        <label>Construction </label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing </fullName>
+        <default>false</default>
+        <label>Manufacturing </label>
+    </customValue>
+    <customValue>
+        <fullName>Transport/Commun/Util </fullName>
+        <default>false</default>
+        <label>Transport/Commun/Util </label>
+    </customValue>
+    <customValue>
+        <fullName>Wholesale/Distribution </fullName>
+        <default>false</default>
+        <label>Wholesale/Distribution </label>
+    </customValue>
+    <customValue>
+        <fullName>Retail Trade </fullName>
+        <default>false</default>
+        <label>Retail Trade </label>
+    </customValue>
+    <customValue>
+        <fullName>Finance, Ins, Real Estate </fullName>
+        <default>false</default>
+        <label>Finance, Ins, Real Estate </label>
+    </customValue>
+    <customValue>
+        <fullName>Services </fullName>
+        <default>false</default>
+        <label>Services </label>
+    </customValue>
+    <customValue>
+        <fullName>Public Administration </fullName>
+        <default>false</default>
+        <label>Public Administration </label>
+    </customValue>
+    <customValue>
+        <fullName>Labor Trust Funds </fullName>
+        <default>false</default>
+        <label>Labor Trust Funds </label>
+    </customValue>
+    <customValue>
+        <fullName>Assocs &amp; Multi-Employer Trusts </fullName>
+        <default>false</default>
+        <label>Assocs &amp; Multi-Employer Trusts </label>
+    </customValue>
+    <customValue>
+        <fullName>Schools </fullName>
+        <default>false</default>
+        <label>Schools </label>
+    </customValue>
+    <customValue>
+        <fullName>Retirees </fullName>
+        <default>false</default>
+        <label>Retirees </label>
+    </customValue>
+    <customValue>
+        <fullName>Teamster Trust Funds </fullName>
+        <default>false</default>
+        <label>Teamster Trust Funds </label>
+    </customValue>
+    <customValue>
+        <fullName>Managed Care</fullName>
+        <default>false</default>
+        <label>Managed Care</label>
+    </customValue>
+    <masterLabel>SIC Divisions</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

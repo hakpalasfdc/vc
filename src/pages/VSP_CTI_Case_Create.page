@@ -1,0 +1,79 @@
+<apex:page controller="VSP_CTI_Controller" showHeader="false" sidebar="false">
+    <apex:includeScript value="{!URLFOR($Resource.cnx__CnxSfdcResources,'js/ConnectsIntegrationAPI.min.js')}"/> 
+    <apex:includeScript value="/support/console/43.0/integration.js"/>
+    <apex:includeScript value="/soap/ajax/38.0/connection.js"/>
+    
+    <apex:outputPanel id="PortalUrl">
+        <apex:form >
+            <script type="text/javascript">  
+            
+            ConnectsIntegrationAPI.onWorkItemConnect = function (event) {
+                
+                if (event.item.Channel == "VOICE") {
+                    var workItemType = ConnectsIntegrationAPI.WORKITEM.TYPE.VOICE;
+                    var firstWorkItemData = ConnectsIntegrationAPI.getFirstWorkItem(workItemType);
+                    
+                    if(firstWorkItemData){
+          //                  alert('Alert ' + firstWorkItemData.DialedNumber);
+                        if (firstWorkItemData.Direction == 'inbound' && !firstWorkItemData.IsInternalCall && firstWorkItemData.DialedNumber == '18553932664'){ ///Change to 1855EYECONIC
+                            var conId = Object.keys(firstWorkItemData.CrmData.SearchResult.returnValue);
+                            array = null;
+                            if(conId.length > 0){
+                                
+                                var array = conId[0]+ ';';
+                                for(var i = 1; i < conId.length; i++){
+                                    array += conId[i] + ';';
+                                }
+                            }
+                            //alert('DNIS:'+ firstWorkItemData.DNIS + 'DialedNumber: '+ firstWorkItemData.DialedNumber + ' ConId: ' + conId + ' Array ' + array);
+                            //  alert('Sender ' + firstWorkItemData.Sender);
+                            //      alert('Array ' + array);
+                          
+                            callAccept(array, firstWorkItemData.DNIS, firstWorkItemData.PerVar4, firstWorkItemData.Sender);
+                            
+                        }
+                    }
+                }
+            }
+            
+            function openCaseTab(){
+                // sforce.console.getFocusedPrimaryTabId(openSubTab);
+                var processNum = '{!processNum}';
+                var caseId = '{!caseId}';
+                
+                if(processNum == null){
+                    
+                }
+                else if(processNum == 'found1EyeconCaseOutFocus' || processNum == 'found1conCaseOutFocus' || processNum == 'MultifoundMultiEyeconCaseOutFocus'){
+                    var conId = '{!conIdValue}';
+                    //  alert('Process 1' + ' ConId ' + conId + ' ConFL {!conFirstLast} caseId ' + caseId );
+                    sforce.console.openPrimaryTab( null, '/'+caseId, false, 'Case: {!caseNum}');
+                }
+                    else if(processNum == 'Multifound1EyeconCaseOutFocus'){
+                        var conId = '{!conIdValue}';                     
+                        sforce.console.openPrimaryTab( null, '/'+conId, true, '{!conFirstLast}');                      
+                        sforce.console.openPrimaryTab( null, '/'+caseId, false, 'Case: {!caseNum}');
+                    }
+                
+                        else if(processNum == 'foundMulticonCaseInFocus' || processNum == 'found0conCaseInFocus'){
+                            
+                            sforce.console.openPrimaryTab( null, '/'+caseId, true, 'Case: {!caseNum}');
+                        }                
+            }
+            
+            </script>
+            
+            <apex:actionFunction name="callAccept" action="{!VSP_cti_Controller}" reRender="PortalUrl" oncomplete="openCaseTab()" >
+                <apex:param name="conIdList" value="" assignTo="{!conIdList}"/>   
+                <apex:param name="IVRDNIS" value="" assignTo="{!IVRDNIS}"/>
+                <apex:param name="IVRConId" value="" assignTo="{!IVRConId}"/>
+                <apex:param name="senderNum" value="" assignTo="{!senderNum}"/>
+            </apex:actionFunction>
+            
+        </apex:form>
+        
+    </apex:outputPanel> 
+    
+    <!--   <apex:iframe id="showPortal" src="https://www.vsp.com/" scrolling="true">
+</apex:iframe>   -->   
+</apex:page>

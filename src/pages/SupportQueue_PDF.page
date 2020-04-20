@@ -1,0 +1,22 @@
+<apex:page cache="false"  id="supportqueuepageid" sidebar="false" renderAs="pdf" >
+<!--<apex:page standardController="Support_Queue__kav" cache="false"  id="supportqueuepageid" sidebar="false" renderAs="pdf" >-->
+
+    <apex:pageBlock mode="detail" html-style="font:12px;width:90%;float:left;">
+        <apex:pageBlockSection columns="1">
+            <!--<apex:outputfield value="{!Support_Queue__kav.Title}"/><br/>
+            <apex:outputfield value="{!Support_Queue__kav.ArticleNumber}"/><br/>
+            <apex:outputfield value="{!Support_Queue__kav.VersionNumber}"/><br/>
+            <apex:outputfield value="{!Support_Queue__kav.LastPublishedDate}"/><br/>
+            <apex:outputfield value="{!Support_Queue__kav.Version_Comments__c}"/><br/>
+            <apex:outputLabel value="================================================================================"/><br/><br/>
+
+        <apex:pageBlockSectionItem >
+            <apex:outputField label="Article Details" value="{!Support_Queue__kav.Article_Details__c}"/>
+        </apex:pageBlockSectionItem>
+
+            <apex:outputField label="Keyword" value="{!Support_Queue__kav.Keyword__c}"/>    
+            <apex:outputField label="SQ/QQ Steps" value="{!Support_Queue__kav.Support_Queue_Steps__c}"/>-->
+
+        </apex:pageBlockSection>
+    </apex:pageBlock>    
+</apex:page>

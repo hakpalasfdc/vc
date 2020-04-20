@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.QA_Review_Status__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Review_Received_Date__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.DocuSign_Completion_Date__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.Review_Date_Scheduled__c</field>
+    </columns>
+    <columns>
+        <field>QA_Review__c.QA_Administrator__c</field>
+    </columns>
+    <description>Complete -QA Reviews that the provider did not complete DocuSign Documents</description>
+    <filter>
+        <criteriaItems>
+            <column>QA_Review__c.QA_Review_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed - Non-responder</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Closed - Non-responder Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$QA_Review__c@QA_Review__c.Provider_Name__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

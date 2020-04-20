@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_49626155</developerName>
+        <masterLabel>Task Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Activities$Type__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Outbound Call</sourceValue>
+            </sourceValues>
+            <value>Outbound Call</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Inbound Call</sourceValue>
+            </sourceValues>
+            <value>Inbound Call</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <value>Email</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Unscheduled Visit</sourceValue>
+            </sourceValues>
+            <value>Unscheduled Visit</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CLOB Referral</sourceValue>
+            </sourceValues>
+            <value>CLOB Referral</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Fax</sourceValue>
+            </sourceValues>
+            <value>Fax</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Postal Mail</sourceValue>
+            </sourceValues>
+            <value>Postal Mail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Internal</sourceValue>
+            </sourceValues>
+            <value>Internal</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Campaign Follow Up</sourceValue>
+            </sourceValues>
+            <value>Campaign Follow Up</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Account$Tax_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <description>All RightEye tasks for Dashboard</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Activities$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>righteye</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Activity_Owner_Role__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>global business development manager</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_49626155</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Activities$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>RightEye GBDM Tasks</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Tasks_and_Events__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Activities$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
